@@ -1,0 +1,37 @@
+DEBUG - 2022-06-12 00:54:07 --> UTF-8 Support Enabled
+DEBUG - 2022-06-12 00:54:07 --> No URI present. Default controller set.
+DEBUG - 2022-06-12 00:54:07 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-06-12 00:54:07 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2022-06-12 00:54:07 --> Total execution time: 0.2279
+DEBUG - 2022-06-12 00:54:08 --> UTF-8 Support Enabled
+DEBUG - 2022-06-12 00:54:08 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2022-06-12 00:54:08 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2022-06-12 11:09:43 --> UTF-8 Support Enabled
+DEBUG - 2022-06-12 11:09:43 --> No URI present. Default controller set.
+DEBUG - 2022-06-12 11:09:43 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-06-12 11:09:43 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2022-06-12 11:09:44 --> Total execution time: 0.2276
+DEBUG - 2022-06-12 11:09:45 --> UTF-8 Support Enabled
+DEBUG - 2022-06-12 11:09:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2022-06-12 11:09:45 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2022-06-12 11:09:56 --> UTF-8 Support Enabled
+DEBUG - 2022-06-12 11:09:56 --> No URI present. Default controller set.
+DEBUG - 2022-06-12 11:09:56 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-06-12 11:09:56 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2022-06-12 11:09:56 --> Total execution time: 0.0312
+DEBUG - 2022-06-12 14:13:32 --> UTF-8 Support Enabled
+DEBUG - 2022-06-12 14:13:32 --> No URI present. Default controller set.
+DEBUG - 2022-06-12 14:13:32 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-06-12 14:13:32 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2022-06-12 14:13:32 --> Total execution time: 0.1852
+DEBUG - 2022-06-12 17:09:58 --> UTF-8 Support Enabled
+DEBUG - 2022-06-12 17:09:58 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-06-12 17:09:58 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2022-06-12 18:00:00 --> UTF-8 Support Enabled
+DEBUG - 2022-06-12 18:00:00 --> No URI present. Default controller set.
+DEBUG - 2022-06-12 18:00:00 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-06-12 18:00:00 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2022-06-12 18:00:00 --> Total execution time: 0.0628
+DEBUG - 2022-06-12 18:00:01 --> UTF-8 Support Enabled
+DEBUG - 2022-06-12 18:00:01 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2022-06-12 18:00:01 --> 404 Page Not Found: Faviconico/index

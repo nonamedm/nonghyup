@@ -1,0 +1,1787 @@
+DEBUG - 2023-01-25 08:44:07 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:44:07 --> No URI present. Default controller set.
+DEBUG - 2023-01-25 08:44:07 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 08:44:07 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 08:44:08 --> Total execution time: 0.2514
+DEBUG - 2023-01-25 08:44:08 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:44:08 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2023-01-25 08:44:08 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2023-01-25 08:44:23 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:44:23 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 08:44:23 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 08:44:24 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:44:24 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 08:44:24 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 08:44:24 --> Total execution time: 0.0490
+DEBUG - 2023-01-25 08:44:30 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:44:30 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 08:44:30 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 08:44:30 --> =================== DL_auth-> oauth::CALLBACK - 시작
+DEBUG - 2023-01-25 08:44:30 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: error=
+DEBUG - 2023-01-25 08:44:30 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: state=
+DEBUG - 2023-01-25 08:44:30 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: code=7vjVokm63UUHJZtMf9PwhdIzlOsetWmpEb_iUwjKrw0hjHWE9V3n-28p8rQjVqekmk2uXAoqJY4AAAGF5is47g
+DEBUG - 2023-01-25 08:44:30 --> =================== DL_auth -> kakao oauth :2: code=7vjVokm63UUHJZtMf9PwhdIzlOsetWmpEb_iUwjKrw0hjHWE9V3n-28p8rQjVqekmk2uXAoqJY4AAAGF5is47g
+DEBUG - 2023-01-25 08:44:30 --> ====================Dl_auth -> kakao_login :: 시작
+DEBUG - 2023-01-25 08:44:30 --> --------------------Dl_auth::kakao_login - 1.토큰요청 시작
+DEBUG - 2023-01-25 08:44:30 --> Dl_auth::kakao_login - get_token 시작 n=2
+DEBUG - 2023-01-25 08:44:30 --> --------------------Dl_auth::kakao_login - 1.2.토큰요청 시작 -> 기타브라우저
+DEBUG - 2023-01-25 08:44:30 --> --------------------Dl_auth::kakao_login - 1.3.토큰요청
+DEBUG - 2023-01-25 08:44:30 --> --------------------Dl_auth::kakao_login - 1.4.토큰요청 -> 성공
+DEBUG - 2023-01-25 08:44:30 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:44:30 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 08:44:30 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 08:44:30 --> =================== DL_auth-> oauth::CALLBACK - 시작
+DEBUG - 2023-01-25 08:44:30 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: error=
+DEBUG - 2023-01-25 08:44:30 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: state=
+DEBUG - 2023-01-25 08:44:30 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: code=7vjVokm63UUHJZtMf9PwhdIzlOsetWmpEb_iUwjKrw0hjHWE9V3n-28p8rQjVqekmk2uXAoqJY4AAAGF5is47g
+DEBUG - 2023-01-25 08:44:30 --> =================== DL_auth -> kakao oauth :2: code=7vjVokm63UUHJZtMf9PwhdIzlOsetWmpEb_iUwjKrw0hjHWE9V3n-28p8rQjVqekmk2uXAoqJY4AAAGF5is47g
+DEBUG - 2023-01-25 08:44:30 --> ====================Dl_auth -> kakao_login :: 시작
+DEBUG - 2023-01-25 08:44:36 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:44:36 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 08:44:36 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 08:44:36 --> Total execution time: 0.0706
+DEBUG - 2023-01-25 08:44:47 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:44:47 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 08:44:47 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 08:44:47 --> Total execution time: 0.0167
+DEBUG - 2023-01-25 08:44:49 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:44:49 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 08:44:49 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 08:44:49 --> =================== DL_auth-> oauth::CALLBACK - 시작
+DEBUG - 2023-01-25 08:44:49 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: error=
+DEBUG - 2023-01-25 08:44:49 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: state=
+DEBUG - 2023-01-25 08:44:49 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: code=mY_fKSEJaU_Nl45c6OpO2nTbUQzXkPetF5RNOjrY2FnZLeySB5LvlIUet26WmzW03fhOtAoqJU4AAAGF5it_3Q
+DEBUG - 2023-01-25 08:44:49 --> =================== DL_auth -> kakao oauth :2: code=mY_fKSEJaU_Nl45c6OpO2nTbUQzXkPetF5RNOjrY2FnZLeySB5LvlIUet26WmzW03fhOtAoqJU4AAAGF5it_3Q
+DEBUG - 2023-01-25 08:44:49 --> ====================Dl_auth -> kakao_login :: 시작
+DEBUG - 2023-01-25 08:44:49 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:44:49 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 08:44:49 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 08:44:49 --> =================== DL_auth -> joinForm :: 시작
+DEBUG - 2023-01-25 08:44:49 --> =================== DL_auth -> joinForm :: 끝
+DEBUG - 2023-01-25 08:44:49 --> Total execution time: 0.0494
+DEBUG - 2023-01-25 08:44:59 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:44:59 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 08:44:59 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 08:44:59 --> ====================Dl_auth -> signup :: 시작
+DEBUG - 2023-01-25 08:44:59 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 08:45:01 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:45:01 --> No URI present. Default controller set.
+DEBUG - 2023-01-25 08:45:01 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 08:45:01 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 08:45:01 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 08:45:01 --> Total execution time: 0.0384
+DEBUG - 2023-01-25 08:45:05 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:45:05 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 08:45:05 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 08:45:05 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 08:45:05 --> Total execution time: 0.0782
+DEBUG - 2023-01-25 08:45:14 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:45:14 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 08:45:14 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 08:45:14 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 08:45:14 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:45:14 --> No URI present. Default controller set.
+DEBUG - 2023-01-25 08:45:14 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 08:45:14 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 08:45:14 --> Total execution time: 0.0338
+DEBUG - 2023-01-25 08:45:15 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:45:15 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2023-01-25 08:45:15 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2023-01-25 08:45:17 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:45:17 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 08:45:17 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 08:45:17 --> Total execution time: 0.0346
+DEBUG - 2023-01-25 08:45:26 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:45:26 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 08:45:26 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 08:45:26 --> =================== DL_auth-> oauth::CALLBACK - 시작
+DEBUG - 2023-01-25 08:45:26 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: error=
+DEBUG - 2023-01-25 08:45:26 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: state=
+DEBUG - 2023-01-25 08:45:26 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: code=yVP1MWT5qpKno8U8mwgvg0gO43cLiS-hRJl3FP-cjUfF1fYMoF1pLETpUdbVlMT9WDEOZQoqJZEAAAGF5iwTXA
+DEBUG - 2023-01-25 08:45:26 --> =================== DL_auth -> kakao oauth :2: code=yVP1MWT5qpKno8U8mwgvg0gO43cLiS-hRJl3FP-cjUfF1fYMoF1pLETpUdbVlMT9WDEOZQoqJZEAAAGF5iwTXA
+DEBUG - 2023-01-25 08:45:26 --> ====================Dl_auth -> kakao_login :: 시작
+DEBUG - 2023-01-25 08:45:26 --> --------------------Dl_auth::kakao_login - 1.토큰요청 시작
+DEBUG - 2023-01-25 08:45:26 --> Dl_auth::kakao_login - get_token 시작 n=2
+DEBUG - 2023-01-25 08:45:26 --> --------------------Dl_auth::kakao_login - 1.2.토큰요청 시작 -> 기타브라우저
+DEBUG - 2023-01-25 08:45:26 --> --------------------Dl_auth::kakao_login - 1.3.토큰요청
+DEBUG - 2023-01-25 08:45:26 --> --------------------Dl_auth::kakao_login - 1.4.토큰요청 -> 성공
+DEBUG - 2023-01-25 08:45:26 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:45:26 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 08:45:26 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 08:45:26 --> =================== DL_auth-> oauth::CALLBACK - 시작
+DEBUG - 2023-01-25 08:45:26 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: error=
+DEBUG - 2023-01-25 08:45:26 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: state=
+DEBUG - 2023-01-25 08:45:26 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: code=yVP1MWT5qpKno8U8mwgvg0gO43cLiS-hRJl3FP-cjUfF1fYMoF1pLETpUdbVlMT9WDEOZQoqJZEAAAGF5iwTXA
+DEBUG - 2023-01-25 08:45:26 --> =================== DL_auth -> kakao oauth :2: code=yVP1MWT5qpKno8U8mwgvg0gO43cLiS-hRJl3FP-cjUfF1fYMoF1pLETpUdbVlMT9WDEOZQoqJZEAAAGF5iwTXA
+DEBUG - 2023-01-25 08:45:26 --> ====================Dl_auth -> kakao_login :: 시작
+DEBUG - 2023-01-25 08:45:26 --> ====================Dl_auth::kakao_login - 1.3.5- 사이트 회원정보 업데이트 성공(카카오 인증 완료) state=
+DEBUG - 2023-01-25 08:45:28 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:45:28 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 08:45:28 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 08:45:28 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 08:45:28 --> Total execution time: 0.1112
+DEBUG - 2023-01-25 08:45:33 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:45:33 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 08:45:34 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 08:45:34 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 08:45:34 --> Total execution time: 0.0852
+DEBUG - 2023-01-25 08:45:48 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:45:48 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 08:45:48 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 08:45:48 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 08:46:11 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:46:11 --> No URI present. Default controller set.
+DEBUG - 2023-01-25 08:46:11 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 08:46:11 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 08:46:11 --> Total execution time: 0.0312
+DEBUG - 2023-01-25 08:46:14 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:46:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2023-01-25 08:46:14 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2023-01-25 08:46:31 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:46:31 --> No URI present. Default controller set.
+DEBUG - 2023-01-25 08:46:31 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 08:46:31 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 08:46:31 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 08:46:31 --> Total execution time: 0.0459
+DEBUG - 2023-01-25 08:46:55 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:46:55 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 08:46:55 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 08:46:58 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:46:58 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 08:46:58 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 08:46:58 --> Total execution time: 0.0324
+DEBUG - 2023-01-25 08:47:33 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:47:33 --> No URI present. Default controller set.
+DEBUG - 2023-01-25 08:47:33 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 08:47:33 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 08:47:33 --> Total execution time: 0.0491
+DEBUG - 2023-01-25 08:47:35 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:47:35 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2023-01-25 08:47:35 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2023-01-25 08:47:57 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:47:57 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 08:47:57 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 08:47:57 --> Total execution time: 0.0452
+DEBUG - 2023-01-25 08:48:07 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:48:07 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 08:48:07 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 08:48:07 --> Total execution time: 0.0531
+DEBUG - 2023-01-25 08:48:32 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 08:48:32 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 08:48:32 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 08:48:32 --> Total execution time: 0.0400
+DEBUG - 2023-01-25 09:02:25 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:02:25 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:02:25 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:02:36 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:02:36 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:02:36 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:02:53 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:02:53 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:02:53 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:03:07 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:03:07 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:03:07 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:03:07 --> Total execution time: 0.0492
+DEBUG - 2023-01-25 09:03:12 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:03:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:03:12 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:03:12 --> Total execution time: 0.0333
+DEBUG - 2023-01-25 09:03:14 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:03:14 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:03:14 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:03:14 --> =================== DL_auth-> oauth::CALLBACK - 시작
+DEBUG - 2023-01-25 09:03:14 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: error=
+DEBUG - 2023-01-25 09:03:14 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: state=
+DEBUG - 2023-01-25 09:03:14 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: code=Pu-_ZiXfKU01yG77IAAu2sAZF86LXJJ-UHF8nA7eNulpDhhK_BjAQNSuUUW_LVWt1GrL_worDNMAAAGF5jxeXA
+DEBUG - 2023-01-25 09:03:14 --> =================== DL_auth -> kakao oauth :2: code=Pu-_ZiXfKU01yG77IAAu2sAZF86LXJJ-UHF8nA7eNulpDhhK_BjAQNSuUUW_LVWt1GrL_worDNMAAAGF5jxeXA
+DEBUG - 2023-01-25 09:03:14 --> ====================Dl_auth -> kakao_login :: 시작
+DEBUG - 2023-01-25 09:03:14 --> --------------------Dl_auth::kakao_login - 1.토큰요청 시작
+DEBUG - 2023-01-25 09:03:14 --> Dl_auth::kakao_login - get_token 시작 n=2
+DEBUG - 2023-01-25 09:03:14 --> --------------------Dl_auth::kakao_login - 1.2.토큰요청 시작 -> 기타브라우저
+DEBUG - 2023-01-25 09:03:14 --> --------------------Dl_auth::kakao_login - 1.3.토큰요청
+DEBUG - 2023-01-25 09:03:14 --> --------------------Dl_auth::kakao_login - 1.4.토큰요청 -> 성공
+DEBUG - 2023-01-25 09:03:14 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:03:14 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:03:14 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:03:14 --> =================== DL_auth-> oauth::CALLBACK - 시작
+DEBUG - 2023-01-25 09:03:14 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: error=
+DEBUG - 2023-01-25 09:03:14 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: state=
+DEBUG - 2023-01-25 09:03:14 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: code=Pu-_ZiXfKU01yG77IAAu2sAZF86LXJJ-UHF8nA7eNulpDhhK_BjAQNSuUUW_LVWt1GrL_worDNMAAAGF5jxeXA
+DEBUG - 2023-01-25 09:03:14 --> =================== DL_auth -> kakao oauth :2: code=Pu-_ZiXfKU01yG77IAAu2sAZF86LXJJ-UHF8nA7eNulpDhhK_BjAQNSuUUW_LVWt1GrL_worDNMAAAGF5jxeXA
+DEBUG - 2023-01-25 09:03:14 --> ====================Dl_auth -> kakao_login :: 시작
+DEBUG - 2023-01-25 09:03:14 --> ====================Dl_auth::kakao_login - 1.3.5- 사이트 회원정보 업데이트 성공(카카오 인증 완료) state=
+DEBUG - 2023-01-25 09:03:15 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:03:15 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:03:15 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:03:15 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:03:15 --> Total execution time: 0.0344
+DEBUG - 2023-01-25 09:03:18 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:03:18 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:03:18 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:03:18 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:03:18 --> Total execution time: 0.0753
+DEBUG - 2023-01-25 09:03:48 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:03:48 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:03:48 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:03:48 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:03:48 --> Total execution time: 0.0430
+DEBUG - 2023-01-25 09:09:22 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:09:22 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:09:22 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:09:22 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:09:22 --> Total execution time: 0.0609
+DEBUG - 2023-01-25 09:16:22 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:16:22 --> No URI present. Default controller set.
+DEBUG - 2023-01-25 09:16:22 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:16:22 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:16:22 --> Total execution time: 0.0323
+DEBUG - 2023-01-25 09:16:25 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:16:25 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2023-01-25 09:16:25 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2023-01-25 09:16:34 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:16:34 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:16:34 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:16:34 --> Total execution time: 0.0362
+DEBUG - 2023-01-25 09:16:39 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:16:39 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:16:39 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:16:41 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:16:41 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:16:41 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:16:41 --> Total execution time: 0.0271
+DEBUG - 2023-01-25 09:16:51 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:16:51 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:16:52 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:16:54 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:16:54 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:16:54 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:16:54 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:16:55 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:16:55 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:16:55 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:16:55 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:16:55 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:16:55 --> Total execution time: 0.0673
+DEBUG - 2023-01-25 09:17:37 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:17:37 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:17:37 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:17:37 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:17:37 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:17:37 --> Total execution time: 0.0368
+DEBUG - 2023-01-25 09:17:40 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:17:40 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:17:40 --> Total execution time: 0.0256
+DEBUG - 2023-01-25 09:17:41 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:17:41 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:17:41 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:17:41 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:17:41 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:17:41 --> Total execution time: 0.0355
+DEBUG - 2023-01-25 09:17:43 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:17:43 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:17:43 --> Total execution time: 0.0335
+DEBUG - 2023-01-25 09:17:44 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:17:44 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:17:44 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:17:44 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:17:44 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:17:44 --> Total execution time: 0.0367
+DEBUG - 2023-01-25 09:18:24 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:18:24 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:18:24 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:18:24 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:18:24 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:18:24 --> Total execution time: 0.0726
+DEBUG - 2023-01-25 09:18:26 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:18:26 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:18:26 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:18:26 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:18:26 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:18:26 --> Total execution time: 0.0389
+DEBUG - 2023-01-25 09:18:40 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:18:40 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:18:40 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:18:40 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:18:40 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:18:40 --> Total execution time: 0.0746
+DEBUG - 2023-01-25 09:19:05 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:19:05 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:19:05 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:19:05 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:19:05 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:19:05 --> Total execution time: 0.0467
+DEBUG - 2023-01-25 09:19:10 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:19:10 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:19:10 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:19:10 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:19:10 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:19:10 --> Total execution time: 0.0413
+DEBUG - 2023-01-25 09:19:12 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:19:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:19:12 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:19:12 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:19:12 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:19:12 --> Total execution time: 0.0384
+DEBUG - 2023-01-25 09:19:15 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:19:15 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:19:15 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:19:15 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:19:15 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:19:15 --> Total execution time: 0.0574
+DEBUG - 2023-01-25 09:19:18 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:19:18 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:19:18 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:19:18 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:19:18 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:19:18 --> Total execution time: 0.0477
+DEBUG - 2023-01-25 09:19:19 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:19:19 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:19:19 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:19:19 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:19:19 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:19:19 --> Total execution time: 0.0357
+DEBUG - 2023-01-25 09:19:20 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:19:20 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:19:20 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:19:20 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:19:20 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:19:20 --> Total execution time: 0.0375
+DEBUG - 2023-01-25 09:19:21 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:19:21 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:19:21 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:19:21 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:19:21 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:19:21 --> Total execution time: 0.0399
+DEBUG - 2023-01-25 09:19:21 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:19:21 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:19:21 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:19:21 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:19:21 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:19:21 --> Total execution time: 0.0819
+DEBUG - 2023-01-25 09:19:23 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:19:23 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:19:23 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:19:23 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:19:23 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:19:23 --> Total execution time: 0.0596
+DEBUG - 2023-01-25 09:19:38 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:19:38 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:19:38 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:19:38 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:19:38 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:19:38 --> Total execution time: 0.0448
+DEBUG - 2023-01-25 09:19:40 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:19:40 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:19:40 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:19:40 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:19:40 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:19:40 --> Total execution time: 0.0484
+DEBUG - 2023-01-25 09:19:47 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:19:47 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:19:47 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:19:47 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:19:47 --> Total execution time: 0.0342
+DEBUG - 2023-01-25 09:19:49 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:19:49 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:19:49 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:19:49 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:19:49 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:19:49 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:19:49 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:19:49 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:19:49 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:19:49 --> Total execution time: 0.0372
+DEBUG - 2023-01-25 09:19:53 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:19:53 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:19:53 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:19:53 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:19:53 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:19:53 --> Total execution time: 0.0369
+DEBUG - 2023-01-25 09:19:55 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:19:55 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:19:55 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:19:55 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:19:55 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:19:55 --> Total execution time: 0.0693
+DEBUG - 2023-01-25 09:19:58 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:19:58 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:19:58 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:19:58 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:19:58 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:19:58 --> Total execution time: 0.0395
+DEBUG - 2023-01-25 09:20:00 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:20:00 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:20:00 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:20:00 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:20:00 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:20:00 --> Total execution time: 0.0500
+DEBUG - 2023-01-25 09:20:02 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:20:02 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:20:02 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:20:02 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:20:02 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:20:02 --> Total execution time: 0.0397
+DEBUG - 2023-01-25 09:20:04 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:20:04 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:20:04 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:20:04 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:20:04 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:20:04 --> Total execution time: 0.6311
+DEBUG - 2023-01-25 09:20:07 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:20:07 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:20:07 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:20:07 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:20:07 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:20:07 --> Total execution time: 0.0377
+DEBUG - 2023-01-25 09:20:10 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:20:10 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:20:10 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:20:10 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:20:10 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:20:10 --> Total execution time: 0.0414
+DEBUG - 2023-01-25 09:20:12 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:20:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:20:12 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:20:12 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:20:12 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:20:12 --> Total execution time: 0.0382
+DEBUG - 2023-01-25 09:20:16 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:20:16 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:20:16 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:20:16 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:20:16 --> Total execution time: 0.0426
+DEBUG - 2023-01-25 09:20:17 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:20:17 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:20:17 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:20:17 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:20:17 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:20:17 --> Total execution time: 0.0366
+DEBUG - 2023-01-25 09:20:19 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:20:19 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:20:19 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:20:19 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:20:19 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:20:19 --> Total execution time: 0.0368
+DEBUG - 2023-01-25 09:21:54 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:21:54 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:21:54 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:21:54 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:21:54 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:21:54 --> Total execution time: 0.0601
+DEBUG - 2023-01-25 09:22:57 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:22:57 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:22:57 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:22:57 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:22:57 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:22:57 --> Total execution time: 0.0463
+DEBUG - 2023-01-25 09:27:52 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:27:52 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:27:52 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:27:52 --> =================== DL_auth-> oauth::CALLBACK - 시작
+DEBUG - 2023-01-25 09:27:52 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: error=
+DEBUG - 2023-01-25 09:27:52 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: state=
+DEBUG - 2023-01-25 09:27:52 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: code=zmM_3pkDHKlLUG00N8AQ_otH-Rymez12eFAwheooX_SyDFMM0fPphjiOWv9gotvXEMfPBworDNQAAAGF5lLr7A
+DEBUG - 2023-01-25 09:27:52 --> =================== DL_auth -> kakao oauth :2: code=zmM_3pkDHKlLUG00N8AQ_otH-Rymez12eFAwheooX_SyDFMM0fPphjiOWv9gotvXEMfPBworDNQAAAGF5lLr7A
+DEBUG - 2023-01-25 09:27:52 --> ====================Dl_auth -> kakao_login :: 시작
+DEBUG - 2023-01-25 09:27:52 --> --------------------Dl_auth::kakao_login - 1.토큰요청 시작
+DEBUG - 2023-01-25 09:27:52 --> Dl_auth::kakao_login - get_token 시작 n=2
+DEBUG - 2023-01-25 09:27:52 --> --------------------Dl_auth::kakao_login - 1.2.토큰요청 시작 -> 기타브라우저
+DEBUG - 2023-01-25 09:27:52 --> --------------------Dl_auth::kakao_login - 1.3.토큰요청
+DEBUG - 2023-01-25 09:27:52 --> --------------------Dl_auth::kakao_login - 1.4.토큰요청 -> 성공
+DEBUG - 2023-01-25 09:27:52 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:27:52 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:27:52 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:27:52 --> =================== DL_auth-> oauth::CALLBACK - 시작
+DEBUG - 2023-01-25 09:27:52 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: error=
+DEBUG - 2023-01-25 09:27:52 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: state=
+DEBUG - 2023-01-25 09:27:52 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: code=zmM_3pkDHKlLUG00N8AQ_otH-Rymez12eFAwheooX_SyDFMM0fPphjiOWv9gotvXEMfPBworDNQAAAGF5lLr7A
+DEBUG - 2023-01-25 09:27:52 --> =================== DL_auth -> kakao oauth :2: code=zmM_3pkDHKlLUG00N8AQ_otH-Rymez12eFAwheooX_SyDFMM0fPphjiOWv9gotvXEMfPBworDNQAAAGF5lLr7A
+DEBUG - 2023-01-25 09:27:52 --> ====================Dl_auth -> kakao_login :: 시작
+DEBUG - 2023-01-25 09:27:52 --> ====================Dl_auth::kakao_login - 1.3.5- 사이트 회원정보 업데이트 성공(카카오 인증 완료) state=
+DEBUG - 2023-01-25 09:27:54 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:27:54 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:27:54 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:27:54 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:27:54 --> Total execution time: 0.0335
+DEBUG - 2023-01-25 09:27:54 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:27:54 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2023-01-25 09:27:54 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2023-01-25 09:27:59 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:27:59 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:27:59 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:27:59 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:27:59 --> Total execution time: 0.0477
+DEBUG - 2023-01-25 09:28:15 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:28:15 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:28:15 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:28:15 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:28:15 --> Total execution time: 0.0721
+DEBUG - 2023-01-25 09:29:48 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:29:48 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:29:48 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:29:48 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:36:41 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:36:41 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:36:41 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:36:42 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:36:42 --> Total execution time: 0.0553
+DEBUG - 2023-01-25 09:36:48 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:36:48 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:36:48 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:36:48 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:36:48 --> Total execution time: 0.0700
+DEBUG - 2023-01-25 09:36:52 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:36:52 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:36:52 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:36:52 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:36:52 --> Total execution time: 0.0573
+DEBUG - 2023-01-25 09:37:02 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:37:02 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:37:02 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:37:02 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:37:17 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:37:17 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:37:17 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:37:17 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:39:01 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:39:01 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:39:01 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:39:01 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:39:03 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:39:03 --> No URI present. Default controller set.
+DEBUG - 2023-01-25 09:39:03 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:39:03 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:39:03 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:39:03 --> Total execution time: 0.0460
+DEBUG - 2023-01-25 09:39:16 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:39:16 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:39:16 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:39:16 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:39:19 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:39:19 --> No URI present. Default controller set.
+DEBUG - 2023-01-25 09:39:19 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:39:19 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:39:19 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:39:19 --> Total execution time: 0.0328
+DEBUG - 2023-01-25 09:39:21 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:39:21 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:39:21 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:39:21 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:39:23 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:39:23 --> No URI present. Default controller set.
+DEBUG - 2023-01-25 09:39:23 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:39:23 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:39:23 --> Total execution time: 0.0572
+DEBUG - 2023-01-25 09:39:28 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:39:28 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:39:28 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:39:30 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:39:30 --> No URI present. Default controller set.
+DEBUG - 2023-01-25 09:39:30 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:39:30 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:39:30 --> Total execution time: 0.0568
+DEBUG - 2023-01-25 09:39:43 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:39:43 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:39:43 --> Config file loaded: /hwonpark/www/application/config/tree.php
+ERROR - 2023-01-25 09:39:43 --> 404 Page Not Found: ERROR : md id is null
+DEBUG - 2023-01-25 09:39:49 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:39:49 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:39:49 --> Config file loaded: /hwonpark/www/application/config/tree.php
+ERROR - 2023-01-25 09:39:49 --> 404 Page Not Found: ERROR : md id is null
+DEBUG - 2023-01-25 09:40:04 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:40:04 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:40:04 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:40:07 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:40:07 --> No URI present. Default controller set.
+DEBUG - 2023-01-25 09:40:07 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:40:07 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:40:07 --> Total execution time: 0.0343
+DEBUG - 2023-01-25 09:42:05 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:42:05 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:42:05 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:42:05 --> Total execution time: 0.0375
+DEBUG - 2023-01-25 09:42:13 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:42:13 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:42:13 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:42:13 --> Total execution time: 0.0323
+DEBUG - 2023-01-25 09:42:52 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:42:52 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:42:52 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:42:54 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:42:54 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:42:54 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:42:54 --> Total execution time: 0.0539
+DEBUG - 2023-01-25 09:44:24 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:44:24 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:44:24 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:44:26 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:44:26 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:44:26 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:44:26 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:44:26 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:44:26 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:44:26 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:44:26 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:44:26 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 09:44:26 --> Total execution time: 0.0390
+DEBUG - 2023-01-25 09:44:29 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:44:29 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:44:29 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:44:29 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:44:29 --> Total execution time: 0.0424
+DEBUG - 2023-01-25 09:44:33 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:44:33 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:44:33 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:44:33 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:44:33 --> Total execution time: 0.0420
+DEBUG - 2023-01-25 09:44:38 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:44:38 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:44:38 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:44:38 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:44:38 --> Total execution time: 0.0593
+DEBUG - 2023-01-25 09:44:53 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:44:53 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:44:53 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:44:53 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:47:24 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:47:24 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:47:25 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:47:25 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:47:25 --> =================== DL_auth-> oauth::CALLBACK - 시작
+DEBUG - 2023-01-25 09:47:25 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: error=
+DEBUG - 2023-01-25 09:47:25 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: state=
+DEBUG - 2023-01-25 09:47:25 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: code=_QESFz0lyN-weOx156mGy5A5VEPl0UWyHztIo-OryQYD88R-H7ik6BvnsqQV7BNChvR-6go9dNkAAAGF5mTQ3A
+DEBUG - 2023-01-25 09:47:25 --> =================== DL_auth -> kakao oauth :2: code=_QESFz0lyN-weOx156mGy5A5VEPl0UWyHztIo-OryQYD88R-H7ik6BvnsqQV7BNChvR-6go9dNkAAAGF5mTQ3A
+DEBUG - 2023-01-25 09:47:25 --> ====================Dl_auth -> kakao_login :: 시작
+DEBUG - 2023-01-25 09:47:25 --> --------------------Dl_auth::kakao_login - 1.토큰요청 시작
+DEBUG - 2023-01-25 09:47:25 --> Dl_auth::kakao_login - get_token 시작 n=2
+DEBUG - 2023-01-25 09:47:25 --> --------------------Dl_auth::kakao_login - 1.2.토큰요청 시작 -> 기타브라우저
+DEBUG - 2023-01-25 09:47:25 --> --------------------Dl_auth::kakao_login - 1.3.토큰요청
+DEBUG - 2023-01-25 09:47:25 --> --------------------Dl_auth::kakao_login - 1.4.토큰요청 -> 성공
+DEBUG - 2023-01-25 09:47:25 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:47:25 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:47:25 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:47:25 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:47:25 --> =================== DL_auth-> oauth::CALLBACK - 시작
+DEBUG - 2023-01-25 09:47:25 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: error=
+DEBUG - 2023-01-25 09:47:25 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: state=
+DEBUG - 2023-01-25 09:47:25 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: code=_QESFz0lyN-weOx156mGy5A5VEPl0UWyHztIo-OryQYD88R-H7ik6BvnsqQV7BNChvR-6go9dNkAAAGF5mTQ3A
+DEBUG - 2023-01-25 09:47:25 --> =================== DL_auth -> kakao oauth :2: code=_QESFz0lyN-weOx156mGy5A5VEPl0UWyHztIo-OryQYD88R-H7ik6BvnsqQV7BNChvR-6go9dNkAAAGF5mTQ3A
+DEBUG - 2023-01-25 09:47:25 --> ====================Dl_auth -> kakao_login :: 시작
+DEBUG - 2023-01-25 09:47:25 --> ====================Dl_auth::kakao_login - 1.3.5- 사이트 회원정보 업데이트 성공(카카오 인증 완료) state=
+DEBUG - 2023-01-25 09:47:27 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:47:27 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:47:27 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:47:27 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:47:27 --> Total execution time: 0.0372
+DEBUG - 2023-01-25 09:47:57 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:47:57 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:47:57 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:47:57 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:47:57 --> =================== DL_auth-> oauth::CALLBACK - 시작
+DEBUG - 2023-01-25 09:47:57 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: error=
+DEBUG - 2023-01-25 09:47:57 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: state=
+DEBUG - 2023-01-25 09:47:57 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: code=NzaeTq-Inb8Dl65AwUdZgt70E8zxt4tfb5Tl38IiU94Gq8D36sVt-C1DaP0R8LPkoonJwQo9dZoAAAGF5mVPYw
+DEBUG - 2023-01-25 09:47:57 --> =================== DL_auth -> kakao oauth :2: code=NzaeTq-Inb8Dl65AwUdZgt70E8zxt4tfb5Tl38IiU94Gq8D36sVt-C1DaP0R8LPkoonJwQo9dZoAAAGF5mVPYw
+DEBUG - 2023-01-25 09:47:57 --> ====================Dl_auth -> kakao_login :: 시작
+DEBUG - 2023-01-25 09:47:57 --> ====================Dl_auth::kakao_login - 1.3.5- 사이트 회원정보 업데이트 성공(카카오 인증 완료) state=
+DEBUG - 2023-01-25 09:48:00 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:48:00 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:48:00 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:48:00 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:48:00 --> Total execution time: 0.0563
+DEBUG - 2023-01-25 09:49:42 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:49:42 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:49:42 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:49:42 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:49:43 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:49:43 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:49:43 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:49:43 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:49:44 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:49:44 --> No URI present. Default controller set.
+DEBUG - 2023-01-25 09:49:44 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:49:44 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:49:44 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:49:44 --> Total execution time: 0.0343
+DEBUG - 2023-01-25 09:49:46 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:49:46 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:49:46 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:49:46 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:49:47 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:49:48 --> No URI present. Default controller set.
+DEBUG - 2023-01-25 09:49:48 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:49:48 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:49:48 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:49:48 --> Total execution time: 0.0290
+DEBUG - 2023-01-25 09:54:37 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:54:37 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:54:37 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:54:37 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:54:37 --> Total execution time: 0.0717
+DEBUG - 2023-01-25 09:54:40 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:54:40 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:54:40 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:54:40 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:54:40 --> Total execution time: 0.0949
+DEBUG - 2023-01-25 09:58:48 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:58:48 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:58:48 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:58:48 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:58:48 --> Total execution time: 0.1009
+DEBUG - 2023-01-25 09:58:49 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 09:58:49 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 09:58:49 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 09:58:49 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 09:58:49 --> Total execution time: 0.0597
+DEBUG - 2023-01-25 10:00:47 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:00:47 --> No URI present. Default controller set.
+DEBUG - 2023-01-25 10:00:47 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:00:47 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:00:47 --> Total execution time: 0.0612
+DEBUG - 2023-01-25 10:00:47 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:00:47 --> No URI present. Default controller set.
+DEBUG - 2023-01-25 10:00:47 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:00:47 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:00:47 --> Total execution time: 0.0677
+DEBUG - 2023-01-25 10:00:49 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:00:49 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2023-01-25 10:00:49 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2023-01-25 10:00:52 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:00:52 --> No URI present. Default controller set.
+DEBUG - 2023-01-25 10:00:52 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:00:52 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:00:52 --> Total execution time: 0.0284
+DEBUG - 2023-01-25 10:02:51 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:02:51 --> No URI present. Default controller set.
+DEBUG - 2023-01-25 10:02:51 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:02:51 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:02:51 --> Total execution time: 0.0658
+DEBUG - 2023-01-25 10:06:12 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:06:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:06:12 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:06:12 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:06:12 --> Total execution time: 0.1194
+DEBUG - 2023-01-25 10:06:26 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:06:26 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:06:26 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:06:26 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:06:26 --> Total execution time: 0.0931
+DEBUG - 2023-01-25 10:06:27 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:06:27 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:06:27 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:06:27 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:06:28 --> Total execution time: 0.0639
+DEBUG - 2023-01-25 10:06:34 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:06:34 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:06:34 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:06:34 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:06:34 --> Total execution time: 0.0619
+DEBUG - 2023-01-25 10:07:47 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:07:47 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:07:47 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:07:47 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:07:47 --> Total execution time: 0.0705
+DEBUG - 2023-01-25 10:10:46 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:10:46 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:10:46 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:10:46 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:10:46 --> Total execution time: 0.0780
+DEBUG - 2023-01-25 10:12:18 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:12:18 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:12:18 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:12:19 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:12:19 --> Total execution time: 0.0675
+DEBUG - 2023-01-25 10:12:24 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:12:24 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:12:24 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:12:24 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:12:24 --> Total execution time: 0.0356
+DEBUG - 2023-01-25 10:12:33 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:12:33 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:12:33 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:12:33 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:12:33 --> Total execution time: 0.0861
+DEBUG - 2023-01-25 10:12:38 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:12:38 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:12:38 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:12:38 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:12:38 --> Total execution time: 0.0496
+DEBUG - 2023-01-25 10:12:40 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:12:40 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:12:40 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:12:40 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:12:40 --> Total execution time: 0.0673
+DEBUG - 2023-01-25 10:15:42 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:15:42 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:15:42 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:15:42 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:15:42 --> Total execution time: 0.0791
+DEBUG - 2023-01-25 10:16:31 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:16:31 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:16:31 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:16:31 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:16:31 --> Total execution time: 0.0925
+DEBUG - 2023-01-25 10:16:37 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:16:37 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:16:37 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:16:37 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:16:37 --> Total execution time: 0.0530
+DEBUG - 2023-01-25 10:16:41 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:16:41 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:16:41 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:16:41 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:16:41 --> Total execution time: 0.0564
+DEBUG - 2023-01-25 10:16:52 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:16:52 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:16:52 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:16:52 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:16:52 --> Total execution time: 0.0970
+DEBUG - 2023-01-25 10:17:37 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:17:37 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:17:37 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:17:37 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:17:37 --> Total execution time: 0.0588
+DEBUG - 2023-01-25 10:19:16 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:19:16 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:19:16 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:19:16 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:19:16 --> Total execution time: 0.1041
+DEBUG - 2023-01-25 10:19:16 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:19:17 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:19:17 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:19:17 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:19:17 --> Total execution time: 0.0947
+DEBUG - 2023-01-25 10:19:22 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:19:22 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:19:22 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:19:22 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:19:26 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:19:26 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:19:26 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:19:26 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:19:29 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:19:29 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:19:29 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:19:29 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:20:15 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:20:15 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:20:15 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:20:16 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:20:16 --> No URI present. Default controller set.
+DEBUG - 2023-01-25 10:20:16 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:20:17 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:20:17 --> Total execution time: 0.0362
+DEBUG - 2023-01-25 10:20:19 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:20:19 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:20:19 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:20:19 --> Total execution time: 0.0278
+DEBUG - 2023-01-25 10:20:23 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:20:23 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:20:23 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:20:25 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:20:25 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:20:25 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:20:25 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:20:25 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:20:25 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:20:25 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:20:25 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:20:25 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 10:20:25 --> Total execution time: 0.0380
+DEBUG - 2023-01-25 10:20:27 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:20:27 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:20:27 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:20:27 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:20:27 --> Total execution time: 0.0612
+DEBUG - 2023-01-25 10:20:28 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:20:28 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:20:28 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:20:28 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:20:28 --> Total execution time: 0.0478
+DEBUG - 2023-01-25 10:20:59 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:20:59 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:20:59 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:20:59 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:20:59 --> Total execution time: 0.0924
+DEBUG - 2023-01-25 10:21:01 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:21:01 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:21:01 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:21:02 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:21:02 --> Total execution time: 0.1928
+DEBUG - 2023-01-25 10:21:55 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:21:55 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:21:55 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:21:55 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:21:55 --> Total execution time: 0.0529
+DEBUG - 2023-01-25 10:21:59 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:21:59 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:21:59 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:21:59 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:22:06 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:22:06 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:22:06 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:22:06 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:22:06 --> Total execution time: 0.0601
+DEBUG - 2023-01-25 10:22:12 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:22:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:22:12 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:22:12 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:22:12 --> Total execution time: 0.0568
+DEBUG - 2023-01-25 10:22:44 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:22:44 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:22:44 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:22:44 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:22:44 --> Total execution time: 0.0531
+DEBUG - 2023-01-25 10:22:48 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:22:48 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:22:48 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:22:48 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:22:54 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:22:54 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:22:54 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:22:54 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:22:54 --> Total execution time: 0.0536
+DEBUG - 2023-01-25 10:22:56 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:22:56 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:22:57 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:22:57 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:22:57 --> Total execution time: 0.0841
+DEBUG - 2023-01-25 10:23:01 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:23:01 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:23:01 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:23:02 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:23:02 --> Total execution time: 0.0545
+DEBUG - 2023-01-25 10:23:04 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:23:04 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:23:04 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:23:04 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:23:04 --> Total execution time: 0.0481
+DEBUG - 2023-01-25 10:23:06 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:23:06 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:23:07 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:23:07 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:23:07 --> Total execution time: 0.0519
+DEBUG - 2023-01-25 10:23:08 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:23:08 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:23:08 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:23:08 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:23:08 --> Total execution time: 0.1098
+DEBUG - 2023-01-25 10:23:17 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:23:17 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:23:17 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:23:17 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:23:17 --> Total execution time: 0.0404
+DEBUG - 2023-01-25 10:23:20 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:23:20 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:23:20 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:23:20 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:23:20 --> Total execution time: 0.0904
+DEBUG - 2023-01-25 10:24:11 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:24:11 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:24:11 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:24:11 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:24:11 --> Total execution time: 0.0591
+DEBUG - 2023-01-25 10:24:16 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:24:16 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:24:16 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:24:16 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:24:16 --> Total execution time: 0.0411
+DEBUG - 2023-01-25 10:24:18 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:24:18 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:24:18 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:24:18 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:24:18 --> Total execution time: 0.0767
+DEBUG - 2023-01-25 10:24:21 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:24:21 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:24:21 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:24:21 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:24:21 --> Total execution time: 0.0382
+DEBUG - 2023-01-25 10:24:22 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:24:22 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:24:22 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:24:22 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:24:22 --> Total execution time: 0.0488
+DEBUG - 2023-01-25 10:24:24 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:24:24 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:24:24 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:24:24 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:24:24 --> Total execution time: 0.0657
+DEBUG - 2023-01-25 10:24:25 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:24:25 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:24:26 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:24:26 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:24:26 --> Total execution time: 0.0895
+DEBUG - 2023-01-25 10:24:27 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:24:27 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:24:27 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:24:27 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:24:27 --> Total execution time: 0.0642
+DEBUG - 2023-01-25 10:24:30 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:24:30 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:24:30 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:24:30 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:24:30 --> Total execution time: 0.0741
+DEBUG - 2023-01-25 10:25:07 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:25:07 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:25:07 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:25:07 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:25:07 --> Total execution time: 0.0450
+DEBUG - 2023-01-25 10:25:13 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:25:13 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:25:13 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:25:13 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:25:13 --> Total execution time: 0.1132
+DEBUG - 2023-01-25 10:25:16 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:25:16 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:25:16 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:25:16 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:25:16 --> Total execution time: 0.0589
+DEBUG - 2023-01-25 10:26:50 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:26:50 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:26:50 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:26:50 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:26:50 --> Total execution time: 0.0636
+DEBUG - 2023-01-25 10:26:52 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:26:52 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:26:52 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:26:52 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:26:52 --> Total execution time: 0.0478
+DEBUG - 2023-01-25 10:27:05 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:27:05 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:27:05 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:27:05 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:27:05 --> Total execution time: 0.0477
+DEBUG - 2023-01-25 10:27:07 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:27:07 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:27:07 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:27:07 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:27:07 --> Total execution time: 0.0394
+DEBUG - 2023-01-25 10:27:10 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:27:10 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:27:10 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:27:10 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:27:10 --> Total execution time: 0.0360
+DEBUG - 2023-01-25 10:27:48 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:27:48 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:27:48 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:27:48 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:27:48 --> Total execution time: 0.0787
+DEBUG - 2023-01-25 10:27:50 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:27:50 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:27:50 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:27:50 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:27:50 --> Total execution time: 0.0392
+DEBUG - 2023-01-25 10:27:51 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:27:51 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:27:51 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:27:51 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:27:51 --> Total execution time: 0.0642
+DEBUG - 2023-01-25 10:29:05 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:29:05 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:29:05 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:29:05 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:29:05 --> Total execution time: 0.0894
+DEBUG - 2023-01-25 10:29:10 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:29:10 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:29:10 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:29:10 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:29:10 --> Total execution time: 0.0398
+DEBUG - 2023-01-25 10:29:11 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:29:11 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:29:11 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:29:11 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:29:11 --> Total execution time: 0.0374
+DEBUG - 2023-01-25 10:29:33 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:29:33 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:29:33 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:29:33 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:29:33 --> Total execution time: 0.0504
+DEBUG - 2023-01-25 10:29:35 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:29:35 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:29:35 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:29:35 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:29:35 --> Total execution time: 0.0316
+DEBUG - 2023-01-25 10:29:38 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:29:38 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:29:38 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:29:38 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:29:38 --> Total execution time: 0.0386
+DEBUG - 2023-01-25 10:29:41 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:29:41 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:29:41 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:29:41 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:29:41 --> Total execution time: 0.0407
+DEBUG - 2023-01-25 10:29:42 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:29:42 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:29:42 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:29:42 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:29:42 --> Total execution time: 0.0375
+DEBUG - 2023-01-25 10:30:05 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:30:05 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:30:06 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:30:06 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:30:06 --> Total execution time: 0.0505
+DEBUG - 2023-01-25 10:30:14 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:30:14 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:30:14 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:30:14 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:30:14 --> Total execution time: 0.0404
+DEBUG - 2023-01-25 10:30:16 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:30:16 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:30:16 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:30:16 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:30:16 --> Total execution time: 0.0372
+DEBUG - 2023-01-25 10:30:17 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:30:17 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:30:17 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:30:17 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:30:17 --> Total execution time: 0.0383
+DEBUG - 2023-01-25 10:30:21 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:30:21 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:30:21 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:30:21 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:30:21 --> Total execution time: 0.0381
+DEBUG - 2023-01-25 10:30:29 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:30:29 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:30:29 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:30:29 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:30:29 --> Total execution time: 0.0423
+DEBUG - 2023-01-25 10:30:30 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:30:30 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:30:30 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:30:30 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:30:30 --> Total execution time: 0.0558
+DEBUG - 2023-01-25 10:30:34 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:30:34 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:30:34 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:30:34 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:30:34 --> Total execution time: 0.0383
+DEBUG - 2023-01-25 10:30:36 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:30:36 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:30:36 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:30:36 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:30:36 --> Total execution time: 0.0649
+DEBUG - 2023-01-25 10:30:40 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:30:40 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:30:40 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:30:40 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:30:40 --> Total execution time: 0.0534
+DEBUG - 2023-01-25 10:30:42 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:30:42 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:30:42 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:30:42 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:30:42 --> Total execution time: 0.0668
+DEBUG - 2023-01-25 10:30:43 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:30:43 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:30:43 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:30:43 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:30:43 --> Total execution time: 0.0363
+DEBUG - 2023-01-25 10:30:45 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:30:45 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:30:45 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:30:45 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:30:45 --> Total execution time: 0.0371
+DEBUG - 2023-01-25 10:30:52 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:30:52 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:30:52 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:30:52 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:30:52 --> Total execution time: 0.0384
+DEBUG - 2023-01-25 10:30:54 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:30:54 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:30:54 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:30:54 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:30:54 --> Total execution time: 0.0367
+DEBUG - 2023-01-25 10:30:55 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:30:55 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:30:55 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:30:55 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:30:55 --> Total execution time: 0.0415
+DEBUG - 2023-01-25 10:30:58 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:30:58 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:30:58 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:30:58 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:30:58 --> Total execution time: 0.0374
+DEBUG - 2023-01-25 10:31:03 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:31:03 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:31:03 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:31:03 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:31:03 --> Total execution time: 0.0497
+DEBUG - 2023-01-25 10:31:05 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:31:05 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:31:05 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:31:05 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:31:05 --> Total execution time: 0.0429
+DEBUG - 2023-01-25 10:31:06 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:31:06 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:31:06 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:31:06 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:31:06 --> Total execution time: 0.0400
+DEBUG - 2023-01-25 10:31:08 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:31:08 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:31:08 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:31:08 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:31:08 --> Total execution time: 0.0455
+DEBUG - 2023-01-25 10:31:19 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:31:19 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:31:19 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:31:19 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:31:19 --> Total execution time: 0.0674
+DEBUG - 2023-01-25 10:31:21 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:31:21 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:31:21 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:31:21 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:31:21 --> Total execution time: 0.0366
+DEBUG - 2023-01-25 10:31:22 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:31:22 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:31:22 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:31:22 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:31:22 --> Total execution time: 0.0373
+DEBUG - 2023-01-25 10:31:25 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:31:25 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:31:25 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:31:25 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:31:25 --> Total execution time: 0.0358
+DEBUG - 2023-01-25 10:31:40 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:31:40 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:31:40 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:31:40 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:31:40 --> Total execution time: 0.0383
+DEBUG - 2023-01-25 10:31:45 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:31:45 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:31:45 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:31:45 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:31:45 --> Total execution time: 0.0707
+DEBUG - 2023-01-25 10:31:47 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:31:47 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:31:47 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:31:47 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:31:47 --> Total execution time: 0.0395
+DEBUG - 2023-01-25 10:31:49 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:31:49 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:31:49 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:31:49 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:31:49 --> Total execution time: 0.0767
+DEBUG - 2023-01-25 10:31:55 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:31:55 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:31:55 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:31:55 --> Total execution time: 0.0625
+DEBUG - 2023-01-25 10:32:00 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:32:00 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:32:00 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:32:01 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:32:01 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:32:01 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:32:01 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:32:01 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:32:01 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:32:01 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:32:01 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:32:01 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 10:32:01 --> Total execution time: 0.0396
+DEBUG - 2023-01-25 10:32:08 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:32:08 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:32:08 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:32:08 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:32:08 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 10:32:08 --> Total execution time: 0.0500
+DEBUG - 2023-01-25 10:32:22 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:32:22 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:32:22 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:32:22 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:32:22 --> Total execution time: 0.0377
+DEBUG - 2023-01-25 10:32:25 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:32:25 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:32:25 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:32:25 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:32:25 --> Total execution time: 0.0369
+DEBUG - 2023-01-25 10:33:42 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:33:42 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:33:42 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:33:42 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:33:42 --> Total execution time: 0.0531
+DEBUG - 2023-01-25 10:34:19 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:34:19 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:34:19 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:34:19 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:34:19 --> Total execution time: 0.0387
+DEBUG - 2023-01-25 10:34:20 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:34:20 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:34:20 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:34:20 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:34:20 --> Total execution time: 0.0654
+DEBUG - 2023-01-25 10:34:52 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:34:52 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:34:52 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:34:52 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:34:52 --> Total execution time: 0.0462
+DEBUG - 2023-01-25 10:34:55 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:34:55 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:34:55 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:34:55 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:34:55 --> Total execution time: 0.0718
+DEBUG - 2023-01-25 10:37:22 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:37:22 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:37:22 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:37:22 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:37:22 --> Total execution time: 0.0683
+DEBUG - 2023-01-25 10:37:24 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:37:24 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:37:24 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:37:24 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:37:24 --> Total execution time: 0.0472
+DEBUG - 2023-01-25 10:37:25 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:37:25 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:37:25 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:37:25 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:37:25 --> Total execution time: 0.0842
+DEBUG - 2023-01-25 10:37:27 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:37:27 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:37:27 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:37:27 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:37:27 --> Total execution time: 0.0636
+DEBUG - 2023-01-25 10:37:32 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:37:32 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:37:32 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:37:32 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:37:32 --> Total execution time: 0.0363
+DEBUG - 2023-01-25 10:37:33 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:37:33 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:37:33 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:37:33 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:37:33 --> Total execution time: 0.0395
+DEBUG - 2023-01-25 10:37:34 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:37:34 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:37:34 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:37:34 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:37:34 --> Total execution time: 0.0722
+DEBUG - 2023-01-25 10:37:36 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:37:36 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:37:36 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:37:36 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:37:36 --> Total execution time: 0.0413
+DEBUG - 2023-01-25 10:37:53 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:37:53 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:37:53 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:37:53 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:37:53 --> Total execution time: 0.0428
+DEBUG - 2023-01-25 10:37:55 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:37:55 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:37:55 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:37:55 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:37:55 --> Total execution time: 0.0796
+DEBUG - 2023-01-25 10:37:56 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:37:56 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:37:56 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:37:56 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:37:56 --> Total execution time: 0.0780
+DEBUG - 2023-01-25 10:42:11 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:42:11 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:42:11 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:42:11 --> Total execution time: 0.0664
+DEBUG - 2023-01-25 10:42:13 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:42:13 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:42:13 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:42:13 --> Total execution time: 0.0304
+DEBUG - 2023-01-25 10:42:20 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:42:20 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:42:20 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:42:21 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:42:21 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:42:21 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:42:21 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:42:21 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:42:21 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:42:21 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:42:21 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:42:21 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 10:42:21 --> Total execution time: 0.0724
+DEBUG - 2023-01-25 10:42:22 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:42:22 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:42:22 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:42:22 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:42:22 --> Total execution time: 0.0712
+DEBUG - 2023-01-25 10:42:25 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:42:25 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:42:25 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:42:25 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:42:25 --> Total execution time: 0.0636
+DEBUG - 2023-01-25 10:42:42 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:42:42 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:42:42 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:42:42 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:42:42 --> Total execution time: 0.0502
+DEBUG - 2023-01-25 10:42:55 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:42:55 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:42:55 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:42:55 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:42:55 --> Total execution time: 0.0805
+DEBUG - 2023-01-25 10:42:58 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:42:58 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:42:58 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:42:58 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:43:04 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:43:04 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:43:04 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:43:04 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:43:04 --> Total execution time: 0.0386
+DEBUG - 2023-01-25 10:43:06 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:43:06 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:43:06 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:43:06 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:43:06 --> Total execution time: 0.0356
+DEBUG - 2023-01-25 10:43:11 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:43:11 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:43:11 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:43:12 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:43:12 --> Total execution time: 0.0407
+DEBUG - 2023-01-25 10:43:14 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:43:14 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:43:14 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:43:15 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:43:15 --> Total execution time: 0.0531
+DEBUG - 2023-01-25 10:43:17 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:43:17 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:43:17 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:43:17 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:43:17 --> Total execution time: 0.0850
+DEBUG - 2023-01-25 10:43:20 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:43:20 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:43:20 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:43:20 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:44:11 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:44:11 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:44:11 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:44:11 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:44:11 --> Total execution time: 0.0845
+DEBUG - 2023-01-25 10:44:13 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:44:13 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:44:13 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:44:13 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:44:13 --> Total execution time: 0.1483
+DEBUG - 2023-01-25 10:44:18 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:44:18 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:44:18 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:44:18 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:44:23 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:44:23 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:44:23 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:44:23 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:44:23 --> Total execution time: 0.0361
+DEBUG - 2023-01-25 10:44:25 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:44:25 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:44:25 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:44:25 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:44:25 --> Total execution time: 0.0559
+DEBUG - 2023-01-25 10:44:27 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:44:27 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:44:27 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:44:27 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:44:27 --> Total execution time: 0.0718
+DEBUG - 2023-01-25 10:44:29 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:44:29 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:44:29 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:44:29 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:44:29 --> Total execution time: 0.0455
+DEBUG - 2023-01-25 10:44:31 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:44:31 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:44:31 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:44:31 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:44:31 --> Total execution time: 0.0375
+DEBUG - 2023-01-25 10:44:33 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:44:33 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:44:33 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:44:33 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:44:33 --> Total execution time: 0.0348
+DEBUG - 2023-01-25 10:44:35 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:44:35 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:44:35 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:44:35 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:44:35 --> Total execution time: 0.0389
+DEBUG - 2023-01-25 10:45:52 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 10:45:52 --> No URI present. Default controller set.
+DEBUG - 2023-01-25 10:45:52 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 10:45:52 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 10:45:52 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 10:45:52 --> Total execution time: 0.0763
+DEBUG - 2023-01-25 11:12:17 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 11:12:17 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 11:12:17 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 11:12:17 --> Total execution time: 0.0345
+DEBUG - 2023-01-25 11:12:19 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 11:12:19 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 11:12:19 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 11:12:19 --> Total execution time: 0.0373
+DEBUG - 2023-01-25 11:12:37 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 11:12:37 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 11:12:37 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 11:12:37 --> Total execution time: 0.0479
+DEBUG - 2023-01-25 11:16:58 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 11:16:58 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 11:16:58 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 11:16:58 --> Total execution time: 0.0355
+DEBUG - 2023-01-25 11:17:03 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 11:17:03 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 11:17:03 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 11:17:04 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 11:17:04 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 11:17:04 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 11:17:04 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 11:17:04 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 11:17:04 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 11:17:04 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 11:17:04 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 11:17:04 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 11:17:04 --> Total execution time: 0.0430
+DEBUG - 2023-01-25 11:17:07 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 11:17:07 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 11:17:07 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 11:17:07 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 11:17:07 --> Total execution time: 0.0481
+DEBUG - 2023-01-25 11:17:08 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 11:17:08 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 11:17:08 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 11:17:08 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 11:17:08 --> Total execution time: 0.0427
+DEBUG - 2023-01-25 11:17:12 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 11:17:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 11:17:12 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 11:17:12 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 11:17:12 --> Total execution time: 0.0423
+DEBUG - 2023-01-25 11:19:21 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 11:19:21 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 11:19:21 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 11:19:21 --> Encryption: Auto-configured driver 'openssl'.
+ERROR - 2023-01-25 11:19:21 --> Could not find the language line "imglib_invalid_image"
+ERROR - 2023-01-25 11:19:21 --> imglib_invalid_image
+DEBUG - 2023-01-25 11:19:21 --> DL_schema class already loaded. Second attempt ignored.
+ERROR - 2023-01-25 11:19:21 --> Could not find the language line "imglib_invalid_image"
+ERROR - 2023-01-25 11:19:21 --> imglib_invalid_image
+DEBUG - 2023-01-25 11:19:21 --> DL_schema class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 11:19:22 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 11:19:22 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 11:19:22 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 11:19:22 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 11:19:22 --> Total execution time: 0.0378
+DEBUG - 2023-01-25 11:22:13 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 11:22:13 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 11:22:13 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 11:22:13 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 11:22:13 --> Total execution time: 0.0782
+DEBUG - 2023-01-25 11:28:16 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 11:28:16 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 11:28:16 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 11:28:16 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 11:28:16 --> Total execution time: 0.0495
+DEBUG - 2023-01-25 11:32:45 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 11:32:45 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 11:32:45 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 11:32:45 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 11:32:45 --> Total execution time: 0.0667
+DEBUG - 2023-01-25 13:08:02 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 13:08:02 --> No URI present. Default controller set.
+DEBUG - 2023-01-25 13:08:02 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 13:08:02 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 13:08:02 --> Total execution time: 0.0932
+DEBUG - 2023-01-25 13:08:02 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 13:08:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2023-01-25 13:08:02 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2023-01-25 13:08:06 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 13:08:06 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 13:08:06 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 13:08:06 --> Total execution time: 0.0461
+DEBUG - 2023-01-25 13:08:10 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 13:08:10 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 13:08:10 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 13:08:11 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 13:08:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 13:08:12 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 13:08:12 --> Total execution time: 0.0317
+DEBUG - 2023-01-25 13:08:17 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 13:08:17 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 13:08:17 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 13:08:17 --> =================== DL_auth-> oauth::CALLBACK - 시작
+DEBUG - 2023-01-25 13:08:17 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: error=
+DEBUG - 2023-01-25 13:08:17 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: state=
+DEBUG - 2023-01-25 13:08:17 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: code=ehLPXm7q1-C7rTEkjV7c4IJqz7QRBe8Du9aUD1VdAIdBj4O3qFcp33qMPk-3NQkUbNTmxAo9c04AAAGF5xy5hA
+DEBUG - 2023-01-25 13:08:17 --> =================== DL_auth -> kakao oauth :2: code=ehLPXm7q1-C7rTEkjV7c4IJqz7QRBe8Du9aUD1VdAIdBj4O3qFcp33qMPk-3NQkUbNTmxAo9c04AAAGF5xy5hA
+DEBUG - 2023-01-25 13:08:17 --> ====================Dl_auth -> kakao_login :: 시작
+DEBUG - 2023-01-25 13:08:17 --> --------------------Dl_auth::kakao_login - 1.토큰요청 시작
+DEBUG - 2023-01-25 13:08:17 --> Dl_auth::kakao_login - get_token 시작 n=2
+DEBUG - 2023-01-25 13:08:17 --> --------------------Dl_auth::kakao_login - 1.2.토큰요청 시작 -> 기타브라우저
+DEBUG - 2023-01-25 13:08:17 --> --------------------Dl_auth::kakao_login - 1.3.토큰요청
+DEBUG - 2023-01-25 13:08:17 --> --------------------Dl_auth::kakao_login - 1.4.토큰요청 -> 성공
+DEBUG - 2023-01-25 13:08:17 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 13:08:17 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 13:08:17 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 13:08:17 --> =================== DL_auth-> oauth::CALLBACK - 시작
+DEBUG - 2023-01-25 13:08:17 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: error=
+DEBUG - 2023-01-25 13:08:17 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: state=
+DEBUG - 2023-01-25 13:08:17 --> =================== DL_auth-> oauth::CALLBACK - kakao param=:: code=ehLPXm7q1-C7rTEkjV7c4IJqz7QRBe8Du9aUD1VdAIdBj4O3qFcp33qMPk-3NQkUbNTmxAo9c04AAAGF5xy5hA
+DEBUG - 2023-01-25 13:08:17 --> =================== DL_auth -> kakao oauth :2: code=ehLPXm7q1-C7rTEkjV7c4IJqz7QRBe8Du9aUD1VdAIdBj4O3qFcp33qMPk-3NQkUbNTmxAo9c04AAAGF5xy5hA
+DEBUG - 2023-01-25 13:08:17 --> ====================Dl_auth -> kakao_login :: 시작
+DEBUG - 2023-01-25 13:08:17 --> ====================Dl_auth::kakao_login - 1.3.5- 사이트 회원정보 업데이트 성공(카카오 인증 완료) state=
+DEBUG - 2023-01-25 13:08:19 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 13:08:19 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 13:08:19 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 13:08:19 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 13:08:19 --> Total execution time: 0.0670
+DEBUG - 2023-01-25 13:08:20 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 13:08:20 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 13:08:20 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 13:08:20 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 13:08:20 --> Total execution time: 0.0371
+DEBUG - 2023-01-25 13:08:22 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 13:08:22 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 13:08:22 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 13:08:22 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 13:08:22 --> Total execution time: 0.0521
+DEBUG - 2023-01-25 13:10:13 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 13:10:13 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 13:10:13 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 13:10:13 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 13:10:13 --> Total execution time: 0.0683
+DEBUG - 2023-01-25 13:10:16 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 13:10:16 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 13:10:16 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 13:10:16 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 13:10:16 --> Total execution time: 0.0501
+DEBUG - 2023-01-25 13:31:35 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 13:31:35 --> No URI present. Default controller set.
+DEBUG - 2023-01-25 13:31:35 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 13:31:35 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 13:31:35 --> Total execution time: 0.0667
+DEBUG - 2023-01-25 13:31:36 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 13:31:36 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2023-01-25 13:31:36 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2023-01-25 13:31:45 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 13:31:45 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 13:31:45 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 13:31:45 --> Total execution time: 0.0390
+DEBUG - 2023-01-25 13:46:55 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 13:46:55 --> No URI present. Default controller set.
+DEBUG - 2023-01-25 13:46:55 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 13:46:55 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 13:46:55 --> Total execution time: 0.0636
+DEBUG - 2023-01-25 13:46:56 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 13:46:56 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2023-01-25 13:46:56 --> 404 Page Not Found: Apple-touch-icon-120x120-precomposedpng/index
+DEBUG - 2023-01-25 13:46:56 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 13:46:56 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2023-01-25 13:46:56 --> 404 Page Not Found: Apple-touch-icon-120x120png/index
+DEBUG - 2023-01-25 13:46:56 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 13:46:56 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2023-01-25 13:46:56 --> 404 Page Not Found: Apple-touch-icon-precomposedpng/index
+DEBUG - 2023-01-25 13:46:56 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 13:46:56 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2023-01-25 13:46:56 --> 404 Page Not Found: Apple-touch-iconpng/index
+DEBUG - 2023-01-25 17:16:15 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 17:16:15 --> No URI present. Default controller set.
+DEBUG - 2023-01-25 17:16:15 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 17:16:15 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 17:16:15 --> Total execution time: 0.2073
+DEBUG - 2023-01-25 17:16:16 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 17:16:16 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2023-01-25 17:16:16 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2023-01-25 18:13:38 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 18:13:38 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 18:13:38 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 18:13:38 --> Total execution time: 0.0378
+DEBUG - 2023-01-25 18:13:46 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 18:13:46 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 18:13:46 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 18:13:46 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 18:13:46 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 18:13:46 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 18:13:47 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 18:13:47 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 18:13:47 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 18:13:47 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 18:13:47 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 18:13:47 --> Encryption class already loaded. Second attempt ignored.
+DEBUG - 2023-01-25 18:13:47 --> Total execution time: 0.0584
+DEBUG - 2023-01-25 18:13:49 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 18:13:49 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 18:13:49 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 18:13:49 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 18:13:49 --> Total execution time: 0.0465
+DEBUG - 2023-01-25 18:13:51 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 18:13:51 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 18:13:52 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 18:13:52 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 18:13:52 --> Total execution time: 0.0564
+DEBUG - 2023-01-25 18:13:56 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 18:13:56 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 18:13:56 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 18:13:56 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 18:13:56 --> Total execution time: 0.0622
+DEBUG - 2023-01-25 18:15:27 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 18:15:27 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 18:15:27 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 18:15:27 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 18:15:28 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 18:15:28 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 18:15:28 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 18:15:28 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2023-01-25 18:15:28 --> Total execution time: 0.0377
+DEBUG - 2023-01-25 18:16:06 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 18:16:06 --> No URI present. Default controller set.
+DEBUG - 2023-01-25 18:16:06 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 18:16:06 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 18:16:06 --> Total execution time: 0.0340
+DEBUG - 2023-01-25 18:16:06 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 18:16:06 --> No URI present. Default controller set.
+DEBUG - 2023-01-25 18:16:06 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 18:16:06 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 18:16:06 --> Total execution time: 0.0357
+DEBUG - 2023-01-25 18:16:08 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 18:16:08 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2023-01-25 18:16:08 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2023-01-25 18:16:14 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 18:16:14 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 18:16:14 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 18:16:14 --> Total execution time: 0.1090
+DEBUG - 2023-01-25 18:16:31 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 18:16:31 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 18:16:31 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 18:16:33 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 18:16:33 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 18:16:33 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 18:16:33 --> Total execution time: 0.0301
+DEBUG - 2023-01-25 21:13:14 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 21:13:14 --> No URI present. Default controller set.
+DEBUG - 2023-01-25 21:13:14 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 21:13:14 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 21:13:14 --> Total execution time: 0.0533
+DEBUG - 2023-01-25 21:13:21 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 21:13:21 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2023-01-25 21:13:21 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2023-01-25 21:13:26 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 21:13:26 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 21:13:26 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 21:13:26 --> Total execution time: 0.0572
+DEBUG - 2023-01-25 21:13:29 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 21:13:29 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 21:13:29 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 21:13:29 --> Total execution time: 0.0411
+DEBUG - 2023-01-25 21:13:31 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 21:13:31 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 21:13:31 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 21:13:31 --> Total execution time: 0.0711
+DEBUG - 2023-01-25 21:13:33 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 21:13:33 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 21:13:33 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 21:13:33 --> Total execution time: 0.0719
+DEBUG - 2023-01-25 21:13:36 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 21:13:36 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 21:13:36 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 21:13:37 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 21:13:37 --> No URI present. Default controller set.
+DEBUG - 2023-01-25 21:13:37 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 21:13:37 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 21:13:37 --> Total execution time: 0.0381
+DEBUG - 2023-01-25 21:13:39 --> UTF-8 Support Enabled
+DEBUG - 2023-01-25 21:13:39 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-25 21:13:39 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-25 21:13:39 --> Total execution time: 0.0317

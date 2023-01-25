@@ -1,0 +1,15 @@
+DEBUG - 2023-01-23 08:47:31 --> UTF-8 Support Enabled
+DEBUG - 2023-01-23 08:47:31 --> No URI present. Default controller set.
+DEBUG - 2023-01-23 08:47:31 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-23 08:47:31 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-23 08:47:31 --> Total execution time: 0.2532
+DEBUG - 2023-01-23 18:13:48 --> UTF-8 Support Enabled
+DEBUG - 2023-01-23 18:13:48 --> No URI present. Default controller set.
+DEBUG - 2023-01-23 18:13:48 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-23 18:13:48 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-23 18:13:48 --> Total execution time: 0.2393
+DEBUG - 2023-01-23 18:13:48 --> UTF-8 Support Enabled
+DEBUG - 2023-01-23 18:13:48 --> No URI present. Default controller set.
+DEBUG - 2023-01-23 18:13:48 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2023-01-23 18:13:48 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2023-01-23 18:13:48 --> Total execution time: 0.0306

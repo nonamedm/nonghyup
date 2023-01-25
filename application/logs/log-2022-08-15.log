@@ -1,0 +1,32 @@
+DEBUG - 2022-08-15 09:12:13 --> UTF-8 Support Enabled
+DEBUG - 2022-08-15 09:12:13 --> No URI present. Default controller set.
+DEBUG - 2022-08-15 09:12:13 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-08-15 09:12:13 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2022-08-15 09:12:13 --> Total execution time: 0.2355
+DEBUG - 2022-08-15 09:23:29 --> UTF-8 Support Enabled
+DEBUG - 2022-08-15 09:23:29 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2022-08-15 09:23:29 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2022-08-15 14:59:42 --> UTF-8 Support Enabled
+DEBUG - 2022-08-15 14:59:42 --> No URI present. Default controller set.
+DEBUG - 2022-08-15 14:59:42 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-08-15 14:59:42 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2022-08-15 14:59:42 --> Total execution time: 0.2256
+DEBUG - 2022-08-15 14:59:44 --> UTF-8 Support Enabled
+DEBUG - 2022-08-15 14:59:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2022-08-15 14:59:44 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2022-08-15 16:18:37 --> UTF-8 Support Enabled
+DEBUG - 2022-08-15 16:18:37 --> No URI present. Default controller set.
+DEBUG - 2022-08-15 16:18:37 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-08-15 16:18:37 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2022-08-15 16:18:37 --> Total execution time: 0.0322
+DEBUG - 2022-08-15 16:18:39 --> UTF-8 Support Enabled
+DEBUG - 2022-08-15 16:18:39 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2022-08-15 16:18:39 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2022-08-15 16:18:40 --> UTF-8 Support Enabled
+DEBUG - 2022-08-15 16:18:40 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-08-15 16:18:40 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2022-08-15 16:18:40 --> Total execution time: 0.0917
+DEBUG - 2022-08-15 16:18:44 --> UTF-8 Support Enabled
+DEBUG - 2022-08-15 16:18:44 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-08-15 16:18:44 --> Config file loaded: /hwonpark/www/application/config/tree.php
+DEBUG - 2022-08-15 16:18:44 --> Total execution time: 0.0323
