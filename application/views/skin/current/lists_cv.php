@@ -83,7 +83,7 @@
 
     <?php
     // ***** bbs pagination
-    $this->load->view("brd/common_pagination");
+    $this->load->view("brd/current_pagination");
 
     // ***** bbs nav
     $this->load->view("brd/common_btn");

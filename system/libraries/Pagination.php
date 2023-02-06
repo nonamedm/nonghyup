@@ -399,6 +399,77 @@ class CI_Pagination {
 	 *
 	 * @return	string
 	 */
+	public function create_index()
+	{
+
+		// // Render the pages
+		// if ($this->display_pages !== FALSE)
+		// {
+		// 	// Write the digit links
+		// 	for ($loop = $start - 1; $loop <= $end; $loop++)
+		// 	{
+		// 		$i = ($this->use_page_numbers) ? $loop : ($loop * $this->per_page) - $this->per_page;
+
+		// 		$attributes = sprintf('%s %s="%d"', $this->_attributes, $this->data_page_attr, $loop);
+
+		// 		if ($i >= $base_page)
+		// 		{
+		// 			if ($this->cur_page === $loop)
+		// 			{
+		// 				// Current page
+		// 				$output .= $this->cur_tag_open.$loop.$this->cur_tag_close;
+		// 			}
+		// 			elseif ($i === $base_page)
+		// 			{
+		// 				// First page
+		// 				$output .= $this->num_tag_open.'<a href="'.$first_url.'"'.$attributes.$this->_attr_rel('start').'>'
+		// 					.$loop.'</a>'.$this->num_tag_close;
+		// 			}
+		// 			else
+		// 			{
+		// 				$append = $this->prefix.$i.$this->suffix;
+		// 				$output .= $this->num_tag_open.'<a href="'.$base_url.$append.'"'.$attributes.'>'
+		// 					.$loop.'</a>'.$this->num_tag_close;
+		// 			}
+		// 		}
+		// 	}
+		// }
+
+		
+		$base_url = trim($this->base_url);
+		$query_string_sep = (strpos($base_url, '?') === FALSE) ? '?' : '&amp;';
+
+		$get = $this->CI->input->get();
+		$base_url .= $query_string_sep.http_build_query(array_merge($get, array($this->query_string_segment => '')));
+
+
+		$output = '';
+		$output .= $this->num_tag_open.'<a href="'.$base_url.'ㄱ"'.sprintf('%s %s="%s"', $this->_attributes, $this->data_page_attr, 'ㄱ').'>ㄱ</a>'.$this->num_tag_close;
+		$output .= $this->num_tag_open.'<a href="'.'/'.'"'.sprintf('%s %s="%s"', $this->_attributes, $this->data_page_attr, 'ㄴ').'>ㄴ</a>'.$this->num_tag_close;
+		$output .= $this->num_tag_open.'<a href="'.'/'.'"'.sprintf('%s %s="%s"', $this->_attributes, $this->data_page_attr, 'ㄷ').'>ㄷ</a>'.$this->num_tag_close;
+		$output .= $this->num_tag_open.'<a href="'.'/'.'"'.sprintf('%s %s="%s"', $this->_attributes, $this->data_page_attr, 'ㄹ').'>ㄹ</a>'.$this->num_tag_close;
+		$output .= $this->num_tag_open.'<a href="'.'/'.'"'.sprintf('%s %s="%s"', $this->_attributes, $this->data_page_attr, 'ㅁ').'>ㅁ</a>'.$this->num_tag_close;
+		$output .= $this->num_tag_open.'<a href="'.'/'.'"'.sprintf('%s %s="%s"', $this->_attributes, $this->data_page_attr, 'ㅂ').'>ㅂ</a>'.$this->num_tag_close;
+		$output .= $this->num_tag_open.'<a href="'.'/'.'"'.sprintf('%s %s="%s"', $this->_attributes, $this->data_page_attr, 'ㅅ').'>ㅅ</a>'.$this->num_tag_close;
+		$output .= $this->num_tag_open.'<a href="'.'/'.'"'.sprintf('%s %s="%s"', $this->_attributes, $this->data_page_attr, 'ㅇ').'>ㅇ</a>'.$this->num_tag_close;
+		$output .= $this->num_tag_open.'<a href="'.'/'.'"'.sprintf('%s %s="%s"', $this->_attributes, $this->data_page_attr, 'ㅈ').'>ㅈ</a>'.$this->num_tag_close;
+		$output .= $this->num_tag_open.'<a href="'.'/'.'"'.sprintf('%s %s="%s"', $this->_attributes, $this->data_page_attr, 'ㅊ').'>ㅊ</a>'.$this->num_tag_close;
+		$output .= $this->num_tag_open.'<a href="'.'/'.'"'.sprintf('%s %s="%s"', $this->_attributes, $this->data_page_attr, 'ㅋ').'>ㅋ</a>'.$this->num_tag_close;
+		$output .= $this->num_tag_open.'<a href="'.'/'.'"'.sprintf('%s %s="%s"', $this->_attributes, $this->data_page_attr, 'ㅌ').'>ㅌ</a>'.$this->num_tag_close;
+		$output .= $this->num_tag_open.'<a href="'.'/'.'"'.sprintf('%s %s="%s"', $this->_attributes, $this->data_page_attr, 'ㅍ').'>ㅍ</a>'.$this->num_tag_close;
+		$output .= $this->num_tag_open.'<a href="'.'/'.'"'.sprintf('%s %s="%s"', $this->_attributes, $this->data_page_attr, 'ㅎ').'>ㅎ</a>'.$this->num_tag_close;
+
+		return $this->full_tag_open.$output.$this->full_tag_close;
+	}
+
+
+	// --------------------------------------------------------------------
+
+	/**
+	 * Generate the pagination links
+	 *
+	 * @return	string
+	 */
 	public function create_links()
 	{
 		// If our item count or per-page total is zero there is no need to continue.

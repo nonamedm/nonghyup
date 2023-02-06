@@ -6,6 +6,8 @@ class DL_lists
     // *****
     public $li_st = 0;
 
+    public $initial_sound;
+
     // *****
     public $li_num = 15;
 
@@ -101,7 +103,7 @@ class DL_lists
                 $this->li_st = ($this->pg_idx - 1) * $this->li_num;
             }
 
-
+            $this->initial_sound = $this->CI->get_val('pg');
 
 
             //echo $this->s_word;
