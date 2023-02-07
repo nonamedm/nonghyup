@@ -360,7 +360,7 @@ $config['svc_tree'] = [
                     ]
                     ,[
                         'id'	        => 'improvement'
-                        ,'tit'	        => ['규제개선제안','']
+                        ,'tit'	        => ['Quick Service','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'write'
@@ -951,7 +951,7 @@ $config['adm_tree'] = [
                     ]
                     ,[
                         'id'	        => 'qna'
-                        ,'tit'	        => ['규제대응Q&A','']
+                        ,'tit'	        => ['Q&A','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'lists'
