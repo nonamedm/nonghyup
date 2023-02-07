@@ -609,6 +609,10 @@ class DC_common extends CI_Controller
             $result['lawmaking'] = $this->DM_basic->getResult_sch($param_cm);
             $total += count($result['lawmaking']);
 
+            $param_cm['tb_id']='ct_relateSite';
+            $result['relateSite'] = $this->DM_basic->getResult_sch($param_cm);
+            $total += count($result['relateSite']);
+
             $param_cm['tb_id']='ct_pr';
             $result['pr'] = $this->DM_basic->getResult_sch($param_cm);
             $total += count($result['pr']);
@@ -1062,7 +1066,7 @@ class DC_common extends CI_Controller
                 echo '<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>';
             	echo '<script type="text/javascript">Kakao.init("91ec0aac3f32ee5795cc51f9c7a9e493");</script>';
                 //echo '<script type="text/javascript">Kakao.Auth.authorize({ redirectUri: "https://law.nhbank.com/ko/auth/oauth"});</script>';
-                echo '<script type="text/javascript">Kakao.Auth.authorize({ redirectUri: "https://law.nhbank.com/ko/auth/oauth", state: "' . $state . '"});</script>';
+                echo '<script type="text/javascript">Kakao.Auth.authorize({ redirectUri: "https://inbv4311.cafe24.com/ko/auth/oauth", state: "' . $state . '"});</script>';
                 //echo '<script type="text/javascript">Kakao.Auth.authorize({ redirectUri: "https://nhfrip.devv.kr/ko/auth/oauth", state: "'.$state.'"});</script>';
                 exit;
             }
@@ -1361,8 +1365,9 @@ class DC_common extends CI_Controller
         $this->chk_ip();
         $this->method = __FUNCTION__;
         $this->rtn_perm = $this->chk_perm();
-        if ($this->rtn_perm['cd'] == 'pass') {
-            if ($param[0]) {
+
+//        if ($this->rtn_perm['cd'] == 'pass') {
+//            if ($param[0]) {
                 if($param[0]=='dashboard'){
                     redirect('/adm/member');
                 }
@@ -1376,12 +1381,12 @@ class DC_common extends CI_Controller
                 } else {
                     $this->dl_admin->dashboard($param);
                 }
-            } else {
-                $this->dl_admin->index();
-            }
-        } else {
-            alert('접근권한이 없습니다.', '/index.php');
-        }
+//            } else {
+//                $this->dl_admin->index();
+//            }
+//        } else {
+//            alert('접근권한이 없습니다.', '/index.php');
+//        }
 
     }
 
@@ -1423,17 +1428,17 @@ class DC_common extends CI_Controller
     {
         $this->method=__FUNCTION__;
         $this->rtn_perm = $this->chk_perm(__FUNCTION__);
-        if( $this->rtn_perm['cd'] == 'pass' )
-        {
+        // if( $this->rtn_perm['cd'] == 'pass' )
+        // {
             if($param[0])
             {
                 $this->dl_lists->lists_cv($param);
             }else{
                 show_404("xox DC_common -> lists : non_param_error", TRUE);
             }
-        }else{
-            alert('목록열람 권한이 없습니다. \n로그인 해 주세요.', '/index.php');
-        }
+        // }else{
+        //     alert('목록열람 권한이 없습니다. \n로그인 해 주세요.', '/index.php');
+        // }
     }
 
 
@@ -1748,7 +1753,7 @@ class DC_common extends CI_Controller
 
     public function chk_ip(){
         $rtn = false;
-        if($_SERVER["REMOTE_ADDR"]=='1.255.77.102' || $_SERVER["REMOTE_ADDR"]=='223.26.222.72' || $_SERVER["REMOTE_ADDR"]=='121.170.124.236'){
+        if($_SERVER["REMOTE_ADDR"]=='183.111.174.96' || $_SERVER["REMOTE_ADDR"]=='192.168.219.104'||$_SERVER["REMOTE_ADDR"]=='210.91.190.155' || $_SERVER["REMOTE_ADDR"]=='223.38.81.134'){
             $rtn = true;
         }else{
             alert('허용되지 않은 접속입니다.', '/index.php');
