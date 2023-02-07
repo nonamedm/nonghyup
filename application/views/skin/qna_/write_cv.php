@@ -23,12 +23,14 @@
                 <div class="uk-form-controls">
                     <textarea class="uk-textarea ckeditor" name="post_cont" id="post_cont">
                     <?php if($m_id=='improvement'){?>
-                        <h3 style="font-weight: 400">■ 규제기관 </h3>
+                        <!-- <h3 style="font-weight: 400">■ 규제기관 </h3>
                         <h3 style="font-weight: 400">■ 관련법령(규정) 또는 제도 </h3>
                         <h3 style="font-weight: 400">■ 현황</h3>
                         <h3 style="font-weight: 400">■ 문제점</h3>
                         <h3 style="font-weight: 400">■ 개선의견</h3>
-                        <h3 style="font-weight: 400">■ 기대효과</h3>
+                        <h3 style="font-weight: 400">■ 기대효과</h3> -->
+                        <h3 style="font-weight: 400">■ 부서 / 이름 : </h3>
+                        <h3 style="font-weight: 400">■ 요청 내용 </h3>
                     <?php }?>
                     </textarea>
                     <!--<textarea class="uk-textarea" name="post_cont" id="post_cont_editor" rows='10'></textarea>
