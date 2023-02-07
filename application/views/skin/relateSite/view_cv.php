@@ -18,11 +18,11 @@
                     <span class="date uk-margin-right"><span class="tit">등록일 :</span> <?php echo substr($view['crt_dtms'], 2, 8);?></span>
                 </div>
                 <div class="tabs">
-                    <?php if(isset($file[0]['file_name']) && $file[0]['file_name']){?>
-                        <a href="#" class="tab vw"> 첨부파일 (<?php echo $attach_file_cnt;?>) <img src="/static/svg/list_expend.svg" class="tab_icon"></a>
-                    <?php }?>
+<!--                    <?php /*if(isset($file[0]['file_name']) && $file[0]['file_name']){*/?>
+                        <a href="#" class="tab vw"> 첨부파일 (<?php /*echo $attach_file_cnt;*/?>) <img src="/static/svg/list_expend.svg" class="tab_icon"></a>
+                    --><?php /*}*/?>
                     <?php if($view['post_link_addr']){ ?>
-                        <a href="<?php echo $view['post_link_addr'];?>" target="<?php echo $view['post_link_trgt'];?>" class="tab lnk"><span>원문</span> 링크 <img src="/static/svg/link.svg" class="tab_icon"></a>
+                        <a href="<?php echo $view['post_link_addr'];?>" target="<?php echo $view['post_link_trgt'];?>" class="tab lnk"><span>URL</span> 링크 <img src="/static/svg/link.svg" class="tab_icon"></a>
                     <?php } ?>
                 </div>
             </div>
@@ -36,7 +36,7 @@
                 ?>
                         <div>
                             <span class="txt"><?php echo $file[$i]['orig_name'];?></span>
-                                <a href="/ko/<?php echo $m_id;?>/dnload?idx=<?php echo $file[$i]['trgt_idx'];?>&fl=<?php echo $i+1;?>" class="unit uk-margin-small-left" title="다운로드"><span class="uk-label down_label">다운로드</span></a>
+                                <!--<a href="/ko/<?php /*echo $m_id;*/?>/dnload?idx=<?php /*echo $file[$i]['trgt_idx'];*/?>&fl=<?php /*echo $i+1;*/?>" class="unit uk-margin-small-left" title="다운로드"><span class="uk-label down_label">다운로드</span></a>-->
                             <?php
                             $ext = explode('/', $file[$i]['file_type'])[1];
                             if ($ext=='pdf'){ ?>
@@ -52,11 +52,11 @@
                 }
                 ?>
 
-                <div class="data uk-placeholder">
-                    <div class="unit"><span class="tit">추진현황 : </span><span class="txt"><?php echo $view['post_status'];?>(<?php echo $view['post_dtms'];?>)</span></div>
-                    <div class="unit"><span class="tit">소관부처 : </span><span class="txt"><?php echo $view['post_field'];?></span></div>
+             <!--   <div class="data uk-placeholder">
+                    <div class="unit"><span class="tit">추진현황 : </span><span class="txt"><?php /*echo $view['post_status'];*/?>(<?php /*echo $view['post_dtms'];*/?>)</span></div>
+                    <div class="unit"><span class="tit">소관부처 : </span><span class="txt"><?php /*echo $view['post_field'];*/?></span></div>
                 </div>
-
+-->
 
 
                 <?php
@@ -64,19 +64,19 @@
                 //    echo "<div class='uk-placeholder summary'>".$view['post_summary']."</div>";
                 //}
                 ?>
-                <?php
-                if(count($file)){
+               <!-- <?php
+/*                if(count($file)){
                     for($i=0; $i<count($file); $i++){
                         if (explode('/', $file[$i]['file_type'])[0]=='image'){
-                            ?>
-                            <img src="/static/data/<?php echo $m_id;?>/<?php echo $file[$i]['file_name'];?>">
-                            <?php
-                        }
+                            */?>
+                            <img src="/static/data/<?php /*echo $m_id;*/?>/<?php /*echo $file[$i]['file_name'];*/?>">
+                            --><?php
+/*                        }
                     }
                 }
-                ?>
+                */?>
                 <div class="bd">
-                    <?php echo $view['post_cont'];?>
+                    <?php echo $view['post_summary'];?>
                 </div>
                 <?php
                 //if($view['post_keyword']){

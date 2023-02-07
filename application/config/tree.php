@@ -404,7 +404,7 @@ $config['svc_tree'] = [
                         ,'tbl'	        => 'ct_relateSite'
                         ,'fld'	        => 'basic'
                         ,'skin'         => 'relateSite'
-                        ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
+                        ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>0, 'modify'=>5, 'delete'=>5, 'dnload'=>0]
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
@@ -912,6 +912,24 @@ $config['adm_tree'] = [
                         ,'edtr'         => 'Y'
                         ,'sub'	        => []
                     ]
+                    ,[
+                        'id'	        => 'relateSite'
+                        ,'tit'	        => ['유용한 사이트','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => ''
+                        ,'tbl'	        => 'ct_relateSite'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'relateSite'
+                        ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>0, 'delete'=>5, 'dnload'=>0]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => ''
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
                 ]
             ]
             ,[
@@ -959,24 +977,6 @@ $config['adm_tree'] = [
                         ,'tbl'	        => 'ct_qna'
                         ,'fld'	        => 'qna'
                         ,'skin'         => 'qna'
-                        ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>5, 'delete'=>5, 'dnload'=>1]
-                        ,'status'       => ''
-                        ,'lng_mode_yn'  => ''
-                        ,'visible_yn'   => ''
-                        ,'file'         => ''
-                        ,'edtr'         => 'Y'
-                        ,'sub'	        => []
-                    ]
-                    ,[
-                        'id'	        => 'relateSite'
-                        ,'tit'	        => ['유용한 사이트','']
-                        ,'typ'          => 'cont'
-                        ,'fnc'          => 'bbs'
-                        ,'mod'          => 'lists'
-                        ,'cat'          => ''
-                        ,'tbl'	        => 'ct_relateSite'
-                        ,'fld'	        => 'basic'
-                        ,'skin'         => 'relateSite'
                         ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>5, 'delete'=>5, 'dnload'=>1]
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''

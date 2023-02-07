@@ -15,25 +15,23 @@
 
 
                 <div class="uk-margin-small uk-width-1-1">
-                    <label class="uk-form-label">제목</label>
+                    <label class="uk-form-label">웹사이트명</label>
                     <div class="uk-form-controls">
                         <input class="uk-input" type="text" name="post_subj" id="post_subj" placeholder="">
                     </div>
                 </div>
 
                 <div class="uk-margin-small uk-width-1-1">
-                    <label class="uk-form-label">요약</label>
+                    <label class="uk-form-label">요약설명</label>
                     <div class="uk-form-controls">
                         <input class="uk-input" type="text" name="post_summary" id="post_summary" placeholder="">
                     </div>
                 </div>
 
-                <div class="uk-margin-small uk-width-1-1">
+               <!-- <div class="uk-margin-small uk-width-1-1">
                     <label class="uk-form-label">내용</label>
                     <div class="uk-form-controls">
                         <textarea class="uk-textarea ckeditor" name="post_cont" id="post_cont" rows='10'></textarea>
-                        <!--<textarea class="uk-textarea" name="post_cont" id="post_cont_editor" rows='10'></textarea>
-                        <input type="hidden" name="post_cont" id="post_cont" value=''>-->
                     </div>
                 </div>
 
@@ -56,7 +54,7 @@
                     <div class="uk-form-controls">
                         <input class="uk-input" type="text" name="post_field" id="post_field" value="">
                     </div>
-                </div>
+                </div>-->
 
                 <div class="uk-margin-small uk-width-1-4@m">
                     <label class="uk-form-label">등록일</label>
@@ -65,19 +63,12 @@
                     </div>
                 </div>
 
-                <div class="uk-margin-small uk-width-1-1">
+                <!--<div class="uk-margin-small uk-width-1-1">
                     <label class="uk-form-label">키워드</label>
                     <div class="uk-form-controls">
                         <input class="uk-input" type="text" name="post_keyword" id="post_keyword" placeholder="">
                     </div>
-                </div>
-
-                <div class="uk-margin-small uk-width-3-4@m">
-                    <label class="uk-form-label">외부링크</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input" type="text" name="post_link_addr" id="post_link_addr" placeholder="주소입력시 보기화면에서 원문링크탭이 나타납니다.">
-                    </div>
-                </div>
+                </div>-->
                 <div class="uk-margin-small uk-width-1-4@m">
                     <label class="uk-form-label">링크옵션</label>
                     <div class="uk-form-controls">
@@ -85,13 +76,21 @@
                     </div>
                 </div>
 
+                <div class="uk-margin-small uk-width-3-4@m">
+                    <label class="uk-form-label">URL</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" type="text" name="post_link_addr" id="post_link_addr" placeholder="주소입력시 보기화면에서 원문링크탭이 나타납니다.">
+                    </div>
+                </div>
+
+
             </div>
 
-            <?php if($upload_files_num){ ?>
-                <?php $this->load->view("brd/common_file"); ?>
-            <?php } ?>
+      <!--      <?php /*if($upload_files_num){ */?>
+                <?php /*$this->load->view("brd/common_file"); */?>
+            --><?php /*} */?>
 
-            <?php $this->load->view("brd/common_btn"); ?>
+            <?php /*$this->load->view("brd/common_btn"); */?>
 
         </form>
     </div>

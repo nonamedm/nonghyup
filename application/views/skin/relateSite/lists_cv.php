@@ -20,7 +20,6 @@
     // ***** bbs list
     ?>
     <div class="brd_bdy uk-overflow-auto">
-        <a href="adm/member/brd/common_pagination">등록테스트</a>
         <?php if( count($lists) ){ ?>
             <table class="uk-table uk-table-small uk-table-divider">
                 <thead class="wth">
@@ -60,15 +59,20 @@
                         </tr>
                         <tr class="wtr">
                             <td class="w40"><?php echo $li_idx;?></td>
-                            <td class="w170"><?php echo $lists[$i]['post_status'];?></td>
-                            <td class="tit" id="tit<?php echo $i;?>"><?php echo $lists[$i]['post_subj'];?></td>
-                            <td class="w120">
-                                <a href="<?php echo $lists[$i]['post_field'];?>"> <?php echo $lists[$i]['post_field'];?></a>
+                            <td class="w170"><?php echo $lists[$i]['post_subj'];?></td>
+                            <td class="tit" id="tit<?php echo $i;?>">
+                                <?php if($is_adm_mod){ ?>
+                                    <a href="/<?php echo $seg;?>/<?php echo $m_id;?>/view?idx=<?php echo $lists[$i]['idx'];?>" class="chk_perm_view">
+                                        <?php echo $lists[$i]['post_summary'];?>
+                                    </a>
+                                <?php }else{?>
+                                    <?php echo $lists[$i]['post_summary'];?>
+                                <?php } ?>
                             </td>
-                            <!--<td class="w90"><?php /*echo substr($lists[$i]['crt_dtms'], 2, 8);*/?></td>-->
+                            <td class="w120">
+                                <a href="<?php echo $lists[$i]['post_link_addr'];?>"> <?php echo $lists[$i]['post_link_addr'];?></a>
+                            </td>
                             <?php if($is_adm_mod){ ?>
-                                <td class="no"><?php echo $lists[$i]['post_like'];?></td>
-                                <td class="no"><?php echo $lists[$i]['post_cmt_cnt'];?></td>
                                 <td class="no"><?php echo $lists[$i]['post_hit'];?></td>
                             <?php } ?>
                         </tr>
