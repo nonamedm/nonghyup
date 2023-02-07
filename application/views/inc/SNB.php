@@ -26,7 +26,9 @@
                     echo "</a></div>";
                 } else {
                     if($gd_arr[$i]['id']=='sanctions') {
-                        echo "<div class='left_sub_menu'><a href='https://www.fss.or.kr/fss/job/openInfo/list.do?menuNo=200476' target='_blank'>" . $gd_arr[$i]['tit'][0] . "</a></div>";
+                        /*금융제재사례수정*/
+                        /*echo "<div class='left_sub_menu'><a href='https://www.fss.or.kr/fss/job/openInfo/list.do?menuNo=200476' target='_blank'>" . $gd_arr[$i]['tit'][0] . "</a></div>";*/
+                        echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>" . $gd_arr[$i]['tit'][0] . "</a></div>";
                     }else if($is_admin && ($gd_arr[$i]['id']=='myimprovement' || $gd_arr[$i]['id']=='myqna' || $gd_arr[$i]['id']=='withdrawal')) {
 
                     }else {

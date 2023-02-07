@@ -269,6 +269,24 @@ $config['svc_tree'] = [
                         'id'	        => 'sanctions'
                         ,'tit'	        => ['금융제재사례','']
                         ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => ''
+                        ,'tbl'	        => 'ct_sanctions'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'sanctions'
+                        ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => 1
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
+                    /*,[
+                        'id'	        => 'sanctions'
+                        ,'tit'	        => ['금융제재사례','']
+                        ,'typ'          => 'cont'
                         ,'fnc'          => 'pg'
                         ,'mod'          => ''
                         ,'cat'          => ''
@@ -282,7 +300,7 @@ $config['svc_tree'] = [
                         ,'file'         => ''
                         ,'edtr'         => ''
                         ,'sub'	        => []
-                    ]
+                    ]*/
                 ]
             ]
             ,[
@@ -887,6 +905,24 @@ $config['adm_tree'] = [
                         ,'fld'	        => 'basic'
                         ,'skin'         => 'trans'
                         ,'perm'         => ''
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => 1
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
+                    ,[
+                        'id'	        => 'sanctions'
+                        ,'tit'	        => ['금융제재사례','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => ''
+                        ,'tbl'	        => 'ct_sanctions'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'sanctions'
+                        ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
