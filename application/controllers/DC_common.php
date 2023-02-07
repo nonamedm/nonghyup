@@ -1428,17 +1428,17 @@ class DC_common extends CI_Controller
     {
         $this->method=__FUNCTION__;
         $this->rtn_perm = $this->chk_perm(__FUNCTION__);
-        if( $this->rtn_perm['cd'] == 'pass' )
-        {
+        // if( $this->rtn_perm['cd'] == 'pass' )
+        // {
             if($param[0])
             {
                 $this->dl_lists->lists_cv($param);
             }else{
                 show_404("xox DC_common -> lists : non_param_error", TRUE);
             }
-        }else{
-            alert('목록열람 권한이 없습니다. \n로그인 해 주세요.', '/index.php');
-        }
+        // }else{
+        //     alert('목록열람 권한이 없습니다. \n로그인 해 주세요.', '/index.php');
+        // }
     }
 
 
