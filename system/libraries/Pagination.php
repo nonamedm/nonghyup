@@ -268,6 +268,13 @@ class CI_Pagination {
 	protected $query_string_segment = 'per_page';
 
 	/**
+	 * Query string segment_initial
+	 *
+	 * @var	string
+	 */
+	protected $query_string_segment_initial = 'per_page';
+
+	/**
 	 * Display pages flag
 	 *
 	 * @var	bool
@@ -440,7 +447,7 @@ class CI_Pagination {
 		$query_string_sep = (strpos($base_url, '?') === FALSE) ? '?' : '&amp;';
 
 		$get = $this->CI->input->get();
-		$base_url .= $query_string_sep.http_build_query(array_merge($get, array($this->query_string_segment => '')));
+		$base_url .= $query_string_sep.http_build_query(array_merge($get, array($this->query_string_segment_initial => '')));
 
 
 		$output = '';

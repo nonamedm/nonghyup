@@ -6,7 +6,7 @@ class DL_lists
     // *****
     public $li_st = 0;
 
-    public $initial_sound;
+    public $initial = 'ㄱ';
 
     // *****
     public $li_num = 15;
@@ -103,7 +103,7 @@ class DL_lists
                 $this->li_st = ($this->pg_idx - 1) * $this->li_num;
             }
 
-            $this->initial_sound = $this->CI->get_val('pg');
+            $this->initial = $this->CI->get_val('initial');
 
 
             //echo $this->s_word;
@@ -296,6 +296,7 @@ class DL_lists
                 $pg_config['page_query_string'] = true;
                 $pg_config['use_page_numbers'] = true;
                 $pg_config['query_string_segment'] = 'pg';
+                $pg_config['query_string_segment_initial'] = 'initial';
                 $pg_config['total_rows'] = $lists_total;
                 $pg_config['pg'] = $this->pg_idx;
                 $pg_config['per_page'] = $this->li_num;

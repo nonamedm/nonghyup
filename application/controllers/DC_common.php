@@ -39,7 +39,7 @@ class DC_common extends CI_Controller
     );
 
     // 파라미터
-    private $p_cat, $p_opt, $p_idx, $pg_idx, $fl_idx, $code, $p_ord;
+    private $p_cat, $p_opt, $p_idx, $pg_idx, $fl_idx, $code, $p_ord, $initial;
 
     // 파라미터(검색)
     private $s_word, $s_cat, $s_sds, $s_sde, $s_rfsw, $s_fsw, $s_res, $s_tot, $s_lng, $s_fld, $s_typ;
@@ -218,13 +218,21 @@ class DC_common extends CI_Controller
             $this->p_idx = $p_idx;
         }
 
-
         if (preg_match("/[^0-9]/", $this->input->get('pg', TRUE))) {
             show_404("ERROR : pg is wrong", TRUE);
         } else {
             $pg_idx = $this->input->get('pg', TRUE);
             $pg_idx = $this->dl_security->xss_cleaner($pg_idx);
             $this->pg_idx = $pg_idx;
+        }
+
+        //initial 검색
+        if (preg_match("/([^가-힣ㄱ-ㅎㅏ-ㅣ\x20])/i", $this->input->get('initial', TRUE))) {
+            show_404("ERROR : initial is wrong", TRUE);
+        } else {
+            $initial = $this->input->get('initial', TRUE);
+            $initial = $this->dl_security->xss_cleaner($initial);
+            $this->initial = $initial;
         }
 
         if ($this->input->get('fl', TRUE)) {
@@ -1752,12 +1760,12 @@ class DC_common extends CI_Controller
     }
 
     public function chk_ip(){
-        // $rtn = false;
-        // if($_SERVER["REMOTE_ADDR"]=='183.111.174.96' || $_SERVER["REMOTE_ADDR"]=='192.168.219.104'||$_SERVER["REMOTE_ADDR"]=='210.91.190.155' || $_SERVER["REMOTE_ADDR"]=='223.38.81.134'){
+        $rtn = false;
+        if($_SERVER["REMOTE_ADDR"]=='183.111.174.96' || $_SERVER["REMOTE_ADDR"]=='192.168.219.104'||$_SERVER["REMOTE_ADDR"]=='210.91.190.155' || $_SERVER["REMOTE_ADDR"]=='223.38.81.134'){
             $rtn = true;
-        // }else{
-        //     alert('허용되지 않은 접속입니다.', '/index.php');
-        // }
+        }else{
+            alert('허용되지 않은 접속입니다.', '/index.php');
+        }
         return $rtn;
     }
 
