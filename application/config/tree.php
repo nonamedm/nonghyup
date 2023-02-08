@@ -480,7 +480,8 @@ $config['svc_tree'] = [
                         ,'tbl'	        => 'ct_intnlctrl'
                         ,'fld'	        => 'basic'
                         ,'skin'         => 'trans'
-                        ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
+                        // ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
+                        ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'reply'=>1, 'modify'=>1, 'delete'=>1, 'dnload'=>1]
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
@@ -489,16 +490,17 @@ $config['svc_tree'] = [
                         ,'sub'	        => []
                     ]
                     ,[
-                        'id'	        => 'finnaccidexmp'
+                        'id'	        => 'finnaccexp'
                         ,'tit'	        => ['금융사고사례','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'lists'
                         ,'cat'          => ''
-                        ,'tbl'	        => 'ct_translate'
+                        ,'tbl'	        => 'ct_finnaccexp'
                         ,'fld'	        => 'basic'
                         ,'skin'         => 'trans'
-                        ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
+                        // ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
+                        ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'reply'=>1, 'modify'=>1, 'delete'=>1, 'dnload'=>1]
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
@@ -507,16 +509,17 @@ $config['svc_tree'] = [
                         ,'sub'	        => []
                     ]
                     ,[
-                        'id'	        => 'prevmonlaun'
+                        'id'	        => 'prevmnlaun'
                         ,'tit'	        => ['자금세탁방지','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'lists'
                         ,'cat'          => ''
-                        ,'tbl'	        => 'ct_translate'
+                        ,'tbl'	        => 'ct_prevmnlaun'
                         ,'fld'	        => 'basic'
                         ,'skin'         => 'trans'
-                        ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
+                        // ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
+                        ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'reply'=>1, 'modify'=>1, 'delete'=>1, 'dnload'=>1]
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
