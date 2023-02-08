@@ -269,6 +269,24 @@ $config['svc_tree'] = [
                         'id'	        => 'sanctions'
                         ,'tit'	        => ['금융제재사례','']
                         ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => ''
+                        ,'tbl'	        => 'ct_sanctions'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'sanctions'
+                        ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => 1
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
+                    /*,[
+                        'id'	        => 'sanctions'
+                        ,'tit'	        => ['금융제재사례','']
+                        ,'typ'          => 'cont'
                         ,'fnc'          => 'pg'
                         ,'mod'          => ''
                         ,'cat'          => ''
@@ -282,7 +300,7 @@ $config['svc_tree'] = [
                         ,'file'         => ''
                         ,'edtr'         => ''
                         ,'sub'	        => []
-                    ]
+                    ]*/
                 ]
             ]
             ,[
@@ -360,7 +378,7 @@ $config['svc_tree'] = [
                     ]
                     ,[
                         'id'	        => 'improvement'
-                        ,'tit'	        => ['규제개선제안','']
+                        ,'tit'	        => ['Quick Service','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'write'
@@ -404,7 +422,7 @@ $config['svc_tree'] = [
                         ,'tbl'	        => 'ct_relateSite'
                         ,'fld'	        => 'basic'
                         ,'skin'         => 'relateSite'
-                        ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
+                        ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>0, 'modify'=>5, 'delete'=>5, 'dnload'=>0]
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
@@ -898,6 +916,24 @@ $config['adm_tree'] = [
                         ,'sub'	        => []
                     ]
                     ,[
+                        'id'	        => 'sanctions'
+                        ,'tit'	        => ['금융제재사례','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => ''
+                        ,'tbl'	        => 'ct_sanctions'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'sanctions'
+                        ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => 1
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
+                    ,[
                         'id'	        => 'precedent'
                         ,'tit'	        => ['금융판례','']
                         ,'typ'          => 'cont'
@@ -912,6 +948,24 @@ $config['adm_tree'] = [
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
                         ,'file'         => 1
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
+                    ,[
+                        'id'	        => 'relateSite'
+                        ,'tit'	        => ['유용한 사이트','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => ''
+                        ,'tbl'	        => 'ct_relateSite'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'relateSite'
+                        ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>0, 'delete'=>5, 'dnload'=>0]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => ''
                         ,'edtr'         => 'Y'
                         ,'sub'	        => []
                     ]
@@ -954,7 +1008,7 @@ $config['adm_tree'] = [
                     ]
                     ,[
                         'id'	        => 'qna'
-                        ,'tit'	        => ['규제대응Q&A','']
+                        ,'tit'	        => ['Q&A','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'lists'
@@ -962,24 +1016,6 @@ $config['adm_tree'] = [
                         ,'tbl'	        => 'ct_qna'
                         ,'fld'	        => 'qna'
                         ,'skin'         => 'qna'
-                        ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>5, 'delete'=>5, 'dnload'=>1]
-                        ,'status'       => ''
-                        ,'lng_mode_yn'  => ''
-                        ,'visible_yn'   => ''
-                        ,'file'         => ''
-                        ,'edtr'         => 'Y'
-                        ,'sub'	        => []
-                    ]
-                    ,[
-                        'id'	        => 'relateSite'
-                        ,'tit'	        => ['유용한 사이트','']
-                        ,'typ'          => 'cont'
-                        ,'fnc'          => 'bbs'
-                        ,'mod'          => 'lists'
-                        ,'cat'          => ''
-                        ,'tbl'	        => 'ct_relateSite'
-                        ,'fld'	        => 'basic'
-                        ,'skin'         => 'relateSite'
                         ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>5, 'delete'=>5, 'dnload'=>1]
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
