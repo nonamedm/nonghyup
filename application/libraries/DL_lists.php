@@ -6,7 +6,7 @@ class DL_lists
     // *****
     public $li_st = 0;
 
-    public $initial = 'ㄱ';
+    public $initial = "";
 
     // *****
     public $li_num = 15;
@@ -87,6 +87,7 @@ class DL_lists
 
             // ***** search
             $this->s_cat =              $this->CI->get_val('s_cat');
+            $this->initial =            $this->CI->get_val('initial');
             $this->s_word =             $this->CI->get_val('s_word');
             $this->s_sds =              $this->CI->get_val('s_sds');
             $this->s_sde =              $this->CI->get_val('s_sde');
@@ -103,7 +104,7 @@ class DL_lists
                 $this->li_st = ($this->pg_idx - 1) * $this->li_num;
             }
 
-            $this->initial = $this->CI->get_val('initial');
+            
 
 
             //echo $this->s_word;
@@ -130,7 +131,8 @@ class DL_lists
                 'order'     => $this->orderBy,
                 //'post_lng'   => $this->lng_cd,
                 'li_st'     => $this->li_st,
-                'li_num'    => $this->li_num
+                'li_num'    => $this->li_num,
+                'initial'    => $this->initial
             );
 
             //print_r($param_cm);

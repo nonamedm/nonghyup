@@ -227,9 +227,7 @@ class DC_common extends CI_Controller
         }
 
         //initial 검색
-        if (preg_match("/([^가-힣ㄱ-ㅎㅏ-ㅣ\x20])/i", $this->input->get('initial', TRUE))) {
-            show_404("ERROR : initial is wrong", TRUE);
-        } else {
+        if ($this->input->get('initial', TRUE)) {
             $initial = $this->input->get('initial', TRUE);
             $initial = $this->dl_security->xss_cleaner($initial);
             $this->initial = $initial;
@@ -1697,7 +1695,7 @@ class DC_common extends CI_Controller
             ,'edtr'         => $this->get_val('edtr')
             ,'breadcrumb'   => $this->get_val('breadcrumb')
 
-            ,'s_word'       => $this->get_val('s_word')
+            ,'initial'      => $this->get_val('initial')
             ,'s_cat'        => $this->get_val('s_cat')
             ,'s_sds'        => $this->get_val('s_sds')
             ,'s_sde'        => $this->get_val('s_sde')

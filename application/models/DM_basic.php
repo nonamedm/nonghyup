@@ -142,38 +142,43 @@ class DM_basic extends CI_MODEL
                     $sql .= ') ';
                 }
 
-                // if (isset($option['pg']) && $option['pg']) { // 참관자 및 관리자 제외
-                //     $sql .= ' AND';
-                //     if($option['pg'] == 'ㄱ')      
-                //         $sql .=  " substr(nick,1,1) between '가' and '낗'";
-                //     else if($option['pg'] == 'ㄴ') 
-                //         $sql .=  " substr(nick,1,1) between '나' and '닣'";
-                //     else if($option['pg'] == 'ㄷ') 
-                //         $sql .=  " substr(nick,1,1) between '다' and '띻'";
-                //     else if($option['pg'] == 'ㄹ')
-                //         $sql .=  " substr(nick,1,1) between '라' and '맇'";
-                //     else if($option['pg'] == 'ㅁ')
-                //         $sql .=  " substr(nick,1,1) between '마' and '밓'";
-                //     else if($option['pg'] == 'ㅂ')
-                //         $sql .=  " substr(nick,1,1) between '바' and '삫'";
-                //     else if($option['pg'] == 'ㅅ')
-                //         $sql .=  " substr(nick,1,1) between '사' and '앃'";
-                //     else if($option['pg'] == 'ㅇ')
-                //         $sql .=  " substr(nick,1,1) between '아' and '잏'";
-                //     else if($option['pg'] == 'ㅈ')
-                //         $sql .=  " substr(nick,1,1) between '자' and '찧'";
-                //     else if($option['pg'] == 'ㅊ')
-                //         $sql .=  " substr(nick,1,1) between '차' and '칳'";
-                //     else if($option['pg'] == 'ㅋ')
-                //         $sql .=  " substr(nick,1,1) between '카' and '킿'";
-                //     else if($option['pg'] == 'ㅌ')
-                //         $sql .=  " substr(nick,1,1) between '타' and '팋'";
-                //     else if($option['pg'] == 'ㅍ')
-                //         $sql .=  " substr(nick,1,1) between '파' and '핗'";
-                //     else if($option['pg'] == 'ㅎ')
-                //         $sql .=  " substr(nick,1,1) between '하' and '힣'";
-                //     else {}
-                // }
+                if (isset($option['initial']) && $option['initial']) { // 참관자 및 관리자 제외
+                    $sql .= ' AND';
+
+                    // if($option['initial'] == 'ㄱ') {
+                        $sql .=  " substr(post_subj,1,1) between '가' and '낗'";
+                    // }
+
+                    // if($option['initial'] == 'ㄱ')      
+                    //     $sql .=  " substr(nick,1,1) between '가' and '낗'";
+                    // else if($option['pg'] == 'ㄴ') 
+                    //     $sql .=  " substr(nick,1,1) between '나' and '닣'";
+                    // else if($option['pg'] == 'ㄷ') 
+                    //     $sql .=  " substr(nick,1,1) between '다' and '띻'";
+                    // else if($option['pg'] == 'ㄹ')
+                    //     $sql .=  " substr(nick,1,1) between '라' and '맇'";
+                    // else if($option['pg'] == 'ㅁ')
+                    //     $sql .=  " substr(nick,1,1) between '마' and '밓'";
+                    // else if($option['pg'] == 'ㅂ')
+                    //     $sql .=  " substr(nick,1,1) between '바' and '삫'";
+                    // else if($option['pg'] == 'ㅅ')
+                    //     $sql .=  " substr(nick,1,1) between '사' and '앃'";
+                    // else if($option['pg'] == 'ㅇ')
+                    //     $sql .=  " substr(nick,1,1) between '아' and '잏'";
+                    // else if($option['pg'] == 'ㅈ')
+                    //     $sql .=  " substr(nick,1,1) between '자' and '찧'";
+                    // else if($option['pg'] == 'ㅊ')
+                    //     $sql .=  " substr(nick,1,1) between '차' and '칳'";
+                    // else if($option['pg'] == 'ㅋ')
+                    //     $sql .=  " substr(nick,1,1) between '카' and '킿'";
+                    // else if($option['pg'] == 'ㅌ')
+                    //     $sql .=  " substr(nick,1,1) between '타' and '팋'";
+                    // else if($option['pg'] == 'ㅍ')
+                    //     $sql .=  " substr(nick,1,1) between '파' and '핗'";
+                    // else if($option['pg'] == 'ㅎ')
+                    //     $sql .=  " substr(nick,1,1) between '하' and '힣'";
+                    // else {}
+                }
 
                 // 왜 like검색을 하지? 입력시 중복선택 때문..그렇다면 해당 게시핀에 한해서
                 if (isset($option['s_cat']) && $option['s_cat']) { // current opt
