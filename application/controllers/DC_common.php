@@ -1752,12 +1752,12 @@ class DC_common extends CI_Controller
     }
 
     public function chk_ip(){
-        $rtn = false;
-        if($_SERVER["REMOTE_ADDR"]=='183.111.174.96' || $_SERVER["REMOTE_ADDR"]=='192.168.219.104'||$_SERVER["REMOTE_ADDR"]=='210.91.190.155' || $_SERVER["REMOTE_ADDR"]=='223.38.81.134'){
+        // $rtn = false;
+        // if($_SERVER["REMOTE_ADDR"]=='183.111.174.96' || $_SERVER["REMOTE_ADDR"]=='192.168.219.104'||$_SERVER["REMOTE_ADDR"]=='210.91.190.155' || $_SERVER["REMOTE_ADDR"]=='223.38.81.134'){
             $rtn = true;
-        }else{
-            alert('허용되지 않은 접속입니다.', '/index.php');
-        }
+        // }else{
+        //     alert('허용되지 않은 접속입니다.', '/index.php');
+        // }
         return $rtn;
     }
 
