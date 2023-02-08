@@ -396,7 +396,7 @@ $config['svc_tree'] = [
                     ]
                     ,[
                         'id'	        => 'qna'
-                        ,'tit'	        => ['규제대응Q&A','']
+                        ,'tit'	        => ['Q&A','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'write'
