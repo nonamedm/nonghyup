@@ -142,42 +142,40 @@ class DM_basic extends CI_MODEL
                     $sql .= ') ';
                 }
 
+                //current 초성 조회
                 if (isset($option['initial']) && $option['initial']) { // 참관자 및 관리자 제외
-                    $sql .= ' AND';
+                    $sql .= ' AND (';
 
-                    // if($option['initial'] == 'ㄱ') {
-                        $sql .=  " substr(post_subj,1,1) between '가' and '낗'";
-                    // }
-
-                    // if($option['initial'] == 'ㄱ')      
-                    //     $sql .=  " substr(nick,1,1) between '가' and '낗'";
-                    // else if($option['pg'] == 'ㄴ') 
-                    //     $sql .=  " substr(nick,1,1) between '나' and '닣'";
-                    // else if($option['pg'] == 'ㄷ') 
-                    //     $sql .=  " substr(nick,1,1) between '다' and '띻'";
-                    // else if($option['pg'] == 'ㄹ')
-                    //     $sql .=  " substr(nick,1,1) between '라' and '맇'";
-                    // else if($option['pg'] == 'ㅁ')
-                    //     $sql .=  " substr(nick,1,1) between '마' and '밓'";
-                    // else if($option['pg'] == 'ㅂ')
-                    //     $sql .=  " substr(nick,1,1) between '바' and '삫'";
-                    // else if($option['pg'] == 'ㅅ')
-                    //     $sql .=  " substr(nick,1,1) between '사' and '앃'";
-                    // else if($option['pg'] == 'ㅇ')
-                    //     $sql .=  " substr(nick,1,1) between '아' and '잏'";
-                    // else if($option['pg'] == 'ㅈ')
-                    //     $sql .=  " substr(nick,1,1) between '자' and '찧'";
-                    // else if($option['pg'] == 'ㅊ')
-                    //     $sql .=  " substr(nick,1,1) between '차' and '칳'";
-                    // else if($option['pg'] == 'ㅋ')
-                    //     $sql .=  " substr(nick,1,1) between '카' and '킿'";
-                    // else if($option['pg'] == 'ㅌ')
-                    //     $sql .=  " substr(nick,1,1) between '타' and '팋'";
-                    // else if($option['pg'] == 'ㅍ')
-                    //     $sql .=  " substr(nick,1,1) between '파' and '핗'";
-                    // else if($option['pg'] == 'ㅎ')
-                    //     $sql .=  " substr(nick,1,1) between '하' and '힣'";
-                    // else {}
+                    if($option['initial'] == 'ㄱ') {
+                        $sql .=  " post_subj RLIKE '^(ㄱ|ㄲ)' OR (post_subj >='가' AND post_subj <'나')";
+                    } else if($option['initial'] == 'ㄴ'){
+                        $sql .= " post_subj RLIKE '^ㄴ' OR (post_subj >='나' AND post_subj <'다')";
+                    } else if($option['initial'] == 'ㄷ'){
+                        $sql .= " post_subj RLIKE '^(ㄷ|ㄸ)' OR (post_subj >='다' AND post_subj <'라')";
+                    } else if($option['initial'] == 'ㄹ'){
+                        $sql .= " post_subj RLIKE '^ㄹ' OR (post_subj >='라' AND post_subj <'마')";
+                    } else if($option['initial'] == 'ㅁ'){
+                        $sql .= " post_subj RLIKE '^ㅁ' OR (post_subj >='마' AND post_subj <'바')";
+                    } else if($option['initial'] == 'ㅂ'){
+                        $sql .= " post_subj RLIKE '^ㅂ' OR (post_subj >='바' AND post_subj <'사')";
+                    } else if($option['initial'] == 'ㅅ'){
+                        $sql .= " post_subj RLIKE '^(ㅅ|ㅆ)' OR (post_subj >='사' AND post_subj <'아')";
+                    } else if($option['initial'] == 'ㅇ'){
+                        $sql .= " post_subj RLIKE '^ㅇ' OR (post_subj >='아' AND post_subj <'자')";
+                    } else if($option['initial'] == 'ㅈ'){
+                        $sql .= " post_subj RLIKE '^(ㅈ|ㅉ)' OR (post_subj >='자' AND post_subj <'차')";
+                    } else if($option['initial'] == 'ㅊ'){
+                        $sql .= " post_subj RLIKE '^ㅊ' OR (post_subj >='차' AND post_subj <'카')";
+                    } else if($option['initial'] == 'ㅋ'){
+                        $sql .= " post_subj RLIKE '^ㅋ' OR (post_subj >='카' AND post_subj <'타')";
+                    } else if($option['initial'] == 'ㅌ'){
+                        $sql .= " post_subj RLIKE '^ㅌ' OR (post_subj >='타' AND post_subj <'파')";
+                    } else if($option['initial'] == 'ㅍ'){
+                        $sql .= " post_subj RLIKE '^ㅍ' OR (post_subj >='파' AND post_subj <'하')";
+                    } else if($option['initial'] == 'ㅎ'){
+                        $sql .= " post_subj RLIKE '^ㅎ' OR (post_subj >='하')";
+                    }
+                    $sql .= ') ';
                 }
 
                 // 왜 like검색을 하지? 입력시 중복선택 때문..그렇다면 해당 게시핀에 한해서
@@ -321,6 +319,46 @@ class DM_basic extends CI_MODEL
                     //    $this->db->or_like('post_cat', $option['s_cat']);
                     //}
                 }
+
+                //initial 초성 검색
+                if (isset($option['initial']) && $option['initial']) { // 참관자 및 관리자 제외
+
+                    $count_sql = '';
+
+                    if($option['initial'] == 'ㄱ') {
+                        $count_sql .= "post_subj RLIKE '^(ㄱ|ㄲ)' OR (post_subj >='가' AND post_subj <'나')";
+                    } else if($option['initial'] == 'ㄴ'){
+                        $count_sql .= "post_subj RLIKE '^ㄴ' OR (post_subj >='나' AND post_subj <'다')";
+                    } else if($option['initial'] == 'ㄷ'){
+                        $count_sql .= "post_subj RLIKE '^(ㄷ|ㄸ)' OR (post_subj >='다' AND post_subj <'라')";
+                    } else if($option['initial'] == 'ㄹ'){
+                        $count_sql .= "post_subj RLIKE '^ㄹ' OR (post_subj >='라' AND post_subj <'마')";
+                    } else if($option['initial'] == 'ㅁ'){
+                        $count_sql .= "post_subj RLIKE '^ㅁ' OR (post_subj >='마' AND post_subj <'바')";
+                    } else if($option['initial'] == 'ㅂ'){
+                        $count_sql .= "post_subj RLIKE '^ㅂ' OR (post_subj >='바' AND post_subj <'사')";
+                    } else if($option['initial'] == 'ㅅ'){
+                        $count_sql .= "post_subj RLIKE '^(ㅅ|ㅆ)' OR (post_subj >='사' AND post_subj <'아')";
+                    } else if($option['initial'] == 'ㅇ'){
+                        $count_sql .= "post_subj RLIKE '^ㅇ' OR (post_subj >='아' AND post_subj <'자')";
+                    } else if($option['initial'] == 'ㅈ'){
+                        $count_sql .= "post_subj RLIKE '^(ㅈ|ㅉ)' OR (post_subj >='자' AND post_subj <'차')";
+                    } else if($option['initial'] == 'ㅊ'){
+                        $count_sql .= "post_subj RLIKE '^ㅊ' OR (post_subj >='차' AND post_subj <'카')";
+                    } else if($option['initial'] == 'ㅋ'){
+                        $count_sql .= "post_subj RLIKE '^ㅋ' OR (post_subj >='카' AND post_subj <'타')";
+                    } else if($option['initial'] == 'ㅌ'){
+                        $count_sql .= "post_subj RLIKE '^ㅌ' OR (post_subj >='타' AND post_subj <'파')";
+                    } else if($option['initial'] == 'ㅍ'){
+                        $count_sql .= "post_subj RLIKE '^ㅍ' OR (post_subj >='파' AND post_subj <'하')";
+                    } else if($option['initial'] == 'ㅎ'){
+                        $count_sql .= "post_subj RLIKE '^ㅎ' OR (post_subj >='하')";
+                    }
+
+                    $this->db->where($count_sql, NULL, FALSE);
+                    //$this->db->like('post_subj', $option['initial']);
+                }
+
 
                 if (isset($option['s_cat']) && $option['s_cat']) { // comment : 대상 글 idx
                     $this->db->like('post_cat', $option['s_cat']);
