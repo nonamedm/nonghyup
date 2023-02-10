@@ -322,8 +322,8 @@ class DM_basic extends CI_MODEL
 
                 //initial 초성 검색
                 if (isset($option['initial']) && $option['initial']) { // 참관자 및 관리자 제외
-
-                    $count_sql = '';
+                
+                    $count_sql = ' (';
 
                     if($option['initial'] == 'ㄱ') {
                         $count_sql .= "post_subj RLIKE '^(ㄱ|ㄲ)' OR (post_subj >='가' AND post_subj <'나')";
@@ -354,6 +354,7 @@ class DM_basic extends CI_MODEL
                     } else if($option['initial'] == 'ㅎ'){
                         $count_sql .= "post_subj RLIKE '^ㅎ' OR (post_subj >='하')";
                     }
+                    $count_sql .= ') ';
 
                     $this->db->where($count_sql, NULL, FALSE);
                     //$this->db->like('post_subj', $option['initial']);
