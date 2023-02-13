@@ -152,6 +152,23 @@ $config['svc_tree'] = [
                         ,'file'         => ''
                         ,'edtr'         => 'Y'
                         ,'sub'	        => []
+                    ],[
+                        'id'	        => 'personnelTrends'
+                        ,'tit'	        => ['인사동향','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => ''
+                        ,'tbl'	        => 'ct_personnelTrends'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'news'
+                        ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => ''
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
                     ]
                 ]
             ]
