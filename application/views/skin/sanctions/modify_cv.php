@@ -26,7 +26,7 @@
                 <div class="uk-margin-small uk-width-1-1">
                     <label class="uk-form-label">대상기관</label>
                     <div class="uk-form-controls">
-                        <input class="uk-input" type="text" name="post_status" id="post_status" value="<?php echo $modify['post_summary'];?>">
+                        <input class="uk-input" type="text" name="post_status" id="post_status" value="<?php echo $modify['post_status'];?>">
                     </div>
                 </div>
 
