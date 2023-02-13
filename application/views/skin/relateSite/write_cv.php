@@ -14,19 +14,21 @@
                 <!--<input type="hidden" name="usr_idx" value="<?php /*echo $usr_idx;*/?>">--><?php // ***** user email ?>
 
                 <div class="uk-margin-small uk-width-1-1">
+                    <label class="uk-form-label">상단고정</label>
+                    <div class="uk-form-controls">
+                        <!--<input class="uk-input" type="number" name="test" id="test" placeholder="">-->
+                        <input class="uk-checkbox" type="checkbox" name="post_fix" value="Y" checked> 체크시 고정
+                    </div>
+                </div>
+                
+                <div class="uk-margin-small uk-width-1-1">
                     <label class="uk-form-label">웹사이트명</label>
                     <div class="uk-form-controls">
                         <input class="uk-input" type="text" name="post_subj" id="post_subj" placeholder="">
                     </div>
                 </div>
 
-                <div class="uk-margin-small uk-width-1-1">
-                    <label class="uk-form-label">test</label>
-                    <div class="uk-form-controls">
-                        <!--<input class="uk-input" type="number" name="test" id="test" placeholder="">-->
-                        <input class="uk-checkbox" type="checkbox" name="test" value="Y" checked> 체크시 고정
-                    </div>
-                </div>
+
 
                 <div class="uk-margin-small uk-width-1-1">
                     <label class="uk-form-label">설명</label>

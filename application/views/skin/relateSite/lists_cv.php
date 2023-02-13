@@ -41,7 +41,7 @@
                     <?php for($i=0; $i<count($lists); $i++, $li_idx--){ ?>
 
                         <tr class="mtr <?php
-                            if ($lists[$i]['test'] == 'Y') echo "fix";?>" >
+                            if ($lists[$i]['post_fix'] == 'Y') echo "fix";?>" >
                             <td class="">
                                 <div class="tit">
                                     <?php if($lists[$i]['post_link_addr'] && !$is_adm_mod){ ?>
@@ -61,7 +61,7 @@
                             </td>
                         </tr>
                         <tr class="wtr <?php
-                            if ($lists[$i]['test'] == 'Y') echo "fix";?>">
+                            if ($lists[$i]['post_fix'] == 'Y') echo "fix";?>">
                             <td class="w40"><?php echo $li_idx;?></td>
                             <td class="w170"><?php echo $lists[$i]['post_subj'];?></td>
                             <td class="tit" id="tit<?php echo $i;?>">
