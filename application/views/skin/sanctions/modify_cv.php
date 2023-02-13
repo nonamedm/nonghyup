@@ -24,9 +24,9 @@
                 </div>
 
                 <div class="uk-margin-small uk-width-1-1">
-                    <label class="uk-form-label">요약</label>
+                    <label class="uk-form-label">대상기관</label>
                     <div class="uk-form-controls">
-                        <input class="uk-input" type="text" name="post_summary" id="post_summary" value="<?php echo $modify['post_summary'];?>">
+                        <input class="uk-input" type="text" name="post_status" id="post_status" value="<?php echo $modify['post_summary'];?>">
                     </div>
                 </div>
 
@@ -34,29 +34,13 @@
                     <label class="uk-form-label">내용</label>
                     <div class="uk-form-controls">
                         <textarea class="uk-textarea ckeditor" name="post_cont" id="post_cont" rows='10'><?php echo $modify['post_cont'];?></textarea>
-                        <!--<textarea class="uk-textarea" id="post_cont_editor" rows='10'></textarea>
-                        <input type="hidden" name="post_cont" id="post_cont" value='<?php /*echo $modify['post_cont'];*/?>'>-->
                     </div>
                 </div>
 
                 <div class="uk-margin-small uk-width-1-4@m">
-                    <label class="uk-form-label">추진현황</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input" type="text" name="post_status" id="post_status" value="<?php echo $modify['post_status'];?>">
-                    </div>
-                </div>
-
-                <div class="uk-margin-small uk-width-1-4@m">
-                    <label class="uk-form-label">추진현황일시</label>
+                    <label class="uk-form-label">제재조치요구일</label>
                     <div class="uk-form-controls">
                         <input class="uk-input datepicker" type="text" name="post_dtms" id="post_dtms" value="<?php echo $modify['post_dtms'];?>" readonly>
-                    </div>
-                </div>
-
-                <div class="uk-margin-small uk-width-1-4@m">
-                    <label class="uk-form-label">소관부처</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input" type="text" name="post_field" id="post_field" value="<?php echo $modify['post_field'];?>">
                     </div>
                 </div>
 
@@ -64,27 +48,6 @@
                     <label class="uk-form-label">등록일</label>
                     <div class="uk-form-controls">
                         <input class="uk-input datepicker" type="text" name="crt_dtms" id="crt_dtms" value="<?php echo $modify['crt_dtms'];?>" readonly>
-                    </div>
-                </div>
-
-                <div class="uk-margin-small uk-width-1-1">
-                    <label class="uk-form-label">키워드</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input" type="text" name="post_keyword" id="post_keyword" value="<?php echo $modify['post_keyword'];?>">
-                    </div>
-                </div>
-
-                <div class="uk-margin-small uk-width-3-4@m">
-                    <label class="uk-form-label">외부링크</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input" type="text" name="post_link_addr" id="post_link_addr" placeholder="주소입력시 보기화면에서 원문링크탭이 나타납니다." value="<?php echo $modify['post_link_addr'];?>">
-                    </div>
-                </div>
-
-                <div class="uk-margin-small uk-width-1-4@m">
-                    <label class="uk-form-label">링크옵션</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-checkbox" type="checkbox" name="post_link_trgt" value="<?php echo $modify['post_link_trgt'];?>" <?php if($modify['post_link_trgt']=='_blank'){ echo 'checked';}?>> 체크시 새창으로
                     </div>
                 </div>
 

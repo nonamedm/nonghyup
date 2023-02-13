@@ -15,7 +15,8 @@
                 <div class="view_tit"><?php echo $view['post_subj'];?></div>
 
                 <div class="info">
-                    <span class="date uk-margin-right"><span class="tit">등록일 :</span> <?php echo substr($view['crt_dtms'], 2, 8);?></span>
+                    <span class="date uk-margin-right"><span class="tit">대상기관 : </span> <?php echo $view['crt_dtms']?></span>
+                    <span class="date uk-margin-right"><span class="tit">등록일 :</span> <?php echo substr($view['post_status'], 2, 8);?></span>
                 </div>
                 <div class="tabs">
                     <?php if(isset($file[0]['file_name']) && $file[0]['file_name']){?>
@@ -53,8 +54,8 @@
                 ?>
 
                 <div class="data uk-placeholder">
-                    <div class="unit"><span class="tit">추진현황 : </span><span class="txt"><?php echo $view['post_status'];?>(<?php echo $view['post_dtms'];?>)</span></div>
-                    <div class="unit"><span class="tit">소관부처 : </span><span class="txt"><?php echo $view['post_field'];?></span></div>
+                    <div class="unit"><span class="tit">제재조치요구일 : </span><span class="txt"><?php echo $view['post_status'];?>(<?php echo $view['post_dtms'];?>)</span></div>
+                    <!--<div class="unit"><span class="tit">소관부처 : </span><span class="txt"><?php /*echo $view['post_field'];*/?></span></div>-->
                 </div>
 
 

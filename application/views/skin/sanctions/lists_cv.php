@@ -25,10 +25,9 @@
                 <thead class="wth">
                     <tr>
                         <th class="w40">번호</th>
-                        <th class="w170">추진현황</th>
+                        <th class="w170">대상기관</th>
                         <th class="tit">제목</th>
-                        <th class="w120">소관부처</th>
-                        <th class="w90">등록일 </th>
+                        <th class="w120">제재조치요구일</th>
                         <?php if($is_adm_mod){ ?>
                             <th class="no">좋아요</th>
                             <th class="no">댓글수</th>
@@ -59,7 +58,7 @@
                         </tr>
                         <tr class="wtr">
                             <td class="w40"><?php echo $li_idx;?></td>
-                            <td class="w170"><?php echo $lists[$i]['post_status'];?> (<?php echo substr($lists[$i]['post_dtms'], 2,8);?>)</td>
+                            <td class="w170"><?php echo $lists[$i]['post_status'];?></td>
                             <td class="tit" id="tit<?php echo $i;?>">
                                 <?php if($lists[$i]['post_link_addr'] && !$is_adm_mod){ ?>
                                 <a href="<?php echo $lists[$i]['post_link_addr'];?>" target="<?php echo $lists[$i]['post_link_trgt'];?>" class="chk_perm_view">
@@ -71,8 +70,7 @@
                                 </a><?php echo get_label_new($lists[$i]['crt_dtms']);?>
                                     <?php if($lists[$i]['post_link_addr']){ ?><span class="uk-label link">외부링크연결</span><?php } ?>
                             </td>
-                            <td class="w120"><?php echo $lists[$i]['post_field'];?></td>
-                            <td class="w90"><?php echo substr($lists[$i]['crt_dtms'], 2, 8);?></td>
+                            <td class="w120"><?php echo $lists[$i]['post_dtms'];?></td>
                             <?php if($is_adm_mod){ ?>
                                 <td class="no"><?php echo $lists[$i]['post_like'];?></td>
                                 <td class="no"><?php echo $lists[$i]['post_cmt_cnt'];?></td>
