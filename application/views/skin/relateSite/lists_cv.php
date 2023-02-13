@@ -19,6 +19,7 @@
 
     // ***** bbs list
     ?>
+
     <div class="brd_bdy uk-overflow-auto">
         <?php if( count($lists) ){ ?>
             <table class="uk-table uk-table-small uk-table-divider">
@@ -38,7 +39,9 @@
                 </thead>
                 <tbody>
                     <?php for($i=0; $i<count($lists); $i++, $li_idx--){ ?>
-                        <tr class="mtr">
+
+                        <tr class="mtr <?php
+                            if ($lists[$i]['test'] == 'Y') echo "fix";?>" >
                             <td class="">
                                 <div class="tit">
                                     <?php if($lists[$i]['post_link_addr'] && !$is_adm_mod){ ?>
@@ -57,7 +60,8 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr class="wtr">
+                        <tr class="wtr <?php
+                            if ($lists[$i]['test'] == 'Y') echo "fix";?>">
                             <td class="w40"><?php echo $li_idx;?></td>
                             <td class="w170"><?php echo $lists[$i]['post_subj'];?></td>
                             <td class="tit" id="tit<?php echo $i;?>">
@@ -95,4 +99,31 @@
     $this->load->view("brd/common_btn");
     ?>
 
+<script>
+    (function() {
+        console.log('list');
+        setTimeout(() => tr_fix(), 200);
+
+
+        function tr_fix(){
+            var tr = $('.uk-table-divider > tbody').children();
+            var tr_len = $('.uk-table-divider > tbody').children().length;
+
+            for(var i = tr_len; i>=0; i--){
+                if(tr.eq(i).hasClass('fix')){
+                    var a = tr.eq(i);
+                    if(i==0){
+                        a = tr.eq(0).next().after(tr.eq(1));
+                    }else{
+                        a = tr.eq(0).next().after(tr.eq(i));
+                    }
+                    tr.eq(i).css('backgroundColor','#f4f4f4');
+                    // tr.eq(i).children()[1]
+                    // tr.eq(i).children()[2].css('font-color','red');
+
+                }
+            }
+        }
+    })();
+</script>
 <!-- 게시글 목록 :: 시작-->

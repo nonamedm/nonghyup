@@ -6,7 +6,7 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
 <div class="brd_write">
-    <form id="brdFormDefault" method="POST" action="/<?php echo $seg;?>/<?php echo $m_id;?>/insert" enctype="multipart/form-data" class="uk-form-stacked"><!--  -->
+    <form id="brdFormDefault" method="POST" action="/<?php echo $seg;?>/<?php echo $m_id;?>/" enctype="multipart/form-data" class="uk-form-stacked"><!--  -->
         <div class="uk-child-width-1-4@m uk-grid-small" uk-grid>
             <input type="hidden" id="mode" value="write">
             <input type="hidden" id="m_id" value="<?php echo $m_id;?>">
