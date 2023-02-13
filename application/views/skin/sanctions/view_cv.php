@@ -57,13 +57,6 @@
                     <div class="unit"><span class="tit">제재조치요구일 : </span><span class="txt"><?php echo $view['post_dtms'];?></span></div>
                 </div>
 
-
-
-                <?php
-                //if($view['post_summary']){
-                //    echo "<div class='uk-placeholder summary'>".$view['post_summary']."</div>";
-                //}
-                ?>
                 <?php
                 if(count($file)){
                     for($i=0; $i<count($file); $i++){

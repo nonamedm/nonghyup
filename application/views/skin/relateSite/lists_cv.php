@@ -28,7 +28,7 @@
                         <th class="w170">웹사이트명</th>
                         <th class="tit">설명</th>
                         <th class="w120">URL</th>
-                        <!--<th class="w90">등록일 </th>-->
+
                         <?php if($is_adm_mod){ ?>
                             <th class="no">좋아요</th>
                             <th class="no">댓글수</th>

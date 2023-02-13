@@ -18,9 +18,6 @@
                     <span class="date uk-margin-right"><span class="tit">등록일 :</span> <?php echo substr($view['crt_dtms'], 2, 8);?></span>
                 </div>
                 <div class="tabs">
-<!--                    <?php /*if(isset($file[0]['file_name']) && $file[0]['file_name']){*/?>
-                        <a href="#" class="tab vw"> 첨부파일 (<?php /*echo $attach_file_cnt;*/?>) <img src="/static/svg/list_expend.svg" class="tab_icon"></a>
-                    --><?php /*}*/?>
                     <?php if($view['post_link_addr']){ ?>
                         <a href="<?php echo $view['post_link_addr'];?>" target="<?php echo $view['post_link_trgt'];?>" class="tab lnk"><span>URL</span> 링크 <img src="/static/svg/link.svg" class="tab_icon"></a>
                     <?php } ?>
@@ -52,37 +49,10 @@
                 }
                 ?>
 
-             <!--   <div class="data uk-placeholder">
-                    <div class="unit"><span class="tit">추진현황 : </span><span class="txt"><?php /*echo $view['post_status'];*/?>(<?php /*echo $view['post_dtms'];*/?>)</span></div>
-                    <div class="unit"><span class="tit">소관부처 : </span><span class="txt"><?php /*echo $view['post_field'];*/?></span></div>
-                </div>
--->
-
-
-                <?php
-                //if($view['post_summary']){
-                //    echo "<div class='uk-placeholder summary'>".$view['post_summary']."</div>";
-                //}
-                ?>
-               <!-- <?php
-/*                if(count($file)){
-                    for($i=0; $i<count($file); $i++){
-                        if (explode('/', $file[$i]['file_type'])[0]=='image'){
-                            */?>
-                            <img src="/static/data/<?php /*echo $m_id;*/?>/<?php /*echo $file[$i]['file_name'];*/?>">
-                            --><?php
-/*                        }
-                    }
-                }
-                */?>
                 <div class="bd">
                     <?php echo $view['post_summary'];?>
                 </div>
-                <?php
-                //if($view['post_keyword']){
-                //    echo "<div class='uk-placeholder keyword'>".$view['post_keyword']."</div>";
-                //}
-                ?>
+
             </div>
         </div>
     <?php }else{ ?>
