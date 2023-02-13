@@ -14,7 +14,15 @@
                 <input type="hidden" name="usr_id" value="<?php echo $usr['usr_id'];?>">
                 <input type="hidden" name="usr_nm" id="usr_nm" value="<?php echo $usr['usr_nm'];?>">
 
-
+                <div class="uk-margin-small uk-width-1-1">
+                    <label class="uk-form-label">상단고정</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-checkbox" type="checkbox" name="post_fix" value="<?php echo $modify['post_fix'];?>"
+                               <?php if($modify['post_fix'] =='Y')
+                                   echo "checked" ;
+                               ?>> 체크시 고정
+                    </div>
+                </div>
 
                 <div class="uk-margin uk-width-1-1">
                     <label class="uk-form-label">웹사이트명</label>
