@@ -14,10 +14,9 @@
                 <!--<input type="hidden" name="usr_idx" value="<?php /*echo $usr_idx;*/?>">--><?php // ***** user email ?>
 
                 <div class="uk-margin-small uk-width-1-1">
-                    <label class="uk-form-label">상단고정</label>
+                    <label class="uk-form-label" >상단고정</label>
                     <div class="uk-form-controls">
-                        <!--<input class="uk-input" type="number" name="test" id="test" placeholder="">-->
-                        <input class="uk-checkbox" type="checkbox" name="post_fix" value="Y" checked> 체크시 고정
+                        <input class="uk-checkbox" type="checkbox" name="post_fix" onClick="check(this)" value="Y"> 체크시 고정
                     </div>
                 </div>
                 
@@ -37,12 +36,12 @@
                     </div>
                 </div>
 
-                <div class="uk-margin-small uk-width-1-4@m">
-                    <label class="uk-form-label">등록일</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input datepicker" type="text" name="crt_dtms" id="crt_dtms" value="" readonly>
-                    </div>
-                </div>
+<!--                <div class="uk-margin-small uk-width-1-4@m">-->
+<!--                    <label class="uk-form-label">등록일</label>-->
+<!--                    <div class="uk-form-controls">-->
+<!--                        <input class="uk-input datepicker" type="text" name="crt_dtms" id="crt_dtms" value="" readonly>-->
+<!--                    </div>-->
+<!--                </div>-->
 
                 <div class="uk-margin-small uk-width-1-4@m">
                     <label class="uk-form-label">링크옵션</label>
@@ -72,6 +71,20 @@
 
 </div>
 <!-- 게시글 쓰기 :: 끝-->
+<script type="text/javascript">
+
+        function check(box){
+            if(box.checked == true){
+                box.value = "Y";
+                box.checked == true;
+            }else{
+                box.value = "N";
+                box.checked == false;
+            }
+
+        }
+
+</script>
 
 
 

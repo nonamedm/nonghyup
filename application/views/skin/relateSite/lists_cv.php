@@ -99,28 +99,37 @@
     $this->load->view("brd/common_btn");
     ?>
 
-<script>
+<script type="text/javascript">
     (function() {
-        console.log('list');
+
         setTimeout(() => tr_fix(), 200);
 
-
         function tr_fix(){
-            var tr = $('.uk-table-divider > tbody').children();
-            var tr_len = $('.uk-table-divider > tbody').children().length;
-
+            var tr = $('.uk-table-divider > tbody > tr');
+            var tr_len = $('.uk-table-divider > tbody > tr ').length;
+            // for(var b=tr_len; b>=0; b--){
+            //
+            //     if(tr.eq(b).hasClass('fix')){
+            //         var a = tr.eq(b);
+            //         console.log(a);
+            //         // a = tr.eq(0).next().after(tr.eq(b));
+            //         tr.eq(b).css('backgroundColor','#f4f4f4');
+            //     }else{
+            //         console.log("fix 안됨"+b);
+            //     }
+            // }
             for(var i = tr_len; i>=0; i--){
+                var a = tr.eq(i);
                 if(tr.eq(i).hasClass('fix')){
-                    var a = tr.eq(i);
-                    if(i==0){
+                    if(i == 0){
                         a = tr.eq(0).next().after(tr.eq(1));
                     }else{
                         a = tr.eq(0).next().after(tr.eq(i));
                     }
                     tr.eq(i).css('backgroundColor','#f4f4f4');
-                    // tr.eq(i).children()[1]
-                    // tr.eq(i).children()[2].css('font-color','red');
-
+                    a.children().eq(0).html('-');
+                }else{
+                    a = tr.eq(i).prev().before(tr.eq(i));
                 }
             }
         }

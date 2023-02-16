@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
-<script src="/static/js/jquery/jquery-1.8.1.min.js"></script>
+<script src="/static/js//jquery-1.8.1.min.js"></script>
 <script type="text/javascript" src="/static/js/uikit.min.js"></script>
 <script type="text/javascript" src="/static/js/slick_main.js"></script>
 
