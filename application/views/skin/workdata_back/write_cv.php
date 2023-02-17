@@ -1,33 +1,17 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
+
+<!-- 게시글 쓰기 :: 시작-->
+
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
 <div class="brd_write">
-    <form id="brdFormDefault" method="POST" action="/<?php echo $seg;?>/<?php echo $m_id;?>/insert" enctype="multipart/form-data" class="uk-form-stacked"><!--  -->
+    <form id="brdFormDefault" method="POST" action="/<?php echo $seg;?>/<?php echo $m_id;?>/" enctype="multipart/form-data" class="uk-form-stacked"><!--  -->
         <div class="uk-child-width-1-4@m uk-grid-small" uk-grid>
             <input type="hidden" id="mode" value="write">
             <input type="hidden" id="m_id" value="<?php echo $m_id;?>">
             <input type="hidden" name="usr_id" value="<?php echo $usr['usr_id'];?>">
             <!--<input type="hidden" name="usr_idx" value="<?php /*echo $usr_idx;*/?>">--><?php // ***** user email ?>
-
-            <?php if($m_id=='intnlctrl') { ?>                
-                <div class="uk-margin-small uk-width-1-5@m">
-                    <label class="uk-form-label">구분</label>
-                    <div class="uk-form-controls">
-                        <select class="uk-select" id="post_opt">
-                            <option value="보도자료" <?php if($cat=='common'){echo 'selected';}?>>보도자료</option>
-                            <option value="연구자료" <?php if($cat=='bank'){echo 'selected';}?>>연구자료</option>
-                            <option value="제·개정" <?php if($cat=='investment'){echo 'selected';}?>>제·개정</option>
-                            <option value="기타" <?php if($cat=='microfinance'){echo 'selected';}?>>기타</option>
-                        </select>
-                    </div>
-                </div>
-            <?php } else if($m_id=='finnaccexp'){?>
-                <div class="uk-margin-small uk-width-1-5@m">
-                    <label class="uk-form-label">구분</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input" type="text" name="post_opt" id="post_opt" value="">
-                    </div>
-                </div>
-            <?php } else {}?>
 
 
             <div class="uk-margin-small uk-width-1-1">
@@ -48,37 +32,44 @@
                 <label class="uk-form-label">내용</label>
                 <div class="uk-form-controls">
                     <textarea class="uk-textarea ckeditor" name="post_cont" id="post_cont" rows='10'></textarea>
+                    <!--<textarea class="uk-textarea" name="post_cont" id="post_cont_editor" rows='10'></textarea>
+                    <input type="hidden" name="post_cont" id="post_cont" value=''>-->
                 </div>
             </div>
 
-            <div class="uk-margin-small uk-width-2-3@m">
+            <div class="uk-margin-small uk-width-1-3@m">
+                <label class="uk-form-label">법령명</label>
+                <div class="uk-form-controls">
+                    <input class="uk-input" type="text" name="post_opt" id="post_opt" value="">
+                </div>
+            </div>
+
+            <div class="uk-margin-small uk-width-1-3@m">
+                <label class="uk-form-label">발행기관</label>
+                <div class="uk-form-controls">
+                    <input class="uk-input" type="text" name="post_field" id="post_field" value="">
+                </div>
+            </div>
+
+            <div class="uk-margin-small uk-width-1-3@m">
+                <label class="uk-form-label">회신일</label>
+                <div class="uk-form-controls">
+                    <input class="uk-input datepicker" type="text" name="post_dtms" id="post_dtms" value="" readonly>
+                </div>
+            </div>
+
+            <div class="uk-margin-small uk-width-1-1">
                 <label class="uk-form-label">키워드</label>
                 <div class="uk-form-controls">
                     <input class="uk-input" type="text" name="post_keyword" id="post_keyword" placeholder="">
                 </div>
             </div>
 
-
-            <div class="uk-margin-small uk-width-1-6@m">
-                <label class="uk-form-label">등록일</label>
-                <div class="uk-form-controls">
-                    <input class="uk-input datepicker" type="text" name="crt_dtms" id="crt_dtms" value="" readonly>
-                </div>
-            </div>
-
-
-
-            <div class="uk-margin-small uk-width-1-6@m">
-                <label class="uk-form-label">작성자</label>
-                <div class="uk-form-controls">
-                    <input class="uk-input" type="text" name="usr_nm" id="usr_nm" value="<?php echo $usr['usr_nm'];?>">
-                </div>
-            </div>
-
-
+            <!--<input type="hidden" name="crt_dtms" id="crt_dtms" value="">-->
+            <input type="hidden" name="usr_nm" id="usr_nm" value="<?php echo $usr['usr_nm'];?>">
 
             <div class="uk-margin-small uk-width-3-4@m">
-                <label class="uk-form-label">원문링크</label>
+                <label class="uk-form-label">외부링크</label>
                 <div class="uk-form-controls">
                     <input class="uk-input" type="text" name="post_link_addr" id="post_link_addr" placeholder="주소입력시 보기화면에서 원문링크탭이 나타납니다.">
                 </div>
@@ -102,3 +93,17 @@
 
     </form>
 </div>
+
+
+<!-- 게시글 쓰기 :: 끝-->
+
+
+
+
+    
+    
+
+    
+
+
+    

@@ -6,6 +6,10 @@
             <thead class="wth">
             <tr>
                 <th class="no">번호 </th>
+                <?php if($m_id=='intnlctrl'||$m_id=='finnaccexp') { ?>                
+                    <th class="cat">분류</th>
+                <?php } else {?>
+                <?php } ?>
                 <th class="tit">제목 </th>
                 <th class="part">작성자 </th>
                 <th class="reg_date">등록일 </th>
@@ -33,6 +37,10 @@
                 </tr>
                 <tr class="wtr">
                     <td class="no"><?php echo $li_idx;?></td>
+                    <?php if($m_id=='intnlctrl'||$m_id=='finnaccexp') { ?>                
+                        <td class="cat"><div class="w100 ellipsis"><?php echo $lists[$i]['post_opt'];?></div></td>
+                    <?php } else {?>
+                    <?php } ?>
                     <td class="tit" id="tit<?php echo $i;?>">
                         <a href="/<?php echo $seg;?>/<?php echo $m_id;?>/view?idx=<?php echo $lists[$i]['idx'];?>" class="chk_perm_view">
                             <?php echo $lists[$i]['post_subj'];?><span class="uk-label hidden" id="post_summary<?php echo $i;?>"><?php echo $lists[$i]['post_summary'];?></span>
