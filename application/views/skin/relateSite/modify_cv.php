@@ -9,7 +9,7 @@
             <div class="uk-child-width-1-4@m uk-grid-small" uk-grid>
                 <input type="hidden" id="mode" value="modify">
                 <input type="hidden" id="m_id" value="<?php echo $m_id;?>">
-                <input type="hidden" id="upload_files_num" value="<?php echo $upload_files_num;?>">
+                <!--<input type="hidden" id="upload_files_num" value="<?php /*echo $upload_files_num;*/?>">-->
                 <input type="hidden" id="idx" name="idx" value="<?php echo $idx;?>">
                 <input type="hidden" name="usr_id" value="<?php echo $usr['usr_id'];?>">
                 <input type="hidden" name="usr_nm" id="usr_nm" value="<?php echo $usr['usr_nm'];?>">
@@ -17,10 +17,7 @@
                 <div class="uk-margin-small uk-width-1-1">
                     <label class="uk-form-label">상단고정</label>
                     <div class="uk-form-controls">
-                        <input class="uk-checkbox" type="checkbox" name="post_fix" value="<?php echo $modify['post_fix'];?>"
-                               <?php if($modify['post_fix'] =='Y')
-                                   echo "checked" ;
-                               ?>> 체크시 고정
+                        <input class="uk-checkbox" id="post_fix" type="checkbox" name="post_fix" onchange="check(this)" value="<?php echo $modify['post_fix'];?>"> 체크시 고정
                     </div>
                 </div>
 
@@ -65,4 +62,23 @@
 
 
 </div>
+<script type="text/javascript">
+    (function() {
+
+        setTimeout(() => check(), 600);
+
+        function check() {
+            var post_fix_chk = $('#post_fix').is(':checked');
+            var post_fix=$('#post_fix').val();
+            if (post_fix == 'Y') {
+                $('#post_fix').val('Y');
+                $('input:checkbox[name="post_fix"]').prop('checked', true);
+            } else {
+                $('#post_fix').val('N');
+                $('input:checkbox[name="post_fix"]').prop('checked', false);
+            }
+
+        }
+    })();
+</script>
 <!-- 게시글 수정 :: 끝-->

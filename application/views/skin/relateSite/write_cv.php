@@ -16,7 +16,7 @@
                 <div class="uk-margin-small uk-width-1-1">
                     <label class="uk-form-label" >상단고정</label>
                     <div class="uk-form-controls">
-                        <input class="uk-checkbox" type="checkbox" name="post_fix" onClick="check(this)" value="Y"> 체크시 고정
+                        <input class="uk-checkbox" id="post_fix" type="checkbox" name="post_fix" onchange="check(this)" value=""> 체크시 고정
                     </div>
                 </div>
                 
@@ -36,12 +36,12 @@
                     </div>
                 </div>
 
-<!--                <div class="uk-margin-small uk-width-1-4@m">-->
-<!--                    <label class="uk-form-label">등록일</label>-->
-<!--                    <div class="uk-form-controls">-->
-<!--                        <input class="uk-input datepicker" type="text" name="crt_dtms" id="crt_dtms" value="" readonly>-->
-<!--                    </div>-->
-<!--                </div>-->
+                <div class="uk-margin-small uk-width-1-4@m">
+                    <label class="uk-form-label">등록일</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input datepicker" type="text" name="crt_dtms" id="crt_dtms" value="" readonly>
+                    </div>
+                </div>
 
                 <div class="uk-margin-small uk-width-1-4@m">
                     <label class="uk-form-label">링크옵션</label>
@@ -74,12 +74,13 @@
 <script type="text/javascript">
 
         function check(box){
-            if(box.checked == true){
-                box.value = "Y";
-                box.checked == true;
+            var post_fix_chk = $('#post_fix').is(':checked');
+            if(post_fix_chk == true){
+                $('#post_fix').val('Y');
+                $('input:checkbox[name="post_fix"]').prop('checked',true);
             }else{
-                box.value = "N";
-                box.checked == false;
+                $('#post_fix').val('N');
+                $('input:checkbox[name="post_fix"]').prop('checked',false);
             }
 
         }

@@ -18,6 +18,10 @@ class DL_lists
     // ***** 정렬기준
     public $ord = "DESC";
     public $orderBy = " crt_dtms DESC ";
+    
+    //*****상단기준
+    public $post_fix = "";
+
 
     // ***** 검색
     public $s_word = "";
@@ -97,6 +101,9 @@ class DL_lists
             // ***** grid col num
             $grid_col = 3;
 
+            //*****fix
+            $this->post_fix =              $this->CI->get_val('post_fix');
+
             // ***** limit num
 
             // ***** limit start
@@ -114,7 +121,6 @@ class DL_lists
 
 
 
-            //echo $this->p_ord;
             if($this->p_ord){
                 $this->orderBy = " crt_dtms ".$this->p_ord." ";
             }
@@ -128,15 +134,16 @@ class DL_lists
             // ***** DB값 요청
             $param_cm = array(
                 'tb_id'     => $this->CI->config->item("md")['tbl'],
+                'where'     => $this->whereFIX,
                 'order'     => $this->orderBy,
                 //'post_lng'   => $this->lng_cd,
                 'li_st'     => $this->li_st,
                 'li_num'    => $this->li_num,
-                'initial'    => $this->initial
+                'initial'    => $this->initial,
+                'post_fix'    => $this->post_fix
             );
 
             //print_r($param_cm);
-
             /*
             ----------------------------------------
             검색모드
@@ -183,6 +190,7 @@ class DL_lists
 
             if ($this->m_id=='translate' || $this->m_id=='noaction') {
                 $param_cm['order'] = " post_dtms ".$this->p_ord.",  crt_dtms ".$this->p_ord." ";
+
             }else if($this->m_id=='precedent'){
                 $param_cm['order'] = " post_dtms ".$this->p_ord." ";
             }
@@ -191,7 +199,7 @@ class DL_lists
             $res_lists = array();
 
 
-            //echo $this->svc_mod;
+//            echo $this->svc_mod;
             if ($this->svc_mod=='adm') // adm
             {
                 if ($this->CI->config->item("md")['fld']=="usr")
@@ -220,7 +228,7 @@ class DL_lists
                         $param_cm['order'] = ' idx DESC, crt_dtms DESC ';
                     }
 
-//print_r($param_cm);
+                    //print_r($param_cm);
                     $res_lists = $this->CI->DM_basic->getList($param_cm);
 
                     $this->CI->load->library('encryption');
