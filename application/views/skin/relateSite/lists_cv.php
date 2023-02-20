@@ -59,9 +59,9 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr class="wtr <?php
-                            if ($lists[$i]['post_fix'] == 'Y') echo "fix";?>">
-                            <td class="w40"><?php echo $li_idx;?></td>
+                        <tr class="wtr <?php if ($lists[$i]['post_fix'] == 'Y') echo "fix";?>" 
+                                       <?php if ($lists[$i]['post_fix'] == 'Y') echo "style=background-color:#f4f4f4"; ?>>
+                            <td class="w40"><?php if($lists[$i]['post_fix'] == 'Y') echo '-'; else echo $li_idx; ?></td>
                             <td class="w170"><?php echo $lists[$i]['post_subj'];?></td>
                             <td class="tit" id="tit<?php echo $i;?>">
                                 <?php if($is_adm_mod){ ?>
@@ -99,23 +99,6 @@
     ?>
 
 <script type="text/javascript">
-    (function() {
-
-        setTimeout(() => tr_fix(), 200);
-
-        function tr_fix(){
-            var tr = $('.uk-table-divider > tbody > tr');
-            var tr_len = $('.uk-table-divider > tbody > tr ').length;
-
-            for(var i = tr_len; i>=0; i--){
-                if(tr.eq(i).hasClass('fix')){
-
-                    tr.eq(i).css('backgroundColor','#f4f4f4');
-                    tr.eq(i).children().eq(0).html('-');
-                }
-
-            }
-        }
-    })();
+    
 </script>
 <!-- 게시글 목록 :: 시작-->
