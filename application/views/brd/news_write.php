@@ -12,11 +12,11 @@
                 <div class="uk-margin-small uk-width-1-5@m">
                     <label class="uk-form-label">구분</label>
                     <div class="uk-form-controls">
-                        <select class="uk-select" id="post_opt">
-                            <option value="보도자료" <?php if($cat=='common'){echo 'selected';}?>>보도자료</option>
-                            <option value="연구자료" <?php if($cat=='bank'){echo 'selected';}?>>연구자료</option>
-                            <option value="제·개정" <?php if($cat=='investment'){echo 'selected';}?>>제·개정</option>
-                            <option value="기타" <?php if($cat=='microfinance'){echo 'selected';}?>>기타</option>
+                        <select class="uk-select" name="post_opt" id="post_opt">
+                            <option value="보도자료" >보도자료</option>
+                            <option value="연구자료">연구자료</option>
+                            <option value="제·개정">제·개정</option>
+                            <option value="기타">기타</option>
                         </select>
                     </div>
                 </div>
