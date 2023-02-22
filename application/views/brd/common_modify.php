@@ -44,7 +44,7 @@
                     <div class="uk-margin-small uk-width-1-3@m">
                         <label class="uk-form-label">회신일</label>
                         <div class="uk-form-controls">
-                            <input class="uk-input datepicker" type="text" name="post_dtms" id="post_dtms" value="<?php echo $modify['post_dtms'];?>" readonly>
+                            <input class="uk-input datepicker" type="text" name="post_dtms" id="post_dtms" value="<?php echo $modify['post_dtms'];?>" placeholder="YYYY-MM-DD">
                         </div>
                     </div>
                 <?php }?>
@@ -69,7 +69,7 @@
                 <div class="uk-margin-small uk-width-1-6@m">
                     <label class="uk-form-label">등록일</label>
                     <div class="uk-form-controls">
-                        <input class="uk-input datepicker" type="text" name="crt_dtms" id="crt_dtms" value="<?php echo $modify['crt_dtms'];?>" readonly>
+                        <input class="uk-input datepicker" type="text" name="crt_dtms" id="crt_dtms" value="<?php echo $modify['crt_dtms'];?>" placeholder="YYYY-MM-DD">
                     </div>
                 </div>
                 <?php } ?>

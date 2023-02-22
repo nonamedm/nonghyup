@@ -34,7 +34,7 @@
             <div class="uk-margin">
                 <label class="uk-form-label">시행일</label>
                 <div class="uk-form-controls">
-                    <input class="uk-input datepicker" type="text" name="post_dtms" id="post_dtms" placeholder="" value="<?php echo $modify['post_dtms'];?>" readonly>
+                    <input class="uk-input datepicker" type="text" name="post_dtms" id="post_dtms" value="<?php echo $modify['post_dtms'];?>" placeholder="YYYY-MM-DD">
                 </div>
             </div>
 

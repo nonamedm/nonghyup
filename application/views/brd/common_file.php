@@ -68,13 +68,20 @@ else if($bbs_mod == 'write')
     { 
         $files_nm = $form_arr['files']['placeholder'][$lng_idx];
 ?>
-    <div class="uk-display-block uk-margin-small file_box">
+    <div class="uk-display-block uk-margin-small file_box uk-grid">
         <label class="uk-form-label">첨부파일 <?php echo $i+1;?></label>
         <div class="uk-form-controls" uk-form-custom="target: true">
             <input type="file" id="file<?php echo $i;?>" name="file<?php echo $i;?>">
             <input class="uk-input uk-margin-small-bottom file_input" id="file_nm<?php echo $i;?>" type="text" placeholder="<?php echo $files_nm;?>" disabled>
         </div>
+        <div class="uk-margin-small uk-width-1-4@m">
+            <label class="uk-form-label">다운로드 가부</label>
+            <div class="uk-form-controls">
+                <input class="uk-checkbox" type="checkbox" name="download_yn" value="_blank" checked> 체크시 다운로드 가능
+            </div>
+        </div>
     </div>
+    
 
     <!--<div class="uk-display-block" uk-form-custom="target: true">
         <input type="file" id="file<?php /*echo $i;*/?>" name="file<?php /*echo $i;*/?>">

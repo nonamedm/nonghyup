@@ -40,7 +40,7 @@
             <div class="uk-margin-small uk-width-1-4@l uk-width-1-3@m">
                 <label class="uk-form-label">판결선고일</label>
                 <div class="uk-form-controls">
-                    <input class="uk-input datepicker" type="text" name="post_dtms" id="post_dtms" value="" readonly>
+                    <input class="uk-input datepicker" type="text" name="post_dtms" id="post_dtms" value="" placeholder="YYYY-MM-DD">
                 </div>
             </div>
 
