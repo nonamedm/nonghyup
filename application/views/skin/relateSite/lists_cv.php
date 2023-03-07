@@ -25,10 +25,10 @@
             <table class="uk-table uk-table-small uk-table-divider">
                 <thead class="wth">
                     <tr>
-                        <th class="w40">번호</th>
-                        <th class="w170">웹사이트명</th>
-                        <th class="tit">설명</th>
-                        <th class="w120">URL</th>
+                        <th class="w40" style="width:5%;">번호</th>
+                        <th class="w170"style="width:15%;">웹사이트명</th>
+                        <th class="tit" style="width:60%;">설명</th>
+                        <th class="w120" style="width:20%;">URL</th>
 
                         <?php if($is_adm_mod){ ?>
                             <th class="no">조회수</th>
@@ -99,6 +99,6 @@
     ?>
 
 <script type="text/javascript">
-    
+
 </script>
 <!-- 게시글 목록 :: 시작-->
