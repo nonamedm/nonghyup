@@ -36,11 +36,16 @@
                 ?>
                         <div>
                             <span class="txt"><?php echo $file[$i]['orig_name'];?></span>
-                                <a href="/ko/<?php echo $m_id;?>/dnload?idx=<?php echo $file[$i]['trgt_idx'];?>&fl=<?php echo $i+1;?>" class="unit uk-margin-small-left" title="다운로드"><span class="uk-label down_label">다운로드</span></a>
                             <?php
-                            $ext = explode('/', $file[$i]['file_type'])[1];
-                            if ($ext=='pdf'){ ?>
-                                <a href="/static/data/<?php echo $m_id;?>/<?php echo $file[$i]['file_name'];?>" target="_blank" class="unit" title="바로보기"><span class="uk-label view_label">바로보기</span></a>
+                                $dload = $file[$i]['download_yn'];
+                                $ext = explode('/', $file[$i]['file_type'])[1];
+                                if($dload=='Y' && $ext=='pdf') {?>
+                                    <a href="/ko/<?php echo $m_id;?>/dnload?idx=<?php echo $file[$i]['trgt_idx'];?>&fl=<?php echo $i+1;?>" class="unit" title="다운로드"><span class="uk-label down_label">다운로드</span></a>
+                            <?php } ?>
+                            <?php
+                                $ext = explode('/', $file[$i]['file_type'])[1];
+                                if ($ext=='pdf' || $ext=='png' || $ext=='jpeg'){ ?>
+                                    <a href="/static/data/<?php echo $m_id;?>/<?php echo $file[$i]['file_name'];?>" target="_blank" class="unit" title="바로보기"><span class="uk-label view_label">바로보기</span></a>
                             <?php } ?>
                         </div>
                 <?php

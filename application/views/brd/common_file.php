@@ -77,7 +77,7 @@ else if($bbs_mod == 'write')
         <div class="uk-margin-small uk-width-1-4@m">
             <label class="uk-form-label">다운로드 가부</label>
             <div class="uk-form-controls">
-                <input class="uk-checkbox" type="checkbox" name="download_yn" value="_blank" checked> 체크시 다운로드 가능
+                <input class="uk-checkbox" type="checkbox" name="download_yn" value="Y" checked> 체크시 다운로드 가능
             </div>
         </div>
     </div>
@@ -113,6 +113,13 @@ for ($i=0; $i<$upload_files_num; $i++) {
             <?php if (isset($file[$i]) && $file[$i]) { ?>
             <input type="checkbox" class="uk-checkbox uk-margin-left" style="z-index: 10;" name="del<?php echo $i;?>" value="1" > 삭제
             <?php } ?>
+        </div>
+        <div class="uk-margin-small uk-width-1-4@m">
+            <label class="uk-form-label">다운로드 가부</label>
+            <div class="uk-form-controls">
+                <input class="uk-checkbox" type="checkbox" name="download_yn" 
+                    value='Y' <?php if($modify['download_yn']=="Y"){ echo 'checked';}?>> 체크시 다운로드 가능
+            </div>
         </div>
     </div>
 <?php

@@ -6,7 +6,7 @@ class DL_lists
     // *****
     public $li_st = 0;
 
-    public $initial = "";
+    public $initial = "ㄱ";
 
     // *****
     public $li_num = 15;

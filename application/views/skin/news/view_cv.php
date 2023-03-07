@@ -16,6 +16,6 @@
     // ***** bbs comment
     $this->load->view("brd/common_cmt_lists");
 
-?>
+            ?>
 
 <!-- 게시글 보기 :: 끝-->
