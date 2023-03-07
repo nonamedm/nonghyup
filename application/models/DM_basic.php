@@ -216,7 +216,7 @@ class DM_basic extends CI_MODEL
 
             if (isset($option['li_st']) && isset($option['li_num']) && $option['li_num'] && $option['tb_id'] != 'ct_current') {
                 if(isset($option['order']) && $option['order']){
-                    $sql .= ' ORDER BY post_fix DESC,'. $this->db->escape_str($option['order']);
+                    $sql .= ' ORDER BY post_fix DESC,post_fix_num *1 ASC,'. $this->db->escape_str($option['order']);
                 }
                 $sql .= ' LIMIT ' . $this->db->escape_str($option['li_st']) . ', ' . $this->db->escape_str($option['li_num']);
             } 

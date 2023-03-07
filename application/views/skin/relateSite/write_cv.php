@@ -14,12 +14,19 @@
                 <!--<input type="hidden" name="usr_idx" value="<?php /*echo $usr_idx;*/?>">--><?php // ***** user email ?>
 
                 <div class="uk-margin-small uk-width-1-1">
-                    <label class="uk-form-label" >상단고정</label>
+                    <label class="uk-form-label" ></label>
                     <div class="uk-form-controls">
-                        <input class="uk-checkbox" id="post_fix" type="checkbox" name="post_fix" onchange="check(this)" value=""> 체크시 고정
+                        <input class="uk-checkbox" id="post_fix" type="checkbox" name="post_fix" onchange="check(this)" value="">상단 체크
                     </div>
                 </div>
                 
+                <div class="uk-margin-small uk-width-1-1">
+                    <label class="uk-form-label">상단 번호</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" type="number" name="post_fix_num"  placeholder="">
+                    </div>
+                </div>
+
                 <div class="uk-margin-small uk-width-1-1">
                     <label class="uk-form-label">웹사이트명</label>
                     <div class="uk-form-controls">

@@ -111,20 +111,14 @@ class DL_lists
                 $this->li_st = ($this->pg_idx - 1) * $this->li_num;
             }
 
-            
-
 
             //echo $this->s_word;
             // ***** Order
 
 
-
-
-
             if($this->p_ord){
                 $this->orderBy = " crt_dtms ".$this->p_ord." ";
             }
-
 
             /*
              * ------------------------------
