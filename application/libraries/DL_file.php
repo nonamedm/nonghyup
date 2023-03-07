@@ -5,7 +5,7 @@ class DL_file
 {
     // *****
     public $rtn_files = "";
-    public $idx, $m_id;
+    public $idx, $m_id, $download_yn;
 
     protected $CI;
 
