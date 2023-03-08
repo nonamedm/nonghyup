@@ -32,6 +32,10 @@
     $this->load->view("brd/common_sort");
     ?>
 
+    <?php
+    // ***** bbs pagination
+    $this->load->view("brd/current_pagination");
+    ?>
 
     <div class="brd_bdy uk-overflow-auto">
     <?php // bbs list
@@ -81,10 +85,8 @@
     <?php } ?>
     </div>
 
+    
     <?php
-    // ***** bbs pagination
-    $this->load->view("brd/current_pagination");
-
     // ***** bbs nav
     $this->load->view("brd/common_btn");
     ?>
