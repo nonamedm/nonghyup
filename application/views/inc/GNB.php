@@ -19,6 +19,8 @@
                     <?php if($nav_tree[0]['sub'][$i]['sub'][$j]['id']=='sanctions'){ ?>
                     <!--<a href="https://www.fss.or.kr/fss/job/openInfo/list.do?menuNo=200476" target="_blank">-->
                     <a href="/<?php echo $lng_cd;?>/<?php echo $nav_tree[0]['sub'][$i]['sub'][$j]['id']; ?>" class="<?php if($nav_tree[0]['sub'][$i]['sub'][$j]['id']==$m_id){ echo 'focus';}?>">
+                    <?php }else if($nav_tree[0]['sub'][$i]['sub'][$j]['id']=='current'){ ?>
+                    <a href="/<?php echo $lng_cd;?>/<?php echo $nav_tree[0]['sub'][$i]['sub'][$j]['id'] ?>/lists?initial=ㄱ" class="<?php if($nav_tree[0]['sub'][$i]['sub'][$j]['id']==$m_id){ echo 'focus';}?>">
                     <?php }else{ ?>
                     <a href="/<?php echo $lng_cd;?>/<?php echo $nav_tree[0]['sub'][$i]['sub'][$j]['id']; ?>" class="<?php if($nav_tree[0]['sub'][$i]['sub'][$j]['id']==$m_id){ echo 'focus';}?>">
                     <?php } ?>
