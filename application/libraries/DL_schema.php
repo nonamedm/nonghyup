@@ -285,6 +285,7 @@ class DL_schema
                     ,'image_height'     =>''
                     ,'image_type'       =>''
                     ,'image_size_str'   =>''
+                    ,'download_yn'      =>''
                 );
                 break;
 

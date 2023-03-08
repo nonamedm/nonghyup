@@ -103,6 +103,7 @@ for ($i=0; $i<$upload_files_num; $i++) {
     $files_nm = '파일선택';
     if (isset($file[$i]) && $file[$i]) {
         $files_nm = $file[$i]['orig_name'];
+        $files_download_yn = $file[$i]['download_yn'];
     }
 ?>
     <div class="uk-display-block uk-margin-small file_box">
@@ -118,7 +119,7 @@ for ($i=0; $i<$upload_files_num; $i++) {
             <label class="uk-form-label">다운로드 가부</label>
             <div class="uk-form-controls">
                 <input class="uk-checkbox" type="checkbox" name="download_yn" 
-                    value='Y' <?php if($modify['download_yn']=="Y"){ echo 'checked';}?>> 체크시 다운로드 가능
+                    value="Y" <?php if($files_download_yn=='Y'){ echo 'checked';}?>> 체크시 다운로드 가능
             </div>
         </div>
     </div>
