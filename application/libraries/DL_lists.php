@@ -25,6 +25,7 @@ class DL_lists
 
     // ***** 검색
     public $s_word = "";
+    public $s_rfsw = "";
     public $lists_mode = "";
     public $s_sds = '';
     public $s_sde = '';
@@ -93,6 +94,7 @@ class DL_lists
             $this->s_cat =              $this->CI->get_val('s_cat');
             $this->initial =            $this->CI->get_val('initial');
             $this->s_word =             $this->CI->get_val('s_word');
+            $this->s_rfsw =             $this->CI->get_val('s_rfsw');
             $this->s_sds =              $this->CI->get_val('s_sds');
             $this->s_sde =              $this->CI->get_val('s_sde');
             $this->s_lng =              $this->CI->get_val('s_lng');
@@ -146,6 +148,7 @@ class DL_lists
             if ($this->s_word) {
 
                 $param_cm['s_word'] = $this->s_word;
+                $param_cm['s_rfsw'] = $this->s_rfsw;
 
                 //$this->lists_mode = 'sch';
                 $param_cm['s_trgt_arr']=array('post_subj', 'post_cont', 'post_keyword');
@@ -210,6 +213,10 @@ class DL_lists
 
                     if (isset($param_cm['s_word']) && $param_cm['s_word']) {
                         $param_cm['s_word_hash'] = hash('sha512', md5($param_cm['s_word']));
+                    }
+
+                    if (isset($param_cm['s_rfsw']) && $param_cm['s_rfsw']) {
+                        $param_cm['s_rfsw_hash'] = hash('sha512', md5($param_cm['s_rfsw']));
                     }
 
                     if($this->p_ord){
@@ -331,6 +338,7 @@ class DL_lists
                 ,'modify_perm'  =>$this->CI->chk_perm('modify')
                 ,'lists_mode'   =>$this->lists_mode
                 ,'s_word'       =>$this->s_word
+                ,'s_rfsw'       =>$this->s_rfsw
                 ,'s_cat'        =>$this->s_cat
                 ,'s_sds'        =>$this->s_sds
                 ,'s_sde'        =>$this->s_sde

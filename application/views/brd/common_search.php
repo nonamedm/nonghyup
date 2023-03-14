@@ -92,6 +92,7 @@
         <button class="uk-close-large uk-position-top-right m_brd_search_close" type="button" uk-close></button>
         <input type="hidden" id="dtl_opt" value="0">
         <input type="text" id="brd_sch" class="uk-input brd_sch_field" name="s_word" placeholder="검색어 입력" value="<?php if($s_word){echo $s_word;}?>">
+        <input type="hidden" id="rs_wrd" value="<?php if($s_word){ echo $s_word;}?>">
         <button type="button" id="brd_sch_btn" class="brd_sch_btn">검색</button>
         <?php if($m_id!='current'){?>
         <button class="brd_sch_dtl_btn"><span class="uk-label law">기간검색</span></button>
@@ -103,5 +104,6 @@
             <input class="uk-input datepicker" id="sch_date_start" type="text" placeholder="검색시작일" value="<?php if($s_sds){echo $s_sds;}?>" readonly> ~ <input class="uk-input datepicker" id="sch_date_end" type="text" placeholder="검색종료일" value="<?php if($s_sde){echo $s_sde;}?>" readonly>
         </div>
     </div>
+    <span class="re_search_box"> <input type="checkbox" class="uk-checkbox re_sch"> 결과 내 재검색</span>
 
 <?php } ?>

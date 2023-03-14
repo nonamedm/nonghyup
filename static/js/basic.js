@@ -963,6 +963,7 @@ document.querySelector('body').addEventListener('keypress', function (e) {
 
 function sch_simple(){
     let rtn = true;
+    let s_rfsw = '';
 
     if (rtn && !$("#brd_sch").val()) {
         alert('검색어를 입력해 주세요');
@@ -984,17 +985,30 @@ function sch_simple(){
 
 
     var s_word = $("#brd_sch").val();
+    
+    if(rtn){
+        if($(".re_sch").attr("checked")){
+            console.log("결과 내 재검색");
+            s_rfsw = $("#rs_wrd").val();
+        } else {
+            s_rfsw = '';
+            console.log("재검색");
+        }
+    }
 
     if (rtn){
         rtn = false;
+        let param = '';
+        if(s_rfsw){
+            param += '&s_rfsw='+s_rfsw;
+        }
         if($("#dtl_opt").val()==1){
             let s_sds = $("#sch_date_start").val();
             let s_sde = $("#sch_date_end").val();
-            location.href="/" + seg + "/" + m_id + "/lists?s_word=" + s_word+"&s_sds="+s_sds+"&s_sde="+s_sde;
+            location.href="/" + seg + "/" + m_id + "/lists?s_word=" + s_word+"&s_sds="+s_sds+"&s_sde="+s_sde+param;
         }else{
-            location.href="/" + seg + "/" + m_id + "/lists?s_word=" + s_word;
+            location.href="/" + seg + "/" + m_id + "/lists?s_word=" + s_word+param;
         }
-
     }
     return false;
 }

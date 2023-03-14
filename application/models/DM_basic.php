@@ -102,6 +102,10 @@ class DM_basic extends CI_MODEL
                 if (isset($option['s_word_hash']) && $option['s_word_hash']) { // 참관자 및 관리자 제외
                     $sql .= ' AND ( usr_nm_hash = "' .$option['s_word_hash']. '" OR usr_email_hash = "' .$option['s_word_hash'].'" OR usr_id LIKE "%' .$option['s_word']. '%") ';
                 }
+
+                if (isset($option['s_rfsw_hash']) && $option['s_rfsw_hash']) { // 참관자 및 관리자 제외
+                    $sql .= ' AND ( usr_nm_hash = "' .$option['s_rfsw_hash']. '" OR usr_email_hash = "' .$option['s_rfsw_hash'].'" OR usr_id LIKE "%' .$option['s_rfsw']. '%") ';
+                }
             } else {
                 if (isset($option['usr_id']) && $option['usr_id']) {
                     $sql .= ' AND usr_id = "' . $this->db->escape_str($option['usr_id']) . '"';
@@ -136,6 +140,16 @@ class DM_basic extends CI_MODEL
                     $sql .= ' post_field LIKE "%' . $this->db->escape_str($option['s_word']) . '%" ';
                     $sql .= ' OR post_subj LIKE "%' . $this->db->escape_str($option['s_word']) . '%" ';
                     $sql .= ' OR post_keyword LIKE "%' . $this->db->escape_str($option['s_word']) . '%" ';
+                    //if ($option['tb_id']=="ct_precedent") {
+                    //    $sql .= ' OR post_cat LIKE "%'.$option['s_word'].'%" ';
+                    //}
+                    $sql .= ') ';
+                }
+                if (isset($option['s_rfsw']) && $option['s_rfsw']) { // 참관자 및 관리자 제외
+                    $sql .= ' AND (';
+                    $sql .= ' post_field LIKE "%' . $this->db->escape_str($option['s_rfsw']) . '%" ';
+                    $sql .= ' OR post_subj LIKE "%' . $this->db->escape_str($option['s_rfsw']) . '%" ';
+                    $sql .= ' OR post_keyword LIKE "%' . $this->db->escape_str($option['s_rfsw']) . '%" ';
                     //if ($option['tb_id']=="ct_precedent") {
                     //    $sql .= ' OR post_cat LIKE "%'.$option['s_word'].'%" ';
                     //}
@@ -272,6 +286,12 @@ class DM_basic extends CI_MODEL
                     $this->db->or_like('usr_id', $option['s_word']);
                 }
 
+                if (isset($option['s_rfsw_hash']) && $option['s_rfsw_hash']) { // 참관자 및 관리자 제외
+                    $this->db->like('usr_nm_hash', $option['s_rfsw_hash']);
+                    $this->db->or_like('usr_email_hash', $option['s_rfsw_hash']);
+                    $this->db->or_like('usr_id', $option['s_rfsw']);
+                }
+
             } else if ($option['tb_id'] == "ct_qna" || $option['tb_id'] == "ct_improvement") {
                 if (isset($option['usr_id']) && $option['usr_id']) {
                     $this->db->where('usr_id', $option['usr_id']);
@@ -285,6 +305,12 @@ class DM_basic extends CI_MODEL
                     $this->db->like('usr_nm', $option['s_word']);
                     $this->db->or_like('usr_id', $option['s_word']);
                     $this->db->or_like('usr_email', $option['s_word']);
+                }
+
+                if (isset($option['s_rfsw']) && $option['s_rfsw']) { // 참관자 및 관리자 제외
+                    $this->db->like('usr_nm', $option['s_rfsw']);
+                    $this->db->or_like('usr_id', $option['s_rfsw']);
+                    $this->db->or_like('usr_email', $option['s_rfsw']);
                 }
             } else {
                 if (isset($option['usr_id']) && $option['usr_id']) { // current cat
@@ -319,6 +345,15 @@ class DM_basic extends CI_MODEL
                     $this->db->like('post_field', $option['s_word']);
                     $this->db->or_like('post_subj', $option['s_word']);
                     $this->db->or_like('post_keyword', $option['s_word']);
+                    //if($option['tb_id']=='ct_precedent'){
+                    //    $this->db->or_like('post_cat', $option['s_cat']);
+                    //}
+                }
+
+                if (isset($option['s_rfsw']) && $option['s_rfsw']) { // 참관자 및 관리자 제외
+                    $this->db->like('post_field', $option['s_rfsw']);
+                    $this->db->or_like('post_subj', $option['s_rfsw']);
+                    $this->db->or_like('post_keyword', $option['s_rfsw']);
                     //if($option['tb_id']=='ct_precedent'){
                     //    $this->db->or_like('post_cat', $option['s_cat']);
                     //}
@@ -888,6 +923,12 @@ class DM_basic extends CI_MODEL
                 //$sql .= ' OR brd_cont LIKE "%'.$option['s_word'].'%" ';
             }
 
+            if (isset($option['s_rfsw']) && $option['s_rfsw']) { // 참관자 및 관리자 제외
+                $sql .= ' AND (post_subj LIKE "%'. $this->db->escape_str($option['s_rfsw']).'%" OR post_cont LIKE "%'.$this->db->escape_str($option['s_rfsw']).'%" OR post_keyword LIKE "%'.$this->db->escape_str($option['s_rfsw']).'%" ) ';
+                //$sql .= ' OR brd_subj LIKE "%'.$option['s_word'].'%" ';
+                //$sql .= ' OR brd_cont LIKE "%'.$option['s_word'].'%" ';
+            }
+
             if (isset($option['order']) && $option['order']) {
                 $sql .= ' ORDER BY '.$this->db->escape_str($option['order']);
             }
@@ -976,6 +1017,13 @@ class DM_basic extends CI_MODEL
                 $this->db->like('post_subj', $option['s_word']);
                 $this->db->or_like('post_cont', $option['s_word']);
                 $this->db->or_like('post_keyword', $option['s_word']);
+            }
+
+            if( isset($option['s_rfsw']) && $option['s_rfsw'] ) // 참관자 및 관리자 제외
+            {
+                $this->db->like('post_subj', $option['s_rfsw']);
+                $this->db->or_like('post_cont', $option['s_rfsw']);
+                $this->db->or_like('post_keyword', $option['s_rfsw']);
             }
 
             $this->db->from($option['tb_id']);
