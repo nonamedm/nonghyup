@@ -197,9 +197,16 @@ class DM_basic extends CI_MODEL
                     $sql .= ' AND  post_cat LIKE "%' . $this->db->escape_str($option['s_cat']) . '%" ';
                 }
 
-                if ((isset($option['s_sds']) && $option['s_sds']) && (isset($option['s_sde']) && $option['s_sde'])) { // 참관자 및 관리자 제외
-                    $sql .= ' AND post_dtms >= "' . $this->db->escape_str($option['s_sds']) . '" ';
-                    $sql .= ' AND post_dtms <= "' . $this->db->escape_str($option['s_sde']) . '" ';
+                if($option['tb_id']=='ct_precedent' || $option['tb_id']=='ct_translate' || $option['tb_id']=='ct_noaction'){
+                    if ((isset($option['s_sds']) && $option['s_sds']) && (isset($option['s_sde']) && $option['s_sde'])) { // 참관자 및 관리자 제외
+                        $sql .= ' AND post_dtms >= "' . $this->db->escape_str($option['s_sds']) . '" ';
+                        $sql .= ' AND post_dtms <= "' . $this->db->escape_str($option['s_sde']) . '" ';
+                    }
+                }else{
+                    if ((isset($option['s_sds']) && $option['s_sds']) && (isset($option['s_sde']) && $option['s_sde'])) { // 참관자 및 관리자 제외
+                        $sql .= ' AND crt_dtms >= "' . $this->db->escape_str($option['s_sds']) . '" ';
+                        $sql .= ' AND crt_dtms <= "' . $this->db->escape_str($option['s_sde']) . '" ';
+                    }
                 }
 
                 if (isset($option['s_lng']) && $option['s_lng']) { // current opt
@@ -403,10 +410,18 @@ class DM_basic extends CI_MODEL
                 if (isset($option['s_cat']) && $option['s_cat']) { // comment : 대상 글 idx
                     $this->db->like('post_cat', $option['s_cat']);
                 }
-                if ((isset($option['s_sds']) && $option['s_sds']) && (isset($option['s_sde']) && $option['s_sde'])) {
-                    $this->db->where('post_dtms >', $option['s_sds']);
-                    $this->db->where('post_dtms <', $option['s_sde']);
+                if($option['tb_id']=='ct_precedent' || $option['tb_id']=='ct_translate' || $option['tb_id']=='ct_noaction'){
+                    if ((isset($option['s_sds']) && $option['s_sds']) && (isset($option['s_sde']) && $option['s_sde'])) {
+                        $this->db->where('post_dtms >', $option['s_sds']);
+                        $this->db->where('post_dtms <', $option['s_sde']);
+                    }
+                }else{
+                    if ((isset($option['s_sds']) && $option['s_sds']) && (isset($option['s_sde']) && $option['s_sde'])) {
+                        $this->db->where('crt_dtms >', $option['s_sds']);
+                        $this->db->where('crt_dtms <', $option['s_sde']);
+                    }
                 }
+                
                 if (isset($option['s_lng']) && $option['s_lng']) {
                     $this->db->where('post_lng', $option['s_lng']);
                 }

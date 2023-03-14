@@ -104,6 +104,6 @@
             <input class="uk-input datepicker" id="sch_date_start" type="text" placeholder="검색시작일" value="<?php if($s_sds){echo $s_sds;}?>" readonly> ~ <input class="uk-input datepicker" id="sch_date_end" type="text" placeholder="검색종료일" value="<?php if($s_sde){echo $s_sde;}?>" readonly>
         </div>
     </div>
-    <span class="re_search_box"> <input type="checkbox" class="uk-checkbox re_sch"> 결과 내 재검색</span>
+    <span class="re_search_box" style="position: absolute;top: 7px;right: 10px;"> <input type="checkbox" class="uk-checkbox re_sch"> 결과 내 재검색</span>
 
 <?php } ?>
