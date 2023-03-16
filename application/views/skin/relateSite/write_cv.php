@@ -23,7 +23,20 @@
                 <div class="uk-margin-small uk-width-1-1">
                     <label class="uk-form-label">상단 번호</label>
                     <div class="uk-form-controls">
-                        <input class="uk-input" type="number" name="post_fix_num"  placeholder="">
+<!--                        <input class="uk-input" type="number" name="post_fix_num"  placeholder="">-->
+                        <select id="post_fix_num" name="post_fix_num" onchange="fixcheck(this.value)">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
                     </div>
                 </div>
 
@@ -89,7 +102,10 @@
                 $('#post_fix').val('N');
                 $('input:checkbox[name="post_fix"]').prop('checked',false);
             }
+        }
 
+        function fixcheck(value){
+            $("#post_fix_num").val(Number(value));
         }
 
 </script>

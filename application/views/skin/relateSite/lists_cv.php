@@ -37,10 +37,9 @@
                 </thead>
                 <tbody>
                     <?php for($i=0; $i<count($lists); $i++, $li_idx--){ ?>
-
                         <tr class="mtr <?php
-                            if ($lists[$i]['post_fix'] == 'Y') echo "fix";
-                            ?>" >
+                        if ($lists[$i]['post_fix'] == 'Y') echo "fix";
+                        ?>" >
                             <td class="">
                                 <div class="tit">
                                     <?php if($lists[$i]['post_link_addr'] && !$is_adm_mod){ ?>

@@ -24,10 +24,10 @@
             <table class="uk-table uk-table-small uk-table-divider">
                 <thead class="wth">
                     <tr>
-                        <th class="w40">번호</th>
-                        <th class="w170">대상기관</th>
-                        <th class="tit">제목</th>
-                        <th class="w120">제재조치요구일</th>
+                        <th class="w40" style="width:5%;">번호</th>
+                        <th class="w170" style="width:15%;">대상기관</th>
+                        <th class="tit" style="width:50%;">제목</th>
+                        <th class="w120" style="width:30%;">제재조치요구일</th>
                         <?php if($is_adm_mod){ ?>
                             <th class="no">좋아요</th>
                             <th class="no">댓글수</th>
@@ -37,7 +37,9 @@
                 </thead>
                 <tbody>
                     <?php for($i=0; $i<count($lists); $i++, $li_idx--){ ?>
-                        <tr class="mtr">
+                        <tr class="mtr <?php
+                        if ($lists[$i]['post_fix'] == 'Y') echo "fix";
+                        ?>" >
                             <td class="">
                                 <div class="tit">
                                     <?php if($lists[$i]['post_link_addr'] && !$is_adm_mod){ ?>
@@ -56,8 +58,9 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr class="wtr">
-                            <td class="w40"><?php echo $li_idx;?></td>
+                        <tr class="wtr <?php if ($lists[$i]['post_fix'] == 'Y') echo "fix";?>"
+                            <?php if ($lists[$i]['post_fix'] == 'Y') echo "style=background-color:#f4f4f4"; ?>>
+                            <td class="w40"><?php if($lists[$i]['post_fix'] == 'Y') echo '-'; else echo $li_idx; ?></td>
                             <td class="w170"><?php echo $lists[$i]['post_status'];?></td>
                             <td class="tit" id="tit<?php echo $i;?>">
                                 <?php if($lists[$i]['post_link_addr'] && !$is_adm_mod){ ?>

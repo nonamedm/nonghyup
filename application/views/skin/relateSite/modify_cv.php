@@ -18,14 +18,26 @@
                     <label class="uk-form-label"></label>
                     <div class="uk-form-controls">
                         <input class="uk-checkbox fix_chk" id="post_fix" type="checkbox" name="post_fix" onchange="check(this)" value="<?php echo $modify['post_fix'];?>"> 체크시 고정
-
                     </div>
                 </div>
 
                 <div class="uk-margin uk-width-1-1">
                     <label class="uk-form-label">상단 번호</label>
                     <div class="uk-form-controls">
-                        <input class="uk-input" type="number" name="post_fix_num" value="<?php echo $modify['post_fix_num'];?>">
+<!--                        <input class="uk-input" type="number" name="post_fix_num" value="--><?php //echo $modify['post_fix_num'];?><!--">-->
+                        <select id="post_fix_num" name="post_fix_num" onchange="fixcheck(this.value)">
+                            <option value="0" <?if($modify['post_fix_num']==0) echo "selected"?>>0</option>
+                            <option value="1" <?if($modify['post_fix_num']==1) echo "selected"?>>1</option>
+                            <option value="2" <?if($modify['post_fix_num']==2) echo "selected"?>>2</option>
+                            <option value="3" <?if($modify['post_fix_num']==3) echo "selected"?>>3</option>
+                            <option value="4" <?if($modify['post_fix_num']==4) echo "selected"?>>4</option>
+                            <option value="5" <?if($modify['post_fix_num']==5) echo "selected"?>>5</option>
+                            <option value="6" <?if($modify['post_fix_num']==6) echo "selected"?>>6</option>
+                            <option value="7" <?if($modify['post_fix_num']==7) echo "selected"?>>7</option>
+                            <option value="8" <?if($modify['post_fix_num']==8) echo "selected"?>>8</option>
+                            <option value="9" <?if($modify['post_fix_num']==9) echo "selected"?>>9</option>
+                            <option value="10" <?if($modify['post_fix_num']==10) echo "selected"?>>10</option>
+                        </select>
                     </div>
                 </div>
 
@@ -85,7 +97,9 @@
                 $('#post_fix').val('N');
                 $('input:checkbox[name="post_fix"]').prop('checked', false);
             }
-
+        }
+        function fixcheck(value){
+            $("#post_fix_num").val(Number(value));
         }
     })();
 </script>
