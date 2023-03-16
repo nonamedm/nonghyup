@@ -61,8 +61,8 @@
                         <tr class="wtr <?php if ($lists[$i]['post_fix'] == 'Y') echo "fix";?>" 
                                        <?php if ($lists[$i]['post_fix'] == 'Y') echo "style=background-color:#f4f4f4"; ?>>
                             <td class="w40"><?php if($lists[$i]['post_fix'] == 'Y') echo '-'; else echo $li_idx; ?></td>
-                            <td class="w170"><?php echo $lists[$i]['post_subj'];?></td>
-                            <td class="tit" id="tit<?php echo $i;?>">
+                            <td class="w170" style="text-align: left;"><?php echo $lists[$i]['post_subj'];?></td>
+                            <td class="tit" id="tit<?php echo $i;?>" style="text-align: left;">
                                 <?php if($is_adm_mod){ ?>
                                     <a href="/<?php echo $seg;?>/<?php echo $m_id;?>/view?idx=<?php echo $lists[$i]['idx'];?>" class="chk_perm_view">
                                         <?php echo $lists[$i]['post_summary'];?>
