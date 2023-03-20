@@ -248,7 +248,76 @@ body #header #mblmenu {display: none; background: #2B347B;}
     body #header .GNB ul.gnb {display: none;}
 }
 
+/*
+banner
+*/
+body #header .noticeBannerW {
+    position: absolute;
+    top: 210px;
+    right: 60px;
+    padding: 0 32px 0 20px;
+    border-radius: 45px 0 45px 45px;
+    background: #eeeff3;
+}
 
+body #header .noticeBannerW .noticeBanner {
+    display: block;
+    padding: 18px 10px;
+    font-size: 20px;
+    font-size: 1.0rem;
+    text-align: left;
+}
+
+body #header .noticeBannerW a {
+    text-decoration: none;
+    color: #000;
+}
+
+body #header .noticeBannerW .noticeBanner p {
+    line-height: 1.1;
+    margin: 0;
+}
+body #header .txtBold {
+    font-weight: 700;
+}
+
+body #header .noticeBannerW .btnClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 52px;
+    height: 52px;
+    border: 0;
+    background: none;
+    outline: 0;
+    cursor: pointer;
+}
+
+body #header .noticeBannerW .btnClose:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 0 0 -10px;
+    width: 22px;
+    height: 2px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: #b1b2b3;
+}
+
+body #header .noticeBannerW .btnClose:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 0 0 -10px;
+    width: 22px;
+    height: 2px;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    background-color: #b1b2b3;
+}
 
 /* ------------------------------------------------------------
 body .section *

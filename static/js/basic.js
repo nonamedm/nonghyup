@@ -673,12 +673,12 @@ $(document).ready(function() {
             $("#tab_0").css({'display': 'none'});
             $("#tab_1").css({'display': 'block'});
             // more
-            $(".latest .tab_box>a").attr("href", "/ko/pr");
+            $(".latest .tab_box>a").attr("href", "/ko/lawmaking");
         }else{
             $("#tab_0").css({'display': 'block'});
             $("#tab_1").css({'display': 'none'});
             // more
-            $(".latest .tab_box>a").attr("href", "/ko/lawmaking");
+            $(".latest .tab_box>a").attr("href", "/ko/pr");
         }
         return false;
     });

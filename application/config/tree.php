@@ -45,25 +45,6 @@ $config['svc_tree'] = [
         ,'sub'	        => [
 
             [
-                'id'	        => 'brief'
-                ,'idx'	        => 0
-                ,'tit'	        => ['Legal Brief','']
-                ,'typ'          => 'cont'
-                ,'fnc'          => 'bbs'
-                ,'mod'          => 'lists'
-                ,'cat'          => ''
-                ,'tbl'	        => 'ct_brief'
-                ,'fld'	        => 'basic'
-                ,'skin'         => 'brief'
-                ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
-                ,'status'       => ''
-                ,'lng_mode_yn'  => ''
-                ,'visible_yn'   => ''
-                ,'file'         => 1
-                ,'edtr'         => 'Y'
-                ,'sub'	        => []
-            ]
-            ,[
                 'id'	        => 'trends'
                 ,'idx'	        => 1
                 ,'tit'	        => ['금융규제동향','']
@@ -229,9 +210,105 @@ $config['svc_tree'] = [
                 ]
             ]
             ,[
+                'id'	        => 'brief'
+                ,'idx'	        => 0
+                ,'tit'	        => ['Legal Brief','']
+                ,'typ'          => 'cont'
+                ,'fnc'          => 'bbs'
+                ,'mod'          => 'lists'
+                ,'cat'          => ''
+                ,'tbl'	        => 'ct_brief'
+                ,'fld'	        => 'basic'
+                ,'skin'         => 'brief'
+                ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
+                ,'status'       => ''
+                ,'lng_mode_yn'  => ''
+                ,'visible_yn'   => ''
+                ,'file'         => 1
+                ,'edtr'         => 'Y'
+                ,'sub'	        => []
+            ]
+            ,[
+                'id'	        => 'workdata'
+                ,'idx'	        => 6
+                ,'tit'	        => ['업무자료','']
+                ,'typ'         => 'label'
+                ,'fnc'         => ''
+                ,'mod'         => ''
+                ,'cat'          => ''
+                ,'tbl'	        => ''
+                ,'fld'	        => ''
+                ,'skin'         => ''
+                ,'perm'         => ''
+                ,'status'       => ''
+                ,'lng_mode_yn'  => ''
+                ,'visible_yn'   => ''
+                ,'file'         => ''
+                ,'edtr'         => ''
+                ,'sub'	        => [
+                    [
+                        'id'	        => 'intnlctrl'
+                        ,'tit'	        => ['내부통제','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => ''
+                        ,'tbl'	        => 'ct_intnlctrl'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'workdata'
+                        // ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
+                        ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'reply'=>1, 'modify'=>1, 'delete'=>1, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => 1
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
+                    ,[
+                        'id'	        => 'finnaccexp'
+                        ,'tit'	        => ['금융사고사례','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => ''
+                        ,'tbl'	        => 'ct_finnaccexp'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'workdata'
+                        // ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
+                        ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'reply'=>1, 'modify'=>1, 'delete'=>1, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => 1
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
+                    ,[
+                        'id'	        => 'prevmnlaun'
+                        ,'tit'	        => ['자금세탁방지','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => ''
+                        ,'tbl'	        => 'ct_prevmnlaun'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'workdata'
+                        // ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
+                        ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'reply'=>1, 'modify'=>1, 'delete'=>1, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => 1
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
+                ]
+            ]
+            ,[
                 'id'	        => 'voter'
                 ,'idx'	        => 3
-                ,'tit'	        => ['정부유권해석','']
+                ,'tit'	        => ['유권해석·판례','']
                 ,'typ'          => 'label'
                 ,'fnc'          => ''
                 ,'mod'          => ''
@@ -319,25 +396,6 @@ $config['svc_tree'] = [
                         ,'sub'	        => []
                     ]*/
                 ]
-            ]
-            ,[
-                'id'	        => 'precedent'
-                ,'idx'	        => 4
-                ,'tit'	        => ['금융판례','']
-                ,'typ'          => 'cont'
-                ,'fnc'          => 'bbs'
-                ,'mod'          => 'lists'
-                ,'cat'          => ''
-                ,'tbl'	        => 'ct_precedent'
-                ,'fld'	        => 'basic'
-                ,'skin'         => 'precedent'
-                ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
-                ,'status'       => ''
-                ,'lng_mode_yn'  => ''
-                ,'visible_yn'   => ''
-                ,'file'         => 2
-                ,'edtr'         => 'Y'
-                ,'sub'	        => []
             ]
             ,[
                 'id'	        => 'overview'
@@ -470,82 +528,24 @@ $config['svc_tree'] = [
                 ]
             ]
             ,[
-                'id'	        => 'workdata'
-                ,'idx'	        => 6
-                ,'tit'	        => ['업무자료','']
-                ,'typ'         => 'label'
-                ,'fnc'         => ''
-                ,'mod'         => ''
+                'id'	        => 'precedent'
+                ,'idx'	        => 4
+                ,'tit'	        => ['금융판례','']
+                ,'typ'          => 'cont'
+                ,'fnc'          => 'bbs'
+                ,'mod'          => 'lists'
                 ,'cat'          => ''
-                ,'tbl'	        => ''
-                ,'fld'	        => ''
-                ,'skin'         => ''
-                ,'perm'         => ''
+                ,'tbl'	        => 'ct_precedent'
+                ,'fld'	        => 'basic'
+                ,'skin'         => 'precedent'
+                ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
                 ,'status'       => ''
                 ,'lng_mode_yn'  => ''
                 ,'visible_yn'   => ''
-                ,'file'         => ''
-                ,'edtr'         => ''
-                ,'sub'	        => [
-                    [
-                        'id'	        => 'intnlctrl'
-                        ,'tit'	        => ['내부통제','']
-                        ,'typ'          => 'cont'
-                        ,'fnc'          => 'bbs'
-                        ,'mod'          => 'lists'
-                        ,'cat'          => ''
-                        ,'tbl'	        => 'ct_intnlctrl'
-                        ,'fld'	        => 'basic'
-                        ,'skin'         => 'workdata'
-                        // ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
-                        ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'reply'=>1, 'modify'=>1, 'delete'=>1, 'dnload'=>1]
-                        ,'status'       => ''
-                        ,'lng_mode_yn'  => ''
-                        ,'visible_yn'   => ''
-                        ,'file'         => 1
-                        ,'edtr'         => 'Y'
-                        ,'sub'	        => []
-                    ]
-                    ,[
-                        'id'	        => 'finnaccexp'
-                        ,'tit'	        => ['금융사고사례','']
-                        ,'typ'          => 'cont'
-                        ,'fnc'          => 'bbs'
-                        ,'mod'          => 'lists'
-                        ,'cat'          => ''
-                        ,'tbl'	        => 'ct_finnaccexp'
-                        ,'fld'	        => 'basic'
-                        ,'skin'         => 'workdata'
-                        // ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
-                        ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'reply'=>1, 'modify'=>1, 'delete'=>1, 'dnload'=>1]
-                        ,'status'       => ''
-                        ,'lng_mode_yn'  => ''
-                        ,'visible_yn'   => ''
-                        ,'file'         => 1
-                        ,'edtr'         => 'Y'
-                        ,'sub'	        => []
-                    ]
-                    ,[
-                        'id'	        => 'prevmnlaun'
-                        ,'tit'	        => ['자금세탁방지','']
-                        ,'typ'          => 'cont'
-                        ,'fnc'          => 'bbs'
-                        ,'mod'          => 'lists'
-                        ,'cat'          => ''
-                        ,'tbl'	        => 'ct_prevmnlaun'
-                        ,'fld'	        => 'basic'
-                        ,'skin'         => 'workdata'
-                        // ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
-                        ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'reply'=>1, 'modify'=>1, 'delete'=>1, 'dnload'=>1]
-                        ,'status'       => ''
-                        ,'lng_mode_yn'  => ''
-                        ,'visible_yn'   => ''
-                        ,'file'         => 1
-                        ,'edtr'         => 'Y'
-                        ,'sub'	        => []
-                    ]
-                ]
-            ]
+                ,'file'         => 2
+                ,'edtr'         => 'Y'
+                ,'sub'	        => []
+            ]  
             ,[
                 'id'	        => 'search'
                 ,'tit'	        => ['검색결과','Search']

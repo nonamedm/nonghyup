@@ -9,6 +9,9 @@ $(document).ready(function() {
         gnb_leave();
     });
 
+    $('.btnClose').on('click', function() {
+        $('.noticeBannerW').css({'display': 'none'});
+    });
 
     //gnb hover
     function gnb_hover(){
