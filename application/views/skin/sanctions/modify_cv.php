@@ -91,29 +91,5 @@
 
         </form>
     </div>
-
-
 </div>
-<!--<script type="text/javascript">
-    (function() {
-
-        setTimeout(() => check(), 600);
-
-        function check() {
-            var post_fix_chk = $('#post_fix').is(':checked');
-            var post_fix=$('#post_fix').val();
-            if (post_fix == 'Y') {
-                $('#post_fix').val('Y');
-                $('input:checkbox[name="post_fix"]').prop('checked', true);
-            } else {
-                $('#post_fix').val('N');
-                $('input:checkbox[name="post_fix"]').prop('checked', false);
-            }
-        }
-        function fixcheck(value){
-
-            $("#post_fix_num").val(value);
-        }
-    })();
-</script>-->
 <!-- 게시글 수정 :: 끝-->

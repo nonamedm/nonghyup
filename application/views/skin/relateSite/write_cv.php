@@ -11,7 +11,6 @@
                 <input type="hidden" id="m_id" value="<?php echo $m_id;?>">
                 <input type="hidden" name="usr_id" value="<?php echo $usr['usr_id'];?>">
                 <input type="hidden" name="usr_nm" id="usr_nm" value="<?php echo $usr['usr_nm'];?>">
-                <!--<input type="hidden" name="usr_idx" value="<?php /*echo $usr_idx;*/?>">--><?php // ***** user email ?>
 
                 <div class="uk-margin-small uk-width-1-1">
                     <label class="uk-form-label" >상단체크</label>
@@ -87,7 +86,6 @@
 
         </form>
     </div>
-
 </div>
 <!-- 게시글 쓰기 :: 끝-->
 
