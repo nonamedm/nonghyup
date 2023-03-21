@@ -304,7 +304,6 @@ $(document).ready(function() {
             return false;
         });
 
-        //
         $(".btn_write").on("click", function () {
             let rtn = true;
 
@@ -362,15 +361,17 @@ $(document).ready(function() {
                     post_cat3 = $("#post_cat3").val();
                 }
                 var post_cat = post_cat0+'|'+post_cat1+'|'+post_cat2+'|'+post_cat3;
-//console.log("post_cat="+post_cat);
+                //console.log("post_cat="+post_cat);
                 $("#post_cat").val(post_cat);
             }
 
             if (rtn) {
                 let idx = $("#idx").val();
                 if (bbs_mod == "modify" && idx) {
+                    alert('수정하시겠습니까?');
                     $(f).attr('action', "/" + seg + "/" + m_id + "/update?idx=" + idx);
                 } else {
+                    alert('등록하시겠습니까?');
                     $(f).attr('action', "/" + seg + "/" + m_id + "/insert");
                 }
                 rtn = false;
@@ -963,7 +964,6 @@ document.querySelector('body').addEventListener('keypress', function (e) {
 
 function sch_simple(){
     let rtn = true;
-    let s_rfsw = '';
 
     if (rtn && !$("#brd_sch").val()) {
         alert('검색어를 입력해 주세요');
@@ -985,30 +985,17 @@ function sch_simple(){
 
 
     var s_word = $("#brd_sch").val();
-    
-    if(rtn){
-        if($(".re_sch").attr("checked")){
-            console.log("결과 내 재검색");
-            s_rfsw = $("#rs_wrd").val();
-        } else {
-            s_rfsw = '';
-            console.log("재검색");
-        }
-    }
 
     if (rtn){
         rtn = false;
-        let param = '';
-        if(s_rfsw){
-            param += '&s_rfsw='+s_rfsw;
-        }
         if($("#dtl_opt").val()==1){
             let s_sds = $("#sch_date_start").val();
             let s_sde = $("#sch_date_end").val();
-            location.href="/" + seg + "/" + m_id + "/lists?s_word=" + s_word+"&s_sds="+s_sds+"&s_sde="+s_sde+param;
+            location.href="/" + seg + "/" + m_id + "/lists?s_word=" + s_word+"&s_sds="+s_sds+"&s_sde="+s_sde;
         }else{
-            location.href="/" + seg + "/" + m_id + "/lists?s_word=" + s_word+param;
+            location.href="/" + seg + "/" + m_id + "/lists?s_word=" + s_word;
         }
+
     }
     return false;
 }
