@@ -20,10 +20,19 @@
                     $cls = "withdrawal";
                 }
                 if($gd_arr[$i]['id']==$m_id){
-                    echo "<div class='left_sub_menu'><div class='focus_bullet'></div>";
-                    echo "<a href='/ko/" . $gd_arr[$i]['id'] . "' class='focus " . $cls . "'>";
-                    echo $gd_arr[$i]['tit'][0];
-                    echo "</a></div>";
+                    if($gd_arr[$i]['id']=='prevmnlaun'){
+                        echo "<div class='left_sub_menu'><div class='focus_bullet'></div>";
+                        echo "<a href='/ko/" . $gd_arr[$i]['id'] . "' class='focus " . $cls . "'>";
+                        echo $gd_arr[$i]['tit'][0];
+                        echo "</a>";
+                        echo "<ul><li><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "' style='font-size:15px;'>-국내동향 & 주요이슈</a></li>";
+                        echo "<li><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "' style='font-size:15px;'>-해외동향 & Sanctions</a></li></ul></div>";
+                    } else {
+                        echo "<div class='left_sub_menu'><div class='focus_bullet'></div>";
+                        echo "<a href='/ko/" . $gd_arr[$i]['id'] . "' class='focus " . $cls . "'>";
+                        echo $gd_arr[$i]['tit'][0];
+                        echo "</a></div>";
+                    }
                 } else {
                     if($gd_arr[$i]['id']=='sanctions') {
                         /*금융제재사례수정*/
