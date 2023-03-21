@@ -1308,4 +1308,20 @@ function loginWithKakao() {
         redirectUri: 'https://law.nhbank.com/ko/auth/oauth'
     })
 }
-
+//상단고정
+function check(box){
+    var post_fix_chk = $('#post_fix').is(':checked');
+    if(post_fix_chk == true){
+        $('#post_fix').val('Y');
+        $('.fix-num-select').show();
+        $('input:checkbox[name="post_fix"]').prop('checked',true);
+    }else{
+        $('#post_fix').val('N');
+        $('.fix-num-select').hide();
+        $("#post_fix_num").val(Number(0));
+        $('input:checkbox[name="post_fix"]').prop('checked',false);
+    }
+}
+function fixcheck(value){
+    $("#post_fix_num").val(Number(value));
+}

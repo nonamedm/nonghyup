@@ -13,16 +13,15 @@
                 <input type="hidden" name="usr_nm" id="usr_nm" value="<?php echo $usr['usr_nm'];?>">
 
                 <div class="uk-margin-small uk-width-1-1">
-                    <label class="uk-form-label" ></label>
+                    <label class="uk-form-label" >상단 체크</label>
                     <div class="uk-form-controls">
-                        <input class="uk-checkbox" id="post_fix" type="checkbox" name="post_fix" onchange="check(this)" value="">상단 체크
+                        <input class="uk-checkbox fix_chk" id="post_fix" type="checkbox" name="post_fix" onchange="check(this)" value="">
                     </div>
                 </div>
 
-                <div class="uk-margin-small uk-width-1-1">
+                <div class="uk-margin-small uk-width-1-1 post_fix_num fix-num-select">
                     <label class="uk-form-label">상단 번호</label>
                     <div class="uk-form-controls">
-<!--                        <input class="uk-input" type="number" name="post_fix_num"  placeholder="">-->
                         <select id="post_fix_num" name="post_fix_num" onchange="fixcheck(this.value)">
                             <option value="0">0</option>
                             <option value="1">1</option>
@@ -86,25 +85,6 @@
     </div>
 
 </div>
-<script type="text/javascript">
-
-    function check(box){
-        var post_fix_chk = $('#post_fix').is(':checked');
-        if(post_fix_chk == true){
-            $('#post_fix').val('Y');
-            $('input:checkbox[name="post_fix"]').prop('checked',true);
-        }else{
-            $('#post_fix').val('N');
-            $('input:checkbox[name="post_fix"]').prop('checked',false);
-        }
-
-    }
-    function fixcheck(value){
-        // console.log("값변경테스트: " + value);
-        $("#post_fix_num").val(value);
-    }
-
-</script>
 <!-- 게시글 쓰기 :: 끝-->
 
 

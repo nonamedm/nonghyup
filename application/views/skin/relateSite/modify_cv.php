@@ -15,16 +15,20 @@
                 <input type="hidden" name="usr_nm" id="usr_nm" value="<?php echo $usr['usr_nm'];?>">
 
                 <div class="uk-margin-small uk-width-1-1">
-                    <label class="uk-form-label"></label>
+                    <label class="uk-form-label">상단 고정</label>
                     <div class="uk-form-controls">
-                        <input class="uk-checkbox fix_chk" id="post_fix" type="checkbox" name="post_fix" onchange="check(this)" value="<?php echo $modify['post_fix'];?>"> 체크시 고정
+                        <input class="uk-checkbox fix_chk" id="post_fix" type="checkbox" name="post_fix" onchange="check(this)" value="<?php if($modify['post_fix']=="Y"){echo "Y";}else{echo "N";}?>" <?php if($modify['post_fix']=="Y") echo " checked";?>>
                     </div>
                 </div>
 
-                <div class="uk-margin uk-width-1-1">
+                <div class="uk-margin uk-width-1-1 fix-num-select" style="display: <?php
+                if ($modify['post_fix'] == "Y") {
+                    echo "block";
+                } else {
+                    echo "none";
+                } ?>;"">
                     <label class="uk-form-label">상단 번호</label>
                     <div class="uk-form-controls">
-<!--                        <input class="uk-input" type="number" name="post_fix_num" value="--><?php //echo $modify['post_fix_num'];?><!--">-->
                         <select id="post_fix_num" name="post_fix_num" onchange="fixcheck(this.value)">
                             <option value="0" <?if($modify['post_fix_num']==0) echo "selected"?>>0</option>
                             <option value="1" <?if($modify['post_fix_num']==1) echo "selected"?>>1</option>
@@ -83,7 +87,7 @@
 
 </div>
 <script type="text/javascript">
-    (function() {
+ /*   (function() {
 
         setTimeout(() => check(), 600);
 
@@ -101,6 +105,6 @@
         function fixcheck(value){
             $("#post_fix_num").val(Number(value));
         }
-    })();
+    })();*/
 </script>
 <!-- 게시글 수정 :: 끝-->

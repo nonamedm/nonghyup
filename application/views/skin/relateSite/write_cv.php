@@ -14,16 +14,15 @@
                 <!--<input type="hidden" name="usr_idx" value="<?php /*echo $usr_idx;*/?>">--><?php // ***** user email ?>
 
                 <div class="uk-margin-small uk-width-1-1">
-                    <label class="uk-form-label" ></label>
+                    <label class="uk-form-label" >상단체크</label>
                     <div class="uk-form-controls">
-                        <input class="uk-checkbox" id="post_fix" type="checkbox" name="post_fix" onchange="check(this)" value="">상단 체크
+                        <input class="uk-checkbox fix_chk" id="post_fix" type="checkbox" name="post_fix" onchange="check(this)" value="">
                     </div>
                 </div>
                 
-                <div class="uk-margin-small uk-width-1-1">
+                <div class="uk-margin-small uk-width-1-1 fix-num-select">
                     <label class="uk-form-label">상단 번호</label>
                     <div class="uk-form-controls">
-<!--                        <input class="uk-input" type="number" name="post_fix_num"  placeholder="">-->
                         <select id="post_fix_num" name="post_fix_num" onchange="fixcheck(this.value)">
                             <option value="0">0</option>
                             <option value="1">1</option>
@@ -91,25 +90,6 @@
 
 </div>
 <!-- 게시글 쓰기 :: 끝-->
-<script type="text/javascript">
-
-        function check(box){
-            var post_fix_chk = $('#post_fix').is(':checked');
-            if(post_fix_chk == true){
-                $('#post_fix').val('Y');
-                $('input:checkbox[name="post_fix"]').prop('checked',true);
-            }else{
-                $('#post_fix').val('N');
-                $('input:checkbox[name="post_fix"]').prop('checked',false);
-            }
-        }
-
-        function fixcheck(value){
-            $("#post_fix_num").val(Number(value));
-        }
-
-</script>
-
 
 
 
