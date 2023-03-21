@@ -34,7 +34,11 @@
 
     <?php
     // ***** bbs pagination
-    $this->load->view("brd/current_pagination");
+    if( count($lists) ){
+        $this->load->view("brd/current_pagination");
+    } else {
+        $this->load->view("brd/current_pagination_nolist");
+    }
     ?>
 
     <div class="brd_bdy uk-overflow-auto">
