@@ -253,7 +253,7 @@ banner
 */
 body #header .noticeBannerW {
     position: absolute;
-    top: 210px;
+    top: 155px;
     right: 60px;
     padding: 0 32px 0 20px;
     border-radius: 45px 0 45px 45px;
@@ -352,6 +352,8 @@ body.sub .section#visual .container .bnr_block {position: absolute; top: 28px; r
     body.sub .section#visual .container .bnr_block {display: none; position: relative; top: unset; right: unset; width: 90%; height: auto; margin: 30px auto 10px;}
 
     body.sub #content .cont_body .left_menu {display: none;}
+    body #header .noticeBannerW {display: none;}
+    
 }
 
 

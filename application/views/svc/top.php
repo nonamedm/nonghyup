@@ -108,7 +108,7 @@
     
     <div class="noticeBannerW">
         <a href="/ko/improvement" class="noticeBanner">
-            <p class="txtBlue txtBold">Quick Service 바로가기</p>
+            <p class="txtBlue txtBold" style="color:#2B347B">Quick Service </p> <p class="txtBlue txtBold"> 바로가기</p>
         </a>
         <button type="button" class="btnClose"></button>
     </div>

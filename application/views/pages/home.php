@@ -9,7 +9,7 @@
                 <div class="subj"><span>최신</span>금융규제동향</div>
                 <div class="tab_box">
                     <div class="tabs">
-                        <div class="mtab">보도자료</div><div class="mtab focus">입법동향</div>
+                        <div class="mtab focus">보도자료</div><div class="mtab">입법동향</div>
                     </div>
                     <a href="/ko/lawmaking"><img src="/static/svg/more.svg" class="more"></a>
                 </div>
