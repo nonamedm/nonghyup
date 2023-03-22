@@ -1,6 +1,8 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');?>
 
 
+    
+
     <div class="section sec2">
         <div class="container">
             <div class="latest">
@@ -9,7 +11,7 @@
                     <div class="tabs">
                         <div class="mtab focus">보도자료</div><div class="mtab">입법동향</div>
                     </div>
-                    <a href="/ko/pr"><img src="/static/svg/more.svg" class="more"></a>
+                    <a href="/ko/lawmaking"><img src="/static/svg/more.svg" class="more"></a>
                 </div>
                 <hr>
                 <div class="tab_content" id="tab_0">
@@ -78,11 +80,14 @@
         </div>
     </div>
 
-    <div class="section sec1">
-        <div class="container">
+    <div class="section sec3">
+        <div class="container cont_pop">
+            <img src="/static/svg/corner_left.svg" class="corner_left">
+            <img src="/static/svg/corner_right.svg" class="corner_right">
+
             <div class="latest">
                 <a href="/ko/labdata" class="subj_box">
-                    <div class="subj">기관연구자료</div><img src="/static/svg/more.svg" class="more">
+                <div class="subj">기관연구자료</div><img src="/static/svg/more.svg" class="more">
                 </a>
                 <hr>
                 <div class="mtr">
@@ -104,7 +109,7 @@
                     <?php } ?>
                 </div>
                 <div class="wtr">
-                    <table class="uk-table uk-table-small uk-table-divider brd_brief">
+                    <table class="brd_pr uk-table uk-table-small uk-table-divider">
                         <?php for ($i=0; $i<count($lists_labdata); $i++) { ?>
                             <tr class="" <?php if($i==0){ echo "style='border-top: 0'";}?>>
                                 <td class="part"><?php echo $lists_labdata[$i]['post_field'];?></td>
@@ -125,24 +130,14 @@
                     </table>
                 </div>
             </div>
-
-            <!-- <div class="banner">
-                <div class="single-item">
-                    <div><a href="http://pf.kakao.com/_VRUxnb" target="_blank"><img src="/static/images/banner0.png"></a></div>
-                    <div><a href="/ko/news"><img src="/static/images/banner1.png"></a></div>
-                </div>
-            </div> -->
         </div>
     </div>
 
-    <div class="section sec3">
-        <div class="container cont_pop">
-            <img src="/static/svg/corner_left.svg" class="corner_left">
-            <img src="/static/svg/corner_right.svg" class="corner_right">
-
+    <div class="section sec1">
+        <div class="container">
             <div class="latest">
                 <a href="/ko/brief" class="subj_box">
-                <div class="subj">LEGAL <span>BRIEF</span></div><img src="/static/svg/more.svg" class="more">
+                    <div class="subj">LEGAL <span>BRIEF</span></div><img src="/static/svg/more.svg" class="more">
                 </a>
                 <hr>
                 <div class="mtr">
@@ -158,7 +153,7 @@
                     <?php } ?>
                 </div>
                 <div class="wtr">
-                    <table class="brd_pr uk-table uk-table-small uk-table-divider">
+                    <table class="uk-table uk-table-small uk-table-divider brd_brief">
                         <?php for ($i=0; $i<count($lists_brief); $i++) { ?>
                             <tr class="" <?php if($i==0){ echo "style='border-top: 0'";}?>>
                                 <td class="cat">[<?php echo $lists_brief[$i]['usr_nm'];?>]</td>
@@ -170,6 +165,13 @@
                             </tr>
                         <?php } ?>
                     </table>
+                </div>
+            </div>
+
+            <div class="banner">
+                <div class="single-item">
+                    <div><a href="http://pf.kakao.com/_VRUxnb" target="_blank"><img src="/static/images/banner0.png"></a></div>
+                    <div><a href="/ko/news"><img src="/static/images/banner1.png"></a></div>
                 </div>
             </div>
         </div>

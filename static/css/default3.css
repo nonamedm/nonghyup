@@ -829,7 +829,7 @@ main
 body.main #content .container {width: 1120px; margin: 0 auto;}
 body.main #content .section .container .latest table.uk-table tr.wtr {display: block;}
 body.main #content .section .container .latest .mtr {display: none;}
-body.main #content .section .container .latest .tit {font-size: 18px; font-weight: 400; width: 71%; position: relative;}
+body.main #content .section .container .latest .tit {font-size: 18px; font-weight: 400; width: 82%; position: relative;}
 
 @media (max-width:1200px) {
     body.main #content .container {width: 100%;}
@@ -872,9 +872,9 @@ body.main #content .section .container .latest .tit {font-size: 18px; font-weigh
 
 /* main sec1
 body.main #content .section.sec1 */
-body.main #content .section.sec1 {margin-top: 50px; padding-bottom: 10px;}
+body.main #content .section.sec1 {background: #F6F6F6; padding-top: 60px; padding-bottom: 160px;}
 body.main #content .section.sec1 .container {display: flex; justify-content: space-between;}
-body.main #content .section.sec1 .container .latest { vertical-align: top; width: 550px; text-align: left;}
+body.main #content .section.sec1 .container .latest { vertical-align: top; width: 100%; text-align: left;}
 body.main #content .section.sec1 .container .latest .subj {font-size: 28px; font-weight: 400;}
 body.main #content .section.sec1 .container .latest .subj>span {font-weight: 300;}
 body.main #content .section.sec1 .container .latest .subj_box {display: flex; justify-content: space-between;}
@@ -883,20 +883,21 @@ body.main #content .section.sec1 .container .latest .subj_box .more {vertical-al
 body.main #content .section.sec1 .container .latest hr {margin: 17px 0 13px; border-top: .5px solid #000000;}
 body.main #content .section.sec1 .container .latest .brd_brief {line-height: 28px;}
 body.main #content .section.sec1 .container .latest .brd_brief .cat {font-size: 15px; font-weight: 300; padding-left: 0; width: 116px;}
-body.main #content .section.sec1 .container .latest .brd_brief .tit {font-size: 18px; font-weight: 400; padding-right: 0; width: 384px; max-width: 384px;}
+body.main #content .section.sec1 .container .latest .brd_brief .tit {font-size: 18px; font-weight: 400; width: 82%; position: relative;}
+body.main #content .section.sec1 .container .latest .brd_brief .date {font-size: 15px; font-weight: 300; width: 10%;}
 
 
 body.main #content .section.sec1 .container .banner {width: 520px; height: 260px; vertical-align: top;}
 @media (max-width:1200px) {
     body.main #content .section.sec1 {margin-top: 40px; padding-bottom: 30px;}
     body.main #content .section.sec1 .container {width: 94%;}
-    body.main #content .section.sec1 .container .latest {width: 50%;}
+    body.main #content .section.sec1 .container .latest {width: 100%;}
     body.main #content .section.sec1 .container .latest .subj {font-size: 24px;}
     body.main #content .section.sec1 .container .latest hr {margin: 14px 0 9px;}
     body.main #content .section.sec1 .container .latest .brd_brief {line-height: 24px;}
     body.main #content .section.sec1 .container .latest .brd_brief .wtr {display: table-row;}
     body.main #content .section.sec1 .container .latest .brd_brief .cat {font-size: 14px; width: 90px;}
-    body.main #content .section.sec1 .container .latest .brd_brief .tit {font-size: 16px; width: 384px;}
+    body.main #content .section.sec1 .container .latest .brd_brief .tit {font-size: 17px; font-weight: 400; width: 82%;}
     body.main #content .section.sec1 .container .banner {width: 47%;}
 
 }
@@ -928,7 +929,7 @@ body.main #content .section.sec1 .container .banner {width: 520px; height: 260px
 
 /* main sec2
 body.main #content .section.sec2 */
-body.main #content .section.sec2 {background: #F6F6F6; padding-top: 60px; padding-bottom: 160px;}
+body.main #content .section.sec2 {margin-top: 50px; padding-bottom: 60px;}
 body.main #content .section.sec2 .container {display: flex; justify-content: space-between;}
 body.main #content .section.sec2 .container .latest {float: left; vertical-align: top; width: 100%; text-align: left;}
 body.main #content .section.sec2 .container .latest .subj {font-size: 26px; font-weight: 400; color: #2B347B;}
@@ -966,12 +967,13 @@ body.main #content .section.sec2 .container .latest .brd_pr .wtr {display: table
 body.main #content .section.sec2 .container .latest .brd_pr tr {width: 100%; display: flex; justify-content: space-between;}
 body.main #content .section.sec2 .container .latest .brd_pr .part {font-size: 15px; font-weight: 300; width: 13%;}
 body.main #content .section.sec2 .container .latest .brd_pr .tit {font-size: 17px; font-weight: 400; width: 82%;}
-body.main #content .section.sec2 .container .latest .brd_pr .date {font-size: 15px; font-weight: 300; width: 8%;}
+body.main #content .section.sec2 .container .latest .brd_pr .date {font-size: 15px; font-weight: 300; width: 10%;}
 
 body.main #content .section.sec2 .container .latest #tab_1 {display: none;}
 
 @media (max-width:1200px) {
-    body.main #content .section.sec2 {padding-top: 40px; padding-bottom: 140px;}
+    body.main #content .section.sec1 {padding-top: 40px; padding-bottom: 140px;}
+    body.main #content .section.sec1 .container {display: flex; justify-content: space-between; width: 94%;}
     body.main #content .section.sec2 .container {display: flex; justify-content: space-between; width: 94%;}
 
     body.main #content .section.sec2 .container .latest .tab_box .tabs .mtab {height: 32px; min-width: 110px; line-height: 36px; font-size: 18px;}
