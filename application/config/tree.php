@@ -1025,7 +1025,7 @@ $config['adm_tree'] = [
                         ,'sub'	        => []
                     ]
                     ,[
-                        'id'	        => 'prevmnlaun1'
+                        'id'	        => 'prevmnlaun'
                         ,'tit'	        => ['국내동향 & 주요이슈','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'

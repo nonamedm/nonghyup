@@ -11,7 +11,11 @@
                 <?php } else {?>
                 <?php } ?>
                 <th class="tit">제목 </th>
-                <th class="part">작성자 </th>
+                <?php if($m_id=='intnlctrl'||$m_id=='finnaccexp'||$m_id=='prevmnlaun'||$m_id=='prevmnlaun2') { ?>
+                    <th class="part">발행기관 </th>
+                <?php } else {?>
+                    <th class="part">작성자 </th>
+                <?php } ?>
                 <th class="reg_date">등록일 </th>
                 <?php if($is_adm_mod){ ?>
                     <th class="no">좋아요</th>

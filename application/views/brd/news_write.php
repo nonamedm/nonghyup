@@ -69,7 +69,11 @@
 
 
             <div class="uk-margin-small uk-width-1-6@m">
-                <label class="uk-form-label">작성자</label>
+                <?php if($m_id=='intnlctrl'||$m_id=='finnaccexp'||$m_id=='prevmnlaun'||$m_id=='prevmnlaun2') { ?>
+                    <label class="uk-form-label">발행기관</label>
+                <?php } else { ?>
+                    <label class="uk-form-label">작성자</label>
+                <?php } ?>
                 <div class="uk-form-controls">
                     <input class="uk-input" type="text" name="usr_nm" id="usr_nm" value="<?php echo $usr['usr_nm'];?>">
                 </div>

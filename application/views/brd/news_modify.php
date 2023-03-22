@@ -15,10 +15,10 @@
                     <label class="uk-form-label">구분</label>
                     <div class="uk-form-controls">
                         <select class="uk-select" name="post_opt" id="post_opt">
-                            <option value="보도자료" <?php if($post_opt=='보도자료'){echo 'selected';}?>>보도자료</option>
-                            <option value="연구자료" <?php if($post_opt=='연구자료'){echo 'selected';}?>>연구자료</option>
-                            <option value="제·개정" <?php if($post_opt=='제·개정'){echo 'selected';}?>>제·개정</option>
-                            <option value="기타" <?php if($post_opt=='기타'){echo 'selected';}?>>기타</option>
+                            <option value="보도자료" <?php if($modify['post_opt']=='보도자료'){echo 'selected';}?>>보도자료</option>
+                            <option value="연구자료" <?php if($modify['post_opt']=='연구자료'){echo 'selected';}?>>연구자료</option>
+                            <option value="제·개정" <?php if($modify['post_opt']=='제·개정'){echo 'selected';}?>>제·개정</option>
+                            <option value="기타" <?php if($modify['post_opt']=='기타'){echo 'selected';}?>>기타</option>
                         </select>
                     </div>
                 </div>
@@ -26,7 +26,7 @@
                 <div class="uk-margin-small uk-width-1-5@m">
                     <label class="uk-form-label">구분</label>
                     <div class="uk-form-controls">
-                        <input class="uk-input" type="text" name="post_opt" id="post_opt" value="">
+                        <input class="uk-input" type="text" name="post_opt" id="post_opt" value="<?php echo $modify['post_opt']; ?>">
                     </div>
                 </div>
             <?php } else {}?>
