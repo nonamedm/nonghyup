@@ -377,24 +377,24 @@ $config['svc_tree'] = [
                         ,'edtr'         => 'Y'
                         ,'sub'	        => []
                     ]
-                    /*,[
-                        'id'	        => 'sanctions'
-                        ,'tit'	        => ['금융제재사례','']
+                    ,[
+                        'id'	        => 'precedent'
+                        ,'tit'	        => ['금융판례','']
                         ,'typ'          => 'cont'
-                        ,'fnc'          => 'pg'
-                        ,'mod'          => ''
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
                         ,'cat'          => ''
-                        ,'tbl'	        => ''
-                        ,'fld'	        => ''
-                        ,'skin'         => ''
-                        ,'perm'         => ''
+                        ,'tbl'	        => 'ct_precedent'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'precedent'
+                        ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
-                        ,'file'         => ''
-                        ,'edtr'         => ''
+                        ,'file'         => 2
+                        ,'edtr'         => 'Y'
                         ,'sub'	        => []
-                    ]*/
+                    ]                    
                 ]
             ]
             ,[
@@ -527,25 +527,6 @@ $config['svc_tree'] = [
 
                 ]
             ]
-            ,[
-                'id'	        => 'precedent'
-                ,'idx'	        => 4
-                ,'tit'	        => ['금융판례','']
-                ,'typ'          => 'cont'
-                ,'fnc'          => 'bbs'
-                ,'mod'          => 'lists'
-                ,'cat'          => ''
-                ,'tbl'	        => 'ct_precedent'
-                ,'fld'	        => 'basic'
-                ,'skin'         => 'precedent'
-                ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
-                ,'status'       => ''
-                ,'lng_mode_yn'  => ''
-                ,'visible_yn'   => ''
-                ,'file'         => 2
-                ,'edtr'         => 'Y'
-                ,'sub'	        => []
-            ]  
             ,[
                 'id'	        => 'search'
                 ,'tit'	        => ['검색결과','Search']
