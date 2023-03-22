@@ -419,6 +419,7 @@ body.sub #content .cont_body .cont_block .brd_sort .sort .uk-label {background: 
 
 /* 검색
 body.sub #content .cont_body .cont_block .brd_sch */
+body.sub #content .cont_body .cont_block .brd_sch .brd_sch_sel {display: inline-block; vertical-align: middle; width: auto; min-width: 150px; border: 1px solid #2B347B; font-weight: 400; color: #2B347B;}
 body.sub #content .cont_body .cont_block .brd_sch {position: relative; height: 40px; width: auto; margin-bottom: 0px; text-align: center;}
 body.sub #content .cont_body .cont_block .m_search {display: none;}
 body.sub #content .cont_body .cont_block .brd_sch form {display: inline-block;}
@@ -427,6 +428,7 @@ body.sub #content .cont_body .cont_block .brd_sch .brd_sch_btn {display: inline-
 body.sub #content .cont_body .sch_tit {position: relative; font-size: 20px; font-weight: 400; padding-left: 10px; background: #2B347B; padding: 7px 30px 5px; display: inline-block; color: #fff; border-top-left-radius: 8px; border-top-right-radius: 8px;}
 body.sub #content .cont_body .sch_tit .ancher {position: absolute; display: block; top: -50px; width: 100%; height: 1px;}
 body.sub #content .cont_body table {margin: 0px 0 50px 0px;}
+body.sub #content .cont_body .re_search_box {position: absolute; top: 7px; right: -30px; }
 
 body.sub #content .cont_body .uk-placeholder {text-align: center;}
 body.sub #content .cont_body .uk-placeholder .sch_res_tit {font-size: 28px; margin: 0 auto;}
@@ -455,6 +457,7 @@ body.search #content .cont_body .frs .frs_sch_dtl span .xclose {position: relati
     body.sub #content .cont_body .cont_block .brd_sch .brd_sch_btn {height: 40px;font-size: 16px;width: 100%;margin-bottom: 2px;}
     body.sub #content .cont_body .cont_block .m_brd_search {display: block;}
     body.sub #content .cont_body .cont_block .brd_sch .m_brd_search_close {position: relative; margin: -25px 0 0 0;}
+    body.sub #content .cont_body .re_search_box {position: relative; display: block; height: 30px; width: 100%; margin:10px 0 5px; top: 0;}
 
     body.search #content .cont_body .frs {text-align: center; background: #f8f8f8; border-radius: 0px; padding: 20px 10px 8px; border: 3px solid #eeeeee; margin-bottom: 20px;}
     body.search #content .cont_body .frs input.uk-input {height: 32px; line-height: 32px; font-size: 16px; color: #333333; border: 1px solid #cccccc; padding: 0 7px;}
@@ -514,6 +517,7 @@ body.sub.precedent #content .cont_body .cont_block .brd_sch_dtl .uk-close-large 
 
     body.sub.precedent #content .cont_body .cont_block .brd_sch_dtl .opt input.datepicker {max-width: 45%;}
 
+    body.sub #content .cont_body .cont_block .brd_sch .brd_sch_sel {position: relative; height: 40px;font-size: 14px;min-width: 100%; margin-bottom: 2px;}
     body.sub.precedent #content .cont_body .cont_block .brd_sch .brd_sch_sel {position: relative; height: 40px;font-size: 14px;min-width: 100%; margin-bottom: 2px;}
     body.sub.precedent #content .cont_body .cont_block .brd_sch .brd_sch_dtl_btn {position: relative; height: 40px;margin-left: 0px; width: 100%; display: block; margin-bottom: 2px;}
     body.sub.precedent #content .cont_body .cont_block .brd_sch .brd_sch_btn_precedent {position: relative; width: 100%;height: 40px;font-size: 16px; margin-bottom: 2px;}

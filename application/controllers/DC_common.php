@@ -42,7 +42,7 @@ class DC_common extends CI_Controller
     private $p_cat, $p_opt, $p_idx, $pg_idx, $fl_idx, $code, $p_ord, $initial;
 
     // 파라미터(검색)
-    private $s_word, $s_cat, $s_sds, $s_sde, $s_rfsw, $s_fsw, $s_res, $s_tot, $s_lng, $s_fld, $s_typ;
+    private $s_word, $s_cat, $s_sds, $s_sde, $s_rfsw, $s_fsw, $s_res, $s_tot, $s_lng, $s_fld, $s_typ, $s_cont, $s_subj, $post_cat, $usr_nm;
 
     // 키워드
     private $kw_lists=[];
@@ -231,6 +231,29 @@ class DC_common extends CI_Controller
             $initial = $this->input->get('initial', TRUE);
             $initial = $this->dl_security->xss_cleaner($initial);
             $this->initial = $initial;
+        }
+        //제목 검색
+        if ($this->input->get('s_subj', TRUE)) {
+            $s_subj = $this->input->get('s_subj', TRUE);
+            $s_subj = $this->dl_security->xss_cleaner($s_subj);
+            $this->s_subj = $s_subj;
+        }
+        //내용 검색
+        if ($this->input->get('s_cont', TRUE)) {
+            $s_cont = $this->input->get('s_cont', TRUE);
+            $s_cont = $this->dl_security->xss_cleaner($s_cont);
+            $this->s_cont = $s_cont;
+        }
+        //발행기관 검색
+        if ($this->input->get('post_cat', TRUE)) {
+            $post_cat = $this->input->get('post_cat', TRUE);
+            $post_cat = $this->dl_security->xss_cleaner($post_cat);
+            $this->post_cat = $post_cat;
+        }
+        if ($this->input->get('usr_nm', TRUE)) {
+            $usr_nm = $this->input->get('usr_nm', TRUE);
+            $usr_nm = $this->dl_security->xss_cleaner($usr_nm);
+            $this->usr_nm = $usr_nm;
         }
 
         if ($this->input->get('fl', TRUE)) {
@@ -1703,6 +1726,10 @@ class DC_common extends CI_Controller
             ,'s_lng'        => $this->get_val('s_lng')
             ,'s_fld'        => $this->get_val('s_fld')
             ,'s_typ'        => $this->get_val('s_typ')
+            ,'s_subj'        => $this->get_val('s_subj')
+            ,'s_cont'        => $this->get_val('s_cont')
+            ,'post_cat'        => $this->get_val('post_cat')
+            ,'usr_nm'        => $this->get_val('usr_nm')
 
             ,'code'         => $this->get_val('code')
             ,'s_res'        => $this->get_val('s_res')
