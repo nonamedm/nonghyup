@@ -25,7 +25,7 @@
             <thead class="wth">
             <tr>
                 <th class="no">번호</th>
-                <?php if($m_id=='prevmnlaun') { ?>                
+                <?php if($m_id=='prevmnlaun1'||$m_id=='prevmnlaun2') { ?>                
                 <?php } else {?>
                         <th class="cat">분류</th>
                 <?php } ?>
@@ -59,7 +59,7 @@
                 </tr>
                 <tr class="wtr">
                     <td class="no"><?php echo $li_idx;?></td>
-                    <?php if($m_id=='prevmnlaun') { ?>                
+                    <?php if($m_id=='prevmnlaun1'||$m_id=='prevmnlaun2') { ?>                
                     <?php } else {?>
                         <td class="cat"><div class="w100 ellipsis"><?php echo $lists[$i]['post_opt'];?></div></td>
                     <?php } ?>

@@ -291,7 +291,26 @@ $config['svc_tree'] = [
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'lists'
                         ,'cat'          => ''
-                        ,'tbl'	        => 'ct_prevmnlaun'
+                        ,'tbl'	        => 'ct_prevmnlaun1'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'workdata'
+                        // ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
+                        ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'reply'=>1, 'modify'=>1, 'delete'=>1, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => 1
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
+                    ,[
+                        'id'	        => 'prevmnlaun2'
+                        ,'tit'	        => ['자금세탁방지2','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => ''
+                        ,'tbl'	        => 'ct_prevmnlaun2'
                         ,'fld'	        => 'basic'
                         ,'skin'         => 'workdata'
                         // ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
@@ -456,7 +475,7 @@ $config['svc_tree'] = [
                         ,'tit'	        => ['Quick Service','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
-                        ,'mod'          => 'write'
+                        ,'mod'          => 'lists'
                         ,'cat'          => ''
                         ,'tbl'	        => 'ct_improvement'
                         ,'fld'	        => 'qna'
@@ -474,7 +493,7 @@ $config['svc_tree'] = [
                         ,'tit'	        => ['Q&A','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
-                        ,'mod'          => 'write'
+                        ,'mod'          => 'lists'
                         ,'cat'          => ''
                         ,'tbl'	        => 'ct_qna'
                         ,'fld'	        => 'qna'
@@ -1006,13 +1025,32 @@ $config['adm_tree'] = [
                         ,'sub'	        => []
                     ]
                     ,[
-                        'id'	        => 'prevmnlaun'
-                        ,'tit'	        => ['자금세탁방지','']
+                        'id'	        => 'prevmnlaun1'
+                        ,'tit'	        => ['국내동향 & 주요이슈','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'lists'
                         ,'cat'          => ''
-                        ,'tbl'	        => 'ct_prevmnlaun'
+                        ,'tbl'	        => 'ct_prevmnlaun1'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'workdata'
+                        // ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>0, 'delete'=>5, 'dnload'=>0]
+                        ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'modify'=>1, 'reply'=>1, 'delete'=>1, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => ''
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
+                    ,[
+                        'id'	        => 'prevmnlaun2'
+                        ,'tit'	        => ['해외동향 & Sanctions','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => ''
+                        ,'tbl'	        => 'ct_prevmnlaun2'
                         ,'fld'	        => 'basic'
                         ,'skin'         => 'workdata'
                         // ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>0, 'delete'=>5, 'dnload'=>0]

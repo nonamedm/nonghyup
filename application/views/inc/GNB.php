@@ -15,16 +15,17 @@
             <ul class="uk-nav">
             <?php for ($j = 0; $j < count($nav_tree[0]['sub'][$i]['sub']); $j++) {?>
                 <li class="">
-                    <!--금융제재사례수정-->
                     <?php if($nav_tree[0]['sub'][$i]['sub'][$j]['id']=='sanctions'){ ?>
                     <!--<a href="https://www.fss.or.kr/fss/job/openInfo/list.do?menuNo=200476" target="_blank">-->
                     <a href="/<?php echo $lng_cd;?>/<?php echo $nav_tree[0]['sub'][$i]['sub'][$j]['id']; ?>" class="<?php if($nav_tree[0]['sub'][$i]['sub'][$j]['id']==$m_id){ echo 'focus';}?>">
                     <?php }else if($nav_tree[0]['sub'][$i]['sub'][$j]['id']=='current'){ ?>
                     <a href="/<?php echo $lng_cd;?>/<?php echo $nav_tree[0]['sub'][$i]['sub'][$j]['id'] ?>/lists?initial=ㄱ" class="<?php if($nav_tree[0]['sub'][$i]['sub'][$j]['id']==$m_id){ echo 'focus';}?>">
+                    <?php }else if($nav_tree[0]['sub'][$i]['sub'][$j]['id']=='prevmnlaun2'){ ?>
+                    <a>
                     <?php }else{ ?>
                     <a href="/<?php echo $lng_cd;?>/<?php echo $nav_tree[0]['sub'][$i]['sub'][$j]['id']; ?>" class="<?php if($nav_tree[0]['sub'][$i]['sub'][$j]['id']==$m_id){ echo 'focus';}?>">
                     <?php } ?>
-                        <?php echo $nav_tree[0]['sub'][$i]['sub'][$j]['tit'][$lng_idx]; ?>
+                    <?php if($nav_tree[0]['sub'][$i]['sub'][$j]['id']!='prevmnlaun2') echo $nav_tree[0]['sub'][$i]['sub'][$j]['tit'][$lng_idx];?>
                     </a>
                 </li>
             <?php } ?>
