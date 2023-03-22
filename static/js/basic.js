@@ -368,14 +368,24 @@ $(document).ready(function() {
             if (rtn) {
                 let idx = $("#idx").val();
                 if (bbs_mod == "modify" && idx) {
-                    alert('수정하시겠습니까?');
-                    $(f).attr('action', "/" + seg + "/" + m_id + "/update?idx=" + idx);
+                    if (confirm("수정하시겠습니까?")) {
+                        $(f).attr('action', "/" + seg + "/" + m_id + "/update?idx=" + idx);
+                        rtn = false;
+                        $(f).submit();
+                    } else {
+                        return false;
+                    }
                 } else {
-                    alert('등록하시겠습니까?');
-                    $(f).attr('action', "/" + seg + "/" + m_id + "/insert");
+                    if (confirm("등록하시겠습니까?")) {
+                        $(f).attr('action', "/" + seg + "/" + m_id + "/insert");
+                        rtn = false;
+                        $(f).submit();
+                    } else {
+                        return false;
+                    }
                 }
-                rtn = false;
-                $(f).submit();
+
+
             }
             return false;
         });
