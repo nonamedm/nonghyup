@@ -81,7 +81,8 @@
         <?php } ?>
 
         <?php if( $delete_perm['cd']=='pass' && ( $svc_mod=='adm' || $is_mine ) ){ ?>
-            <a class="uk-button uk-button-default del" href="<?php echo getLink($seg,$m_id,"delete",$idx,$pg); ?>"><?php if($lng_cd=='ko'){ echo "삭제";}else{echo "Delete";}?></a>
+            <a class="uk-button uk-button-default del" href="<?php echo getLink($seg,$m_id,"delete",$idx,$pg); ?>"
+                onclick="return confirm('삭제하시겠습니까?');"><?php if($lng_cd=='ko'){ echo "삭제";}else{echo "Delete";}?></a>
         <?php } ?>
 
     <?php } ?>
