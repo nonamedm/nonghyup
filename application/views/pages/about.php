@@ -23,7 +23,7 @@
 <div class="section sec2">
     <div class="cont_body">
         <div class="right_cont">
-            <img src="/static/svg/service2.svg">
+            <img src="/static/svg/service2.png">
         </div>
     </div>
 </div>

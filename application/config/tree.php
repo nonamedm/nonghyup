@@ -143,7 +143,7 @@ $config['svc_tree'] = [
                         ,'tbl'	        => 'ct_personnelTrends'
                         ,'fld'	        => 'basic'
                         ,'skin'         => 'news'
-                        ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
+                        ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'reply'=>1, 'modify'=>1, 'delete'=>1, 'dnload'=>1]
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
@@ -406,7 +406,7 @@ $config['svc_tree'] = [
                         ,'tbl'	        => 'ct_precedent'
                         ,'fld'	        => 'basic'
                         ,'skin'         => 'precedent'
-                        ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
+                        ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'reply'=>1, 'modify'=>1, 'delete'=>1, 'dnload'=>1]
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
@@ -475,12 +475,12 @@ $config['svc_tree'] = [
                         ,'tit'	        => ['Quick Service','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
-                        ,'mod'          => 'lists'
+                        ,'mod'          => 'write'
                         ,'cat'          => ''
                         ,'tbl'	        => 'ct_improvement'
                         ,'fld'	        => 'qna'
                         ,'skin'         => 'qna'
-                        ,'perm'         => ['lists'=>10, 'view'=>10, 'write'=>2, 'reply'=>10, 'modify'=>10, 'delete'=>10, 'dnload'=>1]
+                        ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'reply'=>1, 'modify'=>1, 'delete'=>1, 'dnload'=>1]
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
@@ -493,12 +493,12 @@ $config['svc_tree'] = [
                         ,'tit'	        => ['Q&A','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
-                        ,'mod'          => 'lists'
+                        ,'mod'          => 'write'
                         ,'cat'          => ''
                         ,'tbl'	        => 'ct_qna'
                         ,'fld'	        => 'qna'
                         ,'skin'         => 'qna'
-                        ,'perm'         => ['lists'=>10, 'view'=>10, 'write'=>2, 'reply'=>10, 'modify'=>10, 'delete'=>10, 'dnload'=>1]
+                        ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'reply'=>1, 'modify'=>1, 'delete'=>1, 'dnload'=>1]
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
