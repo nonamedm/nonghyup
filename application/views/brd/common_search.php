@@ -85,11 +85,19 @@
 
         </form>
     </div>
+    <span class="re_search_box"> <input type="checkbox" class="uk-checkbox re_sch"> 결과 내 재검색</span>
 
 <?php } else { // 기타 ?>
     <button class="uk-button uk-button-primary uk-width-1-1 m_brd_search">검색</button>
     <div class="brd_sch">
         <button class="uk-close-large uk-position-top-right m_brd_search_close" type="button" uk-close></button>
+        <select class="brd_sch_sel uk-select">
+            <option value="">전체</option>
+            <option value="제목">제목</option>
+            <option value="내용">내용</option>
+            <option value="발행기관">발행기관</option>
+        </select>
+        <input type="hidden" id="sub_sch" name="sub_sch" value="<?php if($sub_sch){echo $sub_sch;}?>">
         <input type="hidden" id="dtl_opt" value="0">
         <input type="text" id="brd_sch" class="uk-input brd_sch_field" name="s_word" placeholder="검색어 입력" value="<?php if($s_word){echo $s_word;}?>">
         <input type="hidden" id="rs_wrd" value="<?php if($s_word){ echo $s_word;}?>">
@@ -104,6 +112,6 @@
             <input class="uk-input datepicker" id="sch_date_start" type="text" placeholder="검색시작일" value="<?php if($s_sds){echo $s_sds;}?>" readonly> ~ <input class="uk-input datepicker" id="sch_date_end" type="text" placeholder="검색종료일" value="<?php if($s_sde){echo $s_sde;}?>" readonly>
         </div>
     </div>
-    <span class="re_search_box" style="position: absolute;top: 7px;right: 10px;"> <input type="checkbox" class="uk-checkbox re_sch"> 결과 내 재검색</span>
+    <span class="re_search_box"> <input type="checkbox" class="uk-checkbox re_sch"> 결과 내 재검색</span>
 
 <?php } ?>

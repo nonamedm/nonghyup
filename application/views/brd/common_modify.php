@@ -11,7 +11,26 @@
                 <input type="hidden" name="usr_id" value="<?php echo $usr['usr_id'];?>">
 
 
-
+                <?php if($m_id=='intnlctrl') { ?>                
+                    <div class="uk-margin-small uk-width-1-5@m">
+                        <label class="uk-form-label">구분</label>
+                        <div class="uk-form-controls">
+                            <select class="uk-select" name="post_opt" id="post_opt">
+                                <option value="보도자료" <?php if($modify['post_opt']=='보도자료'){echo 'selected';}?>>보도자료</option>
+                                <option value="연구자료" <?php if($modify['post_opt']=='연구자료'){echo 'selected';}?>>연구자료</option>
+                                <option value="제·개정" <?php if($modify['post_opt']=='제·개정'){echo 'selected';}?>>제·개정</option>
+                                <option value="기타" <?php if($modify['post_opt']=='기타'){echo 'selected';}?>>기타</option>
+                            </select>
+                        </div>
+                    </div>
+                <?php } else if($m_id=='finnaccexp'){?>
+                    <div class="uk-margin-small uk-width-1-5@m">
+                        <label class="uk-form-label">구분</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" type="text" name="post_opt" id="post_opt" value="<?php echo $modify['post_opt']; ?>">
+                        </div>
+                    </div>
+                <?php } else {}?>
                 <div class="uk-margin uk-width-1-1">
                     <label class="uk-form-label">제목</label>
                     <div class="uk-form-controls">
@@ -82,7 +101,14 @@
                         </div>
                     </div>
                     <input type="hidden" name="usr_nm" id="usr_nm" value="<?php echo $usr['usr_nm'];?>">
-                <?php }else{ ?>
+                <?php }else if($m_id=='intnlctrl'||$m_id=='finnaccexp'||$m_id=='prevmnlaun'||$m_id=='prevmnlaun2'){ ?>
+                    <div class="uk-margin-small uk-width-1-6@m">
+                        <label class="uk-form-label">발행기관</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" type="text" name="usr_nm" id="usr_nm" value="<?php if($modify['usr_nm']){echo $modify['usr_nm'];}else{echo $usr['usr_nm'];}?>">
+                        </div>
+                    </div>
+                <?php }else { ?>
                     <div class="uk-margin-small uk-width-1-6@m">
                         <label class="uk-form-label">작성자</label>
                         <div class="uk-form-controls">

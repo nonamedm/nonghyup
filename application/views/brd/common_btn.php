@@ -45,9 +45,11 @@ if($bbs_mod == 'lists'){ ?>
     
     <?php if( $delete_perm['cd'] == 'pass' && ( $svc_mod=='adm' ) ){ ?>
     <?php if(isset($rep['post_status']) && $rep['post_status']=='reply'){ ?>
-        <a class="uk-button uk-button-default del" href="<?php echo getLink($seg, $m_id, "delete", $rep['idx'], $pg); ?>">답글 삭제</a>
+        <a class="uk-button uk-button-default del" href="<?php echo getLink($seg, $m_id, "delete", $rep['idx'], $pg); ?>"
+            onclick="return confirm('삭제하시겠습니까?');">답글 삭제</a>
     <?php }else{ ?>
-        <a class="uk-button uk-button-default del" href="<?php echo getLink($seg, $m_id, "delete", $idx, $pg); ?>">삭제</a>
+        <a class="uk-button uk-button-default del" href="<?php echo getLink($seg, $m_id, "delete", $idx, $pg); ?>" 
+            onclick="return confirm('삭제하시겠습니까?');">삭제</a>
     <?php } ?>
     <?php } ?>
 
@@ -86,7 +88,8 @@ if($bbs_mod == 'lists'){ ?>
     <?php } ?>
     
     <?php if( $delete_perm['cd']=='pass' && ( $svc_mod=='adm' || $is_mine ) ){ ?>
-    <a class="uk-button uk-button-default del" href="<?php echo getLink($seg,$m_id,"delete",$idx,$pg); ?>"><?php if($lng_cd=='ko'){ echo "삭제";}else{echo "Delete";}?></a>
+    <a class="uk-button uk-button-default del" href="<?php echo getLink($seg,$m_id,"delete",$idx,$pg); ?>"
+        onclick="return confirm('삭제하시겠습니까?');"><?php if($lng_cd=='ko'){ echo "삭제";}else{echo "Delete";}?></a>
     <?php } ?>
 
 

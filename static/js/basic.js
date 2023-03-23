@@ -368,14 +368,24 @@ $(document).ready(function() {
             if (rtn) {
                 let idx = $("#idx").val();
                 if (bbs_mod == "modify" && idx) {
-                    alert('수정하시겠습니까?');
-                    $(f).attr('action', "/" + seg + "/" + m_id + "/update?idx=" + idx);
+                    if (confirm("수정하시겠습니까?")) {
+                        $(f).attr('action', "/" + seg + "/" + m_id + "/update?idx=" + idx);
+                        rtn = false;
+                        $(f).submit();
+                    } else {
+                        return false;
+                    }
                 } else {
-                    alert('등록하시겠습니까?');
-                    $(f).attr('action', "/" + seg + "/" + m_id + "/insert");
+                    if (confirm("등록하시겠습니까?")) {
+                        $(f).attr('action', "/" + seg + "/" + m_id + "/insert");
+                        rtn = false;
+                        $(f).submit();
+                    } else {
+                        return false;
+                    }
                 }
-                rtn = false;
-                $(f).submit();
+
+
             }
             return false;
         });
@@ -964,6 +974,9 @@ document.querySelector('body').addEventListener('keypress', function (e) {
 
 function sch_simple(){
     let rtn = true;
+    let s_rfsw = '';
+    let sub_sch;
+    sub_sch = $("#sub_sch").val();
 
     if (rtn && !$("#brd_sch").val()) {
         alert('검색어를 입력해 주세요');
@@ -985,17 +998,51 @@ function sch_simple(){
 
 
     var s_word = $("#brd_sch").val();
+    
+    if(rtn){
+        if($(".re_sch").attr("checked")){
+            // console.log("결과 내 재검색");
+            s_rfsw = $("#rs_wrd").val();
+        } else {
+            s_rfsw = '';
+            // console.log("재검색");
+        }
+    }
 
     if (rtn){
         rtn = false;
+        let param = '';
+        if(s_rfsw){
+            param += '&s_rfsw='+s_rfsw;
+        }
+        
         if($("#dtl_opt").val()==1){
             let s_sds = $("#sch_date_start").val();
             let s_sde = $("#sch_date_end").val();
-            location.href="/" + seg + "/" + m_id + "/lists?s_word=" + s_word+"&s_sds="+s_sds+"&s_sde="+s_sde;
+            if(sub_sch) {
+                if(sub_sch=='제목') {
+                    location.href="/" + seg + "/" + m_id + "/lists?s_subj=" + s_word+"&s_sds="+s_sds+"&s_sde="+s_sde+param;
+                }else if(sub_sch=='내용') {
+                    location.href="/" + seg + "/" + m_id + "/lists?s_cont=" + s_word+"&s_sds="+s_sds+"&s_sde="+s_sde+param;
+                } else if(sub_sch=='발행기관') {
+                    location.href="/" + seg + "/" + m_id + "/lists?post_cat=" + s_word+"&s_sds="+s_sds+"&s_sde="+s_sde+param;
+                } else {
+                    location.href="/" + seg + "/" + m_id + "/lists?s_word=" + s_word+"&s_sds="+s_sds+"&s_sde="+s_sde+param;
+                }
+            } else {
+                location.href="/" + seg + "/" + m_id + "/lists?s_word=" + s_word+"&s_sds="+s_sds+"&s_sde="+s_sde+param;
+            }
         }else{
-            location.href="/" + seg + "/" + m_id + "/lists?s_word=" + s_word;
+            if(sub_sch=='제목') {
+                location.href="/" + seg + "/" + m_id + "/lists?s_subj=" + s_word+param;
+            }else if(sub_sch=='내용') {
+                location.href="/" + seg + "/" + m_id + "/lists?s_cont=" + s_word+param;
+            } else if(sub_sch=='발행기관') {
+                location.href="/" + seg + "/" + m_id + "/lists?post_cat=" + s_word+param;
+            } else {
+                location.href="/" + seg + "/" + m_id + "/lists?s_word=" + s_word+param;
+            }
         }
-
     }
     return false;
 }
@@ -1060,6 +1107,9 @@ function frs_sch(){
         }
         if(s_sde){
             param += '&s_sde='+s_sde;
+        }
+        if(s_cat) {
+            param += "&s_cat=" + s_cat;
         }
         //console.log(param);
         location.href='/ko/search' + "?s_fsw=" + s_fsw + param;

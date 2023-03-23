@@ -21,13 +21,7 @@
                     </div>
                 </div>
 
-                <div class="uk-margin uk-width-1-1 post_fix_num fix-num-select" style="display: <?php
-                if ($modify['post_fix'] == "Y") {
-                    echo "block";
-                } else {
-                    echo "none";
-                } ?>;"
-                >
+                <div class="uk-margin uk-width-1-1 post_fix_num fix-num-select" style="display: <?php if ($modify['post_fix'] == "Y") {echo "block";} else {echo "none";} ?>;">
                     <label class="uk-form-label">상단 번호</label>
                     <div class="uk-form-controls">
                         <select id="post_fix_num" name="post_fix_num" onchange="fixcheck(this.value)" value="">
