@@ -104,15 +104,15 @@ class DL_lists
             $this->s_lng =              $this->CI->get_val('s_lng');
             $this->s_fld =              $this->CI->get_val('s_fld');
             $this->s_typ =              $this->CI->get_val('s_typ');
-            $this->s_subj =              $this->CI->get_val('s_subj');
-            $this->s_cont =              $this->CI->get_val('s_cont');
-            $this->post_cat =              $this->CI->get_val('post_cat');
-            $this->usr_nm =              $this->CI->get_val('usr_nm');
+            $this->s_subj =             $this->CI->get_val('s_subj');
+            $this->s_cont =             $this->CI->get_val('s_cont');
+            $this->post_cat =           $this->CI->get_val('post_cat');
+            $this->usr_nm =             $this->CI->get_val('usr_nm');
             // ***** grid col num
             $grid_col = 3;
 
             //*****fix
-            $this->post_fix =              $this->CI->get_val('post_fix');
+            $this->post_fix =           $this->CI->get_val('post_fix');
 
             // ***** limit num
 
@@ -143,12 +143,12 @@ class DL_lists
                 //'post_lng'   => $this->lng_cd,
                 'li_st'     => $this->li_st,
                 'li_num'    => $this->li_num,
-                'initial'    => $this->initial,
-                'post_subj'    => $this->s_subj,
-                'post_cont'    => $this->s_cont,
-                'post_cat'    => $this->post_cat,
+                'initial'   => $this->initial,
+                'post_subj' => $this->s_subj,
+                'post_cont' => $this->s_cont,
+                'post_cat'  => $this->post_cat,
                 'usr_nm'    => $this->usr_nm,
-                'post_fix'    => $this->post_fix
+                'post_fix'  => $this->post_fix
             );
 
             //print_r($param_cm);
@@ -357,10 +357,10 @@ class DL_lists
                 ,'s_lng'        =>$this->s_lng
                 ,'s_fld'        =>$this->s_fld
                 ,'s_typ'        =>$this->s_typ
-                ,'s_subj'        =>$this->s_subj
-                ,'s_cont'        =>$this->s_cont
-                ,'post_cat'        =>$this->post_cat
-                ,'usr_nm'        =>$this->usr_nm
+                ,'s_subj'       =>$this->s_subj
+                ,'s_cont'       =>$this->s_cont
+                ,'post_cat'     =>$this->post_cat
+                ,'usr_nm'       =>$this->usr_nm
                 ,'idx'          =>''
                 ,'pg'           =>$this->pg_idx
                 ,'cat'          =>$this->p_cat

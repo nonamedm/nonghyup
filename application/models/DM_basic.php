@@ -88,7 +88,7 @@ class DM_basic extends CI_MODEL
     */
     function getList($option = null)
     {
-        //print_r($option);
+//        print_r($option);
         if ($option) {
             $rtn = false;
             $sql = " SELECT * FROM `" . $this->db->escape_str($option['tb_id']) . "` WHERE 1=1 ";
@@ -119,9 +119,23 @@ class DM_basic extends CI_MODEL
                     $sql .= ' AND post_lng = "' . $this->db->escape_str($option['post_lng']) . '"';
                 }
 
-                // if (isset($option['post_cat']) && $option['post_cat']) { // current cat
-                //     $sql .= ' AND post_cat = "' . $this->db->escape_str($option['post_cat']) . '" ';
-                // }
+                if (isset($option['post_cat']) && $option['post_cat']) { // current cat
+                    // 발행기관검색
+                    if($option['tb_id'] == "ct_lawmaking"||$option['tb_id'] == "ct_noaction"||$option['tb_id'] == "ct_translate"||$option['tb_id'] == "ct_pr"||$option['tb_id'] == "ct_labdata"||$option['tb_id'] == "ct_edudata") {
+                        $sql .= ' AND  post_field LIKE "%' . $this->db->escape_str($option['post_cat']) .'%"';
+                        
+                    } else if ($option['tb_id'] == "ct_intnlctrl"||$option['tb_id'] == "ct_finnaccexp"||$option['tb_id'] == "ct_prevmnlaun"||$option['tb_id'] == "ct_prevmnlaun2"){
+                        $sql .= ' AND  usr_nm LIKE "%' . $this->db->escape_str($option['post_cat']) .'%"';
+                        
+                    } else if ($option['tb_id'] == "ct_current"){
+                        $sql .= ' AND post_cat = "' . $this->db->escape_str($option['post_cat']) . '" ';
+                        
+                    }else {
+                        $sql .= ' AND  post_field LIKE "%' . $this->db->escape_str($option['post_cat']) .'%"';
+
+                    }
+                
+                }
 
                 if (isset($option['post_opt']) && $option['post_opt']) { // current opt
                     $sql .= ' AND  post_opt = "' . $this->db->escape_str($option['post_opt']) . '" ';
@@ -200,20 +214,6 @@ class DM_basic extends CI_MODEL
                 // 내용검색
                 if (isset($option['post_cont']) && $option['post_cont']) { // 
                     $sql .= ' AND  post_cont LIKE "%' . $this->db->escape_str($option['post_cont']) . '%" ';
-                }
-                
-                // 발행기관검색
-                if (isset($option['post_cat']) && $option['post_cat']) { //
-                    if($option['tb_id'] == "ct_lawmaking"||$option['tb_id'] == "ct_noaction"||$option['tb_id'] == "ct_translate"||$option['tb_id'] == "ct_pr"||$option['tb_id'] == "ct_labdata"||$option['tb_id'] == "ct_edudata") {
-                        $sql .= ' AND  post_field LIKE "%' . $this->db->escape_str($option['post_cat']) .'%"';
-                        
-                    } else if ($option['tb_id'] == "ct_intnlctrl"||$option['tb_id'] == "ct_finnaccexp"||$option['tb_id'] == "ct_prevmnlaun"||$option['tb_id'] == "ct_prevmnlaun2"){
-                        $sql .= ' AND  usr_nm LIKE "%' . $this->db->escape_str($option['post_cat']) .'%"';
-                        
-                    } else {
-                        $sql .= ' AND  post_field LIKE "%' . $this->db->escape_str($option['post_cat']) .'%"';
-
-                    }
                 }
 
                 // 왜 like검색을 하지? 입력시 중복선택 때문..그렇다면 해당 게시핀에 한해서
@@ -349,8 +349,20 @@ class DM_basic extends CI_MODEL
                 }
 
                 if (isset($option['post_cat']) && $option['post_cat']) { // current cat
-                    $this->db->where('post_cat', $option['post_cat']);
-                }
+                    if($option['tb_id'] == "ct_lawmaking"||$option['tb_id'] == "ct_noaction"||$option['tb_id'] == "ct_translate"||$option['tb_id'] == "ct_pr"||$option['tb_id'] == "ct_labdata"||$option['tb_id'] == "ct_edudata") {
+                        $this->db->like('post_field', $option['post_cat']);
+                        
+                    } else if ($option['tb_id'] == "ct_intnlctrl"||$option['tb_id'] == "ct_finnaccexp"||$option['tb_id'] == "ct_prevmnlaun"||$option['tb_id'] == "ct_prevmnlaun2"){
+                        $this->db->like('usr_nm', $option['post_cat']);
+                        
+                    } else if ($option['tb_id'] == "ct_current"){
+                        $this->db->like('post_cat', $option['post_cat']);
+                        
+                    }else {
+                        $this->db->like('post_field', $option['post_cat']);
+                    }
+                    
+                }                
 
                 if (isset($option['post_opt']) && $option['post_opt']) { // current opt
                     $this->db->where('post_opt', $option['post_opt']);
@@ -370,6 +382,16 @@ class DM_basic extends CI_MODEL
 
                 if (isset($option['trgt_idx']) && $option['trgt_idx']) { // comment : 대상 글 idx
                     $this->db->where('trgt_idx', $option['trgt_idx']);
+                }
+
+                // 제목검색
+                if (isset($option['post_subj']) && $option['post_subj']) { // 
+                    $this->db->like('post_subj', $option['post_subj']);
+                }
+
+                // 내용검색
+                if (isset($option['post_cont']) && $option['post_cont']) { // 
+                    $this->db->like('post_cont', $option['post_cont']);
                 }
 
                 if (isset($option['s_word']) && $option['s_word']) { // 참관자 및 관리자 제외

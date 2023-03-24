@@ -95,7 +95,9 @@
             <option value="">전체</option>
             <option value="제목">제목</option>
             <option value="내용">내용</option>
+            <?php if($m_id!='current'){ ?>
             <option value="발행기관">발행기관</option>
+            <?php }?>
         </select>
         <input type="hidden" id="sub_sch" name="sub_sch" value="<?php if($sub_sch){echo $sub_sch;}?>">
         <input type="hidden" id="dtl_opt" value="0">
