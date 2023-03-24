@@ -63,6 +63,24 @@ $config['svc_tree'] = [
                 ,'edtr'         => ''
                 ,'sub'	        => [
                     [
+                        'id'	        => 'pr'
+                        ,'tit'	        => ['보도자료','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => ''
+                        ,'tbl'	        => 'ct_pr'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'pr'
+                        ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => 4
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
+                    ,[
                         'id'	        => 'lawmaking'
                         ,'tit'	        => ['입법동향','']
                         ,'typ'          => 'cont'
@@ -81,20 +99,20 @@ $config['svc_tree'] = [
                         ,'sub'	        => []
                     ]
                     ,[
-                        'id'	        => 'pr'
-                        ,'tit'	        => ['보도자료','']
+                        'id'	        => 'news'
+                        ,'tit'	        => ['NEWS','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'lists'
                         ,'cat'          => ''
-                        ,'tbl'	        => 'ct_pr'
+                        ,'tbl'	        => 'ct_news'
                         ,'fld'	        => 'basic'
-                        ,'skin'         => 'pr'
+                        ,'skin'         => 'news'
                         ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
-                        ,'file'         => 4
+                        ,'file'         => ''
                         ,'edtr'         => 'Y'
                         ,'sub'	        => []
                     ]
@@ -117,23 +135,6 @@ $config['svc_tree'] = [
                         ,'sub'	        => []
                     ]
                     ,[
-                        'id'	        => 'news'
-                        ,'tit'	        => ['NEWS','']
-                        ,'typ'          => 'cont'
-                        ,'fnc'          => 'bbs'
-                        ,'mod'          => 'lists'
-                        ,'cat'          => ''
-                        ,'tbl'	        => 'ct_news'
-                        ,'fld'	        => 'basic'
-                        ,'skin'         => 'news'
-                        ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
-                        ,'status'       => ''
-                        ,'lng_mode_yn'  => ''
-                        ,'visible_yn'   => ''
-                        ,'file'         => ''
-                        ,'edtr'         => 'Y'
-                        ,'sub'	        => []
-                    ],[
                         'id'	        => 'personnelTrends'
                         ,'tit'	        => ['인사동향','']
                         ,'typ'          => 'cont'
@@ -143,7 +144,7 @@ $config['svc_tree'] = [
                         ,'tbl'	        => 'ct_personnelTrends'
                         ,'fld'	        => 'basic'
                         ,'skin'         => 'news'
-                        ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'reply'=>1, 'modify'=>1, 'delete'=>1, 'dnload'=>1]
+                        ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
@@ -771,20 +772,20 @@ $config['adm_tree'] = [
                 ,'edtr'         => ''
                 ,'sub'	        => [
                     [
-                        'id'	        => 'brief'
-                        ,'tit'	        => ['리걸브리프','']
+                        'id'	        => 'pr'
+                        ,'tit'	        => ['보도자료','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'lists'
                         ,'cat'          => ''
-                        ,'tbl'	        => 'ct_brief'
+                        ,'tbl'	        => 'ct_pr'
                         ,'fld'	        => 'basic'
-                        ,'skin'         => 'brief'
+                        ,'skin'         => 'pr'
                         ,'perm'         => ''
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
-                        ,'file'         => 1
+                        ,'file'         => 4
                         ,'edtr'         => 'Y'
                         ,'sub'	        => []
                     ]
@@ -805,22 +806,22 @@ $config['adm_tree'] = [
                         ,'file'         => 4
                         ,'edtr'         => 'Y'
                         ,'sub'	        => []
-                    ]
+                    ]                   
                     ,[
-                        'id'	        => 'pr'
-                        ,'tit'	        => ['보도자료','']
+                        'id'	        => 'news'
+                        ,'tit'	        => ['NEWS','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'lists'
                         ,'cat'          => ''
-                        ,'tbl'	        => 'ct_pr'
+                        ,'tbl'	        => 'ct_news'
                         ,'fld'	        => 'basic'
-                        ,'skin'         => 'pr'
+                        ,'skin'         => 'news'
                         ,'perm'         => ''
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
-                        ,'file'         => 4
+                        ,'file'         => 0
                         ,'edtr'         => 'Y'
                         ,'sub'	        => []
                     ]
@@ -843,20 +844,20 @@ $config['adm_tree'] = [
                         ,'sub'	        => []
                     ]
                     ,[
-                        'id'	        => 'news'
-                        ,'tit'	        => ['NEWS','']
+                        'id'	        => 'personnelTrends'
+                        ,'tit'	        => ['인사동향','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'lists'
                         ,'cat'          => ''
-                        ,'tbl'	        => 'ct_news'
+                        ,'tbl'	        => 'ct_personnelTrends'
                         ,'fld'	        => 'basic'
                         ,'skin'         => 'news'
-                        ,'perm'         => ''
+                        ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
-                        ,'file'         => 0
+                        ,'file'         => ''
                         ,'edtr'         => 'Y'
                         ,'sub'	        => []
                     ]
@@ -896,6 +897,62 @@ $config['adm_tree'] = [
                         ,'edtr'         => 'Y'
                         ,'sub'	        => []
                     ]
+                    ,[
+                        'id'	        => 'brief'
+                        ,'tit'	        => ['리걸브리프','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => ''
+                        ,'tbl'	        => 'ct_brief'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'brief'
+                        ,'perm'         => ''
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => 1
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
+                    ,[
+                        'id'	        => 'intnlctrl'
+                        ,'tit'	        => ['내부통제','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => ''
+                        ,'tbl'	        => 'ct_intnlctrl'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'workdata'
+                        // ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>0, 'delete'=>5, 'dnload'=>0]
+                        ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'modify'=>1, 'reply'=>1, 'delete'=>1, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => ''
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
+                    ,[
+                        'id'	        => 'finnaccexp'
+                        ,'tit'	        => ['금융사고사례','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => ''
+                        ,'tbl'	        => 'ct_finnaccexp'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'workdata'
+                        // ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>0, 'delete'=>5, 'dnload'=>0]
+                        ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'modify'=>1, 'reply'=>1, 'delete'=>1, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => ''
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ] 
                     ,[
                         'id'	        => 'translate'
                         ,'tit'	        => ['법령해석','']
@@ -979,44 +1036,6 @@ $config['adm_tree'] = [
                         ,'fld'	        => 'basic'
                         ,'skin'         => 'relateSite'
                         ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>0, 'delete'=>5, 'dnload'=>0]
-                        ,'status'       => ''
-                        ,'lng_mode_yn'  => ''
-                        ,'visible_yn'   => ''
-                        ,'file'         => ''
-                        ,'edtr'         => 'Y'
-                        ,'sub'	        => []
-                    ]
-                    ,[
-                        'id'	        => 'intnlctrl'
-                        ,'tit'	        => ['내부통제','']
-                        ,'typ'          => 'cont'
-                        ,'fnc'          => 'bbs'
-                        ,'mod'          => 'lists'
-                        ,'cat'          => ''
-                        ,'tbl'	        => 'ct_intnlctrl'
-                        ,'fld'	        => 'basic'
-                        ,'skin'         => 'workdata'
-                        // ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>0, 'delete'=>5, 'dnload'=>0]
-                        ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'modify'=>1, 'reply'=>1, 'delete'=>1, 'dnload'=>1]
-                        ,'status'       => ''
-                        ,'lng_mode_yn'  => ''
-                        ,'visible_yn'   => ''
-                        ,'file'         => ''
-                        ,'edtr'         => 'Y'
-                        ,'sub'	        => []
-                    ]
-                    ,[
-                        'id'	        => 'finnaccexp'
-                        ,'tit'	        => ['금융사고사례','']
-                        ,'typ'          => 'cont'
-                        ,'fnc'          => 'bbs'
-                        ,'mod'          => 'lists'
-                        ,'cat'          => ''
-                        ,'tbl'	        => 'ct_finnaccexp'
-                        ,'fld'	        => 'basic'
-                        ,'skin'         => 'workdata'
-                        // ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>0, 'delete'=>5, 'dnload'=>0]
-                        ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'modify'=>1, 'reply'=>1, 'delete'=>1, 'dnload'=>1]
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''

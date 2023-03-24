@@ -13,6 +13,12 @@ $(document).ready(function() {
         $('.noticeBannerW').css({'display': 'none'});
     });
 
+    var currentPosition = parseInt($(".noticeBannerW").css("top"));
+    $(window).scroll(function() {
+        var position = $(window).scrollTop();
+        $(".noticeBannerW").stop().animate({"top" : currentPosition + position + "px"},1000);
+    });
+
     //gnb hover
     function gnb_hover(){
         $("#header .submenu").css({'display': 'block', 'border-bottom': '1px solid #eee'});
