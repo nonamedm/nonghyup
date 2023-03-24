@@ -9,7 +9,7 @@
         <div class="frs_sch_dtl">
             <span class="">
                 <button class="uk-close-small uk-position-top-right xclose" type="button" uk-close></button>
-                <input type="text" class="uk-input datepicker" id="frs_sds" placeholder="검색시작일" value="<?php if($s_sds){ echo $s_sds;}?>" readonly> ~ <input type="text" class="uk-input datepicker" placeholder="검색종료일" id="frs_sde" value="<?php if($s_sde){ echo $s_sde;}?>" readonly>
+                <input type="text" class="uk-input datepicker" id="frs_sds" placeholder="검색시작일" value="<?php if($s_sds){ echo $s_sds;}?>" placeholder="YYYY-MM-DD"> ~ <input type="text" class="uk-input datepicker" placeholder="검색종료일" id="frs_sde" value="<?php if($s_sde){ echo $s_sde;}?>" placeholder="YYYY-MM-DD">
             </span>
         </div>
         <span class="re_search_box"> <input type="checkbox" class="uk-checkbox re_sch"> 결과 내 재검색</span>

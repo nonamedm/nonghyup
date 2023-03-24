@@ -32,8 +32,8 @@
                             <span class="uk-label period" id="py5">최근5년</span>
                         </label>
                         <div class="uk-form-controls">
-                            <input class="uk-input datepicker" id="sch_date_start" type="text" placeholder="" value="<?php if($s_sds){echo $s_sds;}?>" readonly> ~
-                            <input class="uk-input datepicker" id="sch_date_end" type="text" placeholder="" value="<?php if($s_sde){echo $s_sde;}?>" readonly>
+                            <input class="uk-input datepicker" id="sch_date_start" type="text" placeholder="" value="<?php if($s_sds){echo $s_sds;}?>" placeholder="YYYY-MM-DD"> ~
+                            <input class="uk-input datepicker" id="sch_date_end" type="text" placeholder="" value="<?php if($s_sde){echo $s_sde;}?>" placeholder="YYYY-MM-DD">
                         </div>
                     </div>
                 </div>
@@ -109,7 +109,7 @@
     <div class="brd_sch_dtl opt">
         <button class="uk-close-small uk-position-top-right xclose" type="button" uk-close></button>
         <div class="uk-form-controls inputs">
-            <input class="uk-input datepicker" id="sch_date_start" type="text" placeholder="검색시작일" value="<?php if($s_sds){echo $s_sds;}?>" readonly> ~ <input class="uk-input datepicker" id="sch_date_end" type="text" placeholder="검색종료일" value="<?php if($s_sde){echo $s_sde;}?>" readonly>
+            <input class="uk-input datepicker" id="sch_date_start" type="text" placeholder="검색시작일" value="<?php if($s_sds){echo $s_sds;}?>" placeholder="YYYY-MM-DD"> ~ <input class="uk-input datepicker" id="sch_date_end" type="text" placeholder="검색종료일" value="<?php if($s_sde){echo $s_sde;}?>" placeholder="YYYY-MM-DD">
         </div>
     </div>
     <span class="re_search_box"> <input type="checkbox" class="uk-checkbox re_sch"> 결과 내 재검색</span>
