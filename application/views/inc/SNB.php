@@ -52,7 +52,7 @@
     
                         }else if($gd_arr[$i]['id']=='current'){
                             /*현행법령 수정*/
-                            echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "/lists?initial=ㄱ" . "' class='focus " . $cls . "'>" . $gd_arr[$i]['tit'][0] . "</a></div>";
+                            echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "/lists?initial=ㄱ" . "' class='" . $cls . "'>" . $gd_arr[$i]['tit'][0] . "</a></div>";
                         }else {
                             echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>" . $gd_arr[$i]['tit'][0] . "</a></div>";
                         }
