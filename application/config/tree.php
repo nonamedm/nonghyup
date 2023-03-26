@@ -262,7 +262,7 @@ $config['svc_tree'] = [
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
-                        ,'file'         => 1
+                        ,'file'         => 4
                         ,'edtr'         => 'Y'
                         ,'sub'	        => []
                     ]
@@ -281,7 +281,7 @@ $config['svc_tree'] = [
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
-                        ,'file'         => 1
+                        ,'file'         => 4
                         ,'edtr'         => 'Y'
                         ,'sub'	        => []
                     ]
@@ -300,7 +300,7 @@ $config['svc_tree'] = [
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
-                        ,'file'         => 1
+                        ,'file'         => 4
                         ,'edtr'         => 'Y'
                         ,'sub'	        => []
                     ]
@@ -319,7 +319,7 @@ $config['svc_tree'] = [
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
-                        ,'file'         => 1
+                        ,'file'         => 4
                         ,'edtr'         => 'Y'
                         ,'sub'	        => []
                     ]
@@ -930,7 +930,7 @@ $config['adm_tree'] = [
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
-                        ,'file'         => ''
+                        ,'file'         => 4
                         ,'edtr'         => 'Y'
                         ,'sub'	        => []
                     ]
@@ -949,7 +949,7 @@ $config['adm_tree'] = [
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
-                        ,'file'         => ''
+                        ,'file'         => 4
                         ,'edtr'         => 'Y'
                         ,'sub'	        => []
                     ] 
@@ -1058,7 +1058,7 @@ $config['adm_tree'] = [
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
-                        ,'file'         => ''
+                        ,'file'         => 4
                         ,'edtr'         => 'Y'
                         ,'sub'	        => []
                     ]
@@ -1077,7 +1077,7 @@ $config['adm_tree'] = [
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
-                        ,'file'         => ''
+                        ,'file'         => 4
                         ,'edtr'         => 'Y'
                         ,'sub'	        => []
                     ]

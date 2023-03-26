@@ -306,7 +306,7 @@ $(document).ready(function() {
 
         $(".btn_write").on("click", function () {
             let rtn = true;
-
+            
             if (m_id=='agree') { // 약관
 
                 if (rtn && !$("#post_subj").val()) {
@@ -1374,4 +1374,8 @@ function check(box){
 }
 function fixcheck(value){
     $("#post_fix_num").val(Number(value));
+}
+
+function fn_downloadYn(value){
+    $("#"+value).is(":checked") == true ? $("#"+value).val("Y") : $("#"+value).val("N");
 }
