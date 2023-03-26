@@ -104,9 +104,10 @@
         <input type="text" id="brd_sch" class="uk-input brd_sch_field" name="s_word" placeholder="검색어 입력" value="<?php if($s_word){echo $s_word;}?>">
         <input type="hidden" id="rs_wrd" value="<?php if($s_word){ echo $s_word;}?>">
         <button type="button" id="brd_sch_btn" class="brd_sch_btn">검색</button>
-        <?php if($m_id!='current'){?>
-        <button class="brd_sch_dtl_btn"><span class="uk-label law">기간검색</span></button>
-        <?php }?>
+        <?php if($m_id=='current'||$m_id=='sanctions'){?>
+        <?php }else { ?>
+            <button class="brd_sch_dtl_btn"><span class="uk-label law">기간검색</span></button>
+        <?php } ?>
     </div>
     <div class="brd_sch_dtl opt">
         <button class="uk-close-small uk-position-top-right xclose" type="button" uk-close></button>
