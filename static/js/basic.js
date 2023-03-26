@@ -489,6 +489,8 @@ $(document).ready(function() {
                     tmp_arr[1]=ordir;
                     param_arr[i] = tmp_arr[0]+'='+tmp_arr[1];
                     break;
+                } else {
+                    ordir="DESC"
                 }
             }
             if(laword){
@@ -529,6 +531,8 @@ $(document).ready(function() {
                     tmp_arr[1]=ordir;
                     param_arr[i] = tmp_arr[0]+'='+tmp_arr[1];
                     break;
+                } else {
+                    ordir="DESC"
                 }
             }
             if(orgaord){
