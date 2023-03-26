@@ -39,7 +39,7 @@ class DC_common extends CI_Controller
     );
 
     // 파라미터
-    private $p_cat, $p_opt, $p_idx, $pg_idx, $fl_idx, $code, $p_ord, $initial;
+    private $p_cat, $p_opt, $p_idx, $pg_idx, $fl_idx, $code, $p_ord, $initial, $law_ord, $orga_ord;
 
     // 파라미터(검색)
     private $s_word, $s_cat, $s_sds, $s_sde, $s_rfsw, $s_fsw, $s_res, $s_tot, $s_lng, $s_fld, $s_typ, $s_cont, $s_subj, $post_cat, $usr_nm;
@@ -208,6 +208,28 @@ class DC_common extends CI_Controller
                 }
             }
             $this->p_ord = $p_ord;
+        }
+        
+        if ($this->input->get('laword', TRUE)) {
+            $law_ord = $this->input->get('laword', TRUE);
+            $law_ord = $this->dl_security->xss_cleaner($law_ord);
+            if($law_ord){
+                if ( !($law_ord=="DESC" || $law_ord=="ASC") ){
+                    show_404("ERROR : ord is wrong", TRUE);
+                }
+            }
+            $this->law_ord = $law_ord;
+        }
+
+        if ($this->input->get('orgaord', TRUE)) {
+            $orga_ord = $this->input->get('orgaord', TRUE);
+            $orga_ord = $this->dl_security->xss_cleaner($orga_ord);
+            if($orga_ord){
+                if ( !($orga_ord=="DESC" || $orga_ord=="ASC") ){
+                    show_404("ERROR : ord is wrong", TRUE);
+                }
+            }
+            $this->orga_ord = $orga_ord;
         }
 
         if (preg_match("/[^0-9]/", $this->input->get('idx', TRUE))) {

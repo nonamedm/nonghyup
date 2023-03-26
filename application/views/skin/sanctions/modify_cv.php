@@ -48,9 +48,30 @@
                 </div>
 
                 <div class="uk-margin-small uk-width-1-1">
-                    <label class="uk-form-label">대상기관</label>
+                    <label class="uk-form-label">요약</label>
                     <div class="uk-form-controls">
-                        <input class="uk-input" type="text" name="post_status" id="post_status" value="<?php echo $modify['post_status'];?>">
+                        <input class="uk-input" type="text" name="post_summary" id="post_summary" value="<?php echo $modify['post_summary'];?>">
+                    </div>
+                </div>
+
+                <div class="uk-margin-small uk-width-1-4@m">
+                    <label class="uk-form-label">제재조치일</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input datepicker" type="text" name="crt_dtms" id="crt_dtms" value="<?php echo $modify['crt_dtms'];?>" placeholder="YYYY-MM-DD">
+                    </div>
+                </div>
+
+                <div class="uk-margin-small uk-width-1-4@m">
+                    <label class="uk-form-label">제재대상기관</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" type="text" name="post_field" id="post_field" value="<?php echo $modify['post_field'];?>">
+                    </div>
+                </div>
+
+                <div class="uk-margin-small uk-width-1-4@m">
+                    <label class="uk-form-label">위반법률</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" type="text" name="post_cat" id="post_cat" value="<?php echo $modify['post_cat'];?>">
                     </div>
                 </div>
 
@@ -58,20 +79,6 @@
                     <label class="uk-form-label">내용</label>
                     <div class="uk-form-controls">
                         <textarea class="uk-textarea ckeditor" name="post_cont" id="post_cont" rows='10'><?php echo $modify['post_cont'];?></textarea>
-                    </div>
-                </div>
-
-                <div class="uk-margin-small uk-width-1-4@m">
-                    <label class="uk-form-label">제재조치요구일</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input datepicker" type="text" name="post_dtms" id="post_dtms" value="<?php echo $modify['post_dtms'];?>" placeholder="YYYY-MM-DD">
-                    </div>
-                </div>
-
-                <div class="uk-margin-small uk-width-1-4@m">
-                    <label class="uk-form-label">등록일</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input datepicker" type="text" name="crt_dtms" id="crt_dtms" value="<?php echo $modify['crt_dtms'];?>" placeholder="YYYY-MM-DD">
                     </div>
                 </div>
 

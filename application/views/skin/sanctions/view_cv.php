@@ -57,9 +57,10 @@
                 }
                 ?>
 
-                <div class="data uk-placeholder">
-                    <div class="unit"><span class="tit">대상기관 : </span><span class="txt"><?php echo $view['post_status'];?></span></div>
-                    <div class="unit"><span class="tit">제재조치요구일 : </span><span class="txt"><?php echo $view['post_dtms'];?></span></div>
+                <div class="data data-sanction uk-placeholder" style="display: flex;">
+                    <div class="unit"><span class="tit">제재조치일 : </span><span class="txt"><?php echo $view['crt_dtms'];?></span></div>
+                    <div class="unit"><span class="tit">위반법률 : </span><span class="txt"><?php echo $view['post_cat'];?></span></div>
+                    <div class="unit"><span class="tit">제재 대상 기관 : </span><span class="txt"><?php echo $view['post_field'];?></span></div>
                 </div>
 
                 <?php

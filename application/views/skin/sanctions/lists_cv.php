@@ -25,9 +25,10 @@
                 <thead class="wth">
                     <tr>
                         <th class="w40" style="width:5%;">번호</th>
-                        <th class="w170" style="width:15%;">대상기관</th>
+                        <th id="brd_sch_dtl_th" class="w40" style="width:10%;">제재조치요구일</th>
+                        <th class="w40 laword" style="width:10%;">위반법률</th>
                         <th class="tit" style="width:50%;">제목</th>
-                        <th class="w120" style="width:30%;">제재조치요구일</th>
+                        <th class="w170 orgaord" style="width:15%;">제재대상 기관</th>
                         <?php if($is_adm_mod){ ?>
                             <th class="no">좋아요</th>
                             <th class="no">댓글수</th>
@@ -52,7 +53,7 @@
                                     <?php if($lists[$i]['post_link_addr']){ ?><span class="uk-label link">외부링크연결</span><?php } ?>
                                 </div>
                                 <div class="caption">
-                                    <span class="cat"><?php echo $lists[$i]['post_status'];?> (<?php echo substr($lists[$i]['post_dtms'], 2,8);?>)</span>
+                                    <span class="cat"><?php echo $lists[$i]['post_status'];?> (<?php echo substr($lists[$i]['crt_dtms'], 2,8);?>)</span>
                                     <span class="cat"><?php echo $lists[$i]['post_field'];?></span>
                                     <span class="cat"><?php echo substr($lists[$i]['crt_dtms'], 2, 8);?></span>
                                 </div>
@@ -61,7 +62,8 @@
                         <tr class="wtr <?php if ($lists[$i]['post_fix'] == 'Y') echo "fix";?>"
                             <?php if ($lists[$i]['post_fix'] == 'Y') echo "style=background-color:#f4f4f4"; ?>>
                             <td class="w40"><?php if($lists[$i]['post_fix'] == 'Y') echo '-'; else echo $li_idx; ?></td>
-                            <td class="w170"><?php echo $lists[$i]['post_status'];?></td>
+                            <td class="w40"><?php echo $lists[$i]['crt_dtms'];?></td>
+                            <td class="w170"><?php echo $lists[$i]['post_cat'];?></td>
                             <td class="tit" id="tit<?php echo $i;?>">
                                 <?php if($lists[$i]['post_link_addr'] && !$is_adm_mod){ ?>
                                 <a href="<?php echo $lists[$i]['post_link_addr'];?>" target="<?php echo $lists[$i]['post_link_trgt'];?>" class="chk_perm_view">
@@ -73,7 +75,7 @@
                                 </a><?php echo get_label_new($lists[$i]['crt_dtms']);?>
                                     <?php if($lists[$i]['post_link_addr']){ ?><span class="uk-label link">외부링크연결</span><?php } ?>
                             </td>
-                            <td class="w120"><?php echo $lists[$i]['post_dtms'];?></td>
+                            <td class="w170"><?php echo $lists[$i]['post_field'];?></td>
                             <?php if($is_adm_mod){ ?>
                                 <td class="no"><?php echo $lists[$i]['post_like'];?></td>
                                 <td class="no"><?php echo $lists[$i]['post_cmt_cnt'];?></td>

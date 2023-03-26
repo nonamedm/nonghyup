@@ -467,6 +467,87 @@ $(document).ready(function() {
         return false;
     });
 
+    // sancstions 게시판 헤더 정렬
+    $(".laword").on("click", function(){
+        
+        var ordir='';
+
+        var addr1 = '?';
+        var addr_arr = window.location.href.split('?');
+        if(addr_arr.length>1){
+            var param_arr = addr_arr[1].split("&");
+            var laword=1;
+            for(var i=0; i<param_arr.length; i++){
+                var tmp_arr = param_arr[i].split("=");
+                if(tmp_arr[0]=='laword'){
+                    laword=0;
+                    if(tmp_arr[1]=="DESC") {
+                        ordir="ASC";
+                    } else {
+                        ordir="DESC";
+                    }
+                    tmp_arr[1]=ordir;
+                    param_arr[i] = tmp_arr[0]+'='+tmp_arr[1];
+                    break;
+                }
+            }
+            if(laword){
+                param_arr.push("laword="+ordir);
+            }
+            for(var i=0; i<param_arr.length; i++){
+                if(i>0){
+                    addr1 += '&';
+                }
+                addr1 += param_arr[i];
+            }
+        }else{
+            ordir='DESC';
+            addr1 += "laword="+ordir;
+        }
+        location.href=addr_arr[0]+addr1;
+        return false;
+    });
+
+    $(".orgaord").on("click", function(){
+        
+        var ordir='';
+
+        var addr1 = '?';
+        var addr_arr = window.location.href.split('?');
+        if(addr_arr.length>1){
+            var param_arr = addr_arr[1].split("&");
+            var orgaord=1;
+            for(var i=0; i<param_arr.length; i++){
+                var tmp_arr = param_arr[i].split("=");
+                if(tmp_arr[0]=='orgaord'){
+                    orgaord=0;
+                    if(tmp_arr[1]=="DESC") {
+                        ordir="ASC";
+                    } else {
+                        ordir="DESC";
+                    }
+                    tmp_arr[1]=ordir;
+                    param_arr[i] = tmp_arr[0]+'='+tmp_arr[1];
+                    break;
+                }
+            }
+            if(orgaord){
+                param_arr.push("orgaord="+ordir);
+            }
+            for(var i=0; i<param_arr.length; i++){
+                if(i>0){
+                    addr1 += '&';
+                }
+                addr1 += param_arr[i];
+            }
+        }else{
+            ordir='DESC';
+            addr1 += "orgaord="+ordir;
+        }
+        location.href=addr_arr[0]+addr1;
+        return false;
+    });
+
 
     // 회원가입 - 사번확인
     $("#btn_chk_num").on("click", function(){
@@ -615,6 +696,12 @@ $(document).ready(function() {
     $(".brd_sch_dtl_btn").on("click", function(){
        $(".brd_sch_dtl").css("display", "block");
        $(".brd_sch_dtl_btn").css("display", "none");
+       $("#dtl_opt").val(1);
+       return false;
+    });
+
+    $("#brd_sch_dtl_th").on("click", function(){
+       $(".brd_sch_dtl").css("display", "block");
        $("#dtl_opt").val(1);
        return false;
     });

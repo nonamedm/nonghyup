@@ -18,6 +18,8 @@ class DL_lists
     // ***** 정렬기준
     public $ord = "DESC";
     public $orderBy = " crt_dtms DESC ";
+    public $law_ord = "DESC ";
+    public $orga_ord = "DESC ";
     
     //*****상단기준
     public $post_fix = "";
@@ -89,6 +91,8 @@ class DL_lists
             $this->p_cat =              $this->CI->get_val('p_cat');
             $this->p_opt =              $this->CI->get_val('p_opt');
             $this->p_ord =              $this->CI->get_val('p_ord');
+            $this->law_ord =            $this->CI->get_val('law_ord');
+            $this->orga_ord =            $this->CI->get_val('orga_ord');
 
 
             // ***** file num
@@ -129,6 +133,15 @@ class DL_lists
             if($this->p_ord){
                 $this->orderBy = " crt_dtms ".$this->p_ord." ";
             }
+
+            if($this->law_ord){
+                $this->orderBy = " post_cat ".$this->law_ord." ";
+            }
+
+            if($this->orga_ord){
+                $this->orderBy = " post_field ".$this->orga_ord." ";
+            }
+            
 
             /*
              * ------------------------------
@@ -237,6 +250,10 @@ class DL_lists
                         }else if($this->p_ord=="DESC"){
                             $param_cm['order'] = ' crt_dtms DESC ';
                         }
+                    }else if($this->law_ord) {
+                        $param_cm['order'] = ' post_cat DESC ';
+                    }else if($this->orga_ord) {
+                        $param_cm['order'] = ' post_field DESC ';
                     }else{
                         $param_cm['order'] = ' idx DESC, crt_dtms DESC ';
                     }
