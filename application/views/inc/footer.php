@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
-<script src="/static/js//jquery-1.8.1.min.js"></script>
+<script src="/static/js/jquery/jquery-1.8.1.min.js"></script>
 <script type="text/javascript" src="/static/js/uikit.min.js"></script>
 <script type="text/javascript" src="/static/js/slick_main.js"></script>
 
@@ -30,7 +30,10 @@ if ($fnc_typ=='bbs' || $m_id == 'search') {?>
         //script구문 내부에 해당 메소드를 입력합니다.
         $(function() {
             $(".datepicker").datepicker({
-                dateFormat: "yy-mm-dd"
+                dateFormat: "yy-mm-dd",
+                changeMonth: true, // 월을 바꿀수 있는 셀렉트 박스를 표시한다.
+                changeYear: true, // 년을 바꿀 수 있는 셀렉트 박스를 표시한다.
+                showMonthAfterYear: true , // 월, 년순의 셀렉트 박스를 년,월 순으로 바꿔준다. 
             });
         });
     </script>

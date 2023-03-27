@@ -174,7 +174,7 @@ class DL_update
                             $file_data['fields']['file_ord'] = $upload_data_tmp[$i]['file_ord'];
                             log_message("ERROR", "DL_update 파일삭제처리=".$i);
                         }else{
-                            $upload_data_tmp[$i]['download_yn']= $this->CI->dl_security->xss_cleaner1($this->CI->input->post('download_yn', FALSE));
+                            $upload_data_tmp[$i]['download_yn']= $this->CI->dl_security->xss_cleaner1($this->CI->input->post('download_yn'.$i, FALSE));
                             $file_data['fields'] = $upload_data_tmp[$i];
                             log_message("INFO", "DL_update 파일삭제처리=".$i);
                         }

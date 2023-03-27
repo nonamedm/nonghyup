@@ -147,7 +147,7 @@ class DL_insert
                         $upload_data_tmp[$i]['file_ord']=$i;
                         $upload_data_tmp[$i]['file_status']='';
                         $upload_data_tmp[$i]['crt_ip']=$_SERVER['REMOTE_ADDR'];
-                        $upload_data_tmp[$i]['download_yn']= $this->CI->dl_security->xss_cleaner1($this->CI->input->post('download_yn', FALSE));
+                        $upload_data_tmp[$i]['download_yn']= $this->CI->dl_security->xss_cleaner1($this->CI->input->post('download_yn'.$i, FALSE));
 
                         if(isset($upload_data_tmp[$i]) && $upload_data_tmp[$i]){
                             $file_data['fields'] = $upload_data_tmp[$i];
