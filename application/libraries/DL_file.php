@@ -40,7 +40,7 @@ class DL_file
         }
 
         $cfg_file_resize = $this->CI->get_cfg_file_resize();
-
+       
         //var_dump($cfg_file_upload);
 
         // ***** 초기화

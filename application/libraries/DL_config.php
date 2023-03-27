@@ -43,7 +43,8 @@ class DL_config
 
         switch ($post_typ) {
             case 'basic':
-                $allowed_types = "gif|jpg|jpeg|png|pdf|hwp|hwpx|ppt|pptx|doc|docx|xls|xlsx|txt|zip|dwg|mp4";
+                $allowed_types = "*";
+                // $allowed_types = "gif|jpg|jpeg|png|pdf|hwp|hwpx|ppt|pptx|doc|docx|xls|xlsx|txt|zip|dwg|mp4";
                 break;
 
             case 'gallery':
