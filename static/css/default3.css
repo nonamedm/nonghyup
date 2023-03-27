@@ -484,6 +484,8 @@ body.sub #content .cont_body .cont_block .brd_sch_dtl_btn .uk-label {background:
 body.sub #content .cont_body .cont_block .brd_sch_dtl .uk-close-large {margin: 0px 5px 0 0;}
 
 #brd_sch_dtl_th:hover {cursor: pointer;text-decoration: underline;}
+.laword:hover {cursor: pointer;text-decoration: underline;}
+.orgaord:hover {cursor: pointer;text-decoration: underline;}
 @media (max-width:768px) {
     body.sub #content .cont_body .cont_block .brd_sch_dtl_btn {position: relative; height: 40px;width: 100%; display: inline-block;margin-left: 0px; padding: 0;}
     body.sub #content .cont_body .cont_block .brd_sch_dtl_btn .uk-label {background: #8086b4; border-radius: 0px; color: #fff; line-height: 40px; font-size: 16px; font-weight: 400; padding: 0px; height: 40px; margin: 0 auto; width: 100%; height: 100%;}
