@@ -59,17 +59,25 @@
                     </div>
                 </div>
 
-                <div class="uk-margin-small uk-width-3-4@m">
-                    <label class="uk-form-label">URL</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input" type="text" name="post_link_addr" id="post_link_addr" placeholder="주소입력시 보기화면에서 원문링크탭이 나타납니다." value="<?php echo $modify['post_link_addr'];?>">
-                    </div>
-                </div>
                 
                 <div class="uk-margin-small uk-width-1-4@m">
                     <label class="uk-form-label">등록일</label>
                     <div class="uk-form-controls">
                         <input class="uk-input datepicker" type="text" name="crt_dtms" id="crt_dtms" value="<?php echo $modify['crt_dtms'];?>" placeholder="YYYY-MM-DD">
+                    </div>
+                </div>
+                
+                <div class="uk-margin-small uk-width-1-4@m">
+                    <label class="uk-form-label">링크옵션</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-checkbox" type="checkbox" name="post_link_trgt" value="_blank" <?php if($modify['post_link_trgt']){ echo "checked"; } ?>> 체크시 새창으로
+                    </div>
+                </div>
+
+                <div class="uk-margin-small uk-width-3-4@m">
+                    <label class="uk-form-label">외부링크</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" type="text" name="post_link_addr" id="post_link_addr" placeholder="주소입력시 보기화면에서 원문링크탭이 나타납니다." value="<?php echo $modify['post_link_addr'];?>">
                     </div>
                 </div>
 

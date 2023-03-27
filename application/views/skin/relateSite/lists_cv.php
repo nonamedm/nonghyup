@@ -72,7 +72,7 @@
                                 <?php } ?>
                             </td>
                             <td class="w120">
-                                <a href="<?php echo $lists[$i]['post_link_addr'];?>"> <?php echo $lists[$i]['post_link_addr'];?></a>
+                                <a href="<?php echo $lists[$i]['post_link_addr'];?>" target="<?php echo $lists[$i]['post_link_trgt'] ?>"> <?php echo $lists[$i]['post_link_addr'];?></a>
                             </td>
                             <?php if($is_adm_mod){ ?>
                                 <td class="no"><?php echo $lists[$i]['post_hit'];?></td>
