@@ -137,6 +137,15 @@ class DM_basic extends CI_MODEL
                 
                 }
 
+                if (isset($option['sanc']) && $option['sanc']) { // current cat
+                    // 위반법률검색
+                    $sql .= ' AND  post_cat LIKE "%' . $this->db->escape_str($option['sanc']) .'%"';                
+                }
+                if (isset($option['post_sanc']) && $option['post_sanc']) { // current cat
+                    // 제재기관검색
+                    $sql .= ' AND  post_field LIKE "%' . $this->db->escape_str($option['post_sanc']) .'%"';                
+                }
+
                 if (isset($option['post_opt']) && $option['post_opt']) { // current opt
                     $sql .= ' AND  post_opt = "' . $this->db->escape_str($option['post_opt']) . '" ';
                 }
@@ -362,7 +371,17 @@ class DM_basic extends CI_MODEL
                         $this->db->like('post_field', $option['post_cat']);
                     }
                     
-                }                
+                }
+
+                if (isset($option['sanc']) && $option['sanc']) { // current cat
+                    // 위반법률검색
+                    $this->db->like('post_cat', $option['sanc']);           
+                }
+
+                if (isset($option['post_sanc']) && $option['post_sanc']) { //
+                    // 제재기관검색
+                    $this->db->like('post_field', $option['post_sanc']);              
+                }
 
                 if (isset($option['post_opt']) && $option['post_opt']) { // current opt
                     $this->db->where('post_opt', $option['post_opt']);

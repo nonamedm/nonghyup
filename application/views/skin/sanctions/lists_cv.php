@@ -26,9 +26,9 @@
                     <tr>
                         <th class="w40" style="width:5%;">번호</th>
                         <th id="brd_sch_dtl_th" class="w40" style="width:10%;">제재조치요구일</th>
-                        <th class="w40 laword" style="width:10%;">위반법률</th>
+                        <th class="w40" style="width:10%;">위반법률</th>
                         <th class="tit" style="width:50%;">제목</th>
-                        <th class="w170 orgaord" style="width:15%;">제재대상 기관</th>
+                        <th class="w170" style="width:15%;">제재대상 기관</th>
                         <?php if($is_adm_mod){ ?>
                             <th class="no">좋아요</th>
                             <th class="no">댓글수</th>

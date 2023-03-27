@@ -42,7 +42,7 @@ class DC_common extends CI_Controller
     private $p_cat, $p_opt, $p_idx, $pg_idx, $fl_idx, $code, $p_ord, $initial, $law_ord, $orga_ord;
 
     // 파라미터(검색)
-    private $s_word, $s_cat, $s_sds, $s_sde, $s_rfsw, $s_fsw, $s_res, $s_tot, $s_lng, $s_fld, $s_typ, $s_cont, $s_subj, $post_cat, $usr_nm;
+    private $s_word, $s_cat, $s_sds, $s_sde, $s_rfsw, $s_fsw, $s_res, $s_tot, $s_lng, $s_fld, $s_typ, $s_cont, $s_subj, $post_cat, $usr_nm, $sanc, $post_sanc;
 
     // 키워드
     private $kw_lists=[];
@@ -271,6 +271,18 @@ class DC_common extends CI_Controller
             $post_cat = $this->input->get('post_cat', TRUE);
             $post_cat = $this->dl_security->xss_cleaner($post_cat);
             $this->post_cat = $post_cat;
+        }
+        //위반법률 검색
+        if ($this->input->get('sanc', TRUE)) {
+            $sanc = $this->input->get('sanc', TRUE);
+            $sanc = $this->dl_security->xss_cleaner($sanc);
+            $this->sanc = $sanc;
+        }
+        //제재기관 검색
+        if ($this->input->get('post_sanc', TRUE)) {
+            $post_sanc = $this->input->get('post_sanc', TRUE);
+            $post_sanc = $this->dl_security->xss_cleaner($post_sanc);
+            $this->post_sanc = $post_sanc;
         }
         if ($this->input->get('usr_nm', TRUE)) {
             $usr_nm = $this->input->get('usr_nm', TRUE);
@@ -1752,6 +1764,8 @@ class DC_common extends CI_Controller
             ,'s_cont'        => $this->get_val('s_cont')
             ,'post_cat'        => $this->get_val('post_cat')
             ,'usr_nm'        => $this->get_val('usr_nm')
+            ,'sanc'        => $this->get_val('sanc')
+            ,'post_sanc'        => $this->get_val('post_sanc')
 
             ,'code'         => $this->get_val('code')
             ,'s_res'        => $this->get_val('s_res')

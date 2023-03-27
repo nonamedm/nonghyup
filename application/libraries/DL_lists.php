@@ -35,6 +35,8 @@ class DL_lists
     public $s_cont = '';
     public $post_cat = '';
     public $usr_nm = '';
+    public $sanc = '';
+    public $post_sanc = '';
 
     public $usr_add_cnt = 0;
 
@@ -112,6 +114,8 @@ class DL_lists
             $this->s_cont =             $this->CI->get_val('s_cont');
             $this->post_cat =           $this->CI->get_val('post_cat');
             $this->usr_nm =             $this->CI->get_val('usr_nm');
+            $this->sanc =               $this->CI->get_val('sanc');
+            $this->post_sanc =          $this->CI->get_val('post_sanc');
             // ***** grid col num
             $grid_col = 3;
 
@@ -161,6 +165,8 @@ class DL_lists
                 'post_cont' => $this->s_cont,
                 'post_cat'  => $this->post_cat,
                 'usr_nm'    => $this->usr_nm,
+                'sanc'      => $this->sanc,
+                'post_sanc'      => $this->post_sanc,
                 'post_fix'  => $this->post_fix
             );
 
@@ -378,6 +384,8 @@ class DL_lists
                 ,'s_cont'       =>$this->s_cont
                 ,'post_cat'     =>$this->post_cat
                 ,'usr_nm'       =>$this->usr_nm
+                ,'sanc'         =>$this->sanc
+                ,'post_sanc'    =>$this->post_sanc
                 ,'idx'          =>''
                 ,'pg'           =>$this->pg_idx
                 ,'cat'          =>$this->p_cat

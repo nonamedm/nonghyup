@@ -1066,6 +1066,8 @@ document.querySelector('body').addEventListener('keypress', function (e) {
 function sch_simple(){
     let rtn = true;
     let s_rfsw = '';
+    let sanc = '';
+    let post_sanc = '';
     let sub_sch;
     sub_sch = $("#sub_sch").val();
 
@@ -1094,8 +1096,12 @@ function sch_simple(){
         if($(".re_sch").attr("checked")){
             // console.log("결과 내 재검색");
             s_rfsw = $("#rs_wrd").val();
+            sanc = $("#sanc").val();
+            post_sanc = $("#post_sanc").val();
         } else {
             s_rfsw = '';
+            sanc = '';
+            post_sanc = '';
             // console.log("재검색");
         }
     }
@@ -1105,6 +1111,10 @@ function sch_simple(){
         let param = '';
         if(s_rfsw){
             param += '&s_rfsw='+s_rfsw;
+        } else if(sanc) {
+            param += '&sanc='+sanc;
+        } else if (post_sanc) {
+            param += '&post_sanc='+post_sanc;
         }
         
         if($("#dtl_opt").val()==1){
@@ -1117,6 +1127,10 @@ function sch_simple(){
                     location.href="/" + seg + "/" + m_id + "/lists?s_cont=" + s_word+"&s_sds="+s_sds+"&s_sde="+s_sde+param;
                 } else if(sub_sch=='발행기관') {
                     location.href="/" + seg + "/" + m_id + "/lists?post_cat=" + s_word+"&s_sds="+s_sds+"&s_sde="+s_sde+param;
+                } else if(sub_sch=='위반법률') {
+                    location.href="/" + seg + "/" + m_id + "/lists?sanc=" + s_word+"&s_sds="+s_sds+"&s_sde="+s_sde+param;
+                } else if(sub_sch=='제재기관') {
+                    location.href="/" + seg + "/" + m_id + "/lists?post_sanc=" + s_word+"&s_sds="+s_sds+"&s_sde="+s_sde+param;
                 } else {
                     location.href="/" + seg + "/" + m_id + "/lists?s_word=" + s_word+"&s_sds="+s_sds+"&s_sde="+s_sde+param;
                 }
@@ -1130,6 +1144,10 @@ function sch_simple(){
                 location.href="/" + seg + "/" + m_id + "/lists?s_cont=" + s_word+param;
             } else if(sub_sch=='발행기관') {
                 location.href="/" + seg + "/" + m_id + "/lists?post_cat=" + s_word+param;
+            } else if(sub_sch=='위반법률') {
+                location.href="/" + seg + "/" + m_id + "/lists?sanc=" + s_word+param;
+            } else if(sub_sch=='제재기관') {
+                location.href="/" + seg + "/" + m_id + "/lists?post_sanc=" + s_word+param;
             } else {
                 location.href="/" + seg + "/" + m_id + "/lists?s_word=" + s_word+param;
             }

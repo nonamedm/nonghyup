@@ -148,7 +148,7 @@ $config['svc_tree'] = [
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
-                        ,'file'         => ''
+                        ,'file'         => 4
                         ,'edtr'         => 'Y'
                         ,'sub'	        => []
                     ]
