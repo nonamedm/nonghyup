@@ -1467,6 +1467,17 @@ function loginWithKakao() {
         redirectUri: 'https://law.nhbank.com/ko/auth/oauth'
     })
 }
+//checked
+function linkChecked(value){
+    var link_checked = $('#link_checked').is(':checked');
+    if(link_checked == true){
+        $('#link_checked').val('_blank');
+        $('input:checkbox[name="post_link_trgt"]').prop('checked',true);
+    }else{
+        $('#link_checked').val('');
+        $('input:checkbox[name="post_link_trgt"]').prop('checked',false);
+    }
+}
 //상단고정
 function check(box){
     var post_fix_chk = $('#post_fix').is(':checked');

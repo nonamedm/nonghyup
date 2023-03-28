@@ -67,7 +67,7 @@ class DL_insert
             {//echo $key.'='.$val.'<br>';
                 if($val!='' && isset($param_insert['fields'][$key]))
                 {
-                    if( !($key=='post_subj' || $key=='post_cont' || $key=='post_link_addr'|| $key=='post_fix'|| $key=='post_fix_num')) {
+                    if( !($key=='post_subj' || $key=='post_cont' || $key=='post_link_addr'|| $key=='post_fix'|| $key=='post_fix_num'|| $key=='post_link_trgt')) {
                         $param_insert['fields'][$key] = $this->CI->dl_security->xss_cleaner($val);
                     }
                 }
@@ -77,6 +77,7 @@ class DL_insert
             $param_insert['fields']['post_cont'] = $this->CI->dl_security->xss_cleaner1($this->CI->input->post('post_cont', FALSE));
             $param_insert['fields']['post_fix'] = $this->CI->dl_security->xss_cleaner1($this->CI->input->post('post_fix', FALSE));
             $param_insert['fields']['post_fix_num'] = $this->CI->dl_security->xss_cleaner1($this->CI->input->post('post_fix_num', FALSE));
+            $param_insert['fields']['post_link_trgt'] = $this->CI->dl_security->xss_cleaner1($this->CI->input->post('post_link_trgt', FALSE));
 
             //print_r($param_insert['fields']);
 

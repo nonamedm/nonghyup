@@ -64,7 +64,7 @@
                 <div class="uk-margin-small uk-width-1-4@m">
                     <label class="uk-form-label">링크옵션</label>
                     <div class="uk-form-controls">
-                        <input class="uk-checkbox" type="checkbox" name="post_link_trgt" value="_blank" checked> 체크시 새창으로
+                        <input id="link_checked" class="uk-checkbox" type="checkbox" name="post_link_trgt" onchange="linkChecked(this);" value="_blank"> 체크시 새창으로
                     </div>
                 </div>
 
