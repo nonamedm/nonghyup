@@ -708,6 +708,29 @@ class DC_common extends CI_Controller
             $result['precedent'] = $this->DM_basic->getResult_sch($param_cm);
             $total += count($result['precedent']);
 
+            $param_cm['tb_id']='ct_personnelTrends';
+            $result['ct_personnelTrends'] = $this->DM_basic->getResult_sch($param_cm);
+            $total += count($result['ct_personnelTrends']);
+
+            $param_cm['tb_id']='ct_prevmnlaun1';
+            $result['ct_prevmnlaun1'] = $this->DM_basic->getResult_sch($param_cm);
+            $total += count($result['ct_prevmnlaun1']);
+
+            $param_cm['tb_id']='ct_prevmnlaun2';
+            $result['ct_prevmnlaun2'] = $this->DM_basic->getResult_sch($param_cm);
+            $total += count($result['ct_prevmnlaun2']);
+
+            $param_cm['tb_id']='ct_intnlctrl';
+            $result['ct_intnlctrl'] = $this->DM_basic->getResult_sch($param_cm);
+            $total += count($result['ct_intnlctrl']);
+
+            $param_cm['tb_id']='ct_finnaccexp';
+            $result['ct_finnaccexp'] = $this->DM_basic->getResult_sch($param_cm);
+            $total += count($result['ct_finnaccexp']);
+
+            $param_cm['tb_id']='ct_sanctions';
+            $result['ct_sanctions'] = $this->DM_basic->getResult_sch($param_cm);
+            $total += count($result['ct_sanctions']);
             $this->s_res = $result;
             $this->s_tot = $total;
             //echo $this->s_tot;
@@ -1429,8 +1452,8 @@ class DC_common extends CI_Controller
         $this->method = __FUNCTION__;
         $this->rtn_perm = $this->chk_perm();
 
-//        if ($this->rtn_perm['cd'] == 'pass') {
-//            if ($param[0]) {
+       if ($this->rtn_perm['cd'] == 'pass') {
+           if ($param[0]) {
                 if($param[0]=='dashboard'){
                     redirect('/adm/member');
                 }
@@ -1444,12 +1467,12 @@ class DC_common extends CI_Controller
                 } else {
                     $this->dl_admin->dashboard($param);
                 }
-//            } else {
-//                $this->dl_admin->index();
-//            }
-//        } else {
-//            alert('접근권한이 없습니다.', '/index.php');
-//        }
+           } else {
+               $this->dl_admin->index();
+           }
+       } else {
+           alert('접근권한이 없습니다.', '/index.php');
+       }
 
     }
 
@@ -1821,12 +1844,12 @@ class DC_common extends CI_Controller
     }
 
     public function chk_ip(){
-        //$rtn = false;
-        //if($_SERVER["REMOTE_ADDR"]=='183.111.174.96' || $_SERVER["REMOTE_ADDR"]=='192.168.219.104'||$_SERVER["REMOTE_ADDR"]=='210.91.190.155' || $_SERVER["REMOTE_ADDR"]=='223.38.81.134'){
+        $rtn = false;
+        if($_SERVER["REMOTE_ADDR"]=='1.255.77.102' ||$_SERVER["REMOTE_ADDR"]=='183.111.174.96' || $_SERVER["REMOTE_ADDR"]=='192.168.219.104'||$_SERVER["REMOTE_ADDR"]=='210.91.190.155' || $_SERVER["REMOTE_ADDR"]=='223.38.81.134' || $_SERVER["REMOTE_ADDR"]=='221.162.119.225'){
             $rtn = true;
-        //}else{
-        //    alert('허용되지 않은 접속입니다.', '/index.php');
-        //}
+        }else{
+           alert('허용되지 않은 접속입니다.', '/index.php');
+        }
         return $rtn;
     }
 
