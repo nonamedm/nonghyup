@@ -40,6 +40,12 @@
 
         <div class="uk-navbar-center mm menubar uk-visible@l">
             <ul class="gnb">
+                <?php if($usr_arr['usr_id']=='nacf5061'||$usr_arr['usr_id']=='nacf50611'||$usr_arr['usr_id']=='wtadmin'||$usr_arr['usr_id']=='17311795'||$usr_arr['usr_id']=='19312949'||$usr_arr['usr_id']=='08305788'||$usr_arr['usr_id']=='21613193') {?>
+                    <li class="menu">
+                        <a href="/adm/" class="focus">
+                        컨텐츠관리</a>
+                    </li>
+                <?php } else {?>
                 <?php for($i=0; $i<count($nav_tree[0]['sub']); $i++) {
                     if ($nav_tree[0]['sub'][$i]['visible_yn'] != "N") {?>
                         <li class="menu">
@@ -50,9 +56,10 @@
 
                         <?php if ($i<(count($nav_tree[0]['sub'])-2)) { ?>
                             <li class="dv"></li>
-                        <?php } ?>
-
-                    <?php } } ?>
+                            <?php } ?>
+                            
+                            <?php } } ?>
+                <?php }?>
             </ul>
         </div>
 

@@ -1454,23 +1454,46 @@ class DC_common extends CI_Controller
 
        if ($this->rtn_perm['cd'] == 'pass') {
            if ($param[0]) {
-                if($param[0]=='dashboard'){
-                    redirect('/adm/member');
-                }
-                if ($this->m_id) {
-
-                    if ($this->bbs_mod) {
-                        $this->{$this->bbs_mod}($param);
-                    } else {
-                        $this->dl_admin->{$this->m_id}($param);
+                if($this->usr_id=='nacf5061'||$this->usr_id=='nacf50611'||$this->usr_id=='wtadmin'||$this->usr_id=='17311795'||$this->usr_id=='19312949'||$this->usr_id=='08305788'||$this->usr_id=='21613193') {
+                    if($param[0]=='dashboard'){
+                        if($this->usr_id=='nacf5061') {
+                            redirect('/adm/intnlctrl');
+                        } else if($this->usr_id=='nacf50611') {
+                            redirect('/adm/finnaccexp');
+                        } else if($this->usr_id=='17311795'||$this->usr_id=='19312949'||$this->usr_id=='08305788'||$this->usr_id=='21613193'||$this->usr_id=='wtadmin') {
+                            redirect('/adm/prevmnlaun');
+                        }
                     }
-                } else {
-                    $this->dl_admin->dashboard($param);
+                    if ($this->m_id) {
+    
+                        if ($this->bbs_mod) {
+                            $this->{$this->bbs_mod}($param);
+                        } else {
+                            $this->dl_admin->{$this->m_id}($param);
+                        }
+                    } else {
+                        $this->dl_admin->dashboard($param);
+                    }
+                }else {
+                    if($param[0]=='dashboard'){
+                        redirect('/adm/member');
+                    }
+                    if ($this->m_id) {
+    
+                        if ($this->bbs_mod) {
+                            $this->{$this->bbs_mod}($param);
+                        } else {
+                            $this->dl_admin->{$this->m_id}($param);
+                        }
+                    } else {
+                        $this->dl_admin->dashboard($param);
+                    }
+
                 }
            } else {
                $this->dl_admin->index();
            }
-       } else {
+        } else {
            alert('접근권한이 없습니다.', '/index.php');
        }
 
@@ -1548,7 +1571,7 @@ class DC_common extends CI_Controller
             }else{
                 show_404("xox DC_common -> view : non_param_error", TRUE);
             }
-        }else{
+            }else{
             alert('글보기 권한이 없습니다. \n로그인 해 주세요.', '/ko/auth/login');
         }
     }
@@ -1572,6 +1595,14 @@ class DC_common extends CI_Controller
             }else{
                 show_404("xox DC_common -> write : non_param_error", TRUE);
             }
+        } else if($this->usr_id=='nacf5061'||$this->usr_id=='nacf50611'||$this->usr_id=='17311795'||$this->usr_id=='19312949'||$this->usr_id=='08305788'||$this->usr_id=='21613193'||$this->usr_id=='wtadmin') {
+            if($param[0])
+            {
+                $this->dl_view->view_cv($param);
+            }else{
+                show_404("xox DC_common -> view : non_param_error", TRUE);
+            }
+ 
         }else{
             alert('글작성 권한이 없습니다. \n로그인 해 주세요.', '/index.php');
         }

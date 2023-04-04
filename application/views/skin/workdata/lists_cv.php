@@ -23,7 +23,15 @@
     $this->load->view("brd/common_pagination");
 
     // ***** bbs nav
-    $this->load->view("brd/common_btn");
+    if($m_id=='intnlctrl'&&($usr_arr['usr_id']=='nacf5061'||$usr_arr['usr_id']=='wtadmin')) {
+        $this->load->view("brd/intnlctrl_btn");
+    } else if($m_id=='finnaccexp'&&$usr_arr['usr_id']=='nacf50611') {
+        $this->load->view("brd/finnaccexp_btn");
+    } else if(($m_id=='prevmnlaun'||$m_id=='prevmnlaun2')&& ($usr_arr['usr_id']=='17311795'||$usr_arr['usr_id']=='19312949'||$usr_arr['usr_id']=='08305788'||$usr_arr['usr_id']=='21613193')) {
+        $this->load->view("brd/prevmnlaun_btn");
+    } else {
+        $this->load->view("brd/common_btn");
+    }
     ?>
 
 <!-- 게시글 목록 :: 시작-->
