@@ -709,28 +709,28 @@ class DC_common extends CI_Controller
             $total += count($result['precedent']);
 
             $param_cm['tb_id']='ct_personnelTrends';
-            $result['ct_personnelTrends'] = $this->DM_basic->getResult_sch($param_cm);
-            $total += count($result['ct_personnelTrends']);
+            $result['personnelTrends'] = $this->DM_basic->getResult_sch($param_cm);
+            $total += count($result['personnelTrends']);
 
             $param_cm['tb_id']='ct_prevmnlaun1';
-            $result['ct_prevmnlaun1'] = $this->DM_basic->getResult_sch($param_cm);
-            $total += count($result['ct_prevmnlaun1']);
+            $result['prevmnlaun'] = $this->DM_basic->getResult_sch($param_cm);
+            $total += count($result['prevmnlaun']);
 
             $param_cm['tb_id']='ct_prevmnlaun2';
-            $result['ct_prevmnlaun2'] = $this->DM_basic->getResult_sch($param_cm);
-            $total += count($result['ct_prevmnlaun2']);
+            $result['prevmnlaun2'] = $this->DM_basic->getResult_sch($param_cm);
+            $total += count($result['prevmnlaun2']);
 
             $param_cm['tb_id']='ct_intnlctrl';
-            $result['ct_intnlctrl'] = $this->DM_basic->getResult_sch($param_cm);
-            $total += count($result['ct_intnlctrl']);
+            $result['intnlctrl'] = $this->DM_basic->getResult_sch($param_cm);
+            $total += count($result['intnlctrl']);
 
             $param_cm['tb_id']='ct_finnaccexp';
-            $result['ct_finnaccexp'] = $this->DM_basic->getResult_sch($param_cm);
-            $total += count($result['ct_finnaccexp']);
+            $result['finnaccexp'] = $this->DM_basic->getResult_sch($param_cm);
+            $total += count($result['finnaccexp']);
 
             $param_cm['tb_id']='ct_sanctions';
-            $result['ct_sanctions'] = $this->DM_basic->getResult_sch($param_cm);
-            $total += count($result['ct_sanctions']);
+            $result['sanctions'] = $this->DM_basic->getResult_sch($param_cm);
+            $total += count($result['sanctions']);
             $this->s_res = $result;
             $this->s_tot = $total;
             //echo $this->s_tot;
@@ -1152,7 +1152,7 @@ class DC_common extends CI_Controller
                 echo '<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>';
             	echo '<script type="text/javascript">Kakao.init("91ec0aac3f32ee5795cc51f9c7a9e493");</script>';
                 //echo '<script type="text/javascript">Kakao.Auth.authorize({ redirectUri: "https://law.nhbank.com/ko/auth/oauth"});</script>';
-                echo '<script type="text/javascript">Kakao.Auth.authorize({ redirectUri: "https://inbv4311.cafe24.com/ko/auth/oauth", state: "' . $state . '"});</script>';
+                echo '<script type="text/javascript">Kakao.Auth.authorize({ redirectUri: "https://law.nhbank.com/ko/auth/oauth", state: "' . $state . '"});</script>';
                 //echo '<script type="text/javascript">Kakao.Auth.authorize({ redirectUri: "https://nhfrip.devv.kr/ko/auth/oauth", state: "'.$state.'"});</script>';
                 exit;
             }
@@ -1876,7 +1876,7 @@ class DC_common extends CI_Controller
 
     public function chk_ip(){
         $rtn = false;
-        if($_SERVER["REMOTE_ADDR"]=='1.255.77.102' ||$_SERVER["REMOTE_ADDR"]=='223.26.222.72' ||$_SERVER["REMOTE_ADDR"]=='121.170.124.236' ||$_SERVER["REMOTE_ADDR"]=='183.111.174.96' || $_SERVER["REMOTE_ADDR"]=='192.168.219.104'||$_SERVER["REMOTE_ADDR"]=='210.91.190.155' || $_SERVER["REMOTE_ADDR"]=='223.38.81.134' || $_SERVER["REMOTE_ADDR"]=='221.162.119.225' || $_SERVER["REMOTE_ADDR"]=='121.170.124.236'){
+        if($_SERVER["REMOTE_ADDR"]=='1.255.77.102' ||$_SERVER["REMOTE_ADDR"]=='223.26.222.72' ||$_SERVER["REMOTE_ADDR"]=='121.170.124.236' ||$_SERVER["REMOTE_ADDR"]=='183.111.174.96' || $_SERVER["REMOTE_ADDR"]=='192.168.219.104'||$_SERVER["REMOTE_ADDR"]=='210.91.190.155' || $_SERVER["REMOTE_ADDR"]=='223.38.81.134' || $_SERVER["REMOTE_ADDR"]=='221.162.119.225' || $_SERVER["REMOTE_ADDR"]=='121.170.124.236' || $_SERVER["REMOTE_ADDR"]=='1.231.30.68'){
             $rtn = true;
         }else{
            alert('허용되지 않은 접속입니다.', '/index.php');

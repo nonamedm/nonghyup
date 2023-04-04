@@ -117,6 +117,18 @@ function trans_idToNm($_id){
             $rtn = "비조치의견서";
         } else if ($_id == 'precedent') {
             $rtn = "금융판례";
+        } else if ($_id == 'personnelTrends') {
+            $rtn = "입법동향";
+        } else if ($_id == 'intnlctrl') {
+            $rtn = "내부통제";
+        } else if ($_id == 'finnaccexp') {
+            $rtn = "금융사고사례";
+        } else if ($_id == 'prevmnlaun') {
+            $rtn = "국내동향&주요이슈";
+        } else if ($_id == 'prevmnlaun2') {
+            $rtn = "해외동향&Sanction";
+        } else if ($_id == 'sanctions') {
+            $rtn = "금융제재사례";
         } else {
             $rtn = "";
         }
