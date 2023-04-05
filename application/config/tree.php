@@ -136,7 +136,7 @@ $config['svc_tree'] = [
                     ]
                     ,[
                         'id'	        => 'personnelTrends'
-                        ,'tit'	        => ['인사동향','']
+                        ,'tit'	        => ['기관동향','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'lists'
@@ -845,7 +845,7 @@ $config['adm_tree'] = [
                     ]
                     ,[
                         'id'	        => 'personnelTrends'
-                        ,'tit'	        => ['인사동향','']
+                        ,'tit'	        => ['기관동향','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'lists'

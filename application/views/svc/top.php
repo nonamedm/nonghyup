@@ -108,9 +108,9 @@
     
     <div class="noticeBannerW">
         <a href="/ko/improvement" class="noticeBanner">
-            <p class="txtBlue txtBold" style="color:#2B347B">Quick Service </p> 
+            <p class="txtBlue txtBold" style="color:#2B347B">【 Quick Service 】</p> 
             <br>
-            <p style="margin-top: -18px"> 필요한 규제 정보를 요청하세요!</p>
+            <p style="margin-top: -18px"> 필요한 규제 정보를 요청하시면<br>"빠르게" 배송해 드립니다!</p>
         </a>
         <button type="button" class="btnClose"></button>
     </div>
