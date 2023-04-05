@@ -227,12 +227,12 @@ class DL_insert
                         log_message("ERROR", "DL_insert  메일발송 3");
                         if($this->CI->config->item('md')['tbl']=="ct_improvement"){
                             log_message("ERROR", "DL_insert  메일발송 4");
-                            $param_mail['mail_subj'] = '규제개선제안 등록안내';
-                            $param_mail['mail_title'] = '규제개선제안 등록안내';
+                            $param_mail['mail_subj'] = 'Quick Service 등록안내';
+                            $param_mail['mail_title'] = 'Quick Service 등록안내';
                         }else if($this->CI->config->item('md')['tbl']=="ct_qna"){
                             log_message("ERROR", "DL_insert  메일발송 5");
-                            $param_mail['mail_subj'] = '규제대응Q&A 등록안내';
-                            $param_mail['mail_title'] = '규제대응Q&A 등록안내';
+                            $param_mail['mail_subj'] = 'Q&A 등록안내';
+                            $param_mail['mail_title'] = 'Q&A 등록안내';
                         }
                         $this->CI->dl_mail->send_mail_admin($param_mail);
                     }

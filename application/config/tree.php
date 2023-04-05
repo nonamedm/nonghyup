@@ -602,7 +602,7 @@ $config['svc_tree'] = [
                     ]
                     ,[
                         'id'	        => 'myimprovement'
-                        ,'tit'	        => ['나의 규제개선제안','']
+                        ,'tit'	        => ['나의 Quick service','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'lists'
@@ -620,7 +620,7 @@ $config['svc_tree'] = [
                     ]
                     ,[
                         'id'	        => 'myqna'
-                        ,'tit'	        => ['나의 규제대응Q&A','']
+                        ,'tit'	        => ['나의 Q&A','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'lists'

@@ -88,8 +88,8 @@
                     <ul class="dp2">
                         <li class="sm"><a href="/ko/mypage">회원정보</a></li>
                         <?php if(! $is_admin){ ?>
-                        <li class="sm"><a href="/ko/myimprovement">나의 규제개선제안</a></li>
-                        <li class="sm"><a href="/ko/myqna">나의 규제대응Q&A</a></li>
+                        <li class="sm"><a href="/ko/myimprovement">나의 Quick Service</a></li>
+                        <li class="sm"><a href="/ko/myqna">나의 Q&A</a></li>
                         <li class="sm"><a href="/ko/withdrawal" class="withdrawal">회원탈퇴</a></li>
                         <?php } ?>
                     </ul>
