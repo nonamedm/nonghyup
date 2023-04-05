@@ -916,7 +916,7 @@ body.main #content .section.sec1 .container .banner {width: 520px; height: 260px
 }
 
 @media (max-width:1024px) {
-    body.main #content .section.sec1 {margin-top: 40px; padding-bottom: 30px;}
+    body.main #content .section.sec1 {margin-top: 0px; padding-bottom: 30px;}
     body.main #content .section.sec1 .container {width: 90%; display: block; justify-content: unset;}
     body.main #content .section.sec1 .container .latest {width: 100%; float: none;}
     body.main #content .section.sec1 .container .latest hr {margin: 17px 0 13px;}
@@ -938,7 +938,7 @@ body.main #content .section.sec1 .container .banner {width: 520px; height: 260px
 
 /* main sec2
 body.main #content .section.sec2 */
-body.main #content .section.sec2 {margin-top: 50px; padding-bottom: 60px;}
+body.main #content .section.sec2 {margin-top: 50px;}
 body.main #content .section.sec2 .container {display: flex; justify-content: space-between;}
 body.main #content .section.sec2 .container .latest {float: left; vertical-align: top; width: 100%; text-align: left;}
 body.main #content .section.sec2 .container .latest .subj {font-size: 26px; font-weight: 400; color: #2B347B;}
