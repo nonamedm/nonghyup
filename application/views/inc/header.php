@@ -32,6 +32,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <link rel="stylesheet" href="/static/css/common1.css">
     <link rel="stylesheet" href="/static/css/default3.css">
     <link rel="favicon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
 
 
     <title><?php echo $pg_tit;?>:: NH농협은행 규제대응지원포털</title>
