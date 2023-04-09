@@ -221,6 +221,8 @@ class DL_lists
 
             }else if($this->m_id=='precedent'){
                 $param_cm['order'] = " post_dtms ".$this->p_ord." ";
+            }else if($this->m_id=='relateSite'){
+                $param_cm['order'] = " crt_dtms DESC, idx DESC ";
             }
 
 

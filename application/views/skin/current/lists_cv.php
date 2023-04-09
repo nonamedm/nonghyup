@@ -21,12 +21,12 @@
         $this->load->view("brd/common_search");
     }
     ?>
-    <div class="uk-placeholder category">
+    <!-- <div class="uk-placeholder category">
         <a href="/ko/current?cat=common" class="uk-label cat <?php if($cat=='common'){echo "focus";}?>">공통관련법규</a>
         <a href="/ko/current?cat=bank" class="uk-label cat <?php if($cat=='bank'){echo "focus";}?>">은행관련법규</a>
         <a href="/ko/current?cat=investment" class="uk-label cat <?php if($cat=='investment'){echo "focus";}?>">금융투자관련법규</a>
         <a href="/ko/current?cat=microfinance" class="uk-label cat <?php if($cat=='microfinance'){echo "focus";}?>">비은행관련법규</a>
-    </div>
+    </div> -->
     <?php
     // ***** bbs sort
     $this->load->view("brd/common_sort");

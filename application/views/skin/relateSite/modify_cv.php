@@ -58,7 +58,6 @@
                         <input class="uk-input" type="text" name="post_summary" id="post_summary" value="<?php echo $modify['post_summary'];?>">
                     </div>
                 </div>
-
                 
                 <div class="uk-margin-small uk-width-1-4@m">
                     <label class="uk-form-label">등록일</label>

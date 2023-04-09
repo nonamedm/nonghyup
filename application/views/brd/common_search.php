@@ -110,10 +110,7 @@
         <input type="hidden" id="sanc" value="<?php if($sanc){echo $sanc;} ?>">
         <input type="hidden" id="post_sanc" value="<?php if($post_sanc){echo $post_sanc;} ?>">
         <button type="button" id="brd_sch_btn" class="brd_sch_btn">검색</button>
-        <?php if($m_id=='current'||$m_id=='sanctions'){?>
-        <?php }else { ?>
-            <button class="brd_sch_dtl_btn"><span class="uk-label law">기간검색</span></button>
-        <?php } ?>
+        <button class="brd_sch_dtl_btn"><span class="uk-label law">기간검색</span></button>
     </div>
     <div class="brd_sch_dtl opt">
         <button class="uk-close-small uk-position-top-right xclose" type="button" uk-close></button>

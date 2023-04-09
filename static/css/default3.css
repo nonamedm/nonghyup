@@ -483,7 +483,6 @@ body.sub #content .cont_body .cont_block .brd_sch_dtl_btn {position: absolute; d
 body.sub #content .cont_body .cont_block .brd_sch_dtl_btn .uk-label {background: #8086b4;}
 body.sub #content .cont_body .cont_block .brd_sch_dtl .uk-close-large {margin: 0px 5px 0 0;}
 
-#brd_sch_dtl_th:hover {cursor: pointer;text-decoration: underline;}
 .laword:hover {cursor: pointer;text-decoration: underline;}
 .orgaord:hover {cursor: pointer;text-decoration: underline;}
 @media (max-width:768px) {
@@ -667,7 +666,8 @@ body.sub #content .cont_body .cont_block .brd_view .tit_box .tabs .tab .tab_icon
     body.sub #content .cont_body .cont_block .brd_view .tit_box .info .name {margin-right: 10px;}
     body.sub #content .cont_body .cont_block .brd_view .tit_box .info .date {margin-right: 0px;}
 
-    body.sub #content .cont_body .cont_block .brd_view .tit_box .tabs {display: inline-block; right: 10px;}
+    body.sub #content .cont_body .cont_block .brd_view .tit_box .tabs {display: inline-block; right: 3px;}
+    body.sub #content .cont_body .cont_block .brd_view .tit_box .tabs .tab {padding: 0 5px; font-size: 10px; }
 }
 
 

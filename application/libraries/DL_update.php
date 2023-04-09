@@ -94,6 +94,7 @@ class DL_update
             $param_update['fields']['post_link_addr'] = $this->CI->dl_security->xss_cleaner1($this->CI->input->post('post_link_addr', FALSE));
             $param_update['fields']['post_subj'] = $this->CI->dl_security->xss_cleaner1($this->CI->input->post('post_subj', FALSE));
             $param_update['fields']['post_cont'] = $this->CI->dl_security->xss_cleaner1($this->CI->input->post('post_cont', FALSE));
+            $param_update['fields']['post_summary'] = $this->CI->dl_security->xss_cleaner1($this->CI->input->post('post_summary', FALSE));
             $param_update['fields']['post_fix'] = $this->CI->dl_security->xss_cleaner1($this->CI->input->post('post_fix', FALSE));
             $param_update['fields']['post_fix_num'] = $this->CI->dl_security->xss_cleaner1($this->CI->input->post('post_fix_num', FALSE));
             $param_update['fields']['post_link_trgt'] = $this->CI->dl_security->xss_cleaner1($this->CI->input->post('post_link_trgt', FALSE));

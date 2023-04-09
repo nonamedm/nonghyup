@@ -15,7 +15,7 @@
                 <div class="view_tit"><?php echo $view['post_subj'];?></div>
 
                 <div class="info">
-                    <span class="date uk-margin-right"><span class="tit">등록일 :</span> <?php echo substr($view['crt_dtms'], 2, 8);?></span>
+                    <!-- <span class="date uk-margin-right"><span class="tit">등록일 :</span> <?php echo substr($view['crt_dtms'], 2, 8);?></span> -->
                 </div>
                 <div class="tabs">
                     <?php if(isset($file[0]['file_name']) && $file[0]['file_name']){?>

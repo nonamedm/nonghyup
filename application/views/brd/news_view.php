@@ -13,7 +13,11 @@
             <div class="view_tit"><?php echo $view['post_subj'];?></div>
 
             <div class="info">
-                <span class="name uk-margin-right"><span class="tit">작성자 : </span><?php echo $view['usr_nm'];?></span>
+                <?php if($m_id=='intnlctrl'||$m_id=='finnaccexp'||$m_id=='prevmnlaun'||$m_id=='prevmnlaun2'||$m_id=='personnelTrends') { ?>
+                    <span class="name uk-margin-right"><span class="tit">발행기관 : </span><?php echo $view['usr_nm'];?></span>
+                <?php } else { ?>
+                    <span class="name uk-margin-right"><span class="tit">작성자 : </span><?php echo $view['usr_nm'];?></span>
+                <?php } ?>
                 <span class="date uk-margin-right"><span class="tit">등록일 : </span><?php echo substr($view['crt_dtms'], 2, 8);?></span>
             </div>
             <div class="tabs">

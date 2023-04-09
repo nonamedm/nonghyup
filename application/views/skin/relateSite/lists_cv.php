@@ -52,7 +52,7 @@
                                     <?php if($lists[$i]['post_link_addr']){ ?><span class="uk-label link">외부링크연결</span><?php } ?>
                                 </div>
                                 <div class="caption">
-                                    <span class="cat"><?php echo $lists[$i]['post_status'];?> (<?php echo substr($lists[$i]['post_dtms'], 2,8);?>)</span>
+                                    <span class="cat"><?php echo $lists[$i]['post_summary'];?> </span>
                                     <span class="cat"><?php echo $lists[$i]['post_field'];?></span>
                                     <span class="cat"><?php echo substr($lists[$i]['crt_dtms'], 2, 8);?></span>
                                 </div>

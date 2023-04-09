@@ -64,14 +64,19 @@
                     <?php for ($j=0; $j<count($nav_tree[0]['sub'][$i]['sub']); $j++) {
                         if($nav_tree[0]['sub'][$i]['sub'][$j]['visible_yn']!='N') { ?>
                         <li class="sm">
-                            <!--금융제재사례수정-->
                             <?php if($nav_tree[0]['sub'][$i]['sub'][$j]['id']=='sanctions'){ ?>
                             <a href="/<?php echo $lng_cd;?>/<?php echo $nav_tree[0]['sub'][$i]['sub'][$j]['id'];?>">
                             <!--<a href="https://www.fss.or.kr/fss/job/openInfo/list.do?menuNo=200476" target="_blank">-->
                             <?php }else{ ?>
                             <a href="/<?php echo $lng_cd;?>/<?php echo $nav_tree[0]['sub'][$i]['sub'][$j]['id'];?>">
                             <?php } ?>
+                            <?php if($nav_tree[0]['sub'][$i]['sub'][$j]['id']=='prevmnlaun'){ ?>
+                                국내동향&주요이슈
+                            <?php } else if($nav_tree[0]['sub'][$i]['sub'][$j]['id']=='prevmnlaun2') {?>
+                                해외동향&Sanctions
+                            <?php } else { ?>
                                 <?php echo strip_tags($nav_tree[0]['sub'][$i]['sub'][$j]['tit'][$lng_idx]);?>
+                            <?php }?>
                             </a>
                         </li>
                         <?php } ?>
@@ -108,9 +113,9 @@
     
     <div class="noticeBannerW">
         <a href="/ko/improvement" class="noticeBanner">
-            <p class="txtBlue txtBold" style="color:#2B347B">【 Quick Service 】</p> 
+            <p class="txtBlue txtBold" style="color:#2B347B; margin-left:-10px;">【 Quick Service 】</p> 
             <br>
-            <p style="margin-top: -18px"> 필요한 규제 정보를 요청하시면<br>"빠르게" 배송해 드립니다!</p>
+            <p style="margin-top: -18px; line-height: 25px;"> 필요한 규제 정보를 요청하시면<br>"빠르게" 배송해 드립니다!</p>
         </a>
         <button type="button" class="btnClose"></button>
     </div>

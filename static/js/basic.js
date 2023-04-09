@@ -704,12 +704,6 @@ $(document).ready(function() {
        return false;
     });
 
-    $("#brd_sch_dtl_th").on("click", function(){
-       $(".brd_sch_dtl").css("display", "block");
-       $("#dtl_opt").val(1);
-       return false;
-    });
-
     $(".frs_sch_dtl_btn").on("click", function(){
         $(".frs_sch_dtl").css("display", "block");
         $(".frs_sch_dtl_btn").css("display", "none");
