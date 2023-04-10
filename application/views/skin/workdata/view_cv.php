@@ -10,7 +10,7 @@
         $this->load->view("brd/intnlctrl_btn");
     } else if($m_id=='finnaccexp') {
         $this->load->view("brd/finnaccexp_btn");
-    } else if($m_id=='prevmnlaun'||$m_id=='prevmnlaun2') {
+    } else if($m_id=='prevmnlaun1'||$m_id=='prevmnlaun2') {
         $this->load->view("brd/prevmnlaun_btn");
     } else {
         $this->load->view("brd/common_btn");

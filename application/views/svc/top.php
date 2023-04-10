@@ -70,7 +70,7 @@
                             <?php }else{ ?>
                             <a href="/<?php echo $lng_cd;?>/<?php echo $nav_tree[0]['sub'][$i]['sub'][$j]['id'];?>">
                             <?php } ?>
-                            <?php if($nav_tree[0]['sub'][$i]['sub'][$j]['id']=='prevmnlaun'){ ?>
+                            <?php if($nav_tree[0]['sub'][$i]['sub'][$j]['id']=='prevmnlaun1'){ ?>
                                 국내동향&주요이슈
                             <?php } else if($nav_tree[0]['sub'][$i]['sub'][$j]['id']=='prevmnlaun2') {?>
                                 해외동향&Sanctions

@@ -15,7 +15,7 @@ if($m_id=='finnaccexp') {
         alert("접근 권한이 없습니다.", $prevPage);
     }
 }
-if($m_id=='prevmnlaun'||$m_id=='prevmnlaun2') {
+if($m_id=='prevmnlaun1'||$m_id=='prevmnlaun2') {
     if($usr_arr['usr_id']=='17311795'||$usr_arr['usr_id']=='19312949'||$usr_arr['usr_id']=='08305788'||$usr_arr['usr_id']=='21613193'||$usr_arr['usr_id']=='admin'||$usr_arr['usr_id']=='hwonpark'||$usr_arr['usr_id']=='ycneh'||$usr_arr['usr_id']=='jeyun8835') { 
         
     } else {

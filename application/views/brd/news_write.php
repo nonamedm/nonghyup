@@ -95,7 +95,7 @@
 
 
             <div class="uk-margin-small uk-width-1-6@m">
-                <?php if($m_id=='intnlctrl'||$m_id=='finnaccexp'||$m_id=='prevmnlaun'||$m_id=='prevmnlaun2'||$m_id=='personnelTrends') { ?>
+                <?php if($m_id=='intnlctrl'||$m_id=='finnaccexp'||$m_id=='prevmnlaun1'||$m_id=='prevmnlaun2'||$m_id=='personnelTrends') { ?>
                     <label class="uk-form-label">발행기관</label>
                 <?php } else { ?>
                     <label class="uk-form-label">작성자</label>
