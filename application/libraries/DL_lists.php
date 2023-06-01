@@ -348,7 +348,7 @@ class DL_lists
                 $pg_config['total_rows'] = $lists_total;
                 $pg_config['pg'] = $this->pg_idx;
                 $pg_config['per_page'] = $this->li_num;
-                $pg_config['num_links'] = 10;
+                $pg_config['num_links'] = 4;
                 $pg_config['full_tag_open'] = '<ul class="uk-pagination uk-flex-center uk-padding uk-margin">';
                 $pg_config['full_tag_close'] = '</ul>';
                 $pg_config['cur_tag_open'] = '<li class="pn uk-active">';
