@@ -215,7 +215,7 @@ body #wrap #header .GNB *
 body #header .GNB ul.gnb {position:relative; margin: 0 auto;}
 body #header .GNB ul.gnb>li.dv {position: relative;display: inline-block;margin: 22px 0px 5px; width: 0.5px; background: #eee; height: 14px; vertical-align: middle;}
 body #header .GNB ul.gnb>li.dv:last-child {display: none;}
-body #header .GNB ul.gnb>li.menu {position: relative;display: inline-block;padding: 0 40px; vertical-align: top;}
+body #header .GNB ul.gnb>li.menu {position: relative;display: inline-block;padding: 0 40px; vertical-align: top; width: 175px; overflow-x: visible;}
 body #header .GNB ul.gnb>li.menu>a {position: relative; display:inline-block; font-size:18px; color:#fff; letter-spacing: 0px; line-height:54px; font-weight:400; text-align: center; white-space: nowrap;}
 body #header .GNB ul.gnb>li.menu>a:hover {color:#F8EBCB;}
 body #header .GNB ul.gnb>li.menu>a.selected, #header .GNB ul.gnb>li.menu>a.focus {color:#F8EBCB;}
@@ -223,7 +223,7 @@ body #header .GNB ul.gnb>li.menu>a.selected, #header .GNB ul.gnb>li.menu>a.focus
 body #header .GNB ul.gnb>li.menu .smenu {display: none;}
 body #header .GNB ul.gnb>li.menu .smenu ul {position:relative;display: list-item;}
 body #header .GNB ul.gnb>li.menu .smenu ul li {position:relative;display: list-item;}
-body #header .GNB ul.gnb>li.menu .smenu ul li a {color:#222222; font-weight: 400; font-size: 15px; letter-spacing: -0.5px;}
+body #header .GNB ul.gnb>li.menu .smenu ul li a {color:#222222; font-weight: 400; font-size: 15px; letter-spacing: -0.5px; width: 250px;}
 body #header .GNB ul.gnb>li.menu .smenu ul li a:hover {color:#00479D; font-weight: 400;}
 body #header .GNB ul.gnb>li.menu .smenu ul li a.focus {color:#00479D; font-weight: 500;}
 /* .submenu */

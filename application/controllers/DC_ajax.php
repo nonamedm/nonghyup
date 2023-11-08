@@ -293,7 +293,7 @@ class DC_ajax extends CI_Controller {
             // ORDER 시행일
             $param = array(
                 'tb_id' => "ct_agree"
-                ,'post_status' => 1
+                ,'post_status' => "1"
                 ,'post_cat' => $id
                 ,'order' => " post_dtms DESC "
             );

@@ -127,7 +127,7 @@ class DM_basic extends CI_MODEL
                     } else if ($option['tb_id'] == "ct_intnlctrl"||$option['tb_id'] == "ct_finnaccexp"||$option['tb_id'] == "ct_prevmnlaun"||$option['tb_id'] == "ct_prevmnlaun2"){
                         $sql .= ' AND  usr_nm LIKE "%' . $this->db->escape_str($option['post_cat']) .'%"';
                         
-                    } else if ($option['tb_id'] == "ct_current"){
+                    } else if ($option['tb_id'] == "ct_current" ||$option['tb_id'] == "ct_agree"){
                         $sql .= ' AND post_cat = "' . $this->db->escape_str($option['post_cat']) . '" ';
                         
                     }else {
