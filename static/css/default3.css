@@ -1268,6 +1268,8 @@ body.sub #content .joinForm_block>form>div .right_block .uk-placeholder {min-hei
     body.sub #content .joinForm_block>form>div .left_block .tit {height: 50px; font-size: 24px; line-height: 50px;}
     body.sub #content .joinForm_block>form>div .left_block .cont {padding: 30px 30px; font-size: 16px;  line-height: 24px;}
     body.sub #content .joinForm_block>form>div .left_block .cont span {font-size: 20px;}
+    body.sub #content .cont_body .prev_btn {left: 10px !important;}
+    body.sub #content .cont_body .next_btn {right: 10px !important;}
 }
 
 

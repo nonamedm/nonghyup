@@ -27,7 +27,7 @@
         $this->load->view("brd/intnlctrl_btn");
     } else if($m_id=='finnaccexp'&&$usr_arr['usr_id']=='nacf50611') {
         $this->load->view("brd/finnaccexp_btn");
-    } else if(($m_id=='prevmnlaun'||$m_id=='prevmnlaun2')&& ($usr_arr['usr_id']=='17311795'||$usr_arr['usr_id']=='19312949'||$usr_arr['usr_id']=='08305788'||$usr_arr['usr_id']=='21613193')) {
+    } else if(($m_id=='prevmnlaun1'||$m_id=='prevmnlaun2')&& ($usr_arr['usr_id']=='17311795'||$usr_arr['usr_id']=='19312949'||$usr_arr['usr_id']=='08305788'||$usr_arr['usr_id']=='21613193')) {
         $this->load->view("brd/prevmnlaun_btn");
     } else {
         $this->load->view("brd/common_btn");

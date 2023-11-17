@@ -54,7 +54,7 @@
                                 <div class="caption">
                                     <span class="cat"><?php echo $lists[$i]['post_summary'];?> </span>
                                     <span class="cat"><?php echo $lists[$i]['post_field'];?></span>
-                                    <span class="cat"><?php echo substr($lists[$i]['crt_dtms'], 2, 8);?></span>
+                                    <!-- <span class="cat"><?php echo substr($lists[$i]['crt_dtms'], 2, 8);?></span> -->
                                 </div>
                             </td>
                         </tr>

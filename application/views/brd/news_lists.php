@@ -11,7 +11,7 @@
                 <?php } else {?>
                 <?php } ?>
                 <th class="tit">제목 </th>
-                <?php if($m_id=='intnlctrl'||$m_id=='finnaccexp'||$m_id=='prevmnlaun'||$m_id=='prevmnlaun2'||$m_id=='personnelTrends') { ?>
+                <?php if($m_id=='intnlctrl'||$m_id=='finnaccexp'||$m_id=='prevmnlaun1'||$m_id=='prevmnlaun2'||$m_id=='personnelTrends') { ?>
                     <th class="part">발행기관 </th>
                 <?php } else {?>
                     <th class="part">작성자 </th>

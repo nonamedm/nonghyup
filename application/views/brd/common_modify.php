@@ -132,7 +132,7 @@
                         </div>
                     </div>
                     <input type="hidden" name="usr_nm" id="usr_nm" value="<?php echo $usr['usr_nm'];?>">
-                <?php }else if($m_id=='intnlctrl'||$m_id=='finnaccexp'||$m_id=='prevmnlaun'||$m_id=='prevmnlaun2'||$m_id=='personnelTrends'){ ?>
+                <?php }else if($m_id=='intnlctrl'||$m_id=='finnaccexp'||$m_id=='prevmnlaun1'||$m_id=='prevmnlaun2'||$m_id=='personnelTrends'){ ?>
                     <div class="uk-margin-small uk-width-1-6@m">
                         <label class="uk-form-label">발행기관</label>
                         <div class="uk-form-controls">

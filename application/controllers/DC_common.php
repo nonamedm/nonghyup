@@ -713,8 +713,8 @@ class DC_common extends CI_Controller
             $total += count($result['personnelTrends']);
 
             $param_cm['tb_id']='ct_prevmnlaun1';
-            $result['prevmnlaun'] = $this->DM_basic->getResult_sch($param_cm);
-            $total += count($result['prevmnlaun']);
+            $result['prevmnlaun1'] = $this->DM_basic->getResult_sch($param_cm);
+            $total += count($result['prevmnlaun1']);
 
             $param_cm['tb_id']='ct_prevmnlaun2';
             $result['prevmnlaun2'] = $this->DM_basic->getResult_sch($param_cm);
@@ -1461,7 +1461,7 @@ class DC_common extends CI_Controller
                         } else if($this->usr_id=='nacf50611') {
                             redirect('/adm/finnaccexp');
                         } else if($this->usr_id=='17311795'||$this->usr_id=='19312949'||$this->usr_id=='08305788'||$this->usr_id=='21613193'||$this->usr_id=='wtadmin') {
-                            redirect('/adm/prevmnlaun');
+                            redirect('/adm/prevmnlaun1');
                         }
                     }
                     if ($this->m_id) {
@@ -1865,7 +1865,13 @@ class DC_common extends CI_Controller
                 $html_in .= '/'.$_arr[$i]['id'];
 
                 $html_in .= '">';
-                $html_in .= $_arr[$i]['tit'][$this->lng_idx];
+                if($_arr[$i]['id']=='prevmnlaun1') {
+                    $html_in .= '국내동향&주요이슈';
+                } else if($_arr[$i]['id']=='prevmnlaun2') {
+                    $html_in .= '해외동향&Sanctions';
+                } else {
+                    $html_in .= $_arr[$i]['tit'][$this->lng_idx];
+                }
                 $html_in .= '</a></li>';
             }
             $html_in .= '</ul>';

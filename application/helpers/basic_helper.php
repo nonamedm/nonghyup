@@ -123,7 +123,7 @@ function trans_idToNm($_id){
             $rtn = "내부통제";
         } else if ($_id == 'finnaccexp') {
             $rtn = "금융사고사례";
-        } else if ($_id == 'prevmnlaun') {
+        } else if ($_id == 'prevmnlaun1') {
             $rtn = "국내동향&주요이슈";
         } else if ($_id == 'prevmnlaun2') {
             $rtn = "해외동향&Sanction";

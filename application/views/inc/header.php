@@ -36,7 +36,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <link rel="apple-touch-icon" href="/favicon.png">
 
 
-    <title><?php echo $pg_tit;?>:: NH농협은행 규제대응지원포털</title>
+    <title>:: NH농협은행 규제대응지원포털</title>
 
     <meta name="Robots" content="ALL">
     <meta name="subject" content="">

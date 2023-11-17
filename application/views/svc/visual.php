@@ -7,7 +7,17 @@
     <div class="container">
         <div class="tit_block">
             <div class="pg_bullet"></div>
-            <div class="pg_tit"><?php echo $pg_tit; ?></div>
+            <div class="pg_tit">
+                <?php 
+                    if($m_id=='prevmnlaun1') {
+                        echo '국내동향&주요이슈';    
+                    } else if($m_id=='prevmnlaun2') {
+                        echo '해외동향&Sanctions';
+                    } else {
+                        echo $pg_tit;
+                    }
+                ?>
+            </div>
             <div class="pg_loc"><?php echo $breadcrumb;?></div>
         </div>
         <?php //if ($g_id=='about' || $g_id=='brief' || $g_id=='trends') {?>

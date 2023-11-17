@@ -144,7 +144,7 @@ $config['svc_tree'] = [
                         ,'tbl'	        => 'ct_personnelTrends'
                         ,'fld'	        => 'basic'
                         ,'skin'         => 'news'
-                        ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
+                        ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
@@ -286,7 +286,7 @@ $config['svc_tree'] = [
                         ,'sub'	        => []
                     ]
                     ,[
-                        'id'	        => 'prevmnlaun'
+                        'id'	        => 'prevmnlaun1'
                         ,'tit'	        => ['자금세탁방지','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
@@ -853,7 +853,7 @@ $config['adm_tree'] = [
                         ,'tbl'	        => 'ct_personnelTrends'
                         ,'fld'	        => 'basic'
                         ,'skin'         => 'news'
-                        ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
+                        ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
@@ -1044,7 +1044,7 @@ $config['adm_tree'] = [
                         ,'sub'	        => []
                     ]
                     ,[
-                        'id'	        => 'prevmnlaun'
+                        'id'	        => 'prevmnlaun1'
                         ,'tit'	        => ['국내동향 & 주요이슈','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
