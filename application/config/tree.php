@@ -420,7 +420,7 @@ $config['svc_tree'] = [
             ,[
                 'id'	        => 'overview'
                 ,'idx'	        => 5
-                ,'tit'	        => ['규제대응지원반','']
+                ,'tit'	        => ['규제대응지원','']
                 ,'typ'         => 'label'
                 ,'fnc'         => ''
                 ,'mod'         => ''

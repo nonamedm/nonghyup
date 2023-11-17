@@ -21,12 +21,12 @@
             <div class="pg_loc"><?php echo $breadcrumb;?></div>
         </div>
         <?php //if ($g_id=='about' || $g_id=='brief' || $g_id=='trends') {?>
-        <div class="bnr_block">
+        <!-- <div class="bnr_block">
             <div class="bnr-item">
                 <div><a href="/ko/improvement"><img src="/static/images/top_banner.PNG"></a></div>
                 <div><a href="/ko/qna"><img src="/static/images/top_banner1.PNG"></a></div>
             </div>
-        </div>
+        </div>  요청에 의한 숨김처리 -->
         <?php //}?>
     </div>
 </div>

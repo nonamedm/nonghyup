@@ -111,13 +111,13 @@
         </ul>
     </div>
     
-    <div class="noticeBannerW">
+    <!-- <div class="noticeBannerW">
         <a href="/ko/improvement" class="noticeBanner">
             <p class="txtBlue txtBold" style="color:#2B347B; margin-left:-10px;">【 Quick Service 】</p> 
             <br>
             <p style="margin-top: -18px; line-height: 25px;"> 필요한 규제 정보를 요청하시면<br>"빠르게" 배송해 드립니다!</p>
         </a>
         <button type="button" class="btnClose"></button>
-    </div>
+    </div> 요청에 의한 숨김처리 -->
 
 </div>

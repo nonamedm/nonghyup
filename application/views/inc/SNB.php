@@ -28,7 +28,7 @@
                         echo $gd_arr[$i]['tit'][0];
                         echo "</a>";
                         echo "<ul><li><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "' style='font-size:15px;'>- 국내동향 & 주요이슈</a></li>";
-                        echo "<li><a href='/ko/" . $gd_arr[$i]['id'] . "2' class='focus" . $cls . "' style='font-size:15px;'>- 해외동향 & Sanctions</a></li></ul></div>";
+                        echo "<li><a href='/ko/prevmnlaun2' class='focus" . $cls . "' style='font-size:15px;'>- 해외동향 & Sanctions</a></li></ul></div>";
                     } else if ($gd_arr[$i]['id'] == 'prevmnlaun2') {
                         //루프 차례가 해외동향일 때
 

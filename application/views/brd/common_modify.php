@@ -163,6 +163,21 @@
                         </div>
                     </div>
                 <?php }?>
+                <?php if ($m_id=='intnlctrl'||$m_id=='finnaccexp'||$m_id=='prevmnlaun1'||$m_id=='prevmnlaun2') {?>
+                    <div class="uk-margin-small u`  k-width-3-4@m">
+                        <label class="uk-form-label">원문링크</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" type="text" name="post_link_addr" id="post_link_addr" placeholder="주소입력시 목록에서 링크연결됩니다." value="<?php echo $modify['post_link_addr'];?>">
+                        </div>
+                    </div>
+
+                    <div class="uk-margin-small uk-width-1-4@m">
+                        <label class="uk-form-label">링크옵션</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-checkbox" type="checkbox" name="post_link_trgt" value="<?php echo $modify['post_link_trgt'];?>" <?php if($modify['post_link_trgt']=='_blank'){ echo 'checked';}?>> 체크시 새창으로
+                        </div>
+                    </div>
+                <?php }?>
 
             </div>
 
