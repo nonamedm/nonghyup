@@ -323,7 +323,7 @@ $(document).ready(function() {
 
             } else { // 공통
 
-                if (rtn && !$("#post_subj").val()) {
+                if (rtn && !$("#post_subj").val().trim()) {
                     alert('제목을 입력해 주세요');
                     $("#post_subj").focus();
                     rtn = false;
