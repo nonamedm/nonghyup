@@ -93,7 +93,7 @@
                     <ul class="dp2">
                         <li class="sm"><a href="/ko/mypage">회원정보</a></li>
                         <?php if(! $is_admin){ ?>
-                        <li class="sm"><a href="/ko/myimprovement">나의 Quick Service</a></li>
+                        <!-- <li class="sm"><a href="/ko/myimprovement">나의 Quick Service</a></li> 23년 하반기 2차개선 요청사항 -->
                         <li class="sm"><a href="/ko/myqna">나의 Q&A</a></li>
                         <li class="sm"><a href="/ko/withdrawal" class="withdrawal">회원탈퇴</a></li>
                         <?php } ?>
@@ -118,6 +118,6 @@
             <p style="margin-top: -18px; line-height: 25px;"> 필요한 규제 정보를 요청하시면<br>"빠르게" 배송해 드립니다!</p>
         </a>
         <button type="button" class="btnClose"></button>
-    </div> 요청에 의한 숨김처리 -->
+    </div> 23년 하반기 2차개선 요청사항 -->
 
 </div>

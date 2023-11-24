@@ -35,8 +35,8 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                     <li class="dv"></li>
                     <li><a href="#modal-overflow" class="modal_agree" id="copy" uk-toggle>저작권정책</a></li>
                     <li class="dv"></li>
-                    <li><a href="/ko/improvement">Quick Service</a></li>
-                    <li class="dv"></li>
+                    <!-- <li><a href="/ko/improvement">Quick Service</a></li>  23년 하반기 2차개선 요청사항 
+                    <li class="dv"></li> -->
                     <li><a href="/ko/qna">Q&A</a></li>
                     <li><a href="http://pf.kakao.com/_VRUxnb" target="_blank"><img src="/static/svg/kakao_ch.svg"></a></li>
                 </ul>

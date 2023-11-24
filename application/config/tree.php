@@ -471,7 +471,7 @@ $config['svc_tree'] = [
                         ,'edtr'         => ''
                         ,'sub'	        => []
                     ]
-                    ,[
+                    /*,[ --23년 하반기 2차개선 요청사항
                         'id'	        => 'improvement'
                         ,'tit'	        => ['Quick Service','']
                         ,'typ'          => 'cont'
@@ -488,7 +488,7 @@ $config['svc_tree'] = [
                         ,'file'         => ''
                         ,'edtr'         => 'Y'
                         ,'sub'	        => []
-                    ]
+                    ] */
                     ,[
                         'id'	        => 'qna'
                         ,'tit'	        => ['Q&A','']
@@ -600,7 +600,7 @@ $config['svc_tree'] = [
                         ,'edtr'         => ''
                         ,'sub'	        => []
                     ]
-                    ,[
+                    /*,[ --23년 하반기 2차개선 요청사항
                         'id'	        => 'myimprovement'
                         ,'tit'	        => ['나의 Quick service','']
                         ,'typ'          => 'cont'
@@ -617,7 +617,7 @@ $config['svc_tree'] = [
                         ,'file'         => ''
                         ,'edtr'         => 'y'
                         ,'sub'	        => []
-                    ]
+                    ]*/
                     ,[
                         'id'	        => 'myqna'
                         ,'tit'	        => ['나의 Q&A','']
@@ -1100,7 +1100,7 @@ $config['adm_tree'] = [
                 ,'file'         => ''
                 ,'edtr'         => ''
                 ,'sub'	        => [
-                    [
+                    /*[ --23년 하반기 2차개선 요청사항
                         'id'	        => 'improvement'
                         ,'tit'	        => ['Quick Service','']
                         ,'typ'          => 'cont'
@@ -1117,8 +1117,8 @@ $config['adm_tree'] = [
                         ,'file'         => ''
                         ,'edtr'         => 'Y'
                         ,'sub'	        => []
-                    ]
-                    ,[
+                    ] */
+                    [
                         'id'	        => 'qna'
                         ,'tit'	        => ['Q&A','']
                         ,'typ'          => 'cont'
