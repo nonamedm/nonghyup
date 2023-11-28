@@ -1191,6 +1191,24 @@ $config['adm_tree'] = [
                         ,'edtr'         => ''
                         ,'sub'	        => []
                     ]
+                    ,[
+                        'id'	        => 'popup'
+                        ,'tit'	        => ['팝업관리(개발중)','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => ''
+                        ,'tbl'	        => 'ct_popup'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'popup'
+                        ,'perm'         => ''
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => ''
+                        ,'edtr'         => ''
+                        ,'sub'	        => []
+                    ]
                 ]
             ]
             /*,[
