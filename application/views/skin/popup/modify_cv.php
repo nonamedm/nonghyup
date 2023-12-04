@@ -6,7 +6,7 @@
         <div class="uk-child-width-1-4@m" uk-grid>
             <input type="hidden" id="mode" value="modify">
             <input type="hidden" id="m_id" value="<?php echo $m_id;?>">
-            <!--<input type="hidden" id="upload_files_num" value="<?php /*echo $upload_files_num;*/?>">-->
+            <input type="hidden" id="upload_files_num" value="<?php /*echo $upload_files_num;*/?>">
             <input type="hidden" id="idx" name="idx" value="<?php echo $idx;?>">
             <input type="hidden" name="usr_id" value="<?php echo $usr['usr_id'];?>">
             <input type="hidden" name="usr_nm" value="<?php echo $usr['usr_nm'];?>">
@@ -49,7 +49,9 @@
 
 
         </div>
-
+        <?php if($upload_files_num){ ?>
+            <?php $this->load->view("skin/popup/file"); ?>
+        <?php } ?>
         <?php $this->load->view("brd/common_btn"); ?>
 
     </form>

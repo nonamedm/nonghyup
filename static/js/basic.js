@@ -321,7 +321,33 @@ $(document).ready(function() {
                     rtn = false;
                 }
 
-            } else { // 공통
+            } else if (m_id=='popup') { //팝업
+
+                if (rtn && !$("#post_subj").val()) {
+                    alert('제목을 입력해 주세요');
+                    $("#post_subj").focus();
+                    rtn = false;
+                }
+
+                if (rtn && !$("#post_dtms").val()) {
+                    alert('게시일을 입력해 주세요');
+                    $("#post_dtms").focus();
+                    rtn = false;
+                }
+
+                if (rtn && !$("#post_keyword").val()) {
+                    alert('만료일을 입력해 주세요');
+                    $("#post_keyword").focus();
+                    rtn = false;
+                }
+                
+                if (rtn && !$("#file0").val()) {
+                    alert('이미지 파일을 첨부해 주세요');
+                    $("#file0").focus();
+                    rtn = false;
+                }
+                
+            }else { // 공통
 
                 if (rtn && !$("#post_subj").val().trim()) {
                     alert('제목을 입력해 주세요');

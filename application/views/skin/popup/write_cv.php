@@ -45,7 +45,9 @@
             </div>
 
         </div>
-
+        <?php if($upload_files_num){ ?>
+            <?php $this->load->view("skin/popup/file"); ?>
+        <?php } ?>
         <?php $this->load->view("brd/common_btn"); ?>
 
     </form>
