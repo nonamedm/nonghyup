@@ -104,10 +104,22 @@ for ($i=0; $i<$upload_files_num; $i++) {
     <div class="uk-display-block uk-margin-small file_box">
         <label class="uk-form-label">팝업이미지 첨부</label>
         <div class="uk-form-controls" uk-form-custom="target: true">
-            <input type="file" id="file<?php echo $i;?>" name="file<?php echo $i;?>" class="file_input">
+            <input type="file" id="file<?php echo $i;?>" name="file<?php echo $i;?>" class="file_input" accept=".jpg, .jpeg, .png, .gif .bmp" onchange="onChangeFile()">
             <input class="uk-input uk-margin-small-bottom file_input" id="file_nm<?php echo $i;?>" type="text" placeholder="<?php echo $files_nm;?>" disabled>
         </div>        
     </div>
+    <script>
+        function onChangeFile () {
+            var file_type = $("#file0")[0].files[0].type.indexOf("image");
+         
+            //console.log($("#file0")[0].files[0].type.indexOf("image"));
+            // 허용되지 않은 확장자일 경우
+            if (file_type<0) {
+                alert("이미지 파일만 업로드 가능합니다.");
+                $("#file0").val("");
+            }
+        }
+    </script>
 <?php
 }
 ?>

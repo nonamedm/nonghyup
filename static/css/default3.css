@@ -47,6 +47,7 @@ strong {font-weight: 900 !important;}
         overflow: hidden;
         text-overflow: ellipsis;  /* 말줄임 적용 */
     }
+    .popup-image {width:250px; height:250px;}
 }
 
 @media (max-width:640px) {
@@ -1496,3 +1497,4 @@ body .cont_agree .copyright h1 {font-size: 28px !important;text-align: center;}
 body .cont_agree .copyright h6 {font-size: 15px !important; font-weight: 400; margin-top: 40px; margin-bottom:50px; text-align: center;}
 body .cont_agree .copyright ol.num {margin-left: -14px; font-size: 15px; line-height: 22px;list-style: decimal; color: #333; margin-top: 30px; margin-bottom: 30px;}
 body .cont_agree .copyright ol.num li {margin-top: 10px;}
+

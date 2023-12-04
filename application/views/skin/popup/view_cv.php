@@ -71,7 +71,8 @@
                 for($i=0; $i<count($file); $i++){
                     if($file[$i]['file_name']){
                         $data['imagePath'] = '/static/data/'.$m_id.'/'.$file[$i]['file_name'];
-                        $this->load->view("inc/popup_view", $data);
+                        $data['imageName'] = $file[$i]['raw_name'];
+                        $this->load->view("inc/popup_admin", $data);
                     }
                 }
             } else {

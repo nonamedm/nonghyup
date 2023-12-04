@@ -340,11 +340,12 @@ $(document).ready(function() {
                     $("#post_keyword").focus();
                     rtn = false;
                 }
-                
-                if (rtn && !$("#file0").val()) {
-                    alert('이미지 파일을 첨부해 주세요');
-                    $("#file0").focus();
-                    rtn = false;
+                if(bbs_mod == 'write') {
+                    if (rtn && !$("#file0").val()) {
+                        alert('이미지 파일을 첨부해 주세요');
+                        $("#file0").focus();
+                        rtn = false;
+                    }
                 }
                 
             }else { // 공통
