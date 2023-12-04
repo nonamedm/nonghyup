@@ -12,6 +12,12 @@
             <input type="hidden" name="usr_nm" value="<?php echo $usr['usr_nm'];?>">
 
             <div class="uk-margin">
+                <label class="uk-form-label">팝업제목</label>
+                <div class="uk-form-controls">
+                    <input class="uk-input" type="text" name="post_subj" id="post_subj" placeholder="" value="<?php echo $modify['post_subj'];?>">
+                </div>
+            </div>
+            <div class="uk-margin">
                 <label class="uk-form-label">게시일</label>
                 <div class="uk-form-controls">
                     <input class="uk-input datepicker" type="text" name="post_dtms" id="post_dtms" value="<?php echo $modify['post_dtms'];?>" placeholder="YYYY-MM-DD">

@@ -10,7 +10,13 @@
             <input type="hidden" name="usr_id" value="<?php echo $usr['usr_id'];?>">
             <input type="hidden" name="usr_nm" value="<?php echo $usr['usr_nm'];?>">
             <!--<input type="hidden" name="usr_idx" value="<?php /*echo $usr_idx;*/?>">--><?php // ***** user email ?>
-
+            
+            <div class="uk-margin">
+                <label class="uk-form-label">팝업제목</label>
+                <div class="uk-form-controls">
+                    <input class="uk-input" type="text" name="post_subj" id="post_subj" placeholder="">
+                </div>
+            </div>
             <div class="uk-margin">
                 <label class="uk-form-label">게시일</label>
                 <div class="uk-form-controls">

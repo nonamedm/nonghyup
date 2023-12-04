@@ -26,8 +26,8 @@
             <thead>
             <tr>
                 <th class="no">번호</th>
-                <!--<th class="cat">팝업종류</th>
-                <th class="proc">약관버전</th>-->
+                <th class="post_subj">제목</th>
+                <!--<th class="proc">약관버전</th>-->
                 <th class="reg_date">게시일</th>
                 <th class="reg_date">만료일</th>
                 <th class="">등록일시</th>
@@ -39,6 +39,7 @@
             <?php for($i=0; $i<count($lists); $i++, $li_idx--){ ?>
                 <tr>
                     <td class="no"><?php echo $li_idx;?></td>
+                    <td class="post_subj"><a href="/<?php echo $seg;?>/<?php echo $m_id;?>/view?idx=<?php echo $lists[$i]['idx'];?>" class="chk_perm_view"><?php echo $lists[$i]['post_subj'];?></a></td>
                     <td class="reg_date"><?php echo $lists[$i]['post_dtms']?></td>
                     <td class="reg_date"><?php echo $lists[$i]['post_keyword']?></td>
                     <td class=""><?php echo $lists[$i]['crt_dtms'];?></td>

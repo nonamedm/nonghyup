@@ -4,6 +4,7 @@
 <?php if($view){?>
 <div class="brd_view ">
     <div class="view_line">
+        <span class="v_tit uk-text-meta">팝업제목 : </span><span class="v_cont uk-margin-small-left uk-margin-large-right"><?php echo $view['post_subj'];?></span>
         <span class="v_tit uk-text-meta">게시일 : </span><span class="v_cont uk-margin-small-left uk-margin-large-right"><?php echo $view['post_dtms'];?></span>
         <span class="v_tit uk-text-meta">만료일 : </span><span class="v_cont uk-margin-small-left uk-margin-large-right"><?php echo $view['post_keyword'];?></span>
         <span class="v_tit uk-text-meta">등록일시 : </span><span class="v_cont uk-margin-small-left uk-margin-large-right"><?php echo $view['crt_dtms'];?></span>
