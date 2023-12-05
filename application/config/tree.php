@@ -1193,7 +1193,7 @@ $config['adm_tree'] = [
                     ]
                     ,[
                         'id'	        => 'popup'
-                        ,'tit'	        => ['팝업관리(개발중)','']
+                        ,'tit'	        => ['팝업관리','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'lists'

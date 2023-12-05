@@ -5,8 +5,8 @@
     $this->db->join('ct_file B', 'A.idx = B.trgt_idx', 'inner');
     $this->db->where('B.trgt_id', 'ct_popup');
     $this->db->where('A.post_status', '1');
-    $this->db->where('A.post_dtms <=', 'NOW()', false);
-    $this->db->where('A.post_keyword >=', 'NOW()', false);
+    $this->db->where('A.post_dtms <=', "DATE_FORMAT(NOW(),'%Y-%m-%d')", false);
+    $this->db->where('A.post_keyword >=', "DATE_FORMAT(NOW(),'%Y-%m-%d')", false);
     $this->db->order_by('A.post_dtms', 'asc');
     $this->db->order_by('A.crt_dtms', 'asc');
     $query = $this->db->get();
