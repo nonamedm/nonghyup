@@ -129,7 +129,9 @@ function trans_idToNm($_id){
             $rtn = "해외동향&Sanction";
         } else if ($_id == 'sanctions') {
             $rtn = "금융제재사례";
-        } else {
+        } else if ($_id == 'relateSite') {
+            $rtn = "유용한사이트";
+        }else {
             $rtn = "";
         }
     }else{
