@@ -422,6 +422,11 @@ class DM_basic extends CI_MODEL
                     $this->db->like('post_field', $option['s_word']);
                     $this->db->or_like('post_subj', $option['s_word']);
                     $this->db->or_like('post_keyword', $option['s_word']);
+                    if ($option['tb_id']=="ct_sanctions") {
+                        $this->db->or_like('post_cont', $option['s_word']);
+                        $this->db->or_like('post_cat', $option['s_word']);
+                        $this->db->or_like('post_field', $option['s_word']);
+                    }
                     //if($option['tb_id']=='ct_precedent'){
                     //    $this->db->or_like('post_cat', $option['s_cat']);
                     //}
