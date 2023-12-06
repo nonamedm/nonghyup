@@ -1209,6 +1209,24 @@ $config['adm_tree'] = [
                         ,'edtr'         => ''
                         ,'sub'	        => []
                     ]
+                    ,[
+                        'id'	        => 'sanctions'
+                        ,'tit'	        => ['금융제재사례(개발중)','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => ''
+                        ,'tbl'	        => 'ct_sanctions'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'sanctions2'
+                        ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => 1
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
                 ]
             ]
             /*,[
