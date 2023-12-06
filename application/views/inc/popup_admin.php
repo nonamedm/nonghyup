@@ -5,6 +5,8 @@
 $imagePath = isset($imagePath) ? $imagePath : '/static/data/popup/06e3ee6a96dd1a71c36c14c997111240.png';
 // 이미지 파일 이름
 $imageName = isset($imageName) ? $imageName : '06e3ee6a96dd1a71c36c14c997111240.png';
+// 이미지 파일 링크
+$imageLink = isset($imageLink) ? $imageLink : '';
 
 // 쿠키 이름
 $cookieName = 'popup_viewed_'.$imageName;
@@ -18,7 +20,20 @@ if (!isset($_COOKIE[$cookieName])) {
     <div class='uk-placeholder keyword' onclick="showPopup('<?php echo $imagePath; ?>')" >팝업띄우기</div>
     <!-- 팝업 영역 -->
     <div id="imagePopup" class="popup"  style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); border: 1px solid #ccc; background-color: #fff; z-index: 1000; max-width: 500px; max-height: 500px;">
-        <img src="" alt="팝업 이미지" id="popupImage">
+        <?php 
+            if(!$imageLink=='') {
+        ?>
+            <a href="<?php echo $imageLink; ?>" target="_blank">
+                <img src="" alt="팝업 이미지" id="popupImage">
+            </a>
+        <?php
+            } else {
+        ?>
+                <img src="" alt="팝업 이미지" id="popupImage">
+        <?php
+            }
+        ?>    
+        
         <div class="popup-btn-area" style="background-color: black; color: #fff; display: flex; justify-content: space-between;">
             <span onclick="onedayClose()" style="cursor: pointer;">하루동안 보지 않기</span>
             <span onclick="closePopup()" style="cursor: pointer;">닫기</span>

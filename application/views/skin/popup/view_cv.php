@@ -23,9 +23,6 @@
             <?php if(isset($file[0]['file_name']) && $file[0]['file_name']){?>
                 <a href="#" class="tab vw"> 첨부파일 (<?php echo $attach_file_cnt;?>) <img src="/static/svg/list_expend.svg" class="tab_icon"></a>
             <?php }?>
-            <?php if($view['post_link_addr']){ ?>
-                <a href="<?php echo $view['post_link_addr'];?>" target="<?php echo $view['post_link_trgt'];?>" class="tab lnk"><span>원문</span> 링크 <img src="/static/svg/link.svg" class="tab_icon"></a>
-            <?php } ?>
             </div>
         </div>
 
@@ -72,6 +69,7 @@
                     if($file[$i]['file_name']){
                         $data['imagePath'] = '/static/data/'.$m_id.'/'.$file[$i]['file_name'];
                         $data['imageName'] = $file[$i]['raw_name'];
+                        $data['imageLink'] = $view['post_link_addr'];
                         $this->load->view("inc/popup_admin", $data);
                     }
                 }

@@ -44,6 +44,13 @@
                 </div>
             </div>
 
+            <div class="uk-margin-small uk-width-3-4@m">
+                <label class="uk-form-label">외부링크</label>
+                <div class="uk-form-controls">
+                    <input class="uk-input" type="text" name="post_link_addr" id="post_link_addr" placeholder="주소입력시 팝업에 링크가 삽입됩니다.">
+                </div>
+            </div>            
+
         </div>
         <?php if($upload_files_num){ ?>
             <?php $this->load->view("skin/popup/file"); ?>

@@ -33,7 +33,19 @@
             <!-- 팝업 영역 -->
                 <div id="imagePopup<?php echo $i; ?>" class="popup"  style="display: block; position: fixed; left: 10%; border: 1px solid #ccc; background-color: #fff; z-index: 1000; max-width: 500px; max-height: 500px;">
                     <input id="imageName<?php echo $i; ?>" type="hidden" value="<?php echo $imageName; ?>"/>
-                    <img src="<?php echo $imagePath; ?>" alt="팝업 이미지" id="popupImage<?php echo $i; ?>" class="popup-image">
+                    <?php 
+                        if(!$res[$i]['post_link_addr']=='') {
+                    ?>
+                        <a href="<?php echo $res[$i]['post_link_addr']; ?>" target="_blank">
+                            <img src="<?php echo $imagePath; ?>" alt="팝업 이미지" id="popupImage<?php echo $i; ?>" class="popup-image">
+                        </a>
+                    <?php
+                        } else {
+                    ?>
+                        <img src="<?php echo $imagePath; ?>" alt="팝업 이미지" id="popupImage<?php echo $i; ?>" class="popup-image">
+                    <?php
+                        }
+                    ?>
                     <div class="popup-btn-area" style="background-color: black; color: #fff; display: flex; justify-content: space-between;">
                         <span onclick="onedayClose('<?php echo $i; ?>')" style="cursor: pointer;">하루동안 보지 않기</span>
                         <span onclick="closePopup('<?php echo $i; ?>')" style="cursor: pointer;">닫기</span>
