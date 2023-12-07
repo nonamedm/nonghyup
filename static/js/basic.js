@@ -1098,16 +1098,16 @@ function sch_simple(){
         rtn = false;
     }
     if(rtn && $("#dtl_opt").val()==1){
-        if (rtn && !$("#sch_date_start").val()) {
-            alert('검색기간시작을 선택해 주세요');
-            $("#sch_date_start").focus();
-            rtn = false;
-        }
+    if (rtn && !$("#sch_date_start").val()) {
+    alert('검색기간시작을 선택해 주세요');
+    $("#sch_date_start").focus();
+    rtn = false;
+    }
         if (rtn && !$("#sch_date_end").val()) {
-            alert('검색기간끝을 선택해 주세요');
-            $("#sch_date_end").focus();
-            rtn = false;
-        }
+    alert('검색기간끝을 선택해 주세요');
+    $("#sch_date_end").focus();
+    rtn = false;
+    }
     }
 
 
@@ -1196,18 +1196,18 @@ function frs_sch(){
         s_sde = $("#frs_sde").val();
 
         if(!s_sds && !s_sde){
-            alert('검색기간을 설정해 주세요1');
+            alert('검색기간을 설정해 주세요');
             $("#frs_sds").focus();
             rtn = false;
         }
 
         if(!s_sds && s_sde){
-            alert('검색기간을 설정해 주세요2');
+            alert('검색시작일을 설정해 주세요');
             $("#frs_sds").focus();
             rtn = false;
         }
         if(s_sds && !s_sde){
-            alert('검색기간을 설정해 주세요3');
+            alert('검색종료일을 설정해 주세요');
             $("#frs_sde").focus();
             rtn = false;
         }

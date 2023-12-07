@@ -1210,7 +1210,7 @@ $config['adm_tree'] = [
                         ,'sub'	        => []
                     ]
                     ,[
-                        'id'	        => 'sanctions'
+                        'id'	        => 'sanctions2'
                         ,'tit'	        => ['금융제재사례(개발중)','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'

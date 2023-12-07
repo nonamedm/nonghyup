@@ -1454,6 +1454,7 @@ body.adm #content .cont_body .cont_block td.tit>span>img {width: 20px;}
 
 body.adm #content .cont_body .cont_block .brd_bdy {}
 body.adm #content .cont_body .cont_block .brd_bdy table tr th {font-size: 12px; font-weight: 300; text-align: center; padding: 5px 12px 0; color: #333;}
+body.adm #content .cont_body .cont_block .brd_bdy table tr th select {font-size: 12px; font-weight: 300; text-align: center; color: #333; padding: 0 0 4px 0px; font-family: "Noto Sans KR", "Malgun Gothic","Nanum Gothic", NanumGothic, Dotum,"돋움"; -webkit-appearance: none; -moz-appearance: none; appearance: none; min-width: 140px;}
 body.adm #content .cont_body .cont_block .brd_bdy table tr td {font-size: 14px; font-weight: 300; padding: 5px 5px; color: #000; text-align: center;}
 body.adm #content .cont_body .cont_block .brd_bdy table tr .no {text-align: center; width: 40px;}
 body.adm #content .cont_body .cont_block .brd_bdy table tr .proc {width: 160px;}
@@ -1464,6 +1465,7 @@ body.adm #content .cont_body .cont_block .brd_bdy table tr .cat {text-align: cen
 body.adm #content .cont_body .cont_block .brd_bdy table tr .part {text-align: right; width: 140px;}
 body.adm #content .cont_body .cont_block .brd_bdy table tbody {border-top: 2px solid #005CB9; border-bottom: 1px solid #e5e5e5;}
 body.adm #content .cont_body .cont_block .brd_bdy table .uk-placeholder {text-align: left;}
+
 
 
 

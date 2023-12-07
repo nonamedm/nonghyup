@@ -64,4 +64,7 @@ if ($fnc_typ=='bbs' || $m_id == 'search') {?>
 <script type="text/javascript" src="/static/js/common3.js"></script>
 <script type="text/javascript" src="/static/js/basic.js"></script>
 
+<link rel="stylesheet" type="text/css" href="/static/css/sumoselect.min.css"/>
+<script src="/static/js/jquery.sumoselect.min.js"></script>
+
 </html>

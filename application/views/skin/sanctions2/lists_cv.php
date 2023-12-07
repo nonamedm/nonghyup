@@ -8,7 +8,8 @@
 
     // ***** bbs search
     if ($svc_mod=='adm') {
-        $this->load->view("brd/adm_search");
+        // $this->load->view("brd/adm_search");
+        $this->load->view("skin/sanctions2/common_search");
     } else {
         $this->load->view("brd/common_search");
     }
@@ -20,15 +21,32 @@
     // ***** bbs list
     ?>
     <div class="brd_bdy uk-overflow-auto">
+        <?php 
+            // echo '<pre>';
+            // 검색 이용하려면 여러개 체크하고 마지막으로 창 나갈 때 검색 해줘야 함
+            echo count($lists).'개';
+            // echo '</pre>';
+
+        ?>
         <?php if( count($lists) ){ ?>
             <table class="uk-table uk-table-small uk-table-divider">
                 <thead class="wth">
                     <tr>
                         <th class="w40" style="width:5%;">번호</th>
                         <th class="w40" style="width:10%;">제재조치요구일</th>
-                        <th class="w40" style="width:10%;">위반법률</th>
+                        <th class="w40" style="width:10%;">
+                            <?php 
+                                $data['param'] = 'post_cat';
+                                $this->load->view("skin/sanctions2/filter_query",$data); 
+                            ?>
+                        </th>
                         <th class="tit" style="width:50%;">제목</th>
-                        <th class="w170" style="width:15%;">제재대상 기관</th>
+                        <th class="w170" style="width:15%;">
+                            <?php 
+                                $data['param'] = 'post_field';
+                                $this->load->view("skin/sanctions2/filter_query",$data); 
+                            ?>
+                        </th>
                         <?php if($is_adm_mod){ ?>
                             <th class="no">좋아요</th>
                             <th class="no">댓글수</th>
@@ -64,7 +82,9 @@
                             <?php if ($lists[$i]['post_fix'] == 'Y') echo "style=background-color:#f4f4f4"; ?>>
                             <td class="w40"><?php if($lists[$i]['post_fix'] == 'Y') echo '-'; else echo $li_idx; ?></td>
                             <td class="w40"><?php echo $lists[$i]['crt_dtms'];?></td>
-                            <td class="w170"><?php echo $lists[$i]['post_cat'];?></td>
+                            <td class="w170">
+                                <?php echo $lists[$i]['post_cat'];?>
+                            </td>
                             <td class="tit" id="tit<?php echo $i;?>">
                                 <?php if($lists[$i]['post_link_addr'] && !$is_adm_mod){ ?>
                                 <a href="<?php echo $lists[$i]['post_link_addr'];?>" target="<?php echo $lists[$i]['post_link_trgt'];?>" class="chk_perm_view">
@@ -94,6 +114,34 @@
             <?php } ?>
         <?php } ?>
     </div>
+    <script>
+        window.onload = function () {
+            $('.sumoselect_multiple').css('display','block');
+            $('.post_cat_multiple').SumoSelect({
+                placeholder: '위반법률',
+                selectAll: 1,
+                captionFormat: '{0} 개 선택됨',
+                captionFormatAllSelected:'{0} 개 선택됨',
+                csvDispCount: 1,
+                search: 1,
+                noMatch: "검색중 \"{0}\"",
+                okCancelInMulti: 1
+            });
+            $('.post_field_multiple').SumoSelect({
+                placeholder: '제재대상기관',
+                selectAll: 1,                
+                captionFormat: '{0} 개 선택됨',
+                captionFormatAllSelected:'{0} 개 선택됨',
+                csvDispCount: 1,
+                search: 1,
+                noMatch: "검색중 \"{0}\"",
+            });
+        }
+        function handleChange (e) {
+            console.log(e);
+            
+        }
+    </script>
     <?php
     // ***** bbs pagination
     $this->load->view("brd/common_pagination");
