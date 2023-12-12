@@ -24,7 +24,7 @@
         <?php 
             // echo '<pre>';
             // 검색 이용하려면 여러개 체크하고 마지막으로 창 나갈 때 검색 해줘야 함
-            echo count($lists).'개';
+            // echo count($lists_total).'개';
             // echo '</pre>';
 
         ?>
@@ -115,27 +115,32 @@
         <?php } ?>
     </div>
     <script>
-        window.onload = function () {
-            $('.sumoselect_multiple').css('display','block');
-            $('.post_cat_multiple').SumoSelect({
+        window.onload = async function () {
+            await $(".post_cat_multiple option:selected").prop("selected", false);
+            await $('.post_cat_multiple').SumoSelect({
                 placeholder: '위반법률',
                 selectAll: 1,
                 captionFormat: '{0} 개 선택됨',
                 captionFormatAllSelected:'{0} 개 선택됨',
-                csvDispCount: 1,
+                csvDispCount: 2,
                 search: 1,
                 noMatch: "검색중 \"{0}\"",
                 okCancelInMulti: 1
             });
-            $('.post_field_multiple').SumoSelect({
+            
+            await $(".post_field_multiple option:selected").prop("selected", false);
+            await $('.post_field_multiple').SumoSelect({
                 placeholder: '제재대상기관',
-                selectAll: 1,                
+                selectAll: 1,
                 captionFormat: '{0} 개 선택됨',
                 captionFormatAllSelected:'{0} 개 선택됨',
-                csvDispCount: 1,
+                csvDispCount: 2,
                 search: 1,
                 noMatch: "검색중 \"{0}\"",
+                okCancelInMulti: 1
             });
+            
+            await $('.sumoselect_multiple').css('display','block');
         }
         function handleChange (e) {
             console.log(e);
