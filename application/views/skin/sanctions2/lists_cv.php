@@ -20,14 +20,7 @@
 
     // ***** bbs list
     ?>
-    <div class="brd_bdy uk-overflow-auto">
-        <?php 
-            // echo '<pre>';
-            // 검색 이용하려면 여러개 체크하고 마지막으로 창 나갈 때 검색 해줘야 함
-            // echo count($lists_total).'개';
-            // echo '</pre>';
-
-        ?>
+    <div class="brd_bdy uk-overflow-auto" style="min-height: 450px;">
         <?php if( count($lists) ){ ?>
             <table class="uk-table uk-table-small uk-table-divider">
                 <thead class="wth">
@@ -54,7 +47,7 @@
                         <?php } ?>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="filter_list_body">
                     <?php for($i=0; $i<count($lists); $i++, $li_idx--){ ?>
                         <tr class="mtr <?php
                         if ($lists[$i]['post_fix'] == 'Y') echo "fix";
@@ -141,11 +134,90 @@
             });
             
             await $('.sumoselect_multiple').css('display','block');
+
+            $(".btnOk").on("click", function () {
+                var post_cat_filter = $('.post_cat_multiple option:selected').map(function() {
+                    return this.value;
+                }).get();
+                var post_field_filter = $('.post_field_multiple option:selected').map(function() {
+                    return this.value;
+                }).get();
+
+                
+                // 기존 검색값이 있는 경우
+                var s_word = '<?php if($s_word) echo $s_word; ?>';
+                var s_subj = '<?php if($s_subj) echo $s_subj; ?>';
+                var s_cont = '<?php if($s_cont) echo $s_cont; ?>';
+                $.ajax({
+                    url: '/ko/ajax/get_filter_list',
+                    type: 'get',
+                    data : {
+                        'post_cat_filter' : post_cat_filter,
+                        'post_field_filter' : post_field_filter,
+                        's_word' : s_word,
+                        's_subj' : s_subj,
+                        's_cont' : s_cont,
+                    },
+                    dataType: 'json',
+                    async: false,
+                    success: function(data) {
+                        console.log(data);
+                        var body_row = $("#filter_list_body");
+                        var body_cont = '';
+                        var li_idx = data.length;
+                        for(var i=0; i<data.length; i++, li_idx--) {
+                            body_cont += '<tr class="mtr';
+                            if(data[i].post_fix=='Y') body_cont += 'fix';
+                            body_cont += '" >';
+                            body_cont += '<td class=""><div class="tit">';
+                            body_cont += '<a href="/<?php echo $seg;?>/<?php echo $m_id;?>/view?idx='+data[i].idx+'" class="chk_perm_view">';
+                            body_cont += data[i].post_subj+'</a></div>';
+                            body_cont += '<div class="caption">';
+                            body_cont += '<span class="cat">'+data[i].post_status+'('+data[i].post_cat+')</span>';
+                            body_cont += '<span class="cat">'+data[i].post_field+'</span>';
+                            body_cont += '<span class="cat">'+data[i].crt_dtms.substr(2,8)+'</span>';
+                            body_cont += '</div></td></tr>';
+
+                            body_cont += '<tr class="wtr"';
+                            if(data[i].post_fix=='Y') body_cont += ' style=background-color:#f4f4f4"';
+                            body_cont += '><td class="w40">';
+                            if(data[i].post_fix=='Y') {
+                                body_cont += '-';
+                            } else {
+                                body_cont += li_idx;
+                            }
+                            body_cont += '</td>';
+                            
+                            body_cont += '<td class="w40">'+data[i].crt_dtms+'</td>';
+                            body_cont += '<td class="w170">'+data[i].post_cat+'</td>';
+                            body_cont += '<td class="tit" id="tit'+i+'">';
+                            body_cont += '<a href="/<?php echo $seg;?>/<?php echo $m_id;?>/view?idx='+data[i].idx+'" class="chk_perm_view">'+data[i].post_subj;
+                            body_cont += '<span class="uk-label hidden" id="post_summary'+i+'">'+data[i].post_summary+'</span>';
+                            body_cont += '</a></td>';
+                            body_cont += '<td class="w170">'+data[i].post_field+'</td>';
+                            <?php if($is_adm_mod){ ?>
+                            body_cont += '<td class="no">'+data[i].post_like+'</td>';
+                            body_cont += '<td class="no">'+data[i].post_cmt_cnt+'</td>';
+                            body_cont += '<td class="no">'+data[i].post_hit+'</td>';
+                            <?php } ?>
+                            body_cont += '</tr>';
+                            
+                        }
+                        body_row.html(body_cont);
+                    },
+                    error: function(data, status, err) {
+                        alert('데이터를 불러오는데 실패했습니다.');
+                        console.log(err);
+                    },
+                });
+            });
+            
         }
         function handleChange (e) {
             console.log(e);
             
         }
+        
     </script>
     <?php
     // ***** bbs pagination

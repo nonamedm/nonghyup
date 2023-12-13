@@ -372,4 +372,32 @@ class DC_ajax extends CI_Controller {
         echo '</script>';
         exit;
     }
+
+    function get_filter_list() {
+        $post_cat_filter = $this->input->get("post_cat_filter", true);
+        $post_field_filter = $this->input->get("post_field_filter", true);
+        // 전체검색은 별도기능으로 한다. 필터검색이랑 기능이 겹쳐서 제대로 된 검색이 안됨
+        // $s_word = $this->input->get("s_word", true);
+        $s_subj = $this->input->get("s_subj", true);
+        $s_cont = $this->input->get("s_cont", true);
+
+        $this->db->select('*');
+        $this->db->from('ct_sanctions');
+        $this->db->where_in('post_cat', $post_cat_filter);
+        $this->db->where_in('post_field', $post_field_filter);
+        // if($s_word!='' && $s_word != null) {
+        //     $this->db->like('post_subj', $s_word);
+        //     // $this->db->or_like('post_cont', $s_word);
+        // }
+        if($s_subj!='' && $s_subj != null) $this->db->like('post_subj', $s_subj);
+        if($s_cont!='' && $s_cont != null) $this->db->like('post_cont', $s_cont);
+        $this->db->order_by('crt_dtms', 'desc'); 
+        $query = $this->db->get();
+        $result = $query->result();
+        $res = json_decode(json_encode($result), true);
+        $count = count($res);
+
+        echo json_encode($res);
+        //echo json_encode($param);
+    }
 }

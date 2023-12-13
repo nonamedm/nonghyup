@@ -39,12 +39,12 @@
             }
             echo '</select>';
             
-            for ($i=0; $i<$count; $i++) {            
-                if($res[$i][$param]!=='') {
-                    echo '<input type="hidden" id="'.$param.''.$i.'" value="'.$res[$i][$param].'" />';
-                }
-            }
-            echo '<input type="hidden" id="'.$param.'_filter_value" value="'.$count.'" />';
+            // for ($i=0; $i<$count; $i++) {            
+            //     if($res[$i][$param]!=='') {
+            //         echo '<input type="hidden" id="'.$res[$i][$param].'" value="'.$res[$i][$param].'" />';
+            //     }
+            // }
+            // echo '<input type="hidden" id="'.$param.'_filter_value" value="'.$count.'" />';
         } else {
             return false;
         }

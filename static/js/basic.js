@@ -495,7 +495,7 @@ $(document).ready(function() {
     });
 
     // sancstions 게시판 헤더 정렬
-    $(".laword").on("click", function(){
+    /*$(".laword").on("click", function(){
         
         var ordir='';
 
@@ -577,8 +577,8 @@ $(document).ready(function() {
         }
         location.href=addr_arr[0]+addr1;
         return false;
-    });
-
+    });*/
+    
 
     // 회원가입 - 사번확인
     $("#btn_chk_num").on("click", function(){
