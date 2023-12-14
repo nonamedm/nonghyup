@@ -28,21 +28,19 @@
             if (!isset($_COOKIE[$cookieName])) {
             ?>
             
-            <!-- 이미지 클릭 시 팝업 띄우기 -->
-            <!-- <div class='uk-placeholder keyword' onclick="showPopup('<?php echo $i; ?>')" >팝업띄우기</div> -->
             <!-- 팝업 영역 -->
-                <div id="imagePopup<?php echo $i; ?>" class="popup"  style="display: block; position: fixed; left: 10%; border: 1px solid #ccc; background-color: #fff; z-index: 1000; max-width: 500px; max-height: 500px;">
+                <div id="imagePopup<?php echo $i; ?>" class="popup"  style="display: block; position: absolute; left: 10%; border: 1px solid #ccc; background-color: #fff; z-index: 1000; max-width: 500px; ">
                     <input id="imageName<?php echo $i; ?>" type="hidden" value="<?php echo $imageName; ?>"/>
                     <?php 
                         if(!$res[$i]['post_link_addr']=='') {
                     ?>
                         <a href="<?php echo $res[$i]['post_link_addr']; ?>" target="_blank">
-                            <img src="<?php echo $imagePath; ?>" alt="팝업 이미지" id="popupImage<?php echo $i; ?>" class="popup-image">
+                            <img src="<?php echo $imagePath; ?>" alt="팝업 이미지" id="popupImage<?php echo $i; ?>" class="popup-image" style="max-width: 450px; ">
                         </a>
                     <?php
                         } else {
                     ?>
-                        <img src="<?php echo $imagePath; ?>" alt="팝업 이미지" id="popupImage<?php echo $i; ?>" class="popup-image">
+                        <img src="<?php echo $imagePath; ?>" alt="팝업 이미지" id="popupImage<?php echo $i; ?>" class="popup-image" style="max-width: 450px; ">
                     <?php
                         }
                     ?>
@@ -71,9 +69,21 @@
                         divElement.style.left = newLeft + 'px';
                         divElement.style.top = topPixel + 'px';
                     }
+                    function openNewWindow(i) {
+                        // 새 창 열기
+                        var newWindow = window.open('', '_blank', 'width=500,height=500');
+
+                        // 창 내용 설정
+                        if (newWindow) newWindow.document.write('<html><head><title>팝업</title></head><body>');
+                        if (newWindow) newWindow.document.write(document.getElementById('imagePopup'+i).innerHTML);
+                        if (newWindow) newWindow.document.write('</body></html>');
+
+                        // 창 내용을 쓴 후 document를 닫아줌
+                        //newWindow.document.close();
+                    }
                 </script>
             <?php
-                echo "<script>movePopup('" . $i . "');</script>";
+                echo "<script>movePopup('" . $i . "'); //openNewWindow('" . $i . "');</script>";
             } else {
                
             }
@@ -82,18 +92,6 @@
         }
         ?>
         <script>
-            // JavaScript 함수로 팝업 띄우기 및 닫기
-            function showPopup(i) {
-                var popup = document.getElementById('imagePopup'+i);
-                var popupImage = document.getElementById('popupImage'+i);
-
-                // 이미지 경로 설정
-                //popupImage.src = imagePath;
-
-                // 팝업 보이기
-                popup.style.display = 'block';        
-            }
-
             function closePopup(i) {
                 var popup = document.getElementById('imagePopup'+i);
 

@@ -26,7 +26,9 @@
             </thead>
             <tbody>
             <?php for($i=0; $i<count($lists); $i++, $li_idx--){ ?>
-                <tr class="mtr">
+                <tr class="mtr <?php
+                    if ($lists[$i]['post_fix'] == 'Y') echo "fix";
+                ?>" >
                     <td class="">
                         <div class="tit">
                             <a href="/<?php echo $seg;?>/<?php echo $m_id;?>/view?idx=<?php echo $lists[$i]['idx'];?>" class="chk_perm_view">
@@ -39,8 +41,9 @@
                         </div>
                     </td>
                 </tr>
-                <tr class="wtr">
-                    <td class="no"><?php echo $li_idx;?></td>
+                <tr class="wtr <?php if ($lists[$i]['post_fix'] == 'Y') echo "fix";?>"
+                            <?php if ($lists[$i]['post_fix'] == 'Y') echo "style=background-color:#f4f4f4"; ?>>
+                    <td class="no"><?php if($lists[$i]['post_fix'] == 'Y') echo '-'; else echo $li_idx; ?></td>
                     <?php if($m_id=='intnlctrl'||$m_id=='finnaccexp') { ?>                
                         <td class="cat"><div class="w100 ellipsis"><?php echo $lists[$i]['post_opt'];?></div></td>
                     <?php } else {?>

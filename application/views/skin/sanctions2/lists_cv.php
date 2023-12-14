@@ -25,14 +25,14 @@
 
         // 가져온 데이터를 역직렬화하여 배열로 변환
         if($post_cat_filter!='') $post_cat_filter_array = explode(',', $post_cat_filter);
-        echo print_r($post_cat_filter_array);
+        //echo print_r($post_cat_filter_array);
 
 
         $post_field_filter = isset($_COOKIE['post_field_filter']) ? $_COOKIE['post_field_filter'] : '';
 
         // 가져온 데이터를 역직렬화하여 배열로 변환
         if($post_field_filter!='') $post_field_filter_array = explode(',', $post_field_filter);
-        echo print_r($post_field_filter_array);
+        //echo print_r($post_field_filter_array);
 
 
     ?>

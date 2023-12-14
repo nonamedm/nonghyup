@@ -1081,6 +1081,63 @@ $config['adm_tree'] = [
                         ,'edtr'         => 'Y'
                         ,'sub'	        => []
                     ]
+                    ,[
+                        'id'	        => 'prevmnlaun3'
+                        ,'tit'	        => ['정부보도자료','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => ''
+                        ,'tbl'	        => 'ct_prevmnlaun3'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'workdata'
+                        ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>0, 'delete'=>5, 'dnload'=>0]
+                        // ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'modify'=>1, 'reply'=>1, 'delete'=>1, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => 4
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
+                    ,[
+                        'id'	        => 'prevmnlaun4'
+                        ,'tit'	        => ['NEWS','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => ''
+                        ,'tbl'	        => 'ct_prevmnlaun4'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'workdata'
+                        ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>0, 'delete'=>5, 'dnload'=>0]
+                        // ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'modify'=>1, 'reply'=>1, 'delete'=>1, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => 4
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
+                    ,[
+                        'id'	        => 'prevmnlaun5'
+                        ,'tit'	        => ['AML BRIEF','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => ''
+                        ,'tbl'	        => 'ct_prevmnlaun5'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'workdata'
+                        ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>0, 'delete'=>5, 'dnload'=>0]
+                        // ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'modify'=>1, 'reply'=>1, 'delete'=>1, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => 4
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
                 ]
             ]
             ,[
@@ -1211,7 +1268,7 @@ $config['adm_tree'] = [
                     ]
                     ,[
                         'id'	        => 'sanctions2'
-                        ,'tit'	        => ['금융제재사례(개발중)','']
+                        ,'tit'	        => ['금융제재사례','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'lists'
