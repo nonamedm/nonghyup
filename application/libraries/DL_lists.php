@@ -155,6 +155,7 @@ class DL_lists
             // ***** DB값 요청
             $param_cm = array(
                 'tb_id'     => $this->CI->config->item("md")['tbl'],
+                'cat'  => $this->CI->config->item("md")['cat'],
                 'where'     => $this->whereFIX,
                 'order'     => $this->orderBy,
                 //'post_lng'   => $this->lng_cd,

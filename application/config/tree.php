@@ -291,10 +291,10 @@ $config['svc_tree'] = [
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'lists'
-                        ,'cat'          => ''
+                        ,'cat'          => 'ct_prevmnlaun1'
                         ,'tbl'	        => 'ct_prevmnlaun1'
                         ,'fld'	        => 'basic'
-                        ,'skin'         => 'workdata'
+                        ,'skin'         => 'prevmnlaun'
                         ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
                         // ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'reply'=>1, 'modify'=>1, 'delete'=>1, 'dnload'=>1]
                         ,'status'       => ''
@@ -310,10 +310,10 @@ $config['svc_tree'] = [
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'lists'
-                        ,'cat'          => ''
-                        ,'tbl'	        => 'ct_prevmnlaun2'
+                        ,'cat'          => 'ct_prevmnlaun2'
+                        ,'tbl'	        => 'ct_prevmnlaun1'
                         ,'fld'	        => 'basic'
-                        ,'skin'         => 'workdata'
+                        ,'skin'         => 'prevmnlaun'
                         ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
                         // ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'reply'=>1, 'modify'=>1, 'delete'=>1, 'dnload'=>1]
                         ,'status'       => ''
@@ -1049,10 +1049,10 @@ $config['adm_tree'] = [
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'lists'
-                        ,'cat'          => ''
+                        ,'cat'          => 'ct_prevmnlaun1'
                         ,'tbl'	        => 'ct_prevmnlaun1'
                         ,'fld'	        => 'basic'
-                        ,'skin'         => 'workdata'
+                        ,'skin'         => 'prevmnlaun'
                         ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>0, 'delete'=>5, 'dnload'=>0]
                         // ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'modify'=>1, 'reply'=>1, 'delete'=>1, 'dnload'=>1]
                         ,'status'       => ''
@@ -1068,10 +1068,10 @@ $config['adm_tree'] = [
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'lists'
-                        ,'cat'          => ''
-                        ,'tbl'	        => 'ct_prevmnlaun2'
+                        ,'cat'          => 'ct_prevmnlaun2'
+                        ,'tbl'	        => 'ct_prevmnlaun1'
                         ,'fld'	        => 'basic'
-                        ,'skin'         => 'workdata'
+                        ,'skin'         => 'prevmnlaun'
                         ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>0, 'delete'=>5, 'dnload'=>0]
                         // ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'modify'=>1, 'reply'=>1, 'delete'=>1, 'dnload'=>1]
                         ,'status'       => ''
@@ -1087,10 +1087,10 @@ $config['adm_tree'] = [
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'lists'
-                        ,'cat'          => ''
-                        ,'tbl'	        => 'ct_prevmnlaun3'
+                        ,'cat'          => 'ct_prevmnlaun3'
+                        ,'tbl'	        => 'ct_prevmnlaun1'
                         ,'fld'	        => 'basic'
-                        ,'skin'         => 'workdata'
+                        ,'skin'         => 'prevmnlaun'
                         ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>0, 'delete'=>5, 'dnload'=>0]
                         // ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'modify'=>1, 'reply'=>1, 'delete'=>1, 'dnload'=>1]
                         ,'status'       => ''
@@ -1106,10 +1106,10 @@ $config['adm_tree'] = [
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'lists'
-                        ,'cat'          => ''
-                        ,'tbl'	        => 'ct_prevmnlaun4'
+                        ,'cat'          => 'ct_prevmnlaun4'
+                        ,'tbl'	        => 'ct_prevmnlaun1'
                         ,'fld'	        => 'basic'
-                        ,'skin'         => 'workdata'
+                        ,'skin'         => 'prevmnlaun'
                         ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>0, 'delete'=>5, 'dnload'=>0]
                         // ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'modify'=>1, 'reply'=>1, 'delete'=>1, 'dnload'=>1]
                         ,'status'       => ''
@@ -1125,10 +1125,10 @@ $config['adm_tree'] = [
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'lists'
-                        ,'cat'          => ''
-                        ,'tbl'	        => 'ct_prevmnlaun5'
+                        ,'cat'          => 'ct_prevmnlaun5'
+                        ,'tbl'	        => 'ct_prevmnlaun1'
                         ,'fld'	        => 'basic'
-                        ,'skin'         => 'workdata'
+                        ,'skin'         => 'prevmnlaun'
                         ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>0, 'delete'=>5, 'dnload'=>0]
                         // ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'modify'=>1, 'reply'=>1, 'delete'=>1, 'dnload'=>1]
                         ,'status'       => ''

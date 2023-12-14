@@ -119,6 +119,10 @@ class DM_basic extends CI_MODEL
                     $sql .= ' AND post_lng = "' . $this->db->escape_str($option['post_lng']) . '"';
                 }
 
+                if (isset($option['cat']) && $option['cat'] && $option['tb_id'] == "ct_prevmnlaun1")  {
+                    $sql .= ' AND post_cat = "' .$this->db->escape_str($option['cat']).'"';
+                }
+
                 if (isset($option['post_cat']) && $option['post_cat']) { // current cat
                     // 발행기관검색
                     if($option['tb_id'] == "ct_lawmaking"||$option['tb_id'] == "ct_noaction"||$option['tb_id'] == "ct_translate"||$option['tb_id'] == "ct_pr"||$option['tb_id'] == "ct_labdata"||$option['tb_id'] == "ct_edudata") {
@@ -376,6 +380,10 @@ class DM_basic extends CI_MODEL
                         $this->db->like('post_field', $option['post_cat']);
                     }
                     
+                }
+
+                if (isset($option['cat']) && $option['cat'] && $option['tb_id'] == "ct_prevmnlaun1")  {
+                    $this->db->where('post_cat', $option['cat']);
                 }
 
                 if (isset($option['sanc']) && $option['sanc']) { // current cat
