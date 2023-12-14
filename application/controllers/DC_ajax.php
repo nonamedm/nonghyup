@@ -375,9 +375,19 @@ class DC_ajax extends CI_Controller {
 
     function get_filter_list() {
         $post_cat_filter = $this->input->get("post_cat_filter", true);
+
+        //비어있지 않으면 배열을 직렬화하여 문자열로 변환
+        $post_cat_filter_text = !empty($post_cat_filter) ? '' . implode(',', $post_cat_filter) : '';
+
+        setcookie('post_cat_filter', $post_cat_filter_text, time()+3600, '/');
+        
         $post_field_filter = $this->input->get("post_field_filter", true);
-        // 전체검색은 별도기능으로 한다. 필터검색이랑 기능이 겹쳐서 제대로 된 검색이 안됨
-        // $s_word = $this->input->get("s_word", true);
+
+        //비어있지 않으면 배열을 직렬화하여 문자열로 변환
+        $post_field_filter_text = !empty($post_field_filter) ? '' . implode(',', $post_field_filter) : '';
+
+        setcookie('post_field_filter', $post_field_filter_text, time()+3600, '/');
+
         $s_subj = $this->input->get("s_subj", true);
         $s_cont = $this->input->get("s_cont", true);
 
@@ -385,12 +395,11 @@ class DC_ajax extends CI_Controller {
         $this->db->from('ct_sanctions');
         $this->db->where_in('post_cat', $post_cat_filter);
         $this->db->where_in('post_field', $post_field_filter);
-        // if($s_word!='' && $s_word != null) {
-        //     $this->db->like('post_subj', $s_word);
-        //     // $this->db->or_like('post_cont', $s_word);
-        // }
+        
         if($s_subj!='' && $s_subj != null) $this->db->like('post_subj', $s_subj);
         if($s_cont!='' && $s_cont != null) $this->db->like('post_cont', $s_cont);
+        $this->db->order_by('post_fix', 'desc'); 
+        $this->db->order_by('post_fix_num', 'desc'); 
         $this->db->order_by('crt_dtms', 'desc'); 
         $query = $this->db->get();
         $result = $query->result();
