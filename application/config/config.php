@@ -539,7 +539,3 @@ $config['lng_arr'] = array(
 $config['lng_mode_yn'] = 'Y';
 
 $config['adm_lv_allowed'] = 5;
-
-$config['post_cat_filter'] = array();
-
-$config['post_field_filter'] = array();
