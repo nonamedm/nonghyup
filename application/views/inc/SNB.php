@@ -20,32 +20,20 @@
                     $cls = "withdrawal";
                 }
 
-                if($m_id=='prevmnlaun2'){// 클릭이 해외동향일 때
+                if($m_id=='prevmnlaun1') {// 클릭이 국내동향일 때
                     if ($gd_arr[$i]['id'] == 'prevmnlaun1') {
                         //루프 차례가 국내동향일 때
                         echo "<div class='left_sub_menu'><div class='focus_bullet'></div>";
                         echo "<a href='/ko/" . $gd_arr[$i]['id'] . "' class='focus" . $cls . "'>";
                         echo $gd_arr[$i]['tit'][0];
                         echo "</a>";
-                        echo "<ul><li><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "' style='font-size:15px;'>- 국내동향 & 주요이슈</a></li>";
-                        echo "<li><a href='/ko/prevmnlaun2' class='focus" . $cls . "' style='font-size:15px;'>- 해외동향 & Sanctions</a></li></ul></div>";
-                    } else if ($gd_arr[$i]['id'] == 'prevmnlaun2') {
-                        //루프 차례가 해외동향일 때
-
-                    } else {
-                        //그 외의 루프
-                        echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>" . $gd_arr[$i]['tit'][0] . "</a></div>";
-                    }
-                } else if($m_id=='prevmnlaun1'){// 클릭이 국내동향일 때
-                    if ($gd_arr[$i]['id'] == 'prevmnlaun1') {
-                        //루프 차례가 국내동향일 때
-                        echo "<div class='left_sub_menu'><div class='focus_bullet'></div>";
-                        echo "<a href='/ko/" . $gd_arr[$i]['id'] . "' class='focus" . $cls . "'>";
-                        echo $gd_arr[$i]['tit'][0];
-                        echo "</a>";
-                        echo "<ul><li><a href='/ko/" . $gd_arr[$i]['id'] . "' class='focus" . $cls . "' style='font-size:15px;'>- 국내동향 & 주요이슈</a></li>";
-                        echo "<li><a href='/ko/" . "prevmnlaun2' class='" . $cls . "' style='font-size:15px;'>- 해외동향 & Sanctions</a></li></ul></div>";
-                    } else if ($gd_arr[$i]['id'] == 'prevmnlaun2') {
+                        echo "<ul><li><a href='/ko/" . $gd_arr[$i]['id'] . "' class='focus" . $cls . "' style='font-size:15px;'>- 국내제재사례</a></li>";
+                        echo "<li><a href='/ko/" . "prevmnlaun2' class='" . $cls . "' style='font-size:15px;'>- 국외제재사례</a></li>";
+                        echo "<li><a href='/ko/" . "prevmnlaun3' class='" . $cls . "' style='font-size:15px;'>- 정부보도자료</a></li>";
+                        echo "<li><a href='/ko/" . "prevmnlaun4' class='" . $cls . "' style='font-size:15px;'>- NEWS</a></li>";
+                        echo "<li><a href='/ko/" . "prevmnlaun5' class='" . $cls . "' style='font-size:15px;'>- AML BRIEF</a></li>";
+                        echo "</ul></div>";
+                    } else if ($gd_arr[$i]['id'] == 'prevmnlaun2'||$gd_arr[$i]['id'] == 'prevmnlaun3'||$gd_arr[$i]['id'] == 'prevmnlaun4'||$gd_arr[$i]['id'] == 'prevmnlaun5') {
                         //루프 차례가 해외동향일 때
 
                     } else {
@@ -53,6 +41,86 @@
                         echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>" . $gd_arr[$i]['tit'][0] . "</a></div>";
                     }
 
+                } else if($m_id=='prevmnlaun2'){// 클릭이 해외동향일 때
+                    if ($gd_arr[$i]['id'] == 'prevmnlaun1') {
+                        //루프 차례가 국내동향일 때
+                        echo "<div class='left_sub_menu'><div class='focus_bullet'></div>";
+                        echo "<a href='/ko/" . $gd_arr[$i]['id'] . "' class='focus" . $cls . "'>";
+                        echo $gd_arr[$i]['tit'][0];
+                        echo "</a>";
+                        echo "<ul><li><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "' style='font-size:15px;'>- 국내제재사례</a></li>";
+                        echo "<li><a href='/ko/prevmnlaun2' class='focus" . $cls . "' style='font-size:15px;'>- 국외제재사례</a></li>";
+                        echo "<li><a href='/ko/prevmnlaun3' class='". $cls . "' style='font-size:15px;'>- 정부보도자료</a></li>";
+                        echo "<li><a href='/ko/prevmnlaun4' class='". $cls . "' style='font-size:15px;'>- NEWS</a></li>";
+                        echo "<li><a href='/ko/prevmnlaun5' class='". $cls . "' style='font-size:15px;'>- AML BRIEF</a></li>";
+                        echo "</ul></div>";
+                    } else if ($gd_arr[$i]['id'] == 'prevmnlaun2'||$gd_arr[$i]['id'] == 'prevmnlaun3'||$gd_arr[$i]['id'] == 'prevmnlaun4'||$gd_arr[$i]['id'] == 'prevmnlaun5') {
+                        //루프 차례가 해외동향일 때
+
+                    } else {
+                        //그 외의 루프
+                        echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>" . $gd_arr[$i]['tit'][0] . "</a></div>";
+                    }
+                } else if($m_id=='prevmnlaun3'){// 클릭이 해외동향일 때
+                    if ($gd_arr[$i]['id'] == 'prevmnlaun1') {
+                        //루프 차례가 국내동향일 때
+                        echo "<div class='left_sub_menu'><div class='focus_bullet'></div>";
+                        echo "<a href='/ko/" . $gd_arr[$i]['id'] . "' class='focus" . $cls . "'>";
+                        echo $gd_arr[$i]['tit'][0];
+                        echo "</a>";
+                        echo "<ul><li><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "' style='font-size:15px;'>- 국내제재사례</a></li>";
+                        echo "<li><a href='/ko/prevmnlaun2' class='" . $cls . "' style='font-size:15px;'>- 국외제재사례</a></li>";
+                        echo "<li><a href='/ko/prevmnlaun3' class='focus". $cls . "' style='font-size:15px;'>- 정부보도자료</a></li>";
+                        echo "<li><a href='/ko/prevmnlaun4' class='". $cls . "' style='font-size:15px;'>- NEWS</a></li>";
+                        echo "<li><a href='/ko/prevmnlaun5' class='". $cls . "' style='font-size:15px;'>- AML BRIEF</a></li>";
+                        echo "</ul></div>";
+                    } else if ($gd_arr[$i]['id'] == 'prevmnlaun2'||$gd_arr[$i]['id'] == 'prevmnlaun3'||$gd_arr[$i]['id'] == 'prevmnlaun4'||$gd_arr[$i]['id'] == 'prevmnlaun5') {
+                        //루프 차례가 해외동향일 때
+
+                    } else {
+                        //그 외의 루프
+                        echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>" . $gd_arr[$i]['tit'][0] . "</a></div>";
+                    }
+                } else if($m_id=='prevmnlaun4'){// 클릭이 해외동향일 때
+                    if ($gd_arr[$i]['id'] == 'prevmnlaun1') {
+                        //루프 차례가 국내동향일 때
+                        echo "<div class='left_sub_menu'><div class='focus_bullet'></div>";
+                        echo "<a href='/ko/" . $gd_arr[$i]['id'] . "' class='focus" . $cls . "'>";
+                        echo $gd_arr[$i]['tit'][0];
+                        echo "</a>";
+                        echo "<ul><li><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "' style='font-size:15px;'>- 국내제재사례</a></li>";
+                        echo "<li><a href='/ko/prevmnlaun2' class='" . $cls . "' style='font-size:15px;'>- 국외제재사례</a></li>";
+                        echo "<li><a href='/ko/prevmnlaun3' class='". $cls . "' style='font-size:15px;'>- 정부보도자료</a></li>";
+                        echo "<li><a href='/ko/prevmnlaun4' class='focus". $cls . "' style='font-size:15px;'>- NEWS</a></li>";
+                        echo "<li><a href='/ko/prevmnlaun5' class='". $cls . "' style='font-size:15px;'>- AML BRIEF</a></li>";
+                        echo "</ul></div>";
+                    } else if ($gd_arr[$i]['id'] == 'prevmnlaun2'||$gd_arr[$i]['id'] == 'prevmnlaun3'||$gd_arr[$i]['id'] == 'prevmnlaun4'||$gd_arr[$i]['id'] == 'prevmnlaun5') {
+                        //루프 차례가 해외동향일 때
+
+                    } else {
+                        //그 외의 루프
+                        echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>" . $gd_arr[$i]['tit'][0] . "</a></div>";
+                    }
+                } else if($m_id=='prevmnlaun5'){// 클릭이 해외동향일 때
+                    if ($gd_arr[$i]['id'] == 'prevmnlaun1') {
+                        //루프 차례가 국내동향일 때
+                        echo "<div class='left_sub_menu'><div class='focus_bullet'></div>";
+                        echo "<a href='/ko/" . $gd_arr[$i]['id'] . "' class='focus" . $cls . "'>";
+                        echo $gd_arr[$i]['tit'][0];
+                        echo "</a>";
+                        echo "<ul><li><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "' style='font-size:15px;'>- 국내제재사례</a></li>";
+                        echo "<li><a href='/ko/prevmnlaun2' class='" . $cls . "' style='font-size:15px;'>- 국외제재사례</a></li>";
+                        echo "<li><a href='/ko/prevmnlaun3' class='". $cls . "' style='font-size:15px;'>- 정부보도자료</a></li>";
+                        echo "<li><a href='/ko/prevmnlaun4' class='". $cls . "' style='font-size:15px;'>- NEWS</a></li>";
+                        echo "<li><a href='/ko/prevmnlaun5' class='focus". $cls . "' style='font-size:15px;'>- AML BRIEF</a></li>";
+                        echo "</ul></div>";
+                    } else if ($gd_arr[$i]['id'] == 'prevmnlaun2'||$gd_arr[$i]['id'] == 'prevmnlaun3'||$gd_arr[$i]['id'] == 'prevmnlaun4'||$gd_arr[$i]['id'] == 'prevmnlaun5') {
+                        //루프 차례가 해외동향일 때
+
+                    } else {
+                        //그 외의 루프
+                        echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>" . $gd_arr[$i]['tit'][0] . "</a></div>";
+                    }
                 } else {
                     if($gd_arr[$i]['id']==$m_id){                        
                         echo "<div class='left_sub_menu'><div class='focus_bullet'></div>";
@@ -70,7 +138,7 @@
                             /*현행법령 수정*/
                             echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "/lists?initial=ㄱ" . "' class='" . $cls . "'>" . $gd_arr[$i]['tit'][0] . "</a></div>";
                         }else {
-                            if($gd_arr[$i]['id'] == 'prevmnlaun2') {
+                            if($gd_arr[$i]['id'] == 'prevmnlaun2'||$gd_arr[$i]['id'] == 'prevmnlaun3'||$gd_arr[$i]['id'] == 'prevmnlaun4'||$gd_arr[$i]['id'] == 'prevmnlaun5') {
 
                             } else {
                                 echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>" . $gd_arr[$i]['tit'][0] . "</a></div>";

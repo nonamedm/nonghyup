@@ -52,8 +52,9 @@
                 <script>
                     function movePopup(i) {
                         // cont_body
-                        var firstPlace = document.getElementById('content');
-                        var topPixel = firstPlace.offsetTop;
+                        var firstPlace = document.querySelectorAll('.gnb')[0];
+                        console.log(firstPlace);
+                        var topPixel = firstPlace.offsetTop + 40;
                         var leftPixel = firstPlace.offsetLeft;
                         
                         // div 요소 가져오기
@@ -63,7 +64,7 @@
                         var currentLeft = parseFloat(divElement.style.left) || 0;
 
                         // 새로운 left 값 계산 (현재 값 + 300px)
-                        var newLeft = currentLeft + (i*150);
+                        var newLeft = currentLeft + (i*150) + 590;
 
                         // div의 left 속성 설정
                         divElement.style.left = newLeft + 'px';

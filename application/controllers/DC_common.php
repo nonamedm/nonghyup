@@ -720,6 +720,18 @@ class DC_common extends CI_Controller
             $result['prevmnlaun2'] = $this->DM_basic->getResult_sch($param_cm);
             $total += count($result['prevmnlaun2']);
 
+            $param_cm['tb_id']='ct_prevmnlaun3';
+            $result['prevmnlaun3'] = $this->DM_basic->getResult_sch($param_cm);
+            $total += count($result['prevmnlaun3']);
+
+            $param_cm['tb_id']='ct_prevmnlaun4';
+            $result['prevmnlaun4'] = $this->DM_basic->getResult_sch($param_cm);
+            $total += count($result['prevmnlaun4']);
+
+            $param_cm['tb_id']='ct_prevmnlaun5';
+            $result['prevmnlaun5'] = $this->DM_basic->getResult_sch($param_cm);
+            $total += count($result['prevmnlaun5']);
+
             $param_cm['tb_id']='ct_intnlctrl';
             $result['intnlctrl'] = $this->DM_basic->getResult_sch($param_cm);
             $total += count($result['intnlctrl']);
@@ -1866,9 +1878,15 @@ class DC_common extends CI_Controller
 
                 $html_in .= '">';
                 if($_arr[$i]['id']=='prevmnlaun1') {
-                    $html_in .= '국내동향&주요이슈';
+                    $html_in .= '국내제재사례';
                 } else if($_arr[$i]['id']=='prevmnlaun2') {
-                    $html_in .= '해외동향&Sanctions';
+                    $html_in .= '국외제재사례';
+                } else if($_arr[$i]['id']=='prevmnlaun3') {
+                    $html_in .= '정부보도자료';
+                } else if($_arr[$i]['id']=='prevmnlaun4') {
+                    $html_in .= 'NEWS';
+                } else if($_arr[$i]['id']=='prevmnlaun5') {
+                    $html_in .= 'AML BRIEF';
                 } else {
                     $html_in .= $_arr[$i]['tit'][$this->lng_idx];
                 }

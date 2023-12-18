@@ -11,7 +11,7 @@
         // $this->load->view("brd/adm_search");
         $this->load->view("skin/sanctions2/common_search");
     } else {
-        $this->load->view("brd/common_search");
+        $this->load->view("skin/sanctions2/common_search");
     }
 
 

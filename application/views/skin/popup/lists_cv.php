@@ -9,7 +9,6 @@
     // ***** bbs search
     if ($svc_mod=='adm') {
         $this->load->view("brd/adm_search");
-        $this->load->view("inc/popup_view", $data);
     } else {
         $this->load->view("brd/common_search");
     }

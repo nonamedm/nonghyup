@@ -323,6 +323,63 @@ $config['svc_tree'] = [
                         ,'edtr'         => 'Y'
                         ,'sub'	        => []
                     ]
+                    ,[
+                        'id'	        => 'prevmnlaun3'
+                        ,'tit'	        => ['자금세탁방지3','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => 'ct_prevmnlaun3'
+                        ,'tbl'	        => 'ct_prevmnlaun1'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'prevmnlaun'
+                        ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>0, 'delete'=>5, 'dnload'=>0]
+                        // ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'modify'=>1, 'reply'=>1, 'delete'=>1, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => 4
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
+                    ,[
+                        'id'	        => 'prevmnlaun4'
+                        ,'tit'	        => ['자금세탁방지4','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => 'ct_prevmnlaun4'
+                        ,'tbl'	        => 'ct_prevmnlaun1'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'prevmnlaun'
+                        ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>0, 'delete'=>5, 'dnload'=>0]
+                        // ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'modify'=>1, 'reply'=>1, 'delete'=>1, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => 4
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
+                    ,[
+                        'id'	        => 'prevmnlaun5'
+                        ,'tit'	        => ['자금세탁방지5','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => 'ct_prevmnlaun5'
+                        ,'tbl'	        => 'ct_prevmnlaun1'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'prevmnlaun'
+                        ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>0, 'delete'=>5, 'dnload'=>0]
+                        // ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'modify'=>1, 'reply'=>1, 'delete'=>1, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => 4
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
                 ]
             ]
             ,[
@@ -388,7 +445,7 @@ $config['svc_tree'] = [
                         ,'cat'          => ''
                         ,'tbl'	        => 'ct_sanctions'
                         ,'fld'	        => 'basic'
-                        ,'skin'         => 'sanctions'
+                        ,'skin'         => 'sanctions2'
                         ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
@@ -998,7 +1055,7 @@ $config['adm_tree'] = [
                         ,'cat'          => ''
                         ,'tbl'	        => 'ct_sanctions'
                         ,'fld'	        => 'basic'
-                        ,'skin'         => 'sanctions'
+                        ,'skin'         => 'sanctions2'
                         ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
@@ -1045,7 +1102,7 @@ $config['adm_tree'] = [
                     ]
                     ,[
                         'id'	        => 'prevmnlaun1'
-                        ,'tit'	        => ['국내동향 & 주요이슈','']
+                        ,'tit'	        => ['국내제재사례','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'lists'
@@ -1064,7 +1121,7 @@ $config['adm_tree'] = [
                     ]
                     ,[
                         'id'	        => 'prevmnlaun2'
-                        ,'tit'	        => ['해외동향 & Sanctions','']
+                        ,'tit'	        => ['국외제재사례','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'lists'
@@ -1264,24 +1321,6 @@ $config['adm_tree'] = [
                         ,'visible_yn'   => ''
                         ,'file'         => 1
                         ,'edtr'         => ''
-                        ,'sub'	        => []
-                    ]
-                    ,[
-                        'id'	        => 'sanctions2'
-                        ,'tit'	        => ['금융제재사례','']
-                        ,'typ'          => 'cont'
-                        ,'fnc'          => 'bbs'
-                        ,'mod'          => 'lists'
-                        ,'cat'          => ''
-                        ,'tbl'	        => 'ct_sanctions'
-                        ,'fld'	        => 'basic'
-                        ,'skin'         => 'sanctions2'
-                        ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
-                        ,'status'       => ''
-                        ,'lng_mode_yn'  => ''
-                        ,'visible_yn'   => ''
-                        ,'file'         => 1
-                        ,'edtr'         => 'Y'
                         ,'sub'	        => []
                     ]
                 ]

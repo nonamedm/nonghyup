@@ -10,9 +10,15 @@
             <div class="pg_tit">
                 <?php 
                     if($m_id=='prevmnlaun1') {
-                        echo '국내동향&주요이슈';    
+                        echo '국내제재사례';    
                     } else if($m_id=='prevmnlaun2') {
-                        echo '해외동향&Sanctions';
+                        echo '국외제재사례';
+                    } else if($m_id=='prevmnlaun3') {
+                        echo '정부보도자료';
+                    } else if($m_id=='prevmnlaun4') {
+                        echo 'NEWS';
+                    } else if($m_id=='prevmnlaun5') {
+                        echo 'AML BRIEF';
                     } else {
                         echo $pg_tit;
                     }

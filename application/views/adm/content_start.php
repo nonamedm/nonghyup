@@ -13,9 +13,15 @@
                 echo '<div class="left_sub_menu"><a href="/adm/finnaccexp">금융사고사례</a></div>';
                 echo "<hr class='left_sub_dv'>";
             } else if($usr_arr['usr_id']=='17311795'||$usr_arr['usr_id']=='19312949'||$usr_arr['usr_id']=='08305788'||$usr_arr['usr_id']=='21613193'||$usr_arr['usr_id']=='wtadmin') { 
-                echo '<div class="left_sub_menu"><a href="/adm/prevmnlaun1">국내동향 & 주요이슈</a></div>';
+                echo '<div class="left_sub_menu"><a href="/adm/prevmnlaun1">국내제재사례</a></div>';
                 echo "<hr class='left_sub_dv'>";
-                echo '<div class="left_sub_menu"><a href="/adm/prevmnlaun2">해외동향 &amp; Sanctions</a></div>';
+                echo '<div class="left_sub_menu"><a href="/adm/prevmnlaun2">국외제재사례</a></div>';
+                echo "<hr class='left_sub_dv'>";
+                echo '<div class="left_sub_menu"><a href="/adm/prevmnlaun3">정부보도자료</a></div>';
+                echo "<hr class='left_sub_dv'>";
+                echo '<div class="left_sub_menu"><a href="/adm/prevmnlaun4">NEWS</a></div>';
+                echo "<hr class='left_sub_dv'>";
+                echo '<div class="left_sub_menu"><a href="/adm/prevmnlaun5">AML BRIEF</a></div>';
                 echo "<hr class='left_sub_dv'>";
             } else {
                 for ($i = 0; $i < count($gd_arr); $i++) {

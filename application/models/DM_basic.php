@@ -128,7 +128,7 @@ class DM_basic extends CI_MODEL
                     if($option['tb_id'] == "ct_lawmaking"||$option['tb_id'] == "ct_noaction"||$option['tb_id'] == "ct_translate"||$option['tb_id'] == "ct_pr"||$option['tb_id'] == "ct_labdata"||$option['tb_id'] == "ct_edudata") {
                         $sql .= ' AND  post_field LIKE "%' . $this->db->escape_str($option['post_cat']) .'%"';
                         
-                    } else if ($option['tb_id'] == "ct_intnlctrl"||$option['tb_id'] == "ct_finnaccexp"||$option['tb_id'] == "ct_prevmnlaun1"||$option['tb_id'] == "ct_prevmnlaun2"){
+                    } else if ($option['tb_id'] == "ct_intnlctrl"||$option['tb_id'] == "ct_finnaccexp"||$option['tb_id'] == "ct_prevmnlaun1"||$option['tb_id'] == "ct_prevmnlaun2"||$option['tb_id'] == "ct_prevmnlaun3"||$option['tb_id'] == "ct_prevmnlaun4"||$option['tb_id'] == "ct_prevmnlaun5"){
                         $sql .= ' AND  usr_nm LIKE "%' . $this->db->escape_str($option['post_cat']) .'%"';
                         
                     } else if ($option['tb_id'] == "ct_current" ||$option['tb_id'] == "ct_agree"){
@@ -370,7 +370,7 @@ class DM_basic extends CI_MODEL
                     if($option['tb_id'] == "ct_lawmaking"||$option['tb_id'] == "ct_noaction"||$option['tb_id'] == "ct_translate"||$option['tb_id'] == "ct_pr"||$option['tb_id'] == "ct_labdata"||$option['tb_id'] == "ct_edudata") {
                         $this->db->like('post_field', $option['post_cat']);
                         
-                    } else if ($option['tb_id'] == "ct_intnlctrl"||$option['tb_id'] == "ct_finnaccexp"||$option['tb_id'] == "ct_prevmnlaun1"||$option['tb_id'] == "ct_prevmnlaun2"){
+                    } else if ($option['tb_id'] == "ct_intnlctrl"||$option['tb_id'] == "ct_finnaccexp"||$option['tb_id'] == "ct_prevmnlaun1"||$option['tb_id'] == "ct_prevmnlaun2"||$option['tb_id'] == "ct_prevmnlaun3"||$option['tb_id'] == "ct_prevmnlaun4"||$option['tb_id'] == "ct_prevmnlaun5"){
                         $this->db->like('usr_nm', $option['post_cat']);
                         
                     } else if ($option['tb_id'] == "ct_current"){

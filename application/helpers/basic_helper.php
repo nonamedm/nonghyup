@@ -124,9 +124,15 @@ function trans_idToNm($_id){
         } else if ($_id == 'finnaccexp') {
             $rtn = "금융사고사례";
         } else if ($_id == 'prevmnlaun1') {
-            $rtn = "국내동향&주요이슈";
+            $rtn = "국내제재사례";
         } else if ($_id == 'prevmnlaun2') {
-            $rtn = "해외동향&Sanction";
+            $rtn = "국외제재사례";
+        } else if ($_id == 'prevmnlaun3') {
+            $rtn = "정부보도자료";
+        } else if ($_id == 'prevmnlaun4') {
+            $rtn = "NEWS";
+        } else if ($_id == 'prevmnlaun5') {
+            $rtn = "AML BRIEF";
         } else if ($_id == 'sanctions') {
             $rtn = "금융제재사례";
         } else if ($_id == 'relateSite') {

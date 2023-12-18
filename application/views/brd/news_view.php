@@ -13,7 +13,7 @@
             <div class="view_tit"><?php echo $view['post_subj'];?></div>
 
             <div class="info">
-                <?php if($m_id=='intnlctrl'||$m_id=='finnaccexp'||$m_id=='prevmnlaun'||$m_id=='prevmnlaun2'||$m_id=='personnelTrends') { ?>
+                <?php if($m_id=='intnlctrl'||$m_id=='finnaccexp'||$m_id=='prevmnlaun'||$m_id=='prevmnlaun2'||$m_id=='prevmnlaun3'||$m_id=='prevmnlaun4'||$m_id=='prevmnlaun5'||$m_id=='personnelTrends') { ?>
                     <span class="name uk-margin-right"><span class="tit">발행기관 : </span><?php echo $view['usr_nm'];?></span>
                 <?php } else { ?>
                     <span class="name uk-margin-right"><span class="tit">작성자 : </span><?php echo $view['usr_nm'];?></span>
