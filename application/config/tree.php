@@ -325,7 +325,7 @@ $config['svc_tree'] = [
                     ]
                     ,[
                         'id'	        => 'prevmnlaun3'
-                        ,'tit'	        => ['자금세탁방지3','']
+                        ,'tit'	        => ['정부보도자료','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'lists'
@@ -333,7 +333,7 @@ $config['svc_tree'] = [
                         ,'tbl'	        => 'ct_prevmnlaun1'
                         ,'fld'	        => 'basic'
                         ,'skin'         => 'prevmnlaun'
-                        ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>0, 'delete'=>5, 'dnload'=>0]
+                        ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
                         // ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'modify'=>1, 'reply'=>1, 'delete'=>1, 'dnload'=>1]
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
@@ -344,7 +344,7 @@ $config['svc_tree'] = [
                     ]
                     ,[
                         'id'	        => 'prevmnlaun4'
-                        ,'tit'	        => ['자금세탁방지4','']
+                        ,'tit'	        => ['NEWS','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'lists'
@@ -352,7 +352,7 @@ $config['svc_tree'] = [
                         ,'tbl'	        => 'ct_prevmnlaun1'
                         ,'fld'	        => 'basic'
                         ,'skin'         => 'prevmnlaun'
-                        ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>0, 'delete'=>5, 'dnload'=>0]
+                        ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
                         // ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'modify'=>1, 'reply'=>1, 'delete'=>1, 'dnload'=>1]
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
@@ -363,7 +363,7 @@ $config['svc_tree'] = [
                     ]
                     ,[
                         'id'	        => 'prevmnlaun5'
-                        ,'tit'	        => ['자금세탁방지5','']
+                        ,'tit'	        => ['AML BRIEF','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'lists'
@@ -371,7 +371,7 @@ $config['svc_tree'] = [
                         ,'tbl'	        => 'ct_prevmnlaun1'
                         ,'fld'	        => 'basic'
                         ,'skin'         => 'prevmnlaun'
-                        ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>0, 'delete'=>5, 'dnload'=>0]
+                        ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
                         // ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'modify'=>1, 'reply'=>1, 'delete'=>1, 'dnload'=>1]
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''

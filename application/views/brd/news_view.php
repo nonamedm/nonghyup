@@ -13,7 +13,7 @@
             <div class="view_tit"><?php echo $view['post_subj'];?></div>
 
             <div class="info">
-                <?php if($m_id=='intnlctrl'||$m_id=='finnaccexp'||$m_id=='prevmnlaun'||$m_id=='prevmnlaun2'||$m_id=='prevmnlaun3'||$m_id=='prevmnlaun4'||$m_id=='prevmnlaun5'||$m_id=='personnelTrends') { ?>
+                <?php if($m_id=='intnlctrl'||$m_id=='finnaccexp'||$m_id=='prevmnlaun1'||$m_id=='prevmnlaun2'||$m_id=='prevmnlaun3'||$m_id=='prevmnlaun4'||$m_id=='prevmnlaun5'||$m_id=='personnelTrends') { ?>
                     <span class="name uk-margin-right"><span class="tit">발행기관 : </span><?php echo $view['usr_nm'];?></span>
                 <?php } else { ?>
                     <span class="name uk-margin-right"><span class="tit">작성자 : </span><?php echo $view['usr_nm'];?></span>
@@ -43,12 +43,20 @@
                                 $dload = $file[$i]['download_yn'];
                                 $ext = explode('/', $file[$i]['file_type'])[1];
                                 if($dload=='Y') {?>
-                                    <a href="/ko/<?php echo $m_id;?>/dnload?idx=<?php echo $file[$i]['trgt_idx'];?>&fl=<?php echo $i+1;?>" class="unit" title="다운로드"><span class="uk-label down_label">다운로드</span></a>
-                            <?php } ?>
-                            <?php
+                                        <?php if($m_id=='prevmnlaun1'||$m_id=='prevmnlaun2'||$m_id=='prevmnlaun3'||$m_id=='prevmnlaun4'||$m_id=='prevmnlaun5') { ?>
+                                            <a href="/ko/prevmnlaun1/dnload?idx=<?php echo $file[$i]['trgt_idx'];?>&fl=<?php echo $i+1;?>" class="unit" title="다운로드"><span class="uk-label down_label">다운로드</span></a>
+                                        <?php } else { ?>
+                                            <a href="/ko/<?php echo $m_id;?>/dnload?idx=<?php echo $file[$i]['trgt_idx'];?>&fl=<?php echo $i+1;?>" class="unit" title="다운로드"><span class="uk-label down_label">다운로드</span></a>
+                                        <?php } ?>
+                                    <?php } ?>
+                                    <?php
                                 $ext = explode('/', $file[$i]['file_type'])[1];
                                 if ($ext=='pdf' || $ext=='png' || $ext=='jpg'|| $ext=='jpeg'|| $ext=='gif'|| $ext=='bmp'){ ?>
-                                    <a href="/static/data/<?php echo $m_id;?>/<?php echo $file[$i]['file_name'];?>" target="_blank" class="unit" title="바로보기"><span class="uk-label view_label">바로보기</span></a>
+                                    <?php if($m_id=='prevmnlaun1'||$m_id=='prevmnlaun2'||$m_id=='prevmnlaun3'||$m_id=='prevmnlaun4'||$m_id=='prevmnlaun5') { ?>
+                                        <a href="/static/data/prevmnlaun1/<?php echo $file[$i]['file_name'];?>" target="_blank" class="unit" title="바로보기"><span class="uk-label view_label">바로보기</span></a>
+                                    <?php } else { ?>
+                                            <a href="/static/data/<?php echo $m_id;?>/<?php echo $file[$i]['file_name'];?>" target="_blank" class="unit" title="바로보기"><span class="uk-label view_label">바로보기</span></a>
+                                    <?php } ?>
                             <?php } ?>
                         </div>
                         <?php

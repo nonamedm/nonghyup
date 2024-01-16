@@ -71,9 +71,9 @@
                             <a href="/<?php echo $lng_cd;?>/<?php echo $nav_tree[0]['sub'][$i]['sub'][$j]['id'];?>">
                             <?php } ?>
                             <?php if($nav_tree[0]['sub'][$i]['sub'][$j]['id']=='prevmnlaun1'){ ?>
-                                자금세탁방지(국내)
+                                국내제재사례
                             <?php } else if($nav_tree[0]['sub'][$i]['sub'][$j]['id']=='prevmnlaun2') {?>
-                                자금세탁방지(해외)
+                                국외제재사례
                             <?php } else { ?>
                                 <?php echo strip_tags($nav_tree[0]['sub'][$i]['sub'][$j]['tit'][$lng_idx]);?>
                             <?php }?>

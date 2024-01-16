@@ -43,14 +43,14 @@
                     <tr>
                         <th class="w40" style="width:5%;">번호</th>
                         <th class="w40" style="width:10%;">제재조치요구일</th>
-                        <th class="w40" style="width:10%;">
+                        <th class="filter" style="width:10%;">
                             <?php 
                                 $data['param'] = 'post_cat';
                                 $this->load->view("skin/sanctions2/filter_query",$data); 
                             ?>
                         </th>
                         <th class="tit" style="width:50%;">제목</th>
-                        <th class="w170" style="width:15%;">
+                        <th class="filter" style="width:15%;">
                             <?php 
                                 $data['param'] = 'post_field';
                                 $this->load->view("skin/sanctions2/filter_query",$data); 
@@ -66,9 +66,8 @@
                 <tbody id="filter_list_body">
                     <?php for($i=0; $i<count($lists); $i++, $li_idx--){ ?>
                         <tr class="mtr <?php
-                        if ($lists[$i]['post_fix'] == 'Y') echo "fix";
-                        ?>" >
-                            <td class="">
+                        if ($lists[$i]['post_fix'] == 'Y') echo "fix"; ?>" <?php if ($lists[$i]['post_fix'] == 'Y') echo "style=background-color:#f4f4f4"; ?>>
+                            <td class="" colspan="2">
                                 <div class="tit">
                                     <?php if($lists[$i]['post_link_addr'] && !$is_adm_mod){ ?>
                                     <a href="<?php echo $lists[$i]['post_link_addr'];?>" target="<?php echo $lists[$i]['post_link_trgt'];?>" class="chk_perm_view">
@@ -128,7 +127,7 @@
             await $(".post_cat_multiple option:selected").prop("selected", false);
             var post_cat_sumo = await $('.post_cat_multiple').SumoSelect({
                 placeholder: '위반법률',
-                selectAll: 1,
+                selectAll: 0,
                 captionFormat: '{0} 개 선택됨',
                 captionFormatAllSelected:'{0} 개 선택됨',
                 csvDispCount: 2,
@@ -151,7 +150,7 @@
             await $(".post_field_multiple option:selected").prop("selected", false);
             var post_field_sumo = await $('.post_field_multiple').SumoSelect({
                 placeholder: '제재대상기관',
-                selectAll: 1,
+                selectAll: 0,
                 captionFormat: '{0} 개 선택됨',
                 captionFormatAllSelected:'{0} 개 선택됨',
                 csvDispCount: 2,

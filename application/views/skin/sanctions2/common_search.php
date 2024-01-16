@@ -7,8 +7,6 @@
             <option value="">전체</option>
             <option value="제목">제목</option>
             <option value="내용">내용</option>
-            <!-- <option value="위반법률">위반법률</option>
-            <option value="제재기관">제재대상기관</option> -->
         </select>
         <input type="hidden" id="sub_sch" name="sub_sch" value="<?php if($sub_sch){echo $sub_sch;}?>">
         <input type="hidden" id="dtl_opt" value="0">
@@ -18,7 +16,7 @@
         <input type="hidden" id="post_sanc" value="<?php if($post_sanc){echo $post_sanc;} ?>">
         <button type="button" id="brd_sch_btn" class="brd_sch_btn">검색</button>
         <button class="brd_sch_dtl_btn"><span class="uk-label law">기간검색</span></button>
-        <p style="float: left;position: absolute;">
+        <p class="sch_txt" style="text-align:left;">
             ※ 아래에서 <b style="color:blue">위반법률</b> 또는 <b style="color:blue">제재대상 기관</b>을 선택하여 보다 더 효율적으로 검색할 수 있습니다.
         </p>
     </div>

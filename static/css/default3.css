@@ -598,6 +598,7 @@ body.sub #content .cont_body .brd_bdy table.uk-table tr.wtr {display: table-row;
 body.sub #content .cont_body .brd_bdy table.uk-table tr.mtr {display: none;}
 @media (max-width:768px) {
     body.sub #content .cont_body .brd_bdy table.uk-table thead.wth {display: none;}
+    body.sub #content .cont_body .brd_sch .sch_txt {display: none;}
     body.sub #content .cont_body .brd_bdy table.uk-table tr.wtr {display: none;}
     body.sub #content .cont_body .brd_bdy table.uk-table tr.mtr {display: block;}
     body.sub #content .cont_body .brd_bdy table.uk-table tr.mtr .tit {text-align: left; font-size: 16px; font-weight: 400; color: #000;}
