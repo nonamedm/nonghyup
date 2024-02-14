@@ -267,6 +267,25 @@ $config['svc_tree'] = [
                         ,'sub'	        => []
                     ]
                     ,[
+                        'id'	        => 'governance'
+                        ,'tit'	        => ['지배구조법','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => ''
+                        ,'tbl'	        => 'ct_governance'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'workdata'
+                        ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
+                        // ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'reply'=>1, 'modify'=>1, 'delete'=>1, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => 4
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
+                    ,[
                         'id'	        => 'finnaccexp'
                         ,'tit'	        => ['금융사고사례','']
                         ,'typ'          => 'cont'
@@ -278,6 +297,25 @@ $config['svc_tree'] = [
                         ,'skin'         => 'workdata'
                         ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
                         // ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'reply'=>1, 'modify'=>1, 'delete'=>1, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => 4
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]                    
+                    ,[
+                        'id'	        => 'finaninst'
+                        ,'tit'	        => ['금융상품','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => ''
+                        ,'tbl'	        => 'ct_finaninst'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'workdata'
+                        ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
+                        // ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'modify'=>1, 'reply'=>1, 'delete'=>1, 'dnload'=>1]
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
@@ -992,6 +1030,25 @@ $config['adm_tree'] = [
                         ,'sub'	        => []
                     ]
                     ,[
+                        'id'	        => 'governance'
+                        ,'tit'	        => ['지배구조법','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => ''
+                        ,'tbl'	        => 'ct_governance'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'workdata'
+                        ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>0, 'delete'=>5, 'dnload'=>0]
+                        // ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'modify'=>1, 'reply'=>1, 'delete'=>1, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => 4
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
+                    ,[
                         'id'	        => 'finnaccexp'
                         ,'tit'	        => ['금융사고사례','']
                         ,'typ'          => 'cont'
@@ -1097,6 +1154,25 @@ $config['adm_tree'] = [
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
                         ,'file'         => ''
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
+                    ,[
+                        'id'	        => 'finaninst'
+                        ,'tit'	        => ['금융상품','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => ''
+                        ,'tbl'	        => 'ct_finaninst'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'workdata'
+                        ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>0, 'delete'=>5, 'dnload'=>0]
+                        // ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'modify'=>1, 'reply'=>1, 'delete'=>1, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => 4
                         ,'edtr'         => 'Y'
                         ,'sub'	        => []
                     ]

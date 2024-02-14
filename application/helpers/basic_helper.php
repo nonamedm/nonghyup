@@ -121,6 +121,8 @@ function trans_idToNm($_id){
             $rtn = "입법동향";
         } else if ($_id == 'intnlctrl') {
             $rtn = "내부통제";
+        } else if ($_id == 'governance') {
+            $rtn = "지배구조법";
         } else if ($_id == 'finnaccexp') {
             $rtn = "금융사고사례";
         } else if ($_id == 'prevmnlaun1') {

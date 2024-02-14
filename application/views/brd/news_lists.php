@@ -6,12 +6,12 @@
             <thead class="wth">
             <tr>
                 <th class="no">번호 </th>
-                <?php if($m_id=='intnlctrl'||$m_id=='finnaccexp') { ?>                
+                <?php if($m_id=='intnlctrl'||$m_id=='governance'||$m_id=='finnaccexp') { ?>                
                     <th class="cat">분류</th>
                 <?php } else {?>
                 <?php } ?>
                 <th class="tit">제목 </th>
-                <?php if($m_id=='intnlctrl'||$m_id=='finnaccexp'||$m_id=='prevmnlaun1'||$m_id=='prevmnlaun2'||$m_id=='prevmnlaun3'||$m_id=='prevmnlaun4'||$m_id=='prevmnlaun5'||$m_id=='personnelTrends') { ?>
+                <?php if($m_id=='intnlctrl'||$m_id=='governance'||$m_id=='finnaccexp'||$m_id=='prevmnlaun1'||$m_id=='prevmnlaun2'||$m_id=='prevmnlaun3'||$m_id=='prevmnlaun4'||$m_id=='prevmnlaun5'||$m_id=='personnelTrends') { ?>
                     <th class="part">발행기관 </th>
                 <?php } else {?>
                     <th class="part">작성자 </th>
@@ -44,7 +44,7 @@
                 <tr class="wtr <?php if ($lists[$i]['post_fix'] == 'Y') echo "fix";?>"
                             <?php if ($lists[$i]['post_fix'] == 'Y') echo "style=background-color:#f4f4f4"; ?>>
                     <td class="no"><?php if($lists[$i]['post_fix'] == 'Y') echo '-'; else echo $li_idx; ?></td>
-                    <?php if($m_id=='intnlctrl'||$m_id=='finnaccexp') { ?>                
+                    <?php if($m_id=='intnlctrl'||$m_id=='governance'||$m_id=='finnaccexp') { ?>                
                         <td class="cat"><div class="w100 ellipsis"><?php echo $lists[$i]['post_opt'];?></div></td>
                     <?php } else {?>
                     <?php } ?>
