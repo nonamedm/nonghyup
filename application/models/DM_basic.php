@@ -171,6 +171,8 @@ class DM_basic extends CI_MODEL
                         $sql .= ' OR post_cont LIKE "%'.$option['s_word'].'%" ';
                         $sql .= ' OR post_cat LIKE "%'.$option['s_word'].'%" ';
                         $sql .= ' OR post_field LIKE "%'.$option['s_word'].'%" ';
+                    } else {
+                        $sql .= ' OR post_cont LIKE "%'.$option['s_word'].'%" ';
                     }
                     //if ($option['tb_id']=="ct_precedent") {
                     //    $sql .= ' OR post_cat LIKE "%'.$option['s_word'].'%" ';
@@ -434,6 +436,9 @@ class DM_basic extends CI_MODEL
                         $this->db->or_like('post_cont', $option['s_word']);
                         $this->db->or_like('post_cat', $option['s_word']);
                         $this->db->or_like('post_field', $option['s_word']);
+                    } else {
+                        $this->db->or_like('post_cont', $option['s_word']);
+                        
                     }
                     //if($option['tb_id']=='ct_precedent'){
                     //    $this->db->or_like('post_cat', $option['s_cat']);
