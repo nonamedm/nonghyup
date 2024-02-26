@@ -415,6 +415,7 @@ body.sub #content .cont_body .brd_bdy table tbody {border-top: 2px solid #005CB9
 body #content .cont_body .cont_block .brd_sort */
 body #content .cont_body .cont_block .brd_sort {margin-top: 20px; text-align: right; min-height: 30px;}
 body.sub #content .cont_body .cont_block .brd_sort .sort {}
+body.sub #content .cont_body .cont_block .brd_sort .sort.sanction {height: 70px;}
 body.sub #content .cont_body .cont_block .brd_sort .sort .uk-label {background: #eaeaea; padding: 2px 10px; color: #333; border-radius: 5px; font-weight: 400; cursor: pointer;}
 
 
