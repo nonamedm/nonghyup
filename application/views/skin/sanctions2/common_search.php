@@ -2,10 +2,11 @@
 
     <button class="uk-button uk-button-primary uk-width-1-1 m_brd_search">검색</button>
     <div class="brd_sch">
-        <div class="sanction2_search_box" style="display:flex">
-            <input class="uk-input uk-input-const-date datepicker" id="sch_date_start" type="text" placeholder="검색시작일" value="<?php if($s_sds){echo $s_sds;}?>" placeholder="YYYY-MM-DD">
-            <p></p> 
-            <input class="uk-input uk-input-const-date datepicker" id="sch_date_end" type="text" placeholder="검색종료일" value="<?php if($s_sde){echo $s_sde;}?>" placeholder="YYYY-MM-DD">
+        <div class="sanction2_search_box" style="display:flex;" >
+            <div style="text-align:left">
+                <input class="uk-input uk-input-const-date datepicker" id="sch_date_start" type="text" placeholder="검색시작일" value="<?php if($s_sds){echo $s_sds;}?>" placeholder="YYYY-MM-DD">
+                <input class="uk-input uk-input-const-date datepicker" id="sch_date_end" type="text" placeholder="검색종료일" value="<?php if($s_sde){echo $s_sde;}?>" placeholder="YYYY-MM-DD">
+            </div>
             <select class="brd_sch_sel uk-select">
                 <option value="">전체</option>
                 <option value="제목">제목</option>
