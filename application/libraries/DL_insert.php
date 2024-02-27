@@ -217,7 +217,7 @@ class DL_insert
                         $param_mail = array(
                             //'mail_to'       => 'grafish@designclue.com',
                             //'mail_cc'       => 'grafish@designclue.co.kr, grafish@diion.com',
-                            'mail_to'     => 'jeyun8835@nonghyup.com',
+                            'mail_to'     => 'nhbank8739@nonghyup.com',
                             'mail_cc'     => 'hwonpark@nonghyup.com, eunho_noh@nonghyup.com',
                             'mail_from'     => 'mail@sendbox.kr',
                             'usr_id'        => $param_insert['fields']['usr_id'],
