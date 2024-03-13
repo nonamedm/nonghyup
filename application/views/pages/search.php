@@ -32,7 +32,17 @@
                 if(count($lists)){
                 echo '<table class="uk-table uk-table-small uk-table-divider">';
         ?>
+        <?php 
+            if($key==='prevmnlaun1'||$key==='prevmnlaun2'||$key==='prevmnlaun3'||$key==='prevmnlaun4'||$key==='prevmnlaun5') {
+        ?>
+                <div class="sch_tit"><div class="ancher" id="<?php echo $key;?>"></div>자금세탁방지</div>
+        <?php
+            } else {
+        ?>
             <div class="sch_tit"><div class="ancher" id="<?php echo $key;?>"></div><?php echo trans_idToNm($key);?></div>
+        <?php
+            }
+        ?>
 
             <?php for($i=0; $i<count($lists); $i++){ ?>
             <tr class="<?php if($i==0){echo 'dv';}?>">
@@ -45,7 +55,18 @@
                         <?php echo $lists[$i]['post_subj'];?>
                     </a><?php if($lists[$i]['post_link_addr']){ ?><span class="uk-label link"><img src="/static/svg/outlink.svg"></span><?php } ?>
                     <br>
-                    <span class="uk-comment-meta"><?php echo trans_idToNm($key);?></span> <span class="uk-comment-meta uk-margin-large-left"><?php echo substr($lists[$i]['crt_dtms'], 0 ,10);?></span>
+                    <?php 
+                        if($key==='prevmnlaun1'||$key==='prevmnlaun2'||$key==='prevmnlaun3'||$key==='prevmnlaun4'||$key==='prevmnlaun5') {
+                    ?>
+                            <span class="uk-comment-meta">자금세탁방지</span>
+                    <?php
+                        } else {
+                    ?>
+                        <span class="uk-comment-meta"><?php echo trans_idToNm($key);?></span>
+                    <?php
+                        }
+                    ?>
+                     <span class="uk-comment-meta uk-margin-large-left"><?php echo substr($lists[$i]['crt_dtms'], 0 ,10);?></span>
                 </td>
             </tr>
             <?php }?>

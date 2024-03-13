@@ -8,8 +8,15 @@
             <hr class='left_sub_dv'>
             <?php
             foreach($s_res as $key=>$val){
-                echo "<div class='left_sub_menu'><a href='#".$key."' >".trans_idToNm($key)." <span>(".count($val).")</span></a></div>";
-                if($key!='precedent'){
+                if($key==='prevmnlaun1') {
+                    echo "<div class='left_sub_menu'><a href='#".$key."' >자금세탁방지 <span>(".count($val).")</span></a></div>";
+                } else if ($key==='prevmnlaun2'||$key==='prevmnlaun3'||$key==='prevmnlaun4'||$key==='prevmnlaun5') {
+
+                } else {
+                    echo "<div class='left_sub_menu'><a href='#".$key."' >".trans_idToNm($key)." <span>(".count($val).")</span></a></div>";
+                }
+                if($key==='prevmnlaun2'||$key==='prevmnlaun3'||$key==='prevmnlaun4'||$key==='prevmnlaun5'){
+                } else {
                     echo "<hr class='left_sub_dv'>";
                 }
             }
