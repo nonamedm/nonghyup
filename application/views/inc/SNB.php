@@ -278,7 +278,11 @@
                 // }
 
                 if($i<count($gd_arr)-1){
-                    echo "<hr class='left_sub_dv'>";
+                    if($gd_arr[$i]['id'] == 'prevmnlaun2'||$gd_arr[$i]['id'] == 'prevmnlaun3'||$gd_arr[$i]['id'] == 'prevmnlaun4'||$gd_arr[$i]['id'] == 'prevmnlaun5'||$gd_arr[$i]['id'] == 'globalcomp2'||$gd_arr[$i]['id'] == 'globalcomp3'||$gd_arr[$i]['id'] == 'globalcomp4') {
+
+                    } else {
+                        echo "<hr class='left_sub_dv'>";
+                    }
                 }
 
             }

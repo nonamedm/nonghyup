@@ -228,7 +228,7 @@ body #header .GNB ul.gnb>li.menu .smenu ul li a {color:#222222; font-weight: 400
 body #header .GNB ul.gnb>li.menu .smenu ul li a:hover {color:#00479D; font-weight: 400;}
 body #header .GNB ul.gnb>li.menu .smenu ul li a.focus {color:#00479D; font-weight: 500;}
 /* .submenu */
-body #header .GNB .submenu {position: absolute; top: 54px; left: 0; height: 200px; width: 100%; background: #fff; display: none; z-index: 0; box-shadow: 0 5px 15px rgb(0 0 0 / 8%);}
+body #header .GNB .submenu {position: absolute; top: 54px; left: 0; height: 250px; width: 100%; background: #fff; display: none; z-index: 0; box-shadow: 0 5px 15px rgb(0 0 0 / 8%);}
 /* #mblmenu */
 body #header #mblmenu {display: none; background: #2B347B;}
 #mblmenu ul.dp1 {padding: 20px 0 30px;}
