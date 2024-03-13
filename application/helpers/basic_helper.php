@@ -135,6 +135,14 @@ function trans_idToNm($_id){
             $rtn = "NEWS";
         } else if ($_id == 'prevmnlaun5') {
             $rtn = "AML BRIEF";
+        } else if ($_id == 'globalcomp1') {
+            $rtn = "News & Events";
+        } else if ($_id == 'globalcomp2') {
+            $rtn = "Laws & Regulations";
+        } else if ($_id == 'globalcomp3') {
+            $rtn = "Education Resources";
+        } else if ($_id == 'globalcomp4') {
+            $rtn = "Get involved";
         } else if ($_id == 'sanctions') {
             $rtn = "금융제재사례";
         } else if ($_id == 'relateSite') {

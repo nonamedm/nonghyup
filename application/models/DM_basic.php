@@ -119,7 +119,11 @@ class DM_basic extends CI_MODEL
                     $sql .= ' AND post_lng = "' . $this->db->escape_str($option['post_lng']) . '"';
                 }
 
+                // 게시판분류 항목들은 카테고리까지 조건확인
                 if (isset($option['cat']) && $option['cat'] && $option['tb_id'] == "ct_prevmnlaun1")  {
+                    $sql .= ' AND post_cat = "' .$this->db->escape_str($option['cat']).'"';
+                }
+                if (isset($option['cat']) && $option['cat'] && $option['tb_id'] == "ct_globalcomp")  {
                     $sql .= ' AND post_cat = "' .$this->db->escape_str($option['cat']).'"';
                 }
 
@@ -128,7 +132,7 @@ class DM_basic extends CI_MODEL
                     if($option['tb_id'] == "ct_lawmaking"||$option['tb_id'] == "ct_noaction"||$option['tb_id'] == "ct_translate"||$option['tb_id'] == "ct_pr"||$option['tb_id'] == "ct_labdata"||$option['tb_id'] == "ct_edudata") {
                         $sql .= ' AND  post_field LIKE "%' . $this->db->escape_str($option['post_cat']) .'%"';
                         
-                    } else if ($option['tb_id'] == "ct_intnlctrl"||$option['tb_id'] == "ct_finnaccexp"||$option['tb_id'] == "ct_prevmnlaun1"||$option['tb_id'] == "ct_prevmnlaun2"||$option['tb_id'] == "ct_prevmnlaun3"||$option['tb_id'] == "ct_prevmnlaun4"||$option['tb_id'] == "ct_prevmnlaun5"){
+                    } else if ($option['tb_id'] == "ct_intnlctrl"||$option['tb_id'] == "ct_finnaccexp"||$option['tb_id'] == "ct_prevmnlaun1"||$option['tb_id'] == "ct_globalcomp"){
                         $sql .= ' AND  usr_nm LIKE "%' . $this->db->escape_str($option['post_cat']) .'%"';
                         
                     } else if ($option['tb_id'] == "ct_current" ||$option['tb_id'] == "ct_agree"){
@@ -372,7 +376,7 @@ class DM_basic extends CI_MODEL
                     if($option['tb_id'] == "ct_lawmaking"||$option['tb_id'] == "ct_noaction"||$option['tb_id'] == "ct_translate"||$option['tb_id'] == "ct_pr"||$option['tb_id'] == "ct_labdata"||$option['tb_id'] == "ct_edudata") {
                         $this->db->like('post_field', $option['post_cat']);
                         
-                    } else if ($option['tb_id'] == "ct_intnlctrl"||$option['tb_id'] == "ct_finnaccexp"||$option['tb_id'] == "ct_prevmnlaun1"||$option['tb_id'] == "ct_prevmnlaun2"||$option['tb_id'] == "ct_prevmnlaun3"||$option['tb_id'] == "ct_prevmnlaun4"||$option['tb_id'] == "ct_prevmnlaun5"){
+                    } else if ($option['tb_id'] == "ct_intnlctrl"||$option['tb_id'] == "ct_finnaccexp"||$option['tb_id'] == "ct_prevmnlaun1"||$option['tb_id'] == "ct_globalcomp"){
                         $this->db->like('usr_nm', $option['post_cat']);
                         
                     } else if ($option['tb_id'] == "ct_current"){
@@ -384,7 +388,11 @@ class DM_basic extends CI_MODEL
                     
                 }
 
+                // 게시판분류 항목들은 카테고리까지 조건확인
                 if (isset($option['cat']) && $option['cat'] && $option['tb_id'] == "ct_prevmnlaun1")  {
+                    $this->db->where('post_cat', $option['cat']);
+                }
+                if (isset($option['cat']) && $option['cat'] && $option['tb_id'] == "ct_globalcomp")  {
                     $this->db->where('post_cat', $option['cat']);
                 }
 

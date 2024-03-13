@@ -51,6 +51,9 @@ if ($fnc_typ=='bbs' || $m_id == 'search') {?>
         if(m_id=='qna'){
             placeText = "규제정보 관련 요청 및 문의 사항을 남겨주세요.";
         }
+        if(m_id=='globalcomp4'){
+            placeText = "해외감시반 앞 관련 문의/요청사항 및 국외점포 주요 이슈 등을 남겨주세요.";
+        }
         CKEDITOR.replace( 'post_cont', {
             height: 300,
             extraPlugins : 'editorplaceholder',

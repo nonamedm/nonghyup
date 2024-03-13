@@ -23,6 +23,16 @@
                 echo "<hr class='left_sub_dv'>";
                 echo '<div class="left_sub_menu"><a href="/adm/prevmnlaun5">AML BRIEF</a></div>';
                 echo "<hr class='left_sub_dv'>";
+            } else if($usr_arr['usr_id']=='2910703673'||$usr_arr['usr_id']=='2259084387'||$usr_arr['usr_id']=='3282972707'||$usr_arr['usr_id']=='wtadmin') { 
+                echo '<div class="left_sub_menu"><a href="/adm/globalcomp1">News & Events</a></div>';
+                echo "<hr class='left_sub_dv'>";
+                echo '<div class="left_sub_menu"><a href="/adm/globalcomp2">Laws & Regulations</a></div>';
+                echo "<hr class='left_sub_dv'>";
+                echo '<div class="left_sub_menu"><a href="/adm/globalcomp3">Education Resources</a></div>';
+                echo "<hr class='left_sub_dv'>";
+                echo '<div class="left_sub_menu"><a href="/adm/globalcomp4">Get involved</a></div>';
+                echo "<hr class='left_sub_dv'>";
+
             } else {
                 for ($i = 0; $i < count($gd_arr); $i++) {
                     if ($gd_arr[$i]['id'] == $m_id) {

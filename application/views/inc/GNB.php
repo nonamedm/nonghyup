@@ -21,20 +21,19 @@
                     <?php if($nav_tree[0]['sub'][$i]['sub'][$j]['id']=='sanctions'){ ?>
                     <!--<a href="https://www.fss.or.kr/fss/job/openInfo/list.do?menuNo=200476" target="_blank">-->
                     <a href="/<?php echo $lng_cd;?>/<?php echo $nav_tree[0]['sub'][$i]['sub'][$j]['id']; ?>" class="<?php if($nav_tree[0]['sub'][$i]['sub'][$j]['id']==$m_id){ echo 'focus';}?>">
+                        <?php echo $nav_tree[0]['sub'][$i]['sub'][$j]['tit'][$lng_idx]; ?>
+                    </a>
                     <?php }else if($nav_tree[0]['sub'][$i]['sub'][$j]['id']=='current'){ ?>
                     <a href="/<?php echo $lng_cd;?>/<?php echo $nav_tree[0]['sub'][$i]['sub'][$j]['id'] ?>/lists?initial=ㄱ" class="<?php if($nav_tree[0]['sub'][$i]['sub'][$j]['id']==$m_id){ echo 'focus';}?>">
-                    <?php }else if($nav_tree[0]['sub'][$i]['sub'][$j]['id']=='prevmnlaun2'||$nav_tree[0]['sub'][$i]['sub'][$j]['id']=='prevmnlaun3'||$nav_tree[0]['sub'][$i]['sub'][$j]['id']=='prevmnlaun4'||$nav_tree[0]['sub'][$i]['sub'][$j]['id']=='prevmnlaun5'){ ?>
-                        <a>
+                        <?php echo $nav_tree[0]['sub'][$i]['sub'][$j]['tit'][$lng_idx]; ?>
+                    </a>
+                    <?php }else if($nav_tree[0]['sub'][$i]['sub'][$j]['id']=='prevmnlaun2'||$nav_tree[0]['sub'][$i]['sub'][$j]['id']=='prevmnlaun3'||$nav_tree[0]['sub'][$i]['sub'][$j]['id']=='prevmnlaun4'||$nav_tree[0]['sub'][$i]['sub'][$j]['id']=='prevmnlaun5'||$nav_tree[0]['sub'][$i]['sub'][$j]['id']=='globalcomp2'||$nav_tree[0]['sub'][$i]['sub'][$j]['id']=='globalcomp3'||$nav_tree[0]['sub'][$i]['sub'][$j]['id']=='globalcomp4'){ ?>
+                        
                     <?php }else{ ?>
                     <a href="/<?php echo $lng_cd;?>/<?php echo $nav_tree[0]['sub'][$i]['sub'][$j]['id']; ?>" class="<?php if($nav_tree[0]['sub'][$i]['sub'][$j]['id']==$m_id){ echo 'focus';}?>">
-                    <?php } ?>
-                    <?php if($nav_tree[0]['sub'][$i]['sub'][$j]['id']=='prevmnlaun2'||$nav_tree[0]['sub'][$i]['sub'][$j]['id']=='prevmnlaun3'||$nav_tree[0]['sub'][$i]['sub'][$j]['id']=='prevmnlaun4'||$nav_tree[0]['sub'][$i]['sub'][$j]['id']=='prevmnlaun5') {
-                            echo '';
-                          } else {
-                            echo $nav_tree[0]['sub'][$i]['sub'][$j]['tit'][$lng_idx];
-                          }
-                    ?>
+                        <?php echo $nav_tree[0]['sub'][$i]['sub'][$j]['tit'][$lng_idx]; ?>
                     </a>
+                    <?php } ?>
                 </li>
             <?php } ?>
             </ul>

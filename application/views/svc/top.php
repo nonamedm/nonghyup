@@ -74,6 +74,8 @@
                                 국내제재사례
                             <?php } else if($nav_tree[0]['sub'][$i]['sub'][$j]['id']=='prevmnlaun2') {?>
                                 국외제재사례
+                            <?php } else if($nav_tree[0]['sub'][$i]['sub'][$j]['id']=='globalcomp1') {?>
+                                News & Events
                             <?php } else { ?>
                                 <?php echo strip_tags($nav_tree[0]['sub'][$i]['sub'][$j]['tit'][$lng_idx]);?>
                             <?php }?>

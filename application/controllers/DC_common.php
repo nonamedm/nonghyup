@@ -716,21 +716,9 @@ class DC_common extends CI_Controller
             $result['prevmnlaun1'] = $this->DM_basic->getResult_sch($param_cm);
             $total += count($result['prevmnlaun1']);
 
-            $param_cm['tb_id']='ct_prevmnlaun2';
-            $result['prevmnlaun2'] = $this->DM_basic->getResult_sch($param_cm);
-            $total += count($result['prevmnlaun2']);
-
-            $param_cm['tb_id']='ct_prevmnlaun3';
-            $result['prevmnlaun3'] = $this->DM_basic->getResult_sch($param_cm);
-            $total += count($result['prevmnlaun3']);
-
-            $param_cm['tb_id']='ct_prevmnlaun4';
-            $result['prevmnlaun4'] = $this->DM_basic->getResult_sch($param_cm);
-            $total += count($result['prevmnlaun4']);
-
-            $param_cm['tb_id']='ct_prevmnlaun5';
-            $result['prevmnlaun5'] = $this->DM_basic->getResult_sch($param_cm);
-            $total += count($result['prevmnlaun5']);
+            $param_cm['tb_id']='ct_globalcomp';
+            $result['globalcomp1'] = $this->DM_basic->getResult_sch($param_cm);
+            $total += count($result['globalcomp1']);
 
             $param_cm['tb_id']='ct_intnlctrl';
             $result['intnlctrl'] = $this->DM_basic->getResult_sch($param_cm);
@@ -1466,7 +1454,8 @@ class DC_common extends CI_Controller
 
        if ($this->rtn_perm['cd'] == 'pass') {
            if ($param[0]) {
-                if($this->usr_id=='nacf5061'||$this->usr_id=='nacf50611'||$this->usr_id=='wtadmin'||$this->usr_id=='17311795'||$this->usr_id=='19312949'||$this->usr_id=='08305788'||$this->usr_id=='21613193') {
+                if($this->usr_id=='nacf5061'||$this->usr_id=='nacf50611'||$this->usr_id=='wtadmin'||$this->usr_id=='17311795'||$this->usr_id=='19312949'||$this->usr_id=='08305788'||$this->usr_id=='21613193'||
+                $this->usr_id=='2910703673'||$this->usr_id=='2259084387'||$this->usr_id=='3282972707') {
                     if($param[0]=='dashboard'){
                         if($this->usr_id=='nacf5061') {
                             redirect('/adm/intnlctrl');
@@ -1474,6 +1463,8 @@ class DC_common extends CI_Controller
                             redirect('/adm/finnaccexp');
                         } else if($this->usr_id=='17311795'||$this->usr_id=='19312949'||$this->usr_id=='08305788'||$this->usr_id=='21613193'||$this->usr_id=='wtadmin') {
                             redirect('/adm/prevmnlaun1');
+                        } else if($this->usr_id=='2910703673'||$this->usr_id=='2259084387'||$this->usr_id=='3282972707') {
+                            redirect('/adm/globalcomp1');
                         }
                     }
                     if ($this->m_id) {
@@ -1607,7 +1598,7 @@ class DC_common extends CI_Controller
             }else{
                 show_404("xox DC_common -> write : non_param_error", TRUE);
             }
-        } else if($this->usr_id=='nacf5061'||$this->usr_id=='nacf50611'||$this->usr_id=='17311795'||$this->usr_id=='19312949'||$this->usr_id=='08305788'||$this->usr_id=='21613193'||$this->usr_id=='wtadmin') {
+        } else if($this->usr_id=='nacf5061'||$this->usr_id=='nacf50611'||$this->usr_id=='17311795'||$this->usr_id=='19312949'||$this->usr_id=='08305788'||$this->usr_id=='21613193'||$this->usr_id=='wtadmin'||$this->usr_id=='2910703673'||$this->usr_id=='2259084387'||$this->usr_id=='3282972707') {
             if($param[0])
             {
                 $this->dl_view->view_cv($param);

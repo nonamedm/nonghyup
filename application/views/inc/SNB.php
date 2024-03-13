@@ -10,12 +10,14 @@
             foreach($s_res as $key=>$val){
                 if($key==='prevmnlaun1') {
                     echo "<div class='left_sub_menu'><a href='#".$key."' >자금세탁방지 <span>(".count($val).")</span></a></div>";
-                } else if ($key==='prevmnlaun2'||$key==='prevmnlaun3'||$key==='prevmnlaun4'||$key==='prevmnlaun5') {
+                } else if ($key==='globalcomp1') {
+                    echo "<div class='left_sub_menu'><a href='#".$key."' >Global Complicance <span>(".count($val).")</span></a></div>";
+                }else if ($key==='prevmnlaun2'||$key==='prevmnlaun3'||$key==='prevmnlaun4'||$key==='prevmnlaun5'||$key==='globalcomp2'||$key==='globalcomp3'||$key==='globalcomp4') {
 
                 } else {
                     echo "<div class='left_sub_menu'><a href='#".$key."' >".trans_idToNm($key)." <span>(".count($val).")</span></a></div>";
                 }
-                if($key==='prevmnlaun2'||$key==='prevmnlaun3'||$key==='prevmnlaun4'||$key==='prevmnlaun5'){
+                if($key==='prevmnlaun2'||$key==='prevmnlaun3'||$key==='prevmnlaun4'||$key==='prevmnlaun5'||$key==='globalcomp2'||$key==='globalcomp3'||$key==='globalcomp4'){
                 } else {
                     echo "<hr class='left_sub_dv'>";
                 }
@@ -40,12 +42,16 @@
                         echo "<li><a href='/ko/" . "prevmnlaun4' class='" . $cls . "' style='font-size:15px;'>- NEWS</a></li>";
                         echo "<li><a href='/ko/" . "prevmnlaun5' class='" . $cls . "' style='font-size:15px;'>- AML BRIEF</a></li>";
                         echo "</ul></div>";
-                    } else if ($gd_arr[$i]['id'] == 'prevmnlaun2'||$gd_arr[$i]['id'] == 'prevmnlaun3'||$gd_arr[$i]['id'] == 'prevmnlaun4'||$gd_arr[$i]['id'] == 'prevmnlaun5') {
+                    } else if ($gd_arr[$i]['id'] == 'prevmnlaun2'||$gd_arr[$i]['id'] == 'prevmnlaun3'||$gd_arr[$i]['id'] == 'prevmnlaun4'||$gd_arr[$i]['id'] == 'prevmnlaun5'||$gd_arr[$i]['id'] == 'globalcomp2'||$gd_arr[$i]['id'] == 'globalcomp3'||$gd_arr[$i]['id'] == 'globalcomp4') {
                         //루프 차례가 해외동향일 때
 
                     } else {
                         //그 외의 루프
-                        echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>" . $gd_arr[$i]['tit'][0] . "</a></div>";
+                        if($gd_arr[$i]['id'] == 'globalcomp1') {
+                            echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>Global Complicance</a></div>";
+                        } else {
+                            echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>" . $gd_arr[$i]['tit'][0] . "</a></div>";
+                        }
                     }
 
                 } else if($m_id=='prevmnlaun2'){// 클릭이 해외동향일 때
@@ -61,12 +67,16 @@
                         echo "<li><a href='/ko/prevmnlaun4' class='". $cls . "' style='font-size:15px;'>- NEWS</a></li>";
                         echo "<li><a href='/ko/prevmnlaun5' class='". $cls . "' style='font-size:15px;'>- AML BRIEF</a></li>";
                         echo "</ul></div>";
-                    } else if ($gd_arr[$i]['id'] == 'prevmnlaun2'||$gd_arr[$i]['id'] == 'prevmnlaun3'||$gd_arr[$i]['id'] == 'prevmnlaun4'||$gd_arr[$i]['id'] == 'prevmnlaun5') {
+                    } else if ($gd_arr[$i]['id'] == 'prevmnlaun2'||$gd_arr[$i]['id'] == 'prevmnlaun3'||$gd_arr[$i]['id'] == 'prevmnlaun4'||$gd_arr[$i]['id'] == 'prevmnlaun5'||$gd_arr[$i]['id'] == 'globalcomp2'||$gd_arr[$i]['id'] == 'globalcomp3'||$gd_arr[$i]['id'] == 'globalcomp4') {
                         //루프 차례가 해외동향일 때
 
                     } else {
                         //그 외의 루프
-                        echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>" . $gd_arr[$i]['tit'][0] . "</a></div>";
+                        if($gd_arr[$i]['id'] == 'globalcomp1') {
+                            echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>Global Complicance</a></div>";
+                        } else {
+                            echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>" . $gd_arr[$i]['tit'][0] . "</a></div>";
+                        }
                     }
                 } else if($m_id=='prevmnlaun3'){// 클릭이 해외동향일 때
                     if ($gd_arr[$i]['id'] == 'prevmnlaun1') {
@@ -81,12 +91,16 @@
                         echo "<li><a href='/ko/prevmnlaun4' class='". $cls . "' style='font-size:15px;'>- NEWS</a></li>";
                         echo "<li><a href='/ko/prevmnlaun5' class='". $cls . "' style='font-size:15px;'>- AML BRIEF</a></li>";
                         echo "</ul></div>";
-                    } else if ($gd_arr[$i]['id'] == 'prevmnlaun2'||$gd_arr[$i]['id'] == 'prevmnlaun3'||$gd_arr[$i]['id'] == 'prevmnlaun4'||$gd_arr[$i]['id'] == 'prevmnlaun5') {
+                    } else if ($gd_arr[$i]['id'] == 'prevmnlaun2'||$gd_arr[$i]['id'] == 'prevmnlaun3'||$gd_arr[$i]['id'] == 'prevmnlaun4'||$gd_arr[$i]['id'] == 'prevmnlaun5'||$gd_arr[$i]['id'] == 'globalcomp2'||$gd_arr[$i]['id'] == 'globalcomp3'||$gd_arr[$i]['id'] == 'globalcomp4') {
                         //루프 차례가 해외동향일 때
 
                     } else {
                         //그 외의 루프
-                        echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>" . $gd_arr[$i]['tit'][0] . "</a></div>";
+                        if($gd_arr[$i]['id'] == 'globalcomp1') {
+                            echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>Global Complicance</a></div>";
+                        } else {
+                            echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>" . $gd_arr[$i]['tit'][0] . "</a></div>";
+                        }
                     }
                 } else if($m_id=='prevmnlaun4'){// 클릭이 해외동향일 때
                     if ($gd_arr[$i]['id'] == 'prevmnlaun1') {
@@ -101,12 +115,16 @@
                         echo "<li><a href='/ko/prevmnlaun4' class='focus". $cls . "' style='font-size:15px;'>- NEWS</a></li>";
                         echo "<li><a href='/ko/prevmnlaun5' class='". $cls . "' style='font-size:15px;'>- AML BRIEF</a></li>";
                         echo "</ul></div>";
-                    } else if ($gd_arr[$i]['id'] == 'prevmnlaun2'||$gd_arr[$i]['id'] == 'prevmnlaun3'||$gd_arr[$i]['id'] == 'prevmnlaun4'||$gd_arr[$i]['id'] == 'prevmnlaun5') {
+                    } else if ($gd_arr[$i]['id'] == 'prevmnlaun2'||$gd_arr[$i]['id'] == 'prevmnlaun3'||$gd_arr[$i]['id'] == 'prevmnlaun4'||$gd_arr[$i]['id'] == 'prevmnlaun5'||$gd_arr[$i]['id'] == 'globalcomp2'||$gd_arr[$i]['id'] == 'globalcomp3'||$gd_arr[$i]['id'] == 'globalcomp4') {
                         //루프 차례가 해외동향일 때
 
                     } else {
                         //그 외의 루프
-                        echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>" . $gd_arr[$i]['tit'][0] . "</a></div>";
+                        if($gd_arr[$i]['id'] == 'globalcomp1') {
+                            echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>Global Complicance</a></div>";
+                        } else {
+                            echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>" . $gd_arr[$i]['tit'][0] . "</a></div>";
+                        }
                     }
                 } else if($m_id=='prevmnlaun5'){// 클릭이 해외동향일 때
                     if ($gd_arr[$i]['id'] == 'prevmnlaun1') {
@@ -121,12 +139,104 @@
                         echo "<li><a href='/ko/prevmnlaun4' class='". $cls . "' style='font-size:15px;'>- NEWS</a></li>";
                         echo "<li><a href='/ko/prevmnlaun5' class='focus". $cls . "' style='font-size:15px;'>- AML BRIEF</a></li>";
                         echo "</ul></div>";
-                    } else if ($gd_arr[$i]['id'] == 'prevmnlaun2'||$gd_arr[$i]['id'] == 'prevmnlaun3'||$gd_arr[$i]['id'] == 'prevmnlaun4'||$gd_arr[$i]['id'] == 'prevmnlaun5') {
+                    } else if ($gd_arr[$i]['id'] == 'prevmnlaun2'||$gd_arr[$i]['id'] == 'prevmnlaun3'||$gd_arr[$i]['id'] == 'prevmnlaun4'||$gd_arr[$i]['id'] == 'prevmnlaun5'||$gd_arr[$i]['id'] == 'globalcomp2'||$gd_arr[$i]['id'] == 'globalcomp3'||$gd_arr[$i]['id'] == 'globalcomp4') {
                         //루프 차례가 해외동향일 때
 
                     } else {
                         //그 외의 루프
-                        echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>" . $gd_arr[$i]['tit'][0] . "</a></div>";
+                        if($gd_arr[$i]['id'] == 'globalcomp1') {
+                            echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>Global Complicance</a></div>";
+                        } else {
+                            echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>" . $gd_arr[$i]['tit'][0] . "</a></div>";
+                        }
+                    }
+                } else if($m_id=='globalcomp1'){
+                    if ($gd_arr[$i]['id'] == 'globalcomp1') {
+                        echo "<div class='left_sub_menu'><div class='focus_bullet'></div>";
+                        echo "<a href='/ko/" . $gd_arr[$i]['id'] . "' class='focus" . $cls . "'>";
+                        echo $gd_arr[$i]['tit'][0];
+                        echo "</a>";
+                        echo "<ul><li><a href='/ko/" . $gd_arr[$i]['id'] . "' class='focus" . $cls . "' style='font-size:15px;'>- News & Events</a></li>";
+                        echo "<li><a href='/ko/globalcomp2' class='" . $cls . "' style='font-size:15px;'>- Laws & Regulations</a></li>";
+                        echo "<li><a href='/ko/globalcomp3' class='". $cls . "' style='font-size:15px;'>- Education Resources</a></li>";
+                        echo "<li><a href='/ko/globalcomp4' class='". $cls . "' style='font-size:15px;'>- Get involved</a></li>";
+                        echo "</ul></div>";
+                    } else if ($gd_arr[$i]['id'] == 'prevmnlaun2'||$gd_arr[$i]['id'] == 'prevmnlaun3'||$gd_arr[$i]['id'] == 'prevmnlaun4'||$gd_arr[$i]['id'] == 'prevmnlaun5'||$gd_arr[$i]['id'] == 'globalcomp2'||$gd_arr[$i]['id'] == 'globalcomp3'||$gd_arr[$i]['id'] == 'globalcomp4') {
+                        //루프 차례가 해외동향일 때
+
+                    } else {
+                        //그 외의 루프
+                        if($gd_arr[$i]['id'] == 'prevmnlaun1') {
+                            echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>자금세탁방지</a></div>";
+                        } else {
+                            echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>" . $gd_arr[$i]['tit'][0] . "</a></div>";
+                        }
+                    }
+                } else if($m_id=='globalcomp2'){
+                    if ($gd_arr[$i]['id'] == 'globalcomp1') {
+                        echo "<div class='left_sub_menu'><div class='focus_bullet'></div>";
+                        echo "<a href='/ko/" . $gd_arr[$i]['id'] . "' class='focus" . $cls . "'>";
+                        echo $gd_arr[$i]['tit'][0];
+                        echo "</a>";
+                        echo "<ul><li><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "' style='font-size:15px;'>- News & Events</a></li>";
+                        echo "<li><a href='/ko/globalcomp2' class='focus" . $cls . "' style='font-size:15px;'>- Laws & Regulations</a></li>";
+                        echo "<li><a href='/ko/globalcomp3' class='". $cls . "' style='font-size:15px;'>- Education Resources</a></li>";
+                        echo "<li><a href='/ko/globalcomp4' class='". $cls . "' style='font-size:15px;'>- Get involved</a></li>";
+                        echo "</ul></div>";
+                    } else if ($gd_arr[$i]['id'] == 'prevmnlaun2'||$gd_arr[$i]['id'] == 'prevmnlaun3'||$gd_arr[$i]['id'] == 'prevmnlaun4'||$gd_arr[$i]['id'] == 'prevmnlaun5'||$gd_arr[$i]['id'] == 'globalcomp2'||$gd_arr[$i]['id'] == 'globalcomp3'||$gd_arr[$i]['id'] == 'globalcomp4') {
+                        //루프 차례가 해외동향일 때
+
+                    } else {
+                        //그 외의 루프
+                        if($gd_arr[$i]['id'] == 'prevmnlaun1') {
+                            echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>자금세탁방지</a></div>";
+                        } else {
+                            echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>" . $gd_arr[$i]['tit'][0] . "</a></div>";
+                        }
+                    }
+                } else if($m_id=='globalcomp3'){
+                    if ($gd_arr[$i]['id'] == 'globalcomp1') {
+                        echo "<div class='left_sub_menu'><div class='focus_bullet'></div>";
+                        echo "<a href='/ko/" . $gd_arr[$i]['id'] . "' class='focus" . $cls . "'>";
+                        echo $gd_arr[$i]['tit'][0];
+                        echo "</a>";
+                        echo "<ul><li><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "' style='font-size:15px;'>- News & Events</a></li>";
+                        echo "<li><a href='/ko/globalcomp2' class='" . $cls . "' style='font-size:15px;'>- Laws & Regulations</a></li>";
+                        echo "<li><a href='/ko/globalcomp3' class='focus". $cls . "' style='font-size:15px;'>- Education Resources</a></li>";
+                        echo "<li><a href='/ko/globalcomp4' class='". $cls . "' style='font-size:15px;'>- Get involved</a></li>";
+                        echo "</ul></div>";
+                    } else if ($gd_arr[$i]['id'] == 'prevmnlaun2'||$gd_arr[$i]['id'] == 'prevmnlaun3'||$gd_arr[$i]['id'] == 'prevmnlaun4'||$gd_arr[$i]['id'] == 'prevmnlaun5'||$gd_arr[$i]['id'] == 'globalcomp2'||$gd_arr[$i]['id'] == 'globalcomp3'||$gd_arr[$i]['id'] == 'globalcomp4') {
+                        //루프 차례가 해외동향일 때
+
+                    } else {
+                        //그 외의 루프
+                        if($gd_arr[$i]['id'] == 'prevmnlaun1') {
+                            echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>자금세탁방지</a></div>";
+                        } else {
+                            echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>" . $gd_arr[$i]['tit'][0] . "</a></div>";
+                        }
+                    }
+                } else if($m_id=='globalcomp4'){
+                    if ($gd_arr[$i]['id'] == 'globalcomp1') {
+                        echo "<div class='left_sub_menu'><div class='focus_bullet'></div>";
+                        echo "<a href='/ko/" . $gd_arr[$i]['id'] . "' class='focus" . $cls . "'>";
+                        echo $gd_arr[$i]['tit'][0];
+                        echo "</a>";
+                        echo "<ul><li><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "' style='font-size:15px;'>- News & Events</a></li>";
+                        echo "<li><a href='/ko/globalcomp2' class='" . $cls . "' style='font-size:15px;'>- Laws & Regulations</a></li>";
+                        echo "<li><a href='/ko/globalcomp3' class='". $cls . "' style='font-size:15px;'>- Education Resources</a></li>";
+                        echo "<li><a href='/ko/globalcomp4' class='focus". $cls . "' style='font-size:15px;'>- Get involved</a></li>";
+                        echo "</ul></div>";
+                    } else if ($gd_arr[$i]['id'] == 'prevmnlaun2'||$gd_arr[$i]['id'] == 'prevmnlaun3'||$gd_arr[$i]['id'] == 'prevmnlaun4'||$gd_arr[$i]['id'] == 'prevmnlaun5'||$gd_arr[$i]['id'] == 'globalcomp2'||$gd_arr[$i]['id'] == 'globalcomp3'||$gd_arr[$i]['id'] == 'globalcomp4') {
+                        //루프 차례가 해외동향일 때
+
+                    } else {
+                        //그 외의 루프
+                        if($gd_arr[$i]['id'] == 'prevmnlaun1') {
+                            echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>자금세탁방지</a></div>";
+                        } else {
+                            echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>" . $gd_arr[$i]['tit'][0] . "</a></div>";
+                        }
                     }
                 } else {
                     if($gd_arr[$i]['id']==$m_id){                        
@@ -145,7 +255,7 @@
                             /*현행법령 수정*/
                             echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "/lists?initial=ㄱ" . "' class='" . $cls . "'>" . $gd_arr[$i]['tit'][0] . "</a></div>";
                         }else {
-                            if($gd_arr[$i]['id'] == 'prevmnlaun2'||$gd_arr[$i]['id'] == 'prevmnlaun3'||$gd_arr[$i]['id'] == 'prevmnlaun4'||$gd_arr[$i]['id'] == 'prevmnlaun5') {
+                            if($gd_arr[$i]['id'] == 'prevmnlaun2'||$gd_arr[$i]['id'] == 'prevmnlaun3'||$gd_arr[$i]['id'] == 'prevmnlaun4'||$gd_arr[$i]['id'] == 'prevmnlaun5'||$gd_arr[$i]['id'] == 'globalcomp2'||$gd_arr[$i]['id'] == 'globalcomp3'||$gd_arr[$i]['id'] == 'globalcomp4') {
 
                             } else {
                                 echo "<div class='left_sub_menu'><a href='/ko/" . $gd_arr[$i]['id'] . "' class='" . $cls . "'>" . $gd_arr[$i]['tit'][0] . "</a></div>";

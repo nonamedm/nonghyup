@@ -45,6 +45,8 @@
                                 if($dload=='Y') {?>
                                         <?php if($m_id=='prevmnlaun1'||$m_id=='prevmnlaun2'||$m_id=='prevmnlaun3'||$m_id=='prevmnlaun4'||$m_id=='prevmnlaun5') { ?>
                                             <a href="/ko/prevmnlaun1/dnload?idx=<?php echo $file[$i]['trgt_idx'];?>&fl=<?php echo $i+1;?>" class="unit" title="다운로드"><span class="uk-label down_label">다운로드</span></a>
+                                        <?php } else if($m_id=='globalcomp1'||$m_id=='globalcomp2'||$m_id=='globalcomp3'||$m_id=='globalcomp4') { ?>
+                                            <a href="/ko/globalcomp1/dnload?idx=<?php echo $file[$i]['trgt_idx'];?>&fl=<?php echo $i+1;?>" class="unit" title="다운로드"><span class="uk-label down_label">다운로드</span></a>
                                         <?php } else { ?>
                                             <a href="/ko/<?php echo $m_id;?>/dnload?idx=<?php echo $file[$i]['trgt_idx'];?>&fl=<?php echo $i+1;?>" class="unit" title="다운로드"><span class="uk-label down_label">다운로드</span></a>
                                         <?php } ?>
@@ -54,6 +56,8 @@
                                 if ($ext=='pdf' || $ext=='png' || $ext=='jpg'|| $ext=='jpeg'|| $ext=='gif'|| $ext=='bmp'){ ?>
                                     <?php if($m_id=='prevmnlaun1'||$m_id=='prevmnlaun2'||$m_id=='prevmnlaun3'||$m_id=='prevmnlaun4'||$m_id=='prevmnlaun5') { ?>
                                         <a href="/static/data/prevmnlaun1/<?php echo $file[$i]['file_name'];?>" target="_blank" class="unit" title="바로보기"><span class="uk-label view_label">바로보기</span></a>
+                                    <?php } else if($m_id=='globalcomp1'||$m_id=='globalcomp2'||$m_id=='globalcomp3'||$m_id=='globalcomp4') { ?>
+                                        <a href="/static/data/globalcomp1/<?php echo $file[$i]['file_name'];?>" target="_blank" class="unit" title="바로보기"><span class="uk-label view_label">바로보기</span></a>
                                     <?php } else { ?>
                                             <a href="/static/data/<?php echo $m_id;?>/<?php echo $file[$i]['file_name'];?>" target="_blank" class="unit" title="바로보기"><span class="uk-label view_label">바로보기</span></a>
                                     <?php } ?>

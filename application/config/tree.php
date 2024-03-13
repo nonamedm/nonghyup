@@ -417,6 +417,82 @@ $config['svc_tree'] = [
                         ,'file'         => 4
                         ,'edtr'         => 'Y'
                         ,'sub'	        => []
+                    ],
+                    [
+                        'id'	        => 'globalcomp1'
+                        ,'tit'	        => ['Global Complience','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => 'ct_globalcomp1'
+                        ,'tbl'	        => 'ct_globalcomp'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'globalcomp'
+                        ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
+                        // ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'reply'=>1, 'modify'=>1, 'delete'=>1, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => 4
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
+                    ,[
+                        'id'	        => 'globalcomp2'
+                        ,'tit'	        => ['Laws & Regulations','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => 'ct_globalcomp2'
+                        ,'tbl'	        => 'ct_globalcomp'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'globalcomp'
+                        ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
+                        // ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'reply'=>1, 'modify'=>1, 'delete'=>1, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => 4
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
+                    ,[
+                        'id'	        => 'globalcomp3'
+                        ,'tit'	        => ['Education Resources','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => 'ct_globalcomp3'
+                        ,'tbl'	        => 'ct_globalcomp'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'globalcomp'
+                        ,'perm'         => ['lists'=>1, 'view'=>2, 'write'=>5, 'reply'=>10, 'modify'=>5, 'delete'=>5, 'dnload'=>1]
+                        // ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'modify'=>1, 'reply'=>1, 'delete'=>1, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => 4
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
+                    ,[
+                        'id'	        => 'globalcomp4'
+                        ,'tit'	        => ['Get involved','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'write'
+                        ,'cat'          => 'ct_globalcomp4'
+                        ,'tbl'	        => 'ct_globalcomp'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'globalcomp'
+                        ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'reply'=>2, 'modify'=>2, 'delete'=>2, 'dnload'=>2]
+                        // ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'modify'=>1, 'reply'=>1, 'delete'=>1, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => 4
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
                     ]
                 ]
             ]
@@ -594,7 +670,7 @@ $config['svc_tree'] = [
                         ,'tbl'	        => 'ct_qna'
                         ,'fld'	        => 'qna'
                         ,'skin'         => 'qna'
-                        ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'reply'=>1, 'modify'=>1, 'delete'=>1, 'dnload'=>1]
+                        ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'reply'=>2, 'modify'=>2, 'delete'=>2, 'dnload'=>2]
                         ,'status'       => ''
                         ,'lng_mode_yn'  => ''
                         ,'visible_yn'   => ''
@@ -1262,6 +1338,82 @@ $config['adm_tree'] = [
                         ,'tbl'	        => 'ct_prevmnlaun1'
                         ,'fld'	        => 'basic'
                         ,'skin'         => 'prevmnlaun'
+                        ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>0, 'delete'=>5, 'dnload'=>0]
+                        // ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'modify'=>1, 'reply'=>1, 'delete'=>1, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => 4
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
+                    ,[
+                        'id'	        => 'globalcomp1'
+                        ,'tit'	        => ['News & Events','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => 'ct_globalcomp1'
+                        ,'tbl'	        => 'ct_globalcomp'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'globalcomp'
+                        ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>0, 'delete'=>5, 'dnload'=>0]
+                        // ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'modify'=>1, 'reply'=>1, 'delete'=>1, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => 4
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
+                    ,[
+                        'id'	        => 'globalcomp2'
+                        ,'tit'	        => ['Laws & Regulations','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => 'ct_globalcomp2'
+                        ,'tbl'	        => 'ct_globalcomp'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'globalcomp'
+                        ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>0, 'delete'=>5, 'dnload'=>0]
+                        // ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'modify'=>1, 'reply'=>1, 'delete'=>1, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => 4
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
+                    ,[
+                        'id'	        => 'globalcomp3'
+                        ,'tit'	        => ['Education Resources','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => 'ct_globalcomp3'
+                        ,'tbl'	        => 'ct_globalcomp'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'globalcomp'
+                        ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>0, 'delete'=>5, 'dnload'=>0]
+                        // ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'modify'=>1, 'reply'=>1, 'delete'=>1, 'dnload'=>1]
+                        ,'status'       => ''
+                        ,'lng_mode_yn'  => ''
+                        ,'visible_yn'   => ''
+                        ,'file'         => 4
+                        ,'edtr'         => 'Y'
+                        ,'sub'	        => []
+                    ]
+                    ,[
+                        'id'	        => 'globalcomp4'
+                        ,'tit'	        => ['Get involved','']
+                        ,'typ'          => 'cont'
+                        ,'fnc'          => 'bbs'
+                        ,'mod'          => 'lists'
+                        ,'cat'          => 'ct_globalcomp4'
+                        ,'tbl'	        => 'ct_globalcomp'
+                        ,'fld'	        => 'basic'
+                        ,'skin'         => 'globalcomp'
                         ,'perm'         => ['lists'=>5, 'view'=>5, 'write'=>5, 'modify'=>5, 'reply'=>0, 'delete'=>5, 'dnload'=>0]
                         // ,'perm'         => ['lists'=>1, 'view'=>1, 'write'=>1, 'modify'=>1, 'reply'=>1, 'delete'=>1, 'dnload'=>1]
                         ,'status'       => ''

@@ -19,6 +19,14 @@
                         echo 'NEWS';
                     } else if($m_id=='prevmnlaun5') {
                         echo 'AML BRIEF';
+                    } else if($m_id=='globalcomp1') {
+                        echo 'News & Events';
+                    } else if($m_id=='globalcomp2') {
+                        echo 'Laws & Regulations';
+                    } else if($m_id=='globalcomp3') {
+                        echo 'Education Resources';
+                    } else if($m_id=='globalcomp4') {
+                        echo 'Get involved';
                     } else {
                         echo $pg_tit;
                     }
