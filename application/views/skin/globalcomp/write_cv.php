@@ -52,7 +52,9 @@ if($m_id=='globalcomp1'||$m_id=='globalcomp2'||$m_id=='globalcomp3'||$m_id=='glo
                     </textarea>
                 </div>
             </div>
-
+            <?php if($upload_files_num){ ?>
+                <?php $this->load->view("brd/common_file"); ?>
+            <?php } ?>
             <?php $this->load->view("brd/common_btn"); ?>
 
         </form>

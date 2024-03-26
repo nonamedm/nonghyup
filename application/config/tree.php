@@ -420,7 +420,7 @@ $config['svc_tree'] = [
                     ],
                     [
                         'id'	        => 'globalcomp1'
-                        ,'tit'	        => ['Global Complience','']
+                        ,'tit'	        => ['Global Compliance','']
                         ,'typ'          => 'cont'
                         ,'fnc'          => 'bbs'
                         ,'mod'          => 'lists'
