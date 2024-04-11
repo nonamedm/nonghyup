@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 class DC_common extends CI_Controller
 {
@@ -34,8 +34,7 @@ class DC_common extends CI_Controller
     private $file_upload_dir;
     private $cfg_file_upload = array();
     private $cfg_file_resize = array(
-        'resize_width' => 1024
-    , 'resize_height' => 1024
+        'resize_width' => 1024, 'resize_height' => 1024
     );
 
     // 파라미터
@@ -45,7 +44,7 @@ class DC_common extends CI_Controller
     private $s_word, $s_cat, $s_sds, $s_sde, $s_rfsw, $s_fsw, $s_res, $s_tot, $s_lng, $s_fld, $s_typ, $s_cont, $s_subj, $post_cat, $usr_nm, $sanc, $post_sanc;
 
     // 키워드
-    private $kw_lists=[];
+    private $kw_lists = [];
 
     private $base = '/index.php';
 
@@ -187,8 +186,8 @@ class DC_common extends CI_Controller
             $p_cat = $this->input->get('cat', TRUE);
             $p_cat = $this->dl_security->xss_cleaner($p_cat);
 
-            if($p_cat){
-                if ( !($p_cat=="common" || $p_cat=="bank" || $p_cat=="investment" || $p_cat=="microfinance") ){
+            if ($p_cat) {
+                if (!($p_cat == "common" || $p_cat == "bank" || $p_cat == "investment" || $p_cat == "microfinance")) {
                     show_404("ERROR : cat is wrong", TRUE);
                 }
             }
@@ -202,19 +201,19 @@ class DC_common extends CI_Controller
         if ($this->input->get('ord', TRUE)) {
             $p_ord = $this->input->get('ord', TRUE);
             $p_ord = $this->dl_security->xss_cleaner($p_ord);
-            if($p_ord){
-                if ( !($p_ord=="DESC" || $p_ord=="ASC") ){
+            if ($p_ord) {
+                if (!($p_ord == "DESC" || $p_ord == "ASC")) {
                     show_404("ERROR : ord is wrong", TRUE);
                 }
             }
             $this->p_ord = $p_ord;
         }
-        
+
         if ($this->input->get('laword', TRUE)) {
             $law_ord = $this->input->get('laword', TRUE);
             $law_ord = $this->dl_security->xss_cleaner($law_ord);
-            if($law_ord){
-                if ( !($law_ord=="DESC" || $law_ord=="ASC") ){
+            if ($law_ord) {
+                if (!($law_ord == "DESC" || $law_ord == "ASC")) {
                     show_404("ERROR : ord is wrong", TRUE);
                 }
             }
@@ -224,8 +223,8 @@ class DC_common extends CI_Controller
         if ($this->input->get('orgaord', TRUE)) {
             $orga_ord = $this->input->get('orgaord', TRUE);
             $orga_ord = $this->dl_security->xss_cleaner($orga_ord);
-            if($orga_ord){
-                if ( !($orga_ord=="DESC" || $orga_ord=="ASC") ){
+            if ($orga_ord) {
+                if (!($orga_ord == "DESC" || $orga_ord == "ASC")) {
                     show_404("ERROR : ord is wrong", TRUE);
                 }
             }
@@ -298,17 +297,17 @@ class DC_common extends CI_Controller
         // ***** 검색어 GET  $this->security->xss_clean()
         //var_dump($this->input->get('s_word'));
 
-        if($this->input->get('s_word', TRUE)){
+        if ($this->input->get('s_word', TRUE)) {
             $s_word = $this->input->get('s_word', TRUE);
             $s_word = $this->dl_security->xss_cleaner($s_word);
             $this->s_word = $s_word;
         }
 
-        if($this->input->get('s_cat', TRUE)){
+        if ($this->input->get('s_cat', TRUE)) {
             $s_cat = $this->input->get('s_cat', TRUE);
             $s_cat = $this->dl_security->xss_cleaner($s_cat);
-            if($s_cat){
-                if ( !($s_cat=="전자금융거래" || $s_cat=="정보보호" || $s_cat=="금융소비자" || $s_cat=="자본시장법") ){
+            if ($s_cat) {
+                if (!($s_cat == "전자금융거래" || $s_cat == "정보보호" || $s_cat == "금융소비자" || $s_cat == "자본시장법")) {
                     show_404("ERROR : cat is wrong", TRUE);
                 }
             }
@@ -319,49 +318,44 @@ class DC_common extends CI_Controller
         //    show_404("ERROR : cat is wrong", TRUE);
         //}
 
-        if($this->input->get('s_sds', TRUE)){
+        if ($this->input->get('s_sds', TRUE)) {
             $s_sds = $this->input->get('s_sds', TRUE);
             $s_sds = $this->dl_security->xss_cleaner($s_sds);
             $this->s_sds = $s_sds;
         }
 
-        if($this->input->get('s_sde', TRUE)){
+        if ($this->input->get('s_sde', TRUE)) {
             $s_sde = $this->input->get('s_sde', TRUE);
             $s_sde = $this->dl_security->xss_cleaner($s_sde);
             $this->s_sde = $s_sde;
         }
 
-        if($this->input->get('s_fsw'))
-        {
+        if ($this->input->get('s_fsw')) {
             //$s_fsw = $this->input->get('s_fsw');
             $s_fsw = $this->input->get('s_fsw', TRUE);
             $s_fsw = $this->dl_security->xss_cleaner($s_fsw);
             $this->s_fsw = $s_fsw;
         }
 
-        if($this->input->get('s_lng'))
-        {
+        if ($this->input->get('s_lng')) {
             $s_lng = $this->input->get('s_lng', TRUE);
             $s_lng = $this->dl_security->xss_cleaner($s_lng);
             $this->s_lng = $s_lng;
         }
 
-        if($this->input->get('s_fld'))
-        {
+        if ($this->input->get('s_fld')) {
             $s_fld = $this->input->get('s_fld', TRUE);
             $s_fld = $this->dl_security->xss_cleaner($s_fld);
             $this->s_fld = $s_fld;
         }
 
-        if($this->input->get('s_typ'))
-        {
+        if ($this->input->get('s_typ')) {
             $s_typ = $this->input->get('s_typ', TRUE);
             $s_typ = $this->dl_security->xss_cleaner($s_typ);
             $this->s_typ = $s_typ;
         }
 
-        if($this->input->get('s_rfsw'))
-        {
+        if ($this->input->get('s_rfsw')) {
             $s_rfsw = $this->input->get('s_rfsw', TRUE);
             $s_rfsw = $this->dl_security->xss_cleaner($s_rfsw);
             $this->s_rfsw = $s_rfsw;
@@ -419,20 +413,20 @@ class DC_common extends CI_Controller
         $this->auth_tree = $this->config->item('auth_tree');
 
         $this->set_gm_id($this->uri->rsegments);
-//var_dump($this->g_id);
-//var_dump($this->m_id);
+        //var_dump($this->g_id);
+        //var_dump($this->m_id);
 
         $this->set_cur_tree($this->g_id);
 
-//print_r($this->cur_tree);
+        //print_r($this->cur_tree);
 
 
         $tmp_item = $this->dl_structure->get_md($this->cur_tree, 0, $this->m_id);
 
-        if(!$tmp_item){
+        if (!$tmp_item) {
             show_404("ERROR : md id is null", TRUE);
         }
-//print_r( $tmp_item['path_arr'] );
+        //print_r( $tmp_item['path_arr'] );
 
 
         /*
@@ -469,7 +463,7 @@ class DC_common extends CI_Controller
          * ****************************************
          */
         $dpth_arr = $this->config->item('path_arr');
-//print_r($dpth_arr[0]['sub']['idx']);
+        //print_r($dpth_arr[0]['sub']['idx']);
         if (count($dpth_arr) == 3) {
             $this->g_id = $dpth_arr[count($dpth_arr) - 2]['id'];
         } else if (count($dpth_arr) == 2) {
@@ -478,7 +472,7 @@ class DC_common extends CI_Controller
             $this->g_id = $dpth_arr[0]['id'];
         }
         unset($dpth_arr);
-//var_dump($this->g_id);
+        //var_dump($this->g_id);
 
 
         /*
@@ -500,7 +494,7 @@ class DC_common extends CI_Controller
 
             //print_r($this->config->item('path_arr'));
 
-            if (count($this->config->item('path_arr'))>1) {
+            if (count($this->config->item('path_arr')) > 1) {
                 $this->gd_arr = $this->config->item('path_arr')[1]['sub'];
 
 
@@ -509,8 +503,8 @@ class DC_common extends CI_Controller
             //print_r($this->config->item('path_arr')[1]['sub']);
             //print_r($tmp_item['gd']);
             //print_r($tmp_item['path_arr']);
-//echo $this->gd_idx;
-//print_r($this->gd_arr);
+            //echo $this->gd_idx;
+            //print_r($this->gd_arr);
 
             // *****
             $this->set_breadcrumb($this->config->item("path_arr"));
@@ -602,8 +596,7 @@ class DC_common extends CI_Controller
                 } else {
                     // ***** param usr
                     $param_cm = array(
-                        'tb_id' => 'ct_usr'
-                        ,'usr_id' => $this->usr_id
+                        'tb_id' => 'ct_usr', 'usr_id' => $this->usr_id
                     );
                     $_tmp = $this->DM_basic->getByUid($param_cm);
 
@@ -612,24 +605,23 @@ class DC_common extends CI_Controller
                     unset($_tmp['usr_pw']);
 
                     $this->load->library('encryption');
-                    $enc_key = $this->DM_basic->get_enc_key(array('key_id'=> 'enc_key'));
+                    $enc_key = $this->DM_basic->get_enc_key(array('key_id' => 'enc_key'));
                     $this->encryption->initialize(
                         array(
                             'key' => $enc_key['key_val']
                         )
                     );
 
-                    if($_tmp['usr_typ']!=10){
-                        $_tmp['usr_nm']=$this->encryption->decrypt($_tmp['usr_nm']);
-                        $_tmp['usr_email']=$this->encryption->decrypt($_tmp['usr_email']);
+                    if ($_tmp['usr_typ'] != 10) {
+                        $_tmp['usr_nm'] = $this->encryption->decrypt($_tmp['usr_nm']);
+                        $_tmp['usr_email'] = $this->encryption->decrypt($_tmp['usr_email']);
                     }
                     $this->set_usr_arr($_tmp); // usr_arr 로 통일 ( config 에 저장안함 )
 
 
-                    
-                    
-                }
 
+
+                }
             } else { // 로그인 상태인데 아이디가 없다면 오류처리
                 show_404(":::::::::: DC_common | USER : ERROR - is_login but usr_id is null ", TRUE);
             }
@@ -645,12 +637,11 @@ class DC_common extends CI_Controller
         //print_r($this->kw_lists);
 
 
-        if ($this->m_id=='search' && $this->s_fsw){
+        if ($this->m_id == 'search' && $this->s_fsw) {
 
 
             $param_cm = array(
-                'tb_id'     => 'ct_brief'
-                ,'s_val' => $this->s_fsw
+                'tb_id'     => 'ct_brief', 's_val' => $this->s_fsw
             );
             if ($this->s_rfsw) {
                 $param_cm['s_rfsw'] = $this->s_rfsw;
@@ -668,77 +659,74 @@ class DC_common extends CI_Controller
             $result['brief'] = $this->DM_basic->getResult_sch($param_cm);
             $total += count($result['brief']);
 
-            $param_cm['tb_id']='ct_lawmaking';
+            $param_cm['tb_id'] = 'ct_lawmaking';
             $result['lawmaking'] = $this->DM_basic->getResult_sch($param_cm);
             $total += count($result['lawmaking']);
 
-            $param_cm['tb_id']='ct_relateSite';
+            $param_cm['tb_id'] = 'ct_relateSite';
             $result['relateSite'] = $this->DM_basic->getResult_sch($param_cm);
             $total += count($result['relateSite']);
 
-            $param_cm['tb_id']='ct_pr';
+            $param_cm['tb_id'] = 'ct_pr';
             $result['pr'] = $this->DM_basic->getResult_sch($param_cm);
             $total += count($result['pr']);
 
-            $param_cm['tb_id']='ct_current';
+            $param_cm['tb_id'] = 'ct_current';
             $result['current'] = $this->DM_basic->getResult_sch($param_cm);
             $total += count($result['current']);
 
-            $param_cm['tb_id']='ct_news';
+            $param_cm['tb_id'] = 'ct_news';
             $result['news'] = $this->DM_basic->getResult_sch($param_cm);
             $total += count($result['news']);
 
-            $param_cm['tb_id']='ct_labdata';
+            $param_cm['tb_id'] = 'ct_labdata';
             $result['labdata'] = $this->DM_basic->getResult_sch($param_cm);
             $total += count($result['labdata']);
 
-            $param_cm['tb_id']='ct_edudata';
+            $param_cm['tb_id'] = 'ct_edudata';
             $result['edudata'] = $this->DM_basic->getResult_sch($param_cm);
             $total += count($result['edudata']);
 
-            $param_cm['tb_id']='ct_translate';
+            $param_cm['tb_id'] = 'ct_translate';
             $result['translate'] = $this->DM_basic->getResult_sch($param_cm);
             $total += count($result['translate']);
 
-            $param_cm['tb_id']='ct_noaction';
+            $param_cm['tb_id'] = 'ct_noaction';
             $result['noaction'] = $this->DM_basic->getResult_sch($param_cm);
             $total += count($result['noaction']);
 
-            $param_cm['tb_id']='ct_precedent';
+            $param_cm['tb_id'] = 'ct_precedent';
             $result['precedent'] = $this->DM_basic->getResult_sch($param_cm);
             $total += count($result['precedent']);
 
-            $param_cm['tb_id']='ct_personnelTrends';
+            $param_cm['tb_id'] = 'ct_personnelTrends';
             $result['personnelTrends'] = $this->DM_basic->getResult_sch($param_cm);
             $total += count($result['personnelTrends']);
 
-            $param_cm['tb_id']='ct_prevmnlaun1';
+            $param_cm['tb_id'] = 'ct_prevmnlaun1';
             $result['prevmnlaun1'] = $this->DM_basic->getResult_sch($param_cm);
             $total += count($result['prevmnlaun1']);
 
-            $param_cm['tb_id']='ct_globalcomp';
+            $param_cm['tb_id'] = 'ct_globalcomp';
             $result['globalcomp1'] = $this->DM_basic->getResult_sch($param_cm);
             $total += count($result['globalcomp1']);
 
-            $param_cm['tb_id']='ct_intnlctrl';
+            $param_cm['tb_id'] = 'ct_intnlctrl';
             $result['intnlctrl'] = $this->DM_basic->getResult_sch($param_cm);
             $total += count($result['intnlctrl']);
 
-            $param_cm['tb_id']='ct_finnaccexp';
+            $param_cm['tb_id'] = 'ct_finnaccexp';
             $result['finnaccexp'] = $this->DM_basic->getResult_sch($param_cm);
             $total += count($result['finnaccexp']);
 
-            $param_cm['tb_id']='ct_sanctions';
+            $param_cm['tb_id'] = 'ct_sanctions';
             $result['sanctions'] = $this->DM_basic->getResult_sch($param_cm);
             $total += count($result['sanctions']);
             $this->s_res = $result;
             $this->s_tot = $total;
             //echo $this->s_tot;
         }
-
-
-
-    }//---------- end of __construct
+    } //---------- end of __construct
 
 
     /*
@@ -818,7 +806,6 @@ class DC_common extends CI_Controller
             } else {
                 $this->m_id = "dashboard";
             }
-
         } else if ($this->svc_mod == 'mng') {
             $this->g_id = "manager";
             if (count($_arr) == 3) {
@@ -993,10 +980,8 @@ class DC_common extends CI_Controller
             $_msg = "다운로드 기간이 종료되었습니다.";
         } else if ($_opt == 'dnload_period') {           // dnload_period
             $_msg = "다운로드 기간이 아닙니다.";
-
         } else if ($_opt == 'is_admin') {                // is_admin
             $_msg = "관리자만 접근가능합니다.";
-
         } else {
             $_msg = "접근권한이 없습니다. 홈으로 이동합니다.";
         }
@@ -1104,19 +1089,18 @@ class DC_common extends CI_Controller
     public function get_usr($_key = "")
     {
         $rtn = false;
-        if($_key)
-        {
-            if(isset($this->usr_arr[$_key]))
-            {
+        if ($_key) {
+            if (isset($this->usr_arr[$_key])) {
                 $rtn = $this->usr_arr[$_key];
             }
-        }else{
+        } else {
             $rtn = $this->usr_arr;
         }
         return $rtn;
     }
-    public function chk_kakao_sync(){
-        if(isset($_SERVER['HTTP_USER_AGENT']) && strpos($_SERVER['HTTP_USER_AGENT'], 'KAKAOTALK', 0))  // KAKAOTALK 인앱
+    public function chk_kakao_sync()
+    {
+        if (isset($_SERVER['HTTP_USER_AGENT']) && strpos($_SERVER['HTTP_USER_AGENT'], 'KAKAOTALK', 0))  // KAKAOTALK 인앱
         {
             log_message('debug', '--------------------DC_common::chk_perm - 1.인가코드요청 시작 -> if 인앱브라우저');
 
@@ -1145,12 +1129,12 @@ class DC_common extends CI_Controller
             curl_close($ch);
             exit;
             */
-            if (! $this->session->userdata('is_login')) {
+            if (!$this->session->userdata('is_login')) {
                 $state = $_SERVER['REQUEST_URI'];
 
                 echo '<meta http-equiv="content-type" content="text/html; charset=UTF-8">';
                 echo '<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>';
-            	echo '<script type="text/javascript">Kakao.init("91ec0aac3f32ee5795cc51f9c7a9e493");</script>';
+                echo '<script type="text/javascript">Kakao.init("91ec0aac3f32ee5795cc51f9c7a9e493");</script>';
                 //echo '<script type="text/javascript">Kakao.Auth.authorize({ redirectUri: "https://law.nhbank.com/ko/auth/oauth"});</script>';
                 echo '<script type="text/javascript">Kakao.Auth.authorize({ redirectUri: "https://law.nhbank.com/ko/auth/oauth", state: "' . $state . '"});</script>';
                 //echo '<script type="text/javascript">Kakao.Auth.authorize({ redirectUri: "https://nhfrip.devv.kr/ko/auth/oauth", state: "'.$state.'"});</script>';
@@ -1164,7 +1148,7 @@ class DC_common extends CI_Controller
     // ***** chk_perm
     public function chk_perm($bbs_mod = "", $usr_id = "")
     {
-//$rtn=array(
+        //$rtn=array(
 
         //log_message('debug', '--------------------DC_common::chk_perm - 1.인가코드요청 이후 -> if end 인앱브라우저');
         //    'cd'=>'pass'
@@ -1194,7 +1178,7 @@ class DC_common extends CI_Controller
                 $rtn = ["cd" => "deny", "opt" => "adm", "perm_lv" => $this->adm_lv_allowed, "usr_lv" => $usr_lv];
             } else if ($this->config->item("md")['fnc'] == "bbs") {
                 //echo '3<br>';
-                $perm_lv='';
+                $perm_lv = '';
                 if (isset($this->config->item("md")['perm'][$bbs_mod]) && $this->config->item("md")['perm'][$bbs_mod]) {
                     //echo '3-1<br>';
                     $perm_lv = $this->config->item("md")['perm'][$bbs_mod];
@@ -1224,7 +1208,6 @@ class DC_common extends CI_Controller
             } else if ($this->allow_mng_level > $usr_lv) { // 관리 권한 없음
                 $rtn = ["cd" => "deny", "opt" => "mng", "perm_lv" => $this->allow_mng_level, "usr_lv" => $usr_lv];
                 log_message("INFO", "DC_common -> chk_perm : mng : deny : no mng permission ");
-
             } else if ($this->config->item("md")['fnc'] == "bbs") {
                 if (isset($this->config->item("md")['perm'][$bbs_mod]) && $this->config->item("md")['perm'][$bbs_mod]) {
                     $perm_lv = $this->config->item("md")['perm'][$bbs_mod];
@@ -1242,10 +1225,9 @@ class DC_common extends CI_Controller
                 $rtn = ["cd" => "pass", "opt" => "", "perm_lv" => 1, "usr_lv" => $usr_lv];
                 log_message("INFO", "DC_common -> chk_perm : mng : pass : Authorized 2");
             }
-
         } else { // 서비스 모드라면
             log_message("INFO", "DC_common -> chk_perm : svc ");
-            if ($this->config->item("md")['fnc'] == "bbs") {// 게시판이라면
+            if ($this->config->item("md")['fnc'] == "bbs") { // 게시판이라면
 
                 // 대상모드에 대한 퍼미션 설정값이 있다면
                 if (isset($this->config->item("md")['perm'][$bbs_mod]) && $this->config->item("md")['perm'][$bbs_mod]) {
@@ -1258,8 +1240,7 @@ class DC_common extends CI_Controller
                         if ($bbs_mod == "dnload" && $this->m_id == "download") {
 
                             $param_cm = array(
-                                'tb_id' => 'ct_dnload'
-                            , 'idx' => $this->p_idx
+                                'tb_id' => 'ct_dnload', 'idx' => $this->p_idx
                             );
                             $dn_file = $this->DM_basic->getView($param_cm);
                             //print_r($dn_file);
@@ -1309,7 +1290,6 @@ class DC_common extends CI_Controller
                     $rtn = ["cd" => "deny", "opt" => $bbs_mod, "perm_lv" => "", "usr_lv" => $usr_lv];
                     //log_message("INFO", "DC_common -> chk_perm : svc : deny : " . $bbs_mod . " mode perm value is null ");
                 }
-
             } else { // 게시판이 아니라면
                 // 퍼미션 설정이 있다면
                 if ($this->config->item("md")['perm'] != "" && !is_array($this->config->item("md")['perm'])) {
@@ -1377,7 +1357,6 @@ class DC_common extends CI_Controller
                     $_mode = $this->config->item('md')['mod'];
                 }
                 $this->{$_mode}($param);
-
             } else if ($_func == 'flex') { // flex $_func == 'pg'
 
 
@@ -1389,9 +1368,9 @@ class DC_common extends CI_Controller
                 }
                 //echo $param[0];
                 // 검색
-                if($param[0]=='search' && $this->s_fsw){
+                if ($param[0] == 'search' && $this->s_fsw) {
 
-                    $param[1]= $this->s_res;
+                    $param[1] = $this->s_res;
                 }
 
 
@@ -1421,8 +1400,6 @@ class DC_common extends CI_Controller
                     $this->return_chk( "deny", "", "해당페이지 접근권한이 없습니다.", $this->session->userdata('hstry') );
                 }
                 */
-
-
             } else if ($_func == 'pg') { // pg
                 $param_cv = array();
                 if ($this->lng_cd == 'en') {
@@ -1430,11 +1407,9 @@ class DC_common extends CI_Controller
                 } else {
                     $this->load->view($this->dl_config->get_path_skin() . $param[0]);
                 }
-
             } else {
                 //show_404(":::::::::: DC_common -> pg : error - _func is null ", TRUE);
             }
-
         } else {
             show_404(":::::::::: DC_common -> pg : error - param is null ", TRUE);
         }
@@ -1452,23 +1427,25 @@ class DC_common extends CI_Controller
         $this->method = __FUNCTION__;
         $this->rtn_perm = $this->chk_perm();
 
-       if ($this->rtn_perm['cd'] == 'pass') {
-           if ($param[0]) {
-                if($this->usr_id=='nacf5061'||$this->usr_id=='nacf50611'||$this->usr_id=='wtadmin'||$this->usr_id=='17311795'||$this->usr_id=='19312949'||$this->usr_id=='08305788'||$this->usr_id=='21613193'||
-                $this->usr_id=='2910703673'||$this->usr_id=='2259084387'||$this->usr_id=='3282972707') {
-                    if($param[0]=='dashboard'){
-                        if($this->usr_id=='nacf5061') {
+        if ($this->rtn_perm['cd'] == 'pass') {
+            if ($param[0]) {
+                if (
+                    $this->usr_id == 'nacf5061' || $this->usr_id == 'nacf50611' || $this->usr_id == 'wtadmin' || $this->usr_id == '17311795' || $this->usr_id == '19312949' || $this->usr_id == '08305788' || $this->usr_id == '21613193' ||
+                    $this->usr_id == '2910703673' || $this->usr_id == '2259084387' || $this->usr_id == '3282972707'
+                ) {
+                    if ($param[0] == 'dashboard') {
+                        if ($this->usr_id == 'nacf5061') {
                             redirect('/adm/intnlctrl');
-                        } else if($this->usr_id=='nacf50611') {
+                        } else if ($this->usr_id == 'nacf50611') {
                             redirect('/adm/finnaccexp');
-                        } else if($this->usr_id=='17311795'||$this->usr_id=='19312949'||$this->usr_id=='08305788'||$this->usr_id=='21613193'||$this->usr_id=='wtadmin') {
+                        } else if ($this->usr_id == '17311795' || $this->usr_id == '19312949' || $this->usr_id == '08305788' || $this->usr_id == '21613193' || $this->usr_id == 'wtadmin') {
                             redirect('/adm/prevmnlaun1');
-                        } else if($this->usr_id=='2910703673'||$this->usr_id=='2259084387'||$this->usr_id=='3282972707') {
+                        } else if ($this->usr_id == '2910703673' || $this->usr_id == '2259084387' || $this->usr_id == '3282972707') {
                             redirect('/adm/globalcomp1');
                         }
                     }
                     if ($this->m_id) {
-    
+
                         if ($this->bbs_mod) {
                             $this->{$this->bbs_mod}($param);
                         } else {
@@ -1477,12 +1454,12 @@ class DC_common extends CI_Controller
                     } else {
                         $this->dl_admin->dashboard($param);
                     }
-                }else {
-                    if($param[0]=='dashboard'){
+                } else {
+                    if ($param[0] == 'dashboard') {
                         redirect('/adm/member');
                     }
                     if ($this->m_id) {
-    
+
                         if ($this->bbs_mod) {
                             $this->{$this->bbs_mod}($param);
                         } else {
@@ -1491,15 +1468,13 @@ class DC_common extends CI_Controller
                     } else {
                         $this->dl_admin->dashboard($param);
                     }
-
                 }
-           } else {
-               $this->dl_admin->index();
-           }
+            } else {
+                $this->dl_admin->index();
+            }
         } else {
-           alert('접근권한이 없습니다.', '/index.php');
-       }
-
+            alert('접근권한이 없습니다.', '/index.php');
+        }
     }
 
 
@@ -1511,19 +1486,17 @@ class DC_common extends CI_Controller
     */
     protected function auth($param = array())
     {
-        $this->method=__FUNCTION__;
+        $this->method = __FUNCTION__;
         $this->rtn_perm = $this->chk_perm();
-        if($this->rtn_perm['cd'] == 'pass' )
-        {
-            if($param[0])
-            {
-                log_message("INFO", ":::::::::: DC_common -> auth : param[0]=".$param[0]);
+        if ($this->rtn_perm['cd'] == 'pass') {
+            if ($param[0]) {
+                log_message("INFO", ":::::::::: DC_common -> auth : param[0]=" . $param[0]);
                 $this->dl_auth->{$param[0]}();
-            }else{
+            } else {
 
                 $this->dl_auth->index();
             }
-        }else{
+        } else {
             alert('접근권한이 없습니다.', '/index.php');
         }
     }
@@ -1538,16 +1511,15 @@ class DC_common extends CI_Controller
     */
     protected function lists($param = array())
     {
-        $this->method=__FUNCTION__;
+        $this->method = __FUNCTION__;
         $this->rtn_perm = $this->chk_perm(__FUNCTION__);
         // if( $this->rtn_perm['cd'] == 'pass' )
         // {
-            if($param[0])
-            {
-                $this->dl_lists->lists_cv($param);
-            }else{
-                show_404("xox DC_common -> lists : non_param_error", TRUE);
-            }
+        if ($param[0]) {
+            $this->dl_lists->lists_cv($param);
+        } else {
+            show_404("xox DC_common -> lists : non_param_error", TRUE);
+        }
         // }else{
         //     alert('목록열람 권한이 없습니다. \n로그인 해 주세요.', '/index.php');
         // }
@@ -1564,17 +1536,15 @@ class DC_common extends CI_Controller
     {
         $rtn = $this->chk_kakao_sync();
 
-        $this->method=__FUNCTION__;
+        $this->method = __FUNCTION__;
         $this->rtn_perm = $this->chk_perm(__FUNCTION__);
-        if( $this->rtn_perm['cd'] == 'pass' )
-        {
-            if($param[0])
-            {
+        if ($this->rtn_perm['cd'] == 'pass') {
+            if ($param[0]) {
                 $this->dl_view->view_cv($param);
-            }else{
+            } else {
                 show_404("xox DC_common -> view : non_param_error", TRUE);
             }
-            }else{
+        } else {
             alert('글보기 권한이 없습니다. \n로그인 해 주세요.', '/ko/auth/login');
         }
     }
@@ -1588,25 +1558,21 @@ class DC_common extends CI_Controller
     */
     protected function write($param = array())
     {
-        $this->method=__FUNCTION__;
+        $this->method = __FUNCTION__;
         $this->rtn_perm = $this->chk_perm(__FUNCTION__);
-        if( $this->rtn_perm['cd'] == 'pass' )
-        {
-            if($param[0])
-            {
+        if ($this->rtn_perm['cd'] == 'pass') {
+            if ($param[0]) {
                 $this->dl_write->write_cv($param);
-            }else{
+            } else {
                 show_404("xox DC_common -> write : non_param_error", TRUE);
             }
-        } else if($this->usr_id=='nacf5061'||$this->usr_id=='nacf50611'||$this->usr_id=='17311795'||$this->usr_id=='19312949'||$this->usr_id=='08305788'||$this->usr_id=='21613193'||$this->usr_id=='wtadmin'||$this->usr_id=='2910703673'||$this->usr_id=='2259084387'||$this->usr_id=='3282972707') {
-            if($param[0])
-            {
+        } else if ($this->usr_id == 'nacf5061' || $this->usr_id == 'nacf50611' || $this->usr_id == '17311795' || $this->usr_id == '19312949' || $this->usr_id == '08305788' || $this->usr_id == '21613193' || $this->usr_id == 'wtadmin' || $this->usr_id == '2910703673' || $this->usr_id == '2259084387' || $this->usr_id == '3282972707') {
+            if ($param[0]) {
                 $this->dl_view->view_cv($param);
-            }else{
+            } else {
                 show_404("xox DC_common -> view : non_param_error", TRUE);
             }
- 
-        }else{
+        } else {
             alert('글작성 권한이 없습니다. \n로그인 해 주세요.', '/index.php');
         }
     }
@@ -1618,19 +1584,17 @@ class DC_common extends CI_Controller
      * modify
      *----------------------------------------
     */
-    protected function modify($param=array())
+    protected function modify($param = array())
     {
-        $this->method=__FUNCTION__;
+        $this->method = __FUNCTION__;
         $this->rtn_perm = $this->chk_perm(__FUNCTION__);
-        if( $this->rtn_perm['cd'] == 'pass' )
-        {
-            if($param[0])
-            {
+        if ($this->rtn_perm['cd'] == 'pass') {
+            if ($param[0]) {
                 $this->dl_modify->modify_cv($param);
-            }else{
+            } else {
                 show_404("xox DC_common -> modify : non_param_error", TRUE);
             }
-        }else{
+        } else {
             alert('글수정 권한이 없습니다. \n로그인 해 주세요.', '/index.php');
         }
     }
@@ -1642,12 +1606,11 @@ class DC_common extends CI_Controller
      * reply
      *----------------------------------------
     */
-    protected function reply($param=array())
+    protected function reply($param = array())
     {
-        $this->method=__FUNCTION__;
+        $this->method = __FUNCTION__;
         $this->rtn_perm = $this->chk_perm(__FUNCTION__);
-        if( $this->rtn_perm['cd'] == 'pass' )
-        {
+        if ($this->rtn_perm['cd'] == 'pass') {
             //if($param[0]) {
             $this->dl_reply->reply_cv($param);
             //}else{
@@ -1671,62 +1634,58 @@ class DC_common extends CI_Controller
     // ***** insert
     protected function insert()
     {
-        $this->method=__FUNCTION__;
+        $this->method = __FUNCTION__;
         $this->rtn_perm = $this->chk_perm("write");
-        if( $this->rtn_perm['cd'] == 'pass' )
-        {
+        if ($this->rtn_perm['cd'] == 'pass') {
             $this->dl_insert->cm_insert();
-        }else{
-            $this->return_chk( "deny", "write", "글등록(insert) 권한이 없습니다.", $this->session->userdata('hstry') );
+        } else {
+            $this->return_chk("deny", "write", "글등록(insert) 권한이 없습니다.", $this->session->userdata('hstry'));
         }
     }
 
 
     // ***** update
-    protected function update($param=array())
+    protected function update($param = array())
     {
-        $this->method=__FUNCTION__;
+        $this->method = __FUNCTION__;
         $this->rtn_perm = $this->chk_perm("modify");
-        if( $this->rtn_perm['cd'] == 'pass' )
-        {
+        if ($this->rtn_perm['cd'] == 'pass') {
             $this->dl_update->cm_update($param);
-        }else{
-            $this->return_chk( "deny", "modify", "글수정(update) 권한이 없습니다.", $this->session->userdata('hstry') );
+        } else {
+            $this->return_chk("deny", "modify", "글수정(update) 권한이 없습니다.", $this->session->userdata('hstry'));
         }
     }
 
 
     // ***** delete
-    protected function delete($param=array())
+    protected function delete($param = array())
     {
-        $this->method=__FUNCTION__;
+        $this->method = __FUNCTION__;
         $this->rtn_perm = $this->chk_perm(__FUNCTION__);
-        if( $this->rtn_perm['cd'] == 'pass' )
-        {
+        if ($this->rtn_perm['cd'] == 'pass') {
             $this->dl_delete->delete_cm($param);
-        }else{
+        } else {
             log_message("debug", "xox DC_common -> delete -> permission deny ");
-            $this->return_chk("deny", __FUNCTION__, "글삭제 권한이 없습니다.", $this->session->userdata('hstry') );
+            $this->return_chk("deny", __FUNCTION__, "글삭제 권한이 없습니다.", $this->session->userdata('hstry'));
         }
     }
 
 
     // ***** dnload
-    protected function dnload($param=array())
+    protected function dnload($param = array())
     {
-        $this->method=__FUNCTION__;
+        $this->method = __FUNCTION__;
         $this->rtn_perm = $this->chk_perm(__FUNCTION__);
-        if( $this->rtn_perm['cd'] == 'pass' )
-        {
+        if ($this->rtn_perm['cd'] == 'pass') {
             $this->dl_file->dnload_cm($param);
-        }else{
+        } else {
             log_message("debug", "xox DC_common -> dnload -> permission deny ");
-            $this->return_chk( "deny", __FUNCTION__, "다운로드 권한이 없습니다.", $this->session->userdata('hstry') );
+            $this->return_chk("deny", __FUNCTION__, "다운로드 권한이 없습니다.", $this->session->userdata('hstry'));
         }
     }
 
 
-/*
+    /*
  * ======================================================================
  *
  *                   P U B L I C - F U N C T I O N
@@ -1743,7 +1702,7 @@ class DC_common extends CI_Controller
     {
         $rtn = false;
         if (isset($this->{$_str})) {
-            $rtn=$this->{$_str};
+            $rtn = $this->{$_str};
         } else {
             //log_message("DEBUG", "DC_common -> get_val : 존재하지 않는 값 요청 : _str = ".$_str);
         }
@@ -1778,57 +1737,7 @@ class DC_common extends CI_Controller
     public function get_param_header()
     {
         $this->param_header = array(
-            'svc_mod'       => $this->get_val('svc_mod')
-            ,'seg'          => $this->get_val('seg')
-            ,'g_id'         => $this->get_val('g_id')
-            ,'m_id'         => $this->get_val('m_id')
-            ,'idx'          => $this->get_val('p_idx')
-            ,'cat'          => $this->get_val('p_cat')
-            ,'opt'          => $this->get_val('p_opt')
-            ,'nav_tree'     => $this->get_val('nav_tree')
-            ,'pg_tit'       => $this->get_val('pg_tit')
-            ,'grp_tit'      => $this->get_val('grp_tit')
-            ,'gd_arr'       => $this->get_val('gd_arr')
-            ,'gd_idx'       => $this->get_val('gd_idx')
-            ,'lng_cd'       => $this->get_val('lng_cd')
-            ,'lng_idx'      => $this->get_val('lng_idx')
-            ,'bbs_mod'      => $this->get_val('bbs_mod')
-            ,'bbs_perm'     => $this->get_val('bbs_perm')
-            ,'fnc_typ'      => $this->get_val('fnc_typ')
-            ,'lng_arr'      => $this->get_val('lng_arr')
-            ,'lng_mode_yn'  => $this->get_val('lng_mode_yn')
-            ,'usr_arr'      => $this->get_val('usr_arr')
-            ,'usr_lv'       => $this->get_val('usr_lv')
-            ,'base_url'     => $this->get_val('base_url')
-            ,'file_upload_dir'=> $this->file_upload_dir
-            ,'form_arr'     => $this->get_val('form_arr')
-            ,'is_login'     => $this->get_val('is_login')
-            ,'is_admin'     => $this->get_val('is_admin')
-            ,'is_adm_mod'   => $this->get_val('is_adm_mod')
-            ,'is_mng_mod'   => $this->get_val('is_mng_mod')
-            ,'edtr'         => $this->get_val('edtr')
-            ,'breadcrumb'   => $this->get_val('breadcrumb')
-
-            ,'initial'      => $this->get_val('initial')
-            ,'s_cat'        => $this->get_val('s_cat')
-            ,'s_sds'        => $this->get_val('s_sds')
-            ,'s_sde'        => $this->get_val('s_sde')
-            ,'s_fsw'        => $this->get_val('s_fsw')
-            ,'s_lng'        => $this->get_val('s_lng')
-            ,'s_fld'        => $this->get_val('s_fld')
-            ,'s_typ'        => $this->get_val('s_typ')
-            ,'s_subj'        => $this->get_val('s_subj')
-            ,'s_cont'        => $this->get_val('s_cont')
-            ,'post_cat'        => $this->get_val('post_cat')
-            ,'usr_nm'        => $this->get_val('usr_nm')
-            ,'sanc'        => $this->get_val('sanc')
-            ,'post_sanc'        => $this->get_val('post_sanc')
-
-            ,'code'         => $this->get_val('code')
-            ,'s_res'        => $this->get_val('s_res')
-            ,'s_tot'        => $this->get_val('s_tot')
-
-            ,'kw_lists'     => $this->get_val('kw_lists')
+            'svc_mod'       => $this->get_val('svc_mod'), 'seg'          => $this->get_val('seg'), 'g_id'         => $this->get_val('g_id'), 'm_id'         => $this->get_val('m_id'), 'idx'          => $this->get_val('p_idx'), 'cat'          => $this->get_val('p_cat'), 'opt'          => $this->get_val('p_opt'), 'nav_tree'     => $this->get_val('nav_tree'), 'pg_tit'       => $this->get_val('pg_tit'), 'grp_tit'      => $this->get_val('grp_tit'), 'gd_arr'       => $this->get_val('gd_arr'), 'gd_idx'       => $this->get_val('gd_idx'), 'lng_cd'       => $this->get_val('lng_cd'), 'lng_idx'      => $this->get_val('lng_idx'), 'bbs_mod'      => $this->get_val('bbs_mod'), 'bbs_perm'     => $this->get_val('bbs_perm'), 'fnc_typ'      => $this->get_val('fnc_typ'), 'lng_arr'      => $this->get_val('lng_arr'), 'lng_mode_yn'  => $this->get_val('lng_mode_yn'), 'usr_arr'      => $this->get_val('usr_arr'), 'usr_lv'       => $this->get_val('usr_lv'), 'base_url'     => $this->get_val('base_url'), 'file_upload_dir' => $this->file_upload_dir, 'form_arr'     => $this->get_val('form_arr'), 'is_login'     => $this->get_val('is_login'), 'is_admin'     => $this->get_val('is_admin'), 'is_adm_mod'   => $this->get_val('is_adm_mod'), 'is_mng_mod'   => $this->get_val('is_mng_mod'), 'edtr'         => $this->get_val('edtr'), 'breadcrumb'   => $this->get_val('breadcrumb'), 'initial'      => $this->get_val('initial'), 's_cat'        => $this->get_val('s_cat'), 's_sds'        => $this->get_val('s_sds'), 's_sde'        => $this->get_val('s_sde'), 's_fsw'        => $this->get_val('s_fsw'), 's_lng'        => $this->get_val('s_lng'), 's_fld'        => $this->get_val('s_fld'), 's_typ'        => $this->get_val('s_typ'), 's_subj'        => $this->get_val('s_subj'), 's_cont'        => $this->get_val('s_cont'), 'post_cat'        => $this->get_val('post_cat'), 'usr_nm'        => $this->get_val('usr_nm'), 'sanc'        => $this->get_val('sanc'), 'post_sanc'        => $this->get_val('post_sanc'), 'code'         => $this->get_val('code'), 's_res'        => $this->get_val('s_res'), 's_tot'        => $this->get_val('s_tot'), 'kw_lists'     => $this->get_val('kw_lists')
         );
         return $this->param_header;
     }
@@ -1855,30 +1764,32 @@ class DC_common extends CI_Controller
     protected function set_breadcrumb($_arr)
     {
         $html_in = "";
-        if(count($_arr)){
+        if (count($_arr)) {
             $html_in .= '<span class="uk-text-right">';
             $html_in .= '<ul class="uk-breadcrumb uk-margin-remove-bottom">';
             //$html_in .= '<li><a href="/'.$this->lng_cd.'/">Home</a></li>';
-            for($i=0; $i<count($_arr); $i++){
+            for ($i = 0; $i < count($_arr); $i++) {
                 $html_in .= '<li ';
-                if($i == count($_arr)-1){ $html_in .= 'class="uk-disabled"'; }
+                if ($i == count($_arr) - 1) {
+                    $html_in .= 'class="uk-disabled"';
+                }
 
-                $html_in .= '><a href="/'.$this->seg;
+                $html_in .= '><a href="/' . $this->seg;
 
-                $html_in .= '/'.$_arr[$i]['id'];
+                $html_in .= '/' . $_arr[$i]['id'];
 
                 $html_in .= '">';
-                if($_arr[$i]['id']=='prevmnlaun1') {
+                if ($_arr[$i]['id'] == 'prevmnlaun1') {
                     $html_in .= '국내제재사례';
-                } else if($_arr[$i]['id']=='prevmnlaun2') {
+                } else if ($_arr[$i]['id'] == 'prevmnlaun2') {
                     $html_in .= '국외제재사례';
-                } else if($_arr[$i]['id']=='prevmnlaun3') {
+                } else if ($_arr[$i]['id'] == 'prevmnlaun3') {
                     $html_in .= '정부보도자료';
-                } else if($_arr[$i]['id']=='prevmnlaun4') {
+                } else if ($_arr[$i]['id'] == 'prevmnlaun4') {
                     $html_in .= 'NEWS';
-                } else if($_arr[$i]['id']=='prevmnlaun5') {
+                } else if ($_arr[$i]['id'] == 'prevmnlaun5') {
                     $html_in .= 'AML BRIEF';
-                } else if($_arr[$i]['id']=='globalcomp1') {
+                } else if ($_arr[$i]['id'] == 'globalcomp1') {
                     $html_in .= 'News & Events';
                 } else {
                     $html_in .= $_arr[$i]['tit'][$this->lng_idx];
@@ -1891,15 +1802,17 @@ class DC_common extends CI_Controller
         $this->cur_breadcrumb = $html_in;
     }
 
-    public function chk_ip(){
+    public function chk_ip()
+    {
         $rtn = false;
-        if($_SERVER["REMOTE_ADDR"]=='1.255.77.102' ||$_SERVER["REMOTE_ADDR"]=='223.26.222.72' ||$_SERVER["REMOTE_ADDR"]=='121.170.124.236' ||$_SERVER["REMOTE_ADDR"]=='183.111.174.96'|| $_SERVER["REMOTE_ADDR"]=='192.168.219.104'||$_SERVER["REMOTE_ADDR"]=='210.91.190.155' || $_SERVER["REMOTE_ADDR"]=='223.38.81.134' || $_SERVER["REMOTE_ADDR"]=='221.162.119.225'|| $_SERVER["REMOTE_ADDR"]=='121.170.124.236' || $_SERVER["REMOTE_ADDR"]=='1.231.30.68'|| $_SERVER["REMOTE_ADDR"]=='1.230.201.166'||$_SERVER["REMOTE_ADDR"]=='1.230.201.157' || $_SERVER["REMOTE_ADDR"]=='1.230.201.152' || $_SERVER["REMOTE_ADDR"]=='1.230.201.96'|| $_SERVER["REMOTE_ADDR"]=='1.230.201.102'|| $_SERVER["REMOTE_ADDR"]=='211.36.158.248' || $_SERVER["REMOTE_ADDR"]=='1.230.201.128' || $_SERVER["REMOTE_ADDR"]=='1.230.201.140'||$_SERVER["REMOTE_ADDR"]=='117.111.3.212'||$_SERVER["REMOTE_ADDR"]=='211.45.39.196'||$_SERVER["REMOTE_ADDR"]=='1.255.77.102'||$_SERVER["REMOTE_ADDR"]=='10.1.209.104'){
+        if (
+            $_SERVER["REMOTE_ADDR"] == '1.255.77.102' || $_SERVER["REMOTE_ADDR"] == '223.26.222.72' || $_SERVER["REMOTE_ADDR"] == '121.170.124.236' || $_SERVER["REMOTE_ADDR"] == '183.111.174.96' || $_SERVER["REMOTE_ADDR"] == '192.168.219.104' || $_SERVER["REMOTE_ADDR"] == '210.91.190.155' || $_SERVER["REMOTE_ADDR"] == '223.38.81.134' || $_SERVER["REMOTE_ADDR"] == '221.162.119.225' || $_SERVER["REMOTE_ADDR"] == '121.170.124.236' || $_SERVER["REMOTE_ADDR"] == '1.231.30.68' || $_SERVER["REMOTE_ADDR"] == '1.230.201.166' || $_SERVER["REMOTE_ADDR"] == '1.230.201.157' || $_SERVER["REMOTE_ADDR"] == '1.230.201.152' || $_SERVER["REMOTE_ADDR"] == '1.230.201.96' || $_SERVER["REMOTE_ADDR"] == '1.230.201.102' || $_SERVER["REMOTE_ADDR"] == '211.36.158.248' || $_SERVER["REMOTE_ADDR"] == '1.230.201.128' || $_SERVER["REMOTE_ADDR"] == '1.230.201.140' || $_SERVER["REMOTE_ADDR"] == '117.111.3.212' || $_SERVER["REMOTE_ADDR"] == '211.45.39.196' || $_SERVER["REMOTE_ADDR"] == '1.255.77.102' || $_SERVER["REMOTE_ADDR"] == '10.1.209.104'
+            || $_SERVER["REMOTE_ADDR"] == '10.1.203.200' || $_SERVER["REMOTE_ADDR"] == '10.1.209.155' || $_SERVER["REMOTE_ADDR"] == '10.1.209.213'
+        ) {
             $rtn = true;
-        }else{
-           alert('허용되지 않은 접속입니다.', '/index.php');
+        } else {
+            alert('허용되지 않은 접속입니다.', '/index.php');
         }
         return $rtn;
     }
-
-
 }

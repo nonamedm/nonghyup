@@ -2,7 +2,7 @@
 <?php 
 $prevPage = $_SERVER['HTTP_REFERER'];
 if($m_id=='globalcomp1'||$m_id=='globalcomp2'||$m_id=='globalcomp3'||$m_id=='globalcomp4') {
-    if($usr_arr['usr_id']=='2910703673'||$usr_arr['usr_id']=='2259084387'||$usr_arr['usr_id']=='3282972707'||$usr_arr['usr_id']=='admin'||$usr_arr['usr_id']=='hwonpark'||$usr_arr['usr_id']=='ycneh'||$usr_arr['usr_id']=='nhbank8739') { 
+    if($usr_arr['usr_id'] == 'swiri3101' || $usr_arr['usr_id'] == 'suqhfka' || $usr_arr['usr_id'] == 'patty0327'||$usr_arr['usr_id']=='admin'||$usr_arr['usr_id']=='hwonpark'||$usr_arr['usr_id']=='ycneh'||$usr_arr['usr_id']=='nhbank8739') { 
         
     } else {
         alert("접근 권한이 없습니다.", $prevPage);
