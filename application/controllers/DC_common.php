@@ -1431,7 +1431,7 @@ class DC_common extends CI_Controller
             if ($param[0]) {
                 if (
                     $this->usr_id == 'nacf5061' || $this->usr_id == 'nacf50611' || $this->usr_id == 'wtadmin' || $this->usr_id == '17311795' || $this->usr_id == '19312949' || $this->usr_id == '08305788' || $this->usr_id == '21613193' ||
-                    $this->usr_id == '2910703673' || $this->usr_id == '2259084387' || $this->usr_id == '3282972707'
+                    $this->usr_id == 'swiri3101' || $this->usr_id == 'suqhfka' || $this->usr_id == 'patty0327'
                 ) {
                     if ($param[0] == 'dashboard') {
                         if ($this->usr_id == 'nacf5061') {
@@ -1440,7 +1440,7 @@ class DC_common extends CI_Controller
                             redirect('/adm/finnaccexp');
                         } else if ($this->usr_id == '17311795' || $this->usr_id == '19312949' || $this->usr_id == '08305788' || $this->usr_id == '21613193' || $this->usr_id == 'wtadmin') {
                             redirect('/adm/prevmnlaun1');
-                        } else if ($this->usr_id == '2910703673' || $this->usr_id == '2259084387' || $this->usr_id == '3282972707') {
+                        } else if ($this->usr_id == 'swiri3101' || $this->usr_id == 'suqhfka' || $this->usr_id == 'patty0327') {
                             redirect('/adm/globalcomp1');
                         }
                     }
@@ -1566,7 +1566,10 @@ class DC_common extends CI_Controller
             } else {
                 show_404("xox DC_common -> write : non_param_error", TRUE);
             }
-        } else if ($this->usr_id == 'nacf5061' || $this->usr_id == 'nacf50611' || $this->usr_id == '17311795' || $this->usr_id == '19312949' || $this->usr_id == '08305788' || $this->usr_id == '21613193' || $this->usr_id == 'wtadmin' || $this->usr_id == '2910703673' || $this->usr_id == '2259084387' || $this->usr_id == '3282972707') {
+        } else if (
+            $this->usr_id == 'nacf5061' || $this->usr_id == 'nacf50611' || $this->usr_id == '17311795' || $this->usr_id == '19312949' || $this->usr_id == '08305788' || $this->usr_id == '21613193' || $this->usr_id == 'wtadmin'
+            || $this->usr_id == 'swiri3101' || $this->usr_id == 'suqhfka' || $this->usr_id == 'patty0327'
+        ) {
             if ($param[0]) {
                 $this->dl_view->view_cv($param);
             } else {
@@ -1807,7 +1810,7 @@ class DC_common extends CI_Controller
         $rtn = false;
         if (
             $_SERVER["REMOTE_ADDR"] == '1.255.77.102' || $_SERVER["REMOTE_ADDR"] == '223.26.222.72' || $_SERVER["REMOTE_ADDR"] == '121.170.124.236' || $_SERVER["REMOTE_ADDR"] == '183.111.174.96' || $_SERVER["REMOTE_ADDR"] == '192.168.219.104' || $_SERVER["REMOTE_ADDR"] == '210.91.190.155' || $_SERVER["REMOTE_ADDR"] == '223.38.81.134' || $_SERVER["REMOTE_ADDR"] == '221.162.119.225' || $_SERVER["REMOTE_ADDR"] == '121.170.124.236' || $_SERVER["REMOTE_ADDR"] == '1.231.30.68' || $_SERVER["REMOTE_ADDR"] == '1.230.201.166' || $_SERVER["REMOTE_ADDR"] == '1.230.201.157' || $_SERVER["REMOTE_ADDR"] == '1.230.201.152' || $_SERVER["REMOTE_ADDR"] == '1.230.201.96' || $_SERVER["REMOTE_ADDR"] == '1.230.201.102' || $_SERVER["REMOTE_ADDR"] == '211.36.158.248' || $_SERVER["REMOTE_ADDR"] == '1.230.201.128' || $_SERVER["REMOTE_ADDR"] == '1.230.201.140' || $_SERVER["REMOTE_ADDR"] == '117.111.3.212' || $_SERVER["REMOTE_ADDR"] == '211.45.39.196' || $_SERVER["REMOTE_ADDR"] == '1.255.77.102' || $_SERVER["REMOTE_ADDR"] == '10.1.209.104'
-            || $_SERVER["REMOTE_ADDR"] == '10.1.203.200' || $_SERVER["REMOTE_ADDR"] == '10.1.209.155' || $_SERVER["REMOTE_ADDR"] == '10.1.209.213'
+            || $_SERVER["REMOTE_ADDR"] == '10.1.203.200' || $_SERVER["REMOTE_ADDR"] == '10.1.209.155' || $_SERVER["REMOTE_ADDR"] == '10.1.209.213' || $_SERVER["REMOTE_ADDR"] == '211.36.148.130'
         ) {
             $rtn = true;
         } else {

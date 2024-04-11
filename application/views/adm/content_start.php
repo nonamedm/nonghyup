@@ -12,7 +12,7 @@
                 } else if ($usr_arr['usr_id'] == 'nacf50611') {
                     echo '<div class="left_sub_menu"><a href="/adm/finnaccexp">금융사고사례</a></div>';
                     echo "<hr class='left_sub_dv'>";
-                } else if ($usr_arr['usr_id'] == '17311795' || $usr_arr['usr_id'] == '19312949' || $usr_arr['usr_id'] == '08305788' || $usr_arr['usr_id'] == '21613193' || $usr_arr['usr_id'] == 'admin') {
+                } else if ($usr_arr['usr_id'] == '17311795' || $usr_arr['usr_id'] == '19312949' || $usr_arr['usr_id'] == '08305788' || $usr_arr['usr_id'] == '21613193') {
                     echo '<div class="left_sub_menu"><a href="/adm/prevmnlaun1">국내제재사례</a></div>';
                     echo "<hr class='left_sub_dv'>";
                     echo '<div class="left_sub_menu"><a href="/adm/prevmnlaun2">국외제재사례</a></div>';
@@ -23,7 +23,7 @@
                     echo "<hr class='left_sub_dv'>";
                     echo '<div class="left_sub_menu"><a href="/adm/prevmnlaun5">AML BRIEF</a></div>';
                     echo "<hr class='left_sub_dv'>";
-                } else if ($usr_arr['usr_id'] == 'swiri3101' || $usr_arr['usr_id'] == 'suqhfka' || $usr_arr['usr_id'] == 'patty0327' || $usr_arr['usr_id'] == 'admin') {
+                } else if ($usr_arr['usr_id'] == 'swiri3101' || $usr_arr['usr_id'] == 'suqhfka' || $usr_arr['usr_id'] == 'patty0327') {
                     echo '<div class="left_sub_menu"><a href="/adm/globalcomp1">News & Events</a></div>';
                     echo "<hr class='left_sub_dv'>";
                     echo '<div class="left_sub_menu"><a href="/adm/globalcomp2">Laws & Regulations</a></div>';
