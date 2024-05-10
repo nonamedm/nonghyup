@@ -1,4 +1,4 @@
-<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+<?php defined('BASEPATH') or exit('No direct script access allowed'); ?>
 <div id="header_space"></div>
 <div id="header">
     <div class="GH">
@@ -12,14 +12,16 @@
 
         <div class="hd_center">
             <div class="top_search">
-                <input type="text" id="top_search" class="top_search_field" value="<?php if($s_fsw && $m_id!="search"){ echo $s_fsw;}?>">
+                <input type="text" id="top_search" class="top_search_field" value="<?php if ($s_fsw && $m_id != "search") {
+                                                                                        echo $s_fsw;
+                                                                                    } ?>">
                 <button id="top_search_btn" class="top_search_btn"><img src="/static/svg/search.svg"></button>
                 <div class="top_mbl_btn"><a href="#" class="btn_mbl"></a></div>
             </div>
             <div class="top_keyword">
                 <?php
-                for($i=0; $i<count($kw_lists); $i++){
-                    echo "<button class='tkw tkw".$i."' alt='".$kw_lists[$i]['post_subj']."'>".$kw_lists[$i]['post_subj']."</button>";
+                for ($i = 0; $i < count($kw_lists); $i++) {
+                    echo "<button class='tkw tkw" . $i . "' alt='" . $kw_lists[$i]['post_subj'] . "'>" . $kw_lists[$i]['post_subj'] . "</button>";
                 }
                 ?>
             </div>
@@ -35,12 +37,14 @@
         </div>
     </div>
     <div class="m_search">
-        <input type="text" id="mtop_search" class="top_search_field" value="<?php if($s_fsw && $m_id!="search"){ echo $s_fsw;}?>">
+        <input type="text" id="mtop_search" class="top_search_field" value="<?php if ($s_fsw && $m_id != "search") {
+                                                                                echo $s_fsw;
+                                                                            } ?>">
         <button id="mtop_search_btn" class="top_search_btn">검색</button>
         <div class="top_keyword">
             <?php
-            for($i=0; $i<count($kw_lists); $i++){
-                echo "<button class='tkw tkw".$i."' alt='".$kw_lists[$i]['post_subj']."'>".$kw_lists[$i]['post_subj']."</button>";
+            for ($i = 0; $i < count($kw_lists); $i++) {
+                echo "<button class='tkw tkw" . $i . "' alt='" . $kw_lists[$i]['post_subj'] . "'>" . $kw_lists[$i]['post_subj'] . "</button>";
             }
             ?>
         </div>
@@ -52,67 +56,72 @@
 
     <div class="mblmenu" id="mblmenu">
         <ul class="dp1">
-        <?php for($i=0; $i<count($nav_tree[0]['sub']); $i++){
-            if($nav_tree[0]['sub'][$i]['visible_yn']!='N') { ?>
-            <li class="mm">
-                <a class="" href="/<?php echo $lng_cd;?>/<?php echo $nav_tree[0]['sub'][$i]['id'];?>">
-                    <?php echo $nav_tree[0]['sub'][$i]['tit'][$lng_idx];?>
-                </a>
-                <?php if ($nav_tree[0]['sub'][$i]['sub']){ ?>
-                <div class="mm_sub">
-                    <ul class="dp2">
-                    <?php for ($j=0; $j<count($nav_tree[0]['sub'][$i]['sub']); $j++) {
-                        if($nav_tree[0]['sub'][$i]['sub'][$j]['visible_yn']!='N') { ?>
-                        <li class="sm">
-                            <?php if($nav_tree[0]['sub'][$i]['sub'][$j]['id']=='sanctions'){ ?>
-                            <a href="/<?php echo $lng_cd;?>/<?php echo $nav_tree[0]['sub'][$i]['sub'][$j]['id'];?>">
-                            <!--<a href="https://www.fss.or.kr/fss/job/openInfo/list.do?menuNo=200476" target="_blank">-->
-                            <?php }else{ ?>
-                            <a href="/<?php echo $lng_cd;?>/<?php echo $nav_tree[0]['sub'][$i]['sub'][$j]['id'];?>">
-                            <?php } ?>
-                            <?php if($nav_tree[0]['sub'][$i]['sub'][$j]['id']=='prevmnlaun1'){ ?>
-                                국내제재사례
-                            <?php } else if($nav_tree[0]['sub'][$i]['sub'][$j]['id']=='prevmnlaun2') {?>
-                                국외제재사례
-                            <?php } else if($nav_tree[0]['sub'][$i]['sub'][$j]['id']=='globalcomp1') {?>
-                                News & Events
-                            <?php } else { ?>
-                                <?php echo strip_tags($nav_tree[0]['sub'][$i]['sub'][$j]['tit'][$lng_idx]);?>
-                            <?php }?>
-                            </a>
-                        </li>
+            <?php for ($i = 0; $i < count($nav_tree[0]['sub']); $i++) {
+                if ($nav_tree[0]['sub'][$i]['visible_yn'] != 'N') { ?>
+                    <li class="mm">
+                        <a class="" href="/<?php echo $lng_cd; ?>/<?php echo $nav_tree[0]['sub'][$i]['id']; ?>">
+                            <?php echo $nav_tree[0]['sub'][$i]['tit'][$lng_idx]; ?>
+                        </a>
+                        <?php if ($nav_tree[0]['sub'][$i]['sub']) { ?>
+                            <div class="mm_sub">
+                                <ul class="dp2">
+                                    <?php for ($j = 0; $j < count($nav_tree[0]['sub'][$i]['sub']); $j++) {
+                                        if ($nav_tree[0]['sub'][$i]['sub'][$j]['visible_yn'] != 'N') { ?>
+                                            <?php
+                                            if ($nav_tree[0]['sub'][$i]['sub'][$j]['id'] == 'prevmnlaun1' || $nav_tree[0]['sub'][$i]['sub'][$j]['id'] == 'globalcomp1') {
+                                                echo "<br/><br/>"; // 국내, 해외 메뉴 카테고리 분리하기
+                                            }
+                                            ?>
+                                            <li class="sm">
+                                                <?php if ($nav_tree[0]['sub'][$i]['sub'][$j]['id'] == 'sanctions') { ?>
+                                                    <a href="/<?php echo $lng_cd; ?>/<?php echo $nav_tree[0]['sub'][$i]['sub'][$j]['id']; ?>">
+                                                        <!--<a href="https://www.fss.or.kr/fss/job/openInfo/list.do?menuNo=200476" target="_blank">-->
+                                                    <?php } else { ?>
+                                                        <a href="/<?php echo $lng_cd; ?>/<?php echo $nav_tree[0]['sub'][$i]['sub'][$j]['id']; ?>">
+                                                        <?php } ?>
+                                                        <?php if ($nav_tree[0]['sub'][$i]['sub'][$j]['id'] == 'prevmnlaun1') { ?>
+                                                            국내제재사례
+                                                        <?php } else if ($nav_tree[0]['sub'][$i]['sub'][$j]['id'] == 'prevmnlaun2') { ?>
+                                                            국외제재사례
+                                                        <?php } else if ($nav_tree[0]['sub'][$i]['sub'][$j]['id'] == 'globalcomp1') { ?>
+                                                            News & Events
+                                                        <?php } else { ?>
+                                                            <?php echo strip_tags($nav_tree[0]['sub'][$i]['sub'][$j]['tit'][$lng_idx]); ?>
+                                                        <?php } ?>
+                                                        </a>
+                                            </li>
+                                        <?php } ?>
+                                    <?php } ?>
+                                </ul>
+                            </div>
                         <?php } ?>
-                    <?php } ?>
-                    </ul>
-                </div>
+                    </li>
                 <?php } ?>
-            </li>
             <?php } ?>
-        <?php } ?>
             <li class="mm">
                 <a href="#">마이페이지</a>
                 <div class="mm_sub">
                     <ul class="dp2">
                         <li class="sm"><a href="/ko/mypage">회원정보</a></li>
-                        <?php if(! $is_admin){ ?>
-                        <!-- <li class="sm"><a href="/ko/myimprovement">나의 Quick Service</a></li> 23년 하반기 2차개선 요청사항 -->
-                        <li class="sm"><a href="/ko/myqna">나의 Q&A</a></li>
-                        <li class="sm"><a href="/ko/withdrawal" class="withdrawal">회원탈퇴</a></li>
+                        <?php if (!$is_admin) { ?>
+                            <!-- <li class="sm"><a href="/ko/myimprovement">나의 Quick Service</a></li> 23년 하반기 2차개선 요청사항 -->
+                            <li class="sm"><a href="/ko/myqna">나의 Q&A</a></li>
+                            <li class="sm"><a href="/ko/withdrawal" class="withdrawal">회원탈퇴</a></li>
                         <?php } ?>
                     </ul>
                 </div>
             </li>
             <li class="mm">
-                <?php if($is_login){ ?>
+                <?php if ($is_login) { ?>
                     <a href="/ko/auth/logout" class="uk-display-inline">로그아웃</a>
-                <?php }else{ ?>
+                <?php } else { ?>
                     <a href="/ko/auth/login" class="uk-display-inline">로그인</a>
                     <a href="/ko/auth/join" class="uk-display-inline">회원가입</a>
                 <?php } ?>
             </li>
         </ul>
     </div>
-    
+
     <!-- <div class="noticeBannerW">
         <a href="/ko/improvement" class="noticeBanner">
             <p class="txtBlue txtBold" style="color:#2B347B; margin-left:-10px;">【 Quick Service 】</p> 
