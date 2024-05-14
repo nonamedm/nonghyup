@@ -268,3 +268,7 @@ a:focus {text-decoration:none;color:#000;}
 
 .bgcT {background: transparent !important;}
 
+.img_global {
+    width: 20px;
+    height:20px;
+}
