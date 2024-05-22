@@ -707,7 +707,7 @@ class DC_common extends CI_Controller
             $result['prevmnlaun1'] = $this->DM_basic->getResult_sch($param_cm);
             $total += count($result['prevmnlaun1']);
 
-            $param_cm['tb_id'] = 'ct_globalcomp';
+            $param_cm['tb_id'] = 'ct_globalcomp1';
             $result['globalcomp1'] = $this->DM_basic->getResult_sch($param_cm);
             $total += count($result['globalcomp1']);
 
